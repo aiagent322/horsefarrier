@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Farrier & Hoof Care Glossary — HorseFarrier.net</title>
+<meta name="description" content="Complete farrier and hoof care glossary — 120+ terms defined. Anatomy, diseases, tools, shoeing types, and conditions explained in plain language.">
+<link rel="canonical" href="https://horsefarrier.net/glossary/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none;border-radius:0 0 var(--radius) 0}
+.skip-link:focus{left:0}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:none;align-items:center;flex-shrink:0}
+@media(min-width:600px){.bb-logo-link{display:flex}}
+
+/* HERO */
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,#2A4A6B 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:540px;margin:0 auto 14px}
+.hero-stats{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.hero-stats span{font-size:0.78rem;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);padding:4px 12px;border-radius:12px}
+
+/* SEARCH */
+.search-wrap{max-width:860px;margin:0 auto;padding:20px 16px 0}
+.search-box{position:relative}
+.search-box input{width:100%;padding:13px 16px 13px 44px;border:2px solid var(--border-strong);border-radius:var(--radius-lg);font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--ink);background:var(--white);outline:none;transition:var(--transition)}
+.search-box input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
+.search-box input::placeholder{color:var(--ink-muted)}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink-muted);font-size:1.1rem;pointer-events:none}
+.search-count{font-size:0.8rem;color:var(--ink-muted);margin-top:8px;padding-left:2px;min-height:20px}
+
+/* ALPHA NAV */
+.alpha-nav{max-width:860px;margin:0 auto;padding:14px 16px 0;display:flex;flex-wrap:wrap;gap:4px}
+.alpha-btn{min-width:var(--tap);min-height:var(--tap);display:inline-flex;align-items:center;justify-content:center;font-size:0.82rem;font-weight:700;color:var(--leather);background:var(--white);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:var(--transition);padding:0 8px}
+.alpha-btn:hover{background:var(--rope-pale);border-color:var(--border-strong)}
+.alpha-btn.disabled{color:var(--ink-muted);opacity:0.4;pointer-events:none}
+
+/* CONTENT */
+.content-wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+
+.letter-section{margin-bottom:32px}
+.letter-section h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--leather-deeper);line-height:1;margin-bottom:12px;padding-bottom:8px;border-bottom:3px solid var(--rope);display:flex;align-items:baseline;gap:12px}
+.letter-section h2 .letter-count{font-size:0.75rem;font-weight:600;color:var(--ink-muted);font-family:'Source Sans 3',sans-serif}
+
+.term-list{display:flex;flex-direction:column;gap:0}
+.term-entry{border-bottom:1px solid var(--border);padding:14px 0}
+.term-entry:last-child{border-bottom:none}
+.term-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+.term-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);line-height:1.2}
+.term-alt{font-size:0.78rem;color:var(--ink-muted);font-style:italic;margin-top:2px}
+.term-tag{display:inline-flex;align-items:center;font-size:0.67rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:8px;flex-shrink:0;margin-top:2px}
+.tag-anatomy{background:var(--rope-pale);color:var(--leather-dark)}
+.tag-disease{background:var(--rust-light);color:var(--rust)}
+.tag-tool{background:var(--steel-light);color:var(--steel)}
+.tag-shoeing{background:var(--sage-light);color:var(--sage-dark)}
+.tag-condition{background:#FFF8E6;color:#8B6914}
+.tag-procedure{background:#EDE8FF;color:#5A3E9B}
+.tag-gait{background:#E8F8F0;color:#2D7A4F}
+.term-def{font-size:0.9rem;color:var(--ink-soft);line-height:1.7}
+.term-def strong{color:var(--ink);font-weight:700}
+.term-see{font-size:0.82rem;color:var(--leather);font-style:italic;margin-top:4px}
+
+/* HIDDEN by filter */
+.term-entry.hidden{display:none}
+.letter-section.hidden{display:none}
+
+/* NO RESULTS */
+.no-results{display:none;text-align:center;padding:48px 16px;color:var(--ink-muted)}
+.no-results.show{display:block}
+.no-results p{font-size:1rem;margin-bottom:8px}
+
+/* NAV CARDS */
+.nav-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+
+/* FOOTER */
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+
+@media(min-width:600px){
+  .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}.page-hero h1{font-size:2.2rem}
+  .search-wrap{padding:24px 24px 0}
+  .alpha-nav{padding:16px 24px 0}
+  .content-wrap{padding:24px 24px 56px}
+  .term-name{font-size:1.1rem}
+}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Glossary</div>
+  <h1>Farrier &amp; Hoof Care <em>Glossary</em></h1>
+  <p>120+ terms defined — anatomy, diseases, tools, shoeing types, procedures, and conditions. Plain language, no fluff.</p>
+  <div class="hero-stats">
+    <span>🦴 Anatomy</span>
+    <span>🦠 Diseases</span>
+    <span>🔧 Tools</span>
+    <span>🔩 Shoeing</span>
+    <span>🩺 Conditions</span>
+    <span>⚙️ Procedures</span>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="search" id="glossary-search" placeholder="Search terms… e.g. laminitis, rasp, coffin bone" aria-label="Search glossary terms" autocomplete="off">
+  </div>
+  <div class="search-count" id="search-count" aria-live="polite"></div>
+</div>
+
+<!-- ALPHA NAV -->
+<nav class="alpha-nav" aria-label="Jump to letter">
+  <a class="alpha-btn" href="#A">A</a>
+  <a class="alpha-btn" href="#B">B</a>
+  <a class="alpha-btn" href="#C">C</a>
+  <a class="alpha-btn" href="#D">D</a>
+  <a class="alpha-btn" href="#E">E</a>
+  <a class="alpha-btn" href="#F">F</a>
+  <a class="alpha-btn" href="#G">G</a>
+  <a class="alpha-btn" href="#H">H</a>
+  <a class="alpha-btn" href="#I">I</a>
+  <a class="alpha-btn disabled" href="#J">J</a>
+  <a class="alpha-btn" href="#K">K</a>
+  <a class="alpha-btn" href="#L">L</a>
+  <a class="alpha-btn" href="#M">M</a>
+  <a class="alpha-btn" href="#N">N</a>
+  <a class="alpha-btn" href="#O">O</a>
+  <a class="alpha-btn" href="#P">P</a>
+  <a class="alpha-btn disabled" href="#Q">Q</a>
+  <a class="alpha-btn" href="#R">R</a>
+  <a class="alpha-btn" href="#S">S</a>
+  <a class="alpha-btn" href="#T">T</a>
+  <a class="alpha-btn" href="#U">U</a>
+  <a class="alpha-btn" href="#V">V</a>
+  <a class="alpha-btn" href="#W">W</a>
+  <a class="alpha-btn disabled" href="#X">X</a>
+  <a class="alpha-btn disabled" href="#Y">Y</a>
+  <a class="alpha-btn disabled" href="#Z">Z</a>
+</nav>
+
+<div class="content-wrap" id="main-content" role="main">
+<div id="no-results" class="no-results" aria-live="polite"><p>No terms found for that search.</p><p style="font-size:0.85rem">Try a shorter word or check spelling.</p></div>
+
+<!-- A -->
+<div class="letter-section" id="A">
+  <h2>A <span class="letter-count">9 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="abscess hoof infection pocket bacteria lameness">
+      <div class="term-header"><span class="term-name">Abscess, Hoof</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A pocket of infection — usually bacterial — trapped between the sensitive and insensitive structures of the hoof. Typically causes sudden, severe lameness with localized heat and a strong digital pulse. Treated by draining the abscess through the sole or by allowing it to rupture naturally at the coronary band or heel bulb. One of the most common causes of acute, non-weight-bearing lameness.</div>
+    </div>
+    <div class="term-entry" data-terms="alveoli tubules hoof wall horn">
+      <div class="term-header"><span class="term-name">Alveoli</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">Tiny tubular spaces within the hoof wall horn that run from the coronary band to the ground surface. They contribute to the hoof wall's ability to absorb moisture and provide some shock absorption.</div>
+    </div>
+    <div class="term-entry" data-terms="angular limb deformity ALD valgus varus crooked legs foal">
+      <div class="term-header"><span class="term-name">Angular Limb Deformity (ALD)</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A deviation of the limb when viewed from the front or back — the leg does not track straight. <strong>Valgus</strong> is an outward deviation (knock-kneed); <strong>varus</strong> is an inward deviation (bow-legged). Common in newborn foals, many of which self-correct. Persistent deformities may require corrective trimming, shoeing, or surgery before growth plates close.</div>
+    </div>
+    <div class="term-entry" data-terms="ankylosing ankylosis fusion joint ringbone">
+      <div class="term-header"><span class="term-name">Ankylosing / Ankylosis</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The fusion of a joint through bone proliferation. In horses, most commonly associated with ringbone. Once the coffin or pastern joint fuses completely, movement through that joint stops — which paradoxically can relieve pain, allowing some horses to return to limited soundness.</div>
+    </div>
+    <div class="term-entry" data-terms="anvil forge farrier tool shaping steel">
+      <div class="term-header"><span class="term-name">Anvil</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">The steel working surface on which a farrier shapes hot shoes. A good anvil rings clearly when struck (indicating dense, high-quality steel) and has a flat face (table), a rounded horn for bending, and various heel and step configurations. Weight typically ranges from 100 to 300 lbs for a farrier's working anvil.</div>
+    </div>
+    <div class="term-entry" data-terms="articular ringbone coffin joint pastern joint arthritis">
+      <div class="term-header"><span class="term-name">Articular Ringbone</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Ringbone that involves the joint surface itself — the coffin joint (low articular ringbone) or pastern joint (high articular ringbone). More serious than periarticular ringbone because it directly affects joint cartilage. Often causes persistent lameness and is less likely to ankylose into soundness than non-articular forms.</div>
+    </div>
+    <div class="term-entry" data-terms="asymmetrical hoof imbalance medial lateral uneven">
+      <div class="term-header"><span class="term-name">Asymmetrical Hoof</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A hoof where the medial (inside) and lateral (outside) walls are unequal in length or angle. Some degree of asymmetry is normal and desirable — the medial wall is typically slightly higher — but significant asymmetry contributes to joint stress and is addressed through corrective trimming.</div>
+    </div>
+    <div class="term-entry" data-terms="atrophy frog digital cushion wasting">
+      <div class="term-header"><span class="term-name">Atrophy, Frog/Digital Cushion</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Wasting or reduction in size of the frog and underlying digital cushion, typically from lack of ground contact and movement. Seen in horses kept on deep, soft footing or shod with pads that prevent frog contact. Reduces the heel's shock-absorbing capacity and is a risk factor for navicular syndrome.</div>
+    </div>
+    <div class="term-entry" data-terms="AFA American Farrier Association certification">
+      <div class="term-header"><span class="term-name">AFA (American Farrier's Association)</span><span class="term-tag tag-procedure">Organization</span></div>
+      <div class="term-def">The primary professional organization for farriers in the United States. Offers a tiered certification system — Farrier (CF), Journeyman Farrier (CJF), and Therapeutic Endorsement — that requires written exams, practical shoeing evaluations, and ongoing continuing education. AFA certification is a recognized baseline of competency.</div>
+    </div>
+  </div>
+</div>
+
+<!-- B -->
+<div class="letter-section" id="B">
+  <h2>B <span class="letter-count">8 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="bar hoof anatomy wall heel buttress">
+      <div class="term-header"><span class="term-name">Bar (Hoof)</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The inward fold of the hoof wall at the heel that runs along the sides of the frog toward the toe. Bars help the hoof resist contraction and provide additional bearing surface. Excessive bar growth can fold over the sole and cause pressure; overly aggressive removal weakens the heel.</div>
+    </div>
+    <div class="term-entry" data-terms="bar shoe straight egg therapeutic support">
+      <div class="term-header"><span class="term-name">Bar Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A shoe with a bar of metal connecting the two branches across the heels — either straight or curved. Provides additional heel support and stability, prevents the shoe from shifting, and can be used to bear on the frog. Types include straight bar, egg bar, and heart bar shoes.</div>
+    </div>
+    <div class="term-entry" data-terms="bearing surface hoof wall ground contact shoe fit">
+      <div class="term-header"><span class="term-name">Bearing Surface</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The ground-facing surface of the hoof wall — the part that bears the horse's weight and contacts the shoe or ground directly. Proper bearing surface levelness and balance is the primary objective of trimming.</div>
+    </div>
+    <div class="term-entry" data-terms="biotin vitamin B7 supplement hoof quality growth">
+      <div class="term-header"><span class="term-name">Biotin</span><span class="term-tag tag-condition">Nutrition</span></div>
+      <div class="term-def">A B-complex vitamin (B7) that plays a role in keratin synthesis. Multiple controlled studies support its use at 20mg/day or more for improving hoof wall hardness and reducing cracking in horses with poor hoof quality. Results take 9–12 months to fully manifest, as the entire hoof must grow out. The most evidence-backed hoof supplement available.</div>
+    </div>
+    <div class="term-entry" data-terms="blood supply vascular hoof circulation digital vessels">
+      <div class="term-header"><span class="term-name">Blood Supply, Hoof</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The hoof has a rich blood supply via the digital arteries and their extensive branching within the sensitive laminae, solar corium, and coronary band. The frog mechanism — where frog contact compresses the digital cushion — actively pumps blood back up the leg. Disruption of this blood flow (as in laminitis) causes rapid, serious damage.</div>
+    </div>
+    <div class="term-entry" data-terms="borium tungsten carbide traction road nails ice">
+      <div class="term-header"><span class="term-name">Borium</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A tungsten carbide compound welded onto the shoe surface to provide permanent, extremely durable traction. Used on working horses on pavement, icy surfaces, or rough terrain where studs or road nails would wear too quickly. Unlike removable studs, borium is permanent and wears very slowly.</div>
+    </div>
+    <div class="term-entry" data-terms="breakover point of breakover toe rocker roll">
+      <div class="term-header"><span class="term-name">Breakover</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The moment during the stride when the heel lifts and the hoof pivots over the toe before leaving the ground. The <strong>point of breakover</strong> is the exact spot on the toe where this pivot occurs. Manipulating breakover (via rolled toes, rocker shoes, or set-back shoes) is a primary tool in corrective and therapeutic shoeing — easing breakover reduces stress on the DDFT, navicular structures, and coffin joint.</div>
+    </div>
+    <div class="term-entry" data-terms="bruised sole stone bruise lameness sole injury">
+      <div class="term-header"><span class="term-name">Bruised Sole</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">Hemorrhage and inflammation of the solar corium from impact — stepping on a stone, rock, or other hard object. Appears as reddish or purple discoloration visible when the sole is pared. Causes lameness ranging from subtle to severe. Common in Thoroughbreds and other horses with flat, thin soles. Prevented by sole protection — pads, pour-in materials, or appropriate shoes.</div>
+    </div>
+  </div>
+</div>
+
+<!-- C -->
+<div class="letter-section" id="C">
+  <h2>C <span class="letter-count">14 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="canker frog proliferating tissue chronic infection">
+      <div class="term-header"><span class="term-name">Canker</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A chronic, progressive infection of the frog and solar corium resulting in abnormal, hypertrophied (overgrown) horn tissue. Appears as cauliflower-like white or gray proliferating mass at the frog, bleeds easily, and has a distinctive foul odor. Far more serious than thrush — invades sensitive tissue. Requires aggressive veterinary and farrier debridement followed by weeks of bandaging. Draft breeds are disproportionately affected.</div>
+    </div>
+    <div class="term-entry" data-terms="clinch nail bent tip hoof wall shoe securement">
+      <div class="term-header"><span class="term-name">Clinch</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">The bent-over tip of a horseshoe nail that emerges through the outer hoof wall after nailing. The farrier cuts, smooths, and bends the clinch tight against the wall to lock the shoe in place. Protruding or risen clinches are sharp and can cause injury — a sign the shoe needs attention.</div>
+    </div>
+    <div class="term-entry" data-terms="clinch cutter buffer tool nail removal shoe pull">
+      <div class="term-header"><span class="term-name">Clinch Cutter (Buffer)</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A chisel-like tool used to cut clinches before shoe removal. Placed under the clinch and struck with a hammer to sever the bent nail tip from the wall. Attempting to pull a shoe without first cutting clinches tears chunks of hoof wall.</div>
+    </div>
+    <div class="term-entry" data-terms="coffin bone pedal bone P3 distal phalanx rotation sinking">
+      <div class="term-header"><span class="term-name">Coffin Bone</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-alt">Also called: Pedal Bone, P3, Distal Phalanx, PIII</div>
+      <div class="term-def">The main bone within the hoof capsule, shaped to mirror the hoof's internal contour. Attached to the hoof wall via the sensitive and insensitive laminae. In laminitis, the coffin bone may <strong>rotate</strong> (tip downward at the toe) or <strong>sink</strong> (drop vertically within the capsule) — both are serious and potentially life-threatening. Visible on radiograph.</div>
+    </div>
+    <div class="term-entry" data-terms="coffin joint distal interphalangeal joint DIP P2 P3">
+      <div class="term-header"><span class="term-name">Coffin Joint</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-alt">Also called: Distal Interphalangeal Joint (DIP)</div>
+      <div class="term-def">The joint between the short pastern bone (P2) and the coffin bone (P3), located inside the hoof capsule. The site of low ringbone, some navicular syndrome involvement, and coffin joint arthritis. Injected therapeutically when joint pain is identified. The joint also contains the navicular bone as a sesamoid.</div>
+    </div>
+    <div class="term-entry" data-terms="cold shoeing fitting shoe without heat forge">
+      <div class="term-header"><span class="term-name">Cold Shoeing</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">Fitting and nailing a shoe without first heating it in a forge. The shoe may be bent slightly with tools but is not hot-shaped on the anvil. Faster and requires less equipment than hot shoeing but produces a less precise fit, particularly for horses with unusual hoof shapes or corrective needs.</div>
+    </div>
+    <div class="term-entry" data-terms="concavity solar concavity sole arch depth">
+      <div class="term-header"><span class="term-name">Concavity, Solar</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The arch or dome of the sole — the degree to which the sole is cupped upward rather than flat. A well-developed concavity protects the sole from ground contact. Flat soles (insufficient concavity) are prone to bruising and pressure. Concavity varies significantly by breed — Arabians typically have more; Thoroughbreds often have less.</div>
+    </div>
+    <div class="term-entry" data-terms="contracted heel narrow heel frog compression">
+      <div class="term-header"><span class="term-name">Contracted Heel</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A condition where the heels of the hoof narrow inward, compressing the frog and reducing the hoof's natural expansion mechanism. The frog appears narrow and deep-seated. Causes include prolonged shoeing without frog contact, long-toe/low-heel syndrome, stall confinement, and some hereditary tendencies. Treated with corrective trimming and increased movement over varied terrain.</div>
+    </div>
+    <div class="term-entry" data-terms="copper nutrition mineral deficiency hoof keratin zinc">
+      <div class="term-header"><span class="term-name">Copper</span><span class="term-tag tag-condition">Nutrition</span></div>
+      <div class="term-def">A trace mineral essential for cross-linking of keratin proteins — the chemical bonds that make hoof wall hard and strong. Deficiency (often caused by high dietary iron suppressing absorption) produces brittle, cracking hooves, faded coat color, and slow growth. Works synergistically with zinc; the two are always balanced together. Target: ~125 mg/day in a 4:1 zinc-to-copper ratio.</div>
+    </div>
+    <div class="term-entry" data-terms="coronary band coronet hoof growth origin">
+      <div class="term-header"><span class="term-name">Coronary Band</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-alt">Also called: Coronet</div>
+      <div class="term-def">The soft, slightly swollen band of tissue at the top of the hoof capsule where new hoof wall originates and grows downward. The coronary band contains the coronary corium — the tissue that produces horn cells. Injuries to the coronary band can permanently disrupt hoof wall growth, producing permanent ridges, cracks, or defects. Gentle daily massage promotes circulation and healthy growth.</div>
+    </div>
+    <div class="term-entry" data-terms="corrective shoeing therapeutic farrier lameness treatment">
+      <div class="term-header"><span class="term-name">Corrective Shoeing</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">The use of modified shoe shapes, sizes, placement, pads, or additions to address specific biomechanical problems — conformational flaws, gait defects, lameness conditions, or injury. Distinguished from routine shoeing by its therapeutic intent. Requires a farrier with strong understanding of equine biomechanics, ideally working in coordination with a veterinarian.</div>
+    </div>
+    <div class="term-entry" data-terms="corium sensitive tissue vascular hoof sole frog coronary">
+      <div class="term-header"><span class="term-name">Corium</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The sensitive, vascular tissue beneath the hoof capsule that produces horn. Different regions: <strong>coronary corium</strong> (produces hoof wall), <strong>lamellar corium</strong> (produces sensitive laminae), <strong>solar corium</strong> (produces sole), <strong>frog corium</strong> (produces frog), and <strong>perioplic corium</strong> (produces the periople at the top of the wall). Damage to corium causes permanent changes to the horn it produces.</div>
+    </div>
+    <div class="term-entry" data-terms="crack hoof wall grass sand quarter toe heel">
+      <div class="term-header"><span class="term-name">Crack, Hoof Wall</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A split in the hoof wall, classified by origin and location. <strong>Grass cracks</strong> start at the ground and grow upward — usually from long toes or dry conditions. <strong>Sand cracks</strong> start at the coronary band and grow down — more serious, often from coronary band injury. <strong>Quarter cracks</strong> are vertical splits in the side wall from concussion or imbalance. Severity ranges from cosmetic to career-threatening.</div>
+    </div>
+    <div class="term-entry" data-terms="Cushing disease PPID pituitary pars intermedia laminitis horse">
+      <div class="term-header"><span class="term-name">Cushing's Disease (PPID)</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-alt">Also called: Pituitary Pars Intermedia Dysfunction</div>
+      <div class="term-def">A hormonal disorder caused by dysfunction of the pituitary gland, most common in horses over 15. Produces elevated ACTH and cortisol, leading to a range of signs including a long, curly coat that doesn't shed, muscle wasting, increased thirst and urination, and — critically — increased laminitis susceptibility. Managed with pergolide (Prascend). Every horse with recurring laminitis should be tested for PPID.</div>
+    </div>
+  </div>
+</div>
+
+<!-- D -->
+<div class="letter-section" id="D">
+  <h2>D <span class="letter-count">6 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="DDFT deep digital flexor tendon navicular laminitis">
+      <div class="term-header"><span class="term-name">DDFT (Deep Digital Flexor Tendon)</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The tendon that runs down the back of the lower limb, wraps around the navicular bone, and attaches to the bottom of the coffin bone. Excessive tension in the DDFT — from long toes, low heels, or navicular changes — is a primary cause of palmar foot pain. In laminitis, the rotating coffin bone pulls away from the DDFT's attachment point. Managing DDFT tension through breakover and heel height is central to many corrective shoeing approaches.</div>
+    </div>
+    <div class="term-entry" data-terms="debridement removal infected dead tissue farrier vet abscess">
+      <div class="term-header"><span class="term-name">Debridement</span><span class="term-tag tag-procedure">Procedure</span></div>
+      <div class="term-def">The removal of infected, dead, or diseased tissue from a hoof condition. Performed by a farrier or veterinarian with a hoof knife. Required for abscesses, white line disease, canker, and some abscess sequelae. Adequate debridement — removing all diseased tissue even if it looks drastic — is essential for resolution. Incomplete debridement allows conditions to persist or recur.</div>
+    </div>
+    <div class="term-entry" data-terms="digital cushion heel frog shock absorber fibrocartilage">
+      <div class="term-header"><span class="term-name">Digital Cushion</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">A fibrocartilaginous pad that occupies the heel area of the hoof above the frog, between the lateral cartilages. Functions as the primary shock absorber of the hoof mechanism. Develops with use — horses with regular movement on varied terrain develop larger, firmer digital cushions than horses confined to soft stall footing. Atrophied digital cushions are a significant risk factor for navicular syndrome.</div>
+    </div>
+    <div class="term-entry" data-terms="digital pulse fetlock navicular laminitis abscess">
+      <div class="term-header"><span class="term-name">Digital Pulse</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The pulse felt in the digital arteries running along the sides of the fetlock joint and pastern. Normally subtle and hard to detect. A <strong>bounding or pounding digital pulse</strong> — noticeably stronger than usual — indicates increased blood pressure in the foot and accompanies laminitis, abscesses, and other inflammatory conditions. Learning to identify a normal vs. abnormal digital pulse is a critical horse owner skill.</div>
+    </div>
+    <div class="term-entry" data-terms="distal phalanx coffin bone P3 pedal bone rotation sinking">
+      <div class="term-header"><span class="term-name">Distal Phalanx</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-see">See: Coffin Bone</div>
+    </div>
+    <div class="term-entry" data-terms="driving hammer farrier nail tool weight balance">
+      <div class="term-header"><span class="term-name">Driving Hammer</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A lightweight hammer (typically 12–16 oz) specifically designed for driving horseshoe nails. The slightly offset head and particular weight distribution allow precise, controlled nail driving at the correct angle to emerge through the hoof wall at the white line. Different from the heavier turning hammer used for shaping shoes on the anvil.</div>
+    </div>
+  </div>
+</div>
+
+<!-- E -->
+<div class="letter-section" id="E">
+  <h2>E <span class="letter-count">4 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="egg bar shoe navicular heel support extension">
+      <div class="term-header"><span class="term-name">Egg Bar Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A shoe shaped like an egg — the branches extend behind the heels and are connected by a curved bar. Provides heel and palmar foot support, distributes weight behind the hoof, and reduces tension on the navicular structures and DDFT. Commonly used for navicular syndrome, low-heel conformation, and palmar foot pain. Named for its oval shape.</div>
+    </div>
+    <div class="term-entry" data-terms="equine metabolic syndrome EMS insulin resistance laminitis easy keeper">
+      <div class="term-header"><span class="term-name">Equine Metabolic Syndrome (EMS)</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A hormonal disorder characterized by insulin dysregulation, regional adiposity (fat deposits at the crest, tailhead, and behind the shoulder), and a predisposition to laminitis. Affects easy-keeper breeds disproportionately. Managed through strict diet control — limiting non-structural carbohydrates — and regular exercise. Every horse with unexplained recurring laminitis should be tested for EMS alongside PPID.</div>
+    </div>
+    <div class="term-entry" data-terms="exungulation complete hoof capsule loss removal severe laminitis">
+      <div class="term-header"><span class="term-name">Exungulation</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The complete loss or sloughing of the hoof capsule — the outer wall, sole, and frog separating from the underlying sensitive structures. The most severe possible consequence of catastrophic laminitis, where the laminar connection fails entirely. Requires intensive veterinary management and, if survived, many months of regrowth. Fortunately rare, but documented in severe founder cases.</div>
+    </div>
+    <div class="term-entry" data-terms="extension lateral medial shoe modification conformation gait">
+      <div class="term-header"><span class="term-name">Extension, Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A modification where the shoe is made wider or longer on one side — medially (inside), laterally (outside), or at the toe — to change how the hoof lands and loads. Lateral extensions help correct varus deformities in foals; medial extensions address valgus. Toe extensions ease breakover. A precision corrective tool requiring accurate diagnosis before application.</div>
+    </div>
+  </div>
+</div>
+
+<!-- F -->
+<div class="letter-section" id="F">
+  <h2>F <span class="letter-count">8 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="farrier professional horse shoer hoof care trade certification">
+      <div class="term-header"><span class="term-name">Farrier</span><span class="term-tag tag-procedure">Profession</span></div>
+      <div class="term-def">A skilled tradesperson who trims and shoes horses' hooves. Distinct from a blacksmith (who works metal generally) in that a farrier specifically works on horses and requires knowledge of equine anatomy, biomechanics, and pathology alongside metalworking skills. The word derives from the Latin <em>ferrarius</em> (iron). A good farrier is as important to a horse's health as a good veterinarian.</div>
+    </div>
+    <div class="term-entry" data-terms="flare hoof wall distortion spreading splaying">
+      <div class="term-header"><span class="term-name">Flare</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">An outward distortion of the hoof wall where it spreads away from the coffin bone rather than following its contour. Causes include long-toe syndrome, poor balance, excessive moisture, and some nutritional deficiencies. Flares create leverage that stresses the laminae and must be addressed through rasping and corrective trimming. The hoof wall should follow a straight line from coronary band to ground when viewed from the side.</div>
+    </div>
+    <div class="term-entry" data-terms="flexor tendon DDFT SDFT check ligament lower limb anatomy">
+      <div class="term-header"><span class="term-name">Flexor Tendons</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">Two tendons run down the back of the lower limb: the <strong>Deep Digital Flexor Tendon (DDFT)</strong>, which attaches to the coffin bone, and the <strong>Superficial Digital Flexor Tendon (SDFT)</strong>, which attaches to the short pastern bone. Both pass through the digital sheath behind the fetlock. Excessive tension (from poor hoof balance) or trauma can damage either tendon — DDFT injury is often associated with navicular syndrome.</div>
+    </div>
+    <div class="term-entry" data-terms="forge propane coal farrier hot shoe heat metal">
+      <div class="term-header"><span class="term-name">Forge</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A furnace used to heat metal to working temperature for shaping. Modern farriers typically use compact propane forges that can heat a shoe to bright orange in 2–3 minutes. Traditional coal forges are still used but less common in field work. The forge enables hot shoeing — heating and custom-shaping shoes to precisely fit the individual hoof.</div>
+    </div>
+    <div class="term-entry" data-terms="forging hind toe front shoe strike gait interference">
+      <div class="term-header"><span class="term-name">Forging</span><span class="term-tag tag-gait">Gait Issue</span></div>
+      <div class="term-def">A gait fault where the hind toe strikes the bottom of the front shoe during movement, producing a characteristic clicking sound at the trot. Common in young, unfit, or poorly collected horses. Can be addressed by speeding up front breakover (rolled or squared toe on front shoes), slowing hind breakover, or improving the horse's way of going through training.</div>
+    </div>
+    <div class="term-entry" data-terms="founder laminitis rotation coffin bone chronic">
+      <div class="term-header"><span class="term-name">Founder</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">The common term for laminitis, particularly chronic laminitis with coffin bone rotation or sinking. Technically, <em>founder</em> refers to the structural changes that result from laminitis — when the coffin bone has moved. "He foundered" implies there has been rotation or sinking; "he has laminitis" may describe the acute inflammatory episode before structural change. In common use the terms are interchangeable.</div>
+    </div>
+    <div class="term-entry" data-terms="frog anatomy V-shape shock absorber traction pump">
+      <div class="term-header"><span class="term-name">Frog</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The V-shaped, rubbery structure in the center of the solar surface of the hoof. Functions as a shock absorber, traction device, and — critically — a blood pump. When the frog contacts the ground and compresses the digital cushion, it pushes venous blood back up the leg (the "frog mechanism"). Must contact the ground to function. Thrush and canker affect the frog primarily.</div>
+    </div>
+    <div class="term-entry" data-terms="fullered crease groove shoe nail placement traction">
+      <div class="term-header"><span class="term-name">Fullered Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A shoe with a groove (the fuller or crease) pressed into the ground-facing surface around the perimeter. The fuller improves nail placement, provides traction, and reduces shoe weight versus a plain stamped shoe. The standard shoe for most everyday shod horses. The nail holes are punched through the fuller, ensuring proper nail placement angles.</div>
+    </div>
+  </div>
+</div>
+
+<!-- G -->
+<div class="letter-section" id="G">
+  <h2>G <span class="letter-count">3 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="glue-on shoe adhesive epoxy thin wall poor quality">
+      <div class="term-header"><span class="term-name">Glue-On Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A shoe applied with adhesive (typically polyurethane epoxy) rather than nails. Used when the hoof wall is too thin, damaged, or brittle to hold nails securely, or when nailing would cause further damage. Commonly used in laminitis cases where the wall has separated, in horses with white line disease, or in foals needing corrective extensions. Requires a dry hoof surface and proper preparation for adhesion.</div>
+    </div>
+    <div class="term-entry" data-terms="growth rings laminitis rings horizontal bands hoof wall history">
+      <div class="term-header"><span class="term-name">Growth Rings</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Horizontal bands visible on the hoof wall reflecting changes in growth rate — nutritional changes, illness, or seasonal variation can all produce rings. <strong>Diverging rings</strong> — where the rings at the toe are closer together than at the heel — indicate previous laminitis episodes, as inflammation slows toe growth disproportionately. Reading a hoof's growth rings is like reading tree rings: each tells a story.</div>
+    </div>
+    <div class="term-entry" data-terms="ground surface bearing surface sole hoof contact">
+      <div class="term-header"><span class="term-name">Ground Surface</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The bottom of the hoof — the surface facing the ground, consisting of the hoof wall's bearing edge, the sole, bars, and frog. Proper ground surface orientation (balanced medial-laterally and anterior-posteriorly) is the fundamental goal of trimming and shoeing.</div>
+    </div>
+  </div>
+</div>
+
+<!-- H -->
+<div class="letter-section" id="H">
+  <h2>H <span class="letter-count">9 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="hardy cutting tool anvil hole hot shoe trim metal">
+      <div class="term-header"><span class="term-name">Hardy</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A cutting tool that fits in the square hardy hole in the anvil face. The hot shoe is placed over the hardy's cutting edge and struck with a hammer to sever the metal cleanly. Used for trimming shoe branches to length and making cuts that require precision. Working with a hardy requires the shoe to be at proper working temperature — too cold and the metal won't cut cleanly.</div>
+    </div>
+    <div class="term-entry" data-terms="heart bar shoe laminitis frog support coffin bone pressure">
+      <div class="term-header"><span class="term-name">Heart Bar Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A bar shoe with a V-shaped or heart-shaped bar that extends inward to contact and support the frog. By loading the frog, it transfers weight away from the hoof wall and laminae — critical in laminitis where the laminar connection is failing. Must be fitted precisely; a heart bar that presses too hard on the frog can cause more damage. Fitting requires radiographs and close vet-farrier collaboration.</div>
+    </div>
+    <div class="term-entry" data-terms="heel buttress back of hoof anatomy structure">
+      <div class="term-header"><span class="term-name">Heel Bulbs</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The rounded, soft structures at the very back of the hoof, flanking the central groove of the frog. Composed of fibrocartilage covered by skin — they are the most pliable part of the hoof exterior. Heel bulbs can be injured by overreach wounds (when the hind hoof strikes the front), wire cuts, or repeated trauma, and injuries here can affect gait permanently.</div>
+    </div>
+    <div class="term-entry" data-terms="hoof angle degree slope wall inclination balance">
+      <div class="term-header"><span class="term-name">Hoof Angle</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The angle of the front wall of the hoof relative to the ground, measured in degrees. Optimal hoof angle aligns the hoof-pastern axis — the front of the hoof wall should be parallel to the pastern. For most horses this falls between 50–55° on the front feet and 55–60° on the hinds. Broken-back (too low) or broken-forward (too high) hoof-pastern angles indicate imbalance and create excessive tendon and ligament stress.</div>
+    </div>
+    <div class="term-entry" data-terms="hoof knife farrier tool trimming sole frog bars">
+      <div class="term-header"><span class="term-name">Hoof Knife</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">The primary hand tool for trimming the sole, frog, and bars. Available in left- and right-handed versions with curved blades. Must be kept razor-sharp — a dull hoof knife requires force that causes slipping and injury. Different blade profiles (loop knife, straight blade, searcher) are used for different tasks. Every farrier maintains multiple knives at different stages of sharpness.</div>
+    </div>
+    <div class="term-entry" data-terms="hoof nippers cutters trim wall excess length">
+      <div class="term-header"><span class="term-name">Hoof Nippers</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">Heavy-duty cutting pliers used to remove excess hoof wall length before rasping. Available in various jaw lengths; the right jaw length for the horse's hoof size matters for control and precision. Dull nippers crush and shatter horn rather than cutting cleanly, stressing the hoof wall. Must be sharpened regularly.</div>
+    </div>
+    <div class="term-entry" data-terms="hoof pastern axis HPA alignment angle broken back forward">
+      <div class="term-header"><span class="term-name">Hoof-Pastern Axis (HPA)</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The alignment of the front of the hoof wall with the pastern bones when viewed from the side. A <strong>straight HPA</strong> means the hoof wall angle matches the pastern angle — optimal. A <strong>broken-back HPA</strong> (toe too long, heel too low) puts excessive stress on the DDFT and navicular structures. A <strong>broken-forward HPA</strong> (heel too high) stresses the extensor tendon and coffin joint. Correcting HPA is a primary objective of remedial trimming.</div>
+    </div>
+    <div class="term-entry" data-terms="hoof pick tool daily cleaning sole frog debris">
+      <div class="term-header"><span class="term-name">Hoof Pick</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A simple, pointed tool used to remove packed debris from the hoof — dirt, manure, gravel, and bedding from the sole, frog, and sulci. The most important hoof care tool a horse owner uses. Should be used daily, working heel to toe. Picks with a stiff brush on the back allow cleaning after picking. Keep multiples at every location where horses are handled.</div>
+    </div>
+    <div class="term-entry" data-terms="hot shoeing forge heating shoe fitting burn">
+      <div class="term-header"><span class="term-name">Hot Shoeing</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">The practice of heating a shoe in the forge, shaping it precisely on the anvil, and briefly burning it onto the prepared hoof to check and refine the fit before nailing. Hot shoeing allows for exact custom fitting impossible with cold shoes, seals the white line slightly with the burn, and allows the farrier to address any hoof irregularities. Produces superior results, particularly for horses with therapeutic needs or unusual hoof shapes.</div>
+    </div>
+  </div>
+</div>
+
+<!-- I -->
+<div class="letter-section" id="I">
+  <h2>I <span class="letter-count">3 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="impar ligament navicular distal sesamoidean anatomy">
+      <div class="term-header"><span class="term-name">Impar Ligament</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The distal sesamoidean impar ligament — connects the navicular bone to the coffin bone. Part of the navicular apparatus. Damage or degeneration of this ligament contributes to navicular syndrome and palmar foot pain. Visible on MRI and sometimes on contrast radiographs.</div>
+    </div>
+    <div class="term-entry" data-terms="interfering leg strike inside gait fault conformation">
+      <div class="term-header"><span class="term-name">Interfering</span><span class="term-tag tag-gait">Gait Issue</span></div>
+      <div class="term-def">A gait fault where one leg strikes the inside of the opposite leg during movement. Most common in horses that are base-narrow or toed-out. Can cause wounds on the inside of the fetlock or cannon bone, sometimes requiring protective boots. Addressed through shoeing modifications (lateral extensions, adjusted shoe placement) and sometimes conformation-appropriate trimming.</div>
+    </div>
+    <div class="term-entry" data-terms="insulin resistance IR laminitis metabolic EMS glucose">
+      <div class="term-header"><span class="term-name">Insulin Resistance (IR)</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A metabolic condition where body cells become less responsive to insulin, causing elevated blood insulin levels after carbohydrate intake. High insulin directly damages lamellar tissue in the hoof — the primary mechanism behind pasture-associated and dietary laminitis. The cornerstone of laminitis prevention in IR horses is strict carbohydrate (NSC) restriction.</div>
+    </div>
+  </div>
+</div>
+
+<!-- K -->
+<div class="letter-section" id="K">
+  <h2>K <span class="letter-count">2 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="keratin protein hoof wall hair nails horn structure">
+      <div class="term-header"><span class="term-name">Keratin</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The structural protein that forms hoof horn, hair, and nails. Hoof wall is approximately 90% keratin by dry weight, organized into tubular and intertubular horn. The quality and hardness of keratin is influenced by genetics, nutrition (particularly zinc, copper, and biotin), and environmental moisture. Keratin synthesis requires adequate dietary protein and specific trace minerals.</div>
+    </div>
+    <div class="term-entry" data-terms="keratoma horn tumor mass coffin bone pressure lameness">
+      <div class="term-header"><span class="term-name">Keratoma</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A benign tumor of keratinized cells (horn cells) that grows within the hoof capsule, typically at the white line or sole. As it grows, it presses on the coffin bone, eventually causing a visible indentation on the bone's surface (seen on radiograph) and lameness. Treatment is surgical removal, which requires cutting an opening in the hoof wall. Prognosis is generally good with complete removal.</div>
+    </div>
+  </div>
+</div>
+
+<!-- L -->
+<div class="letter-section" id="L">
+  <h2>L <span class="letter-count">7 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="laminae laminar sensitive insensitive bond wall coffin bone">
+      <div class="term-header"><span class="term-name">Laminae</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">Interlocking leaf-like structures that bond the coffin bone to the inner hoof wall. <strong>Sensitive laminae</strong> (primary and secondary) arise from the coffin bone's surface and contain blood vessels and nerves. <strong>Insensitive laminae</strong> arise from the inner hoof wall and interdigitate with the sensitive laminae like interlocked fingers. This bond supports the horse's full weight. Laminitis is inflammation and failure of this bond.</div>
+    </div>
+    <div class="term-entry" data-terms="laminitis founder inflammation laminae emergency blood flow">
+      <div class="term-header"><span class="term-name">Laminitis</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">Inflammation of the sensitive laminae caused by disruption of blood flow to the hoof. The lamellar bond weakens and can fail, allowing the coffin bone to rotate or sink within the hoof capsule. A veterinary emergency. Causes include dietary overload (grain, lush pasture), systemic illness, Cushing's disease (PPID), insulin resistance (EMS), and mechanical overloading of one limb while the other is injured.</div>
+    </div>
+    <div class="term-entry" data-terms="lateral cartilage sidebone flexible wing heel coffin bone">
+      <div class="term-header"><span class="term-name">Lateral Cartilages</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">Paired flexible cartilage extensions of the coffin bone that project upward on each side of the heel above the coronary band. Palpable as firm but slightly springy structures above the hoof at the heel. They enclose the digital cushion and contribute to the hoof's expansion mechanism. When they ossify (calcify), the condition is called sidebone.</div>
+    </div>
+    <div class="term-entry" data-terms="lateral medial balance trimming inside outside wall height">
+      <div class="term-header"><span class="term-name">Lateral/Medial Balance</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The equality of the inside (medial) and outside (lateral) hoof wall heights when the hoof is viewed from the front. A horse standing on level ground should have a level hoof from side to side, with the joint axis parallel to the ground. Imbalance creates unequal joint loading, contributing to arthritis and asymmetric wear patterns.</div>
+    </div>
+    <div class="term-entry" data-terms="long toe low heel LTLH broken back HPA navicular DDFT">
+      <div class="term-header"><span class="term-name">Long Toe, Low Heel (LTLH)</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">One of the most common and damaging hoof imbalances — the toe grows long while the heel collapses, creating a broken-back hoof-pastern axis. Puts excessive, continuous tension on the DDFT and navicular structures. Contributes to navicular syndrome, DDFT tears, coffin joint arthritis, and heel pain. Correction requires regular farrier attention to keep the toe short and rebuild heel height, often combined with wedge pads during the transition period.</div>
+    </div>
+    <div class="term-entry" data-terms="laminitis rings rings diverging hoof history previous episodes">
+      <div class="term-header"><span class="term-name">Laminitis Rings</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Horizontal ridges on the hoof wall that indicate previous episodes of laminitis. Distinguished from normal growth rings by their pattern: in laminitis rings, the spacing between rings at the toe is narrower than at the heel — because laminitis slows horn production at the toe disproportionately. Multiple diverging rings indicate multiple episodes. A horse with laminitis rings has a history — ask about it.</div>
+    </div>
+    <div class="term-entry" data-terms="leverage flare wall stress laminae imbalance long toe">
+      <div class="term-header"><span class="term-name">Leverage, Hoof Wall</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The mechanical force exerted on the laminae when excess hoof wall extends beyond the coffin bone's support. Long toes and flares create leverage that stresses the lamellar bond, particularly during movement. Reducing leverage through trimming is one of the most important preventive measures in hoof care — especially in horses prone to white line disease or laminitis.</div>
+    </div>
+  </div>
+</div>
+
+<!-- M -->
+<div class="letter-section" id="M">
+  <h2>M <span class="letter-count">5 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="methionine amino acid keratin sulfur hoof supplement">
+      <div class="term-header"><span class="term-name">Methionine</span><span class="term-tag tag-condition">Nutrition</span></div>
+      <div class="term-def">A sulfur-containing essential amino acid required for keratin formation. Found in adequate amounts in most balanced diets, but horses with poor protein intake or low-quality hay may benefit from supplementation. Sulfur from methionine contributes to the disulfide bonds that give keratin its strength. Often included in commercial hoof supplements alongside biotin.</div>
+    </div>
+    <div class="term-entry" data-terms="medial lateral balance inside outside hoof wall symmetry">
+      <div class="term-header"><span class="term-name">Medial Wall</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The inside wall of the hoof (toward the midline of the horse). Typically slightly steeper and taller than the lateral (outside) wall in a normally conformed horse. The medial-lateral balance is assessed during every trim and is critical to joint loading symmetry.</div>
+    </div>
+    <div class="term-entry" data-terms="moisture hoof hydration water conditioning dry cracking">
+      <div class="term-header"><span class="term-name">Moisture, Hoof</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Hooves are approximately 25% water by weight. Adequate internal hydration (from the horse drinking sufficient water) and appropriate external moisture maintain the pliability and function of hoof horn. Excessive dryness leads to brittleness and cracking; excessive wetness (especially wet-dry cycling) weakens the wall and promotes infection. External conditioners are secondary to the horse's hydration status.</div>
+    </div>
+    <div class="term-entry" data-terms="mud fever scratches pasterns dermatitis wet conditions">
+      <div class="term-header"><span class="term-name">Mud Fever (Scratches)</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A skin condition affecting the pasterns and lower leg — dermatitis caused by prolonged wet and muddy conditions that break down the skin barrier. More a skin condition than a hoof condition, but relevant to farriery because feathered draft breeds and horses with white legs are most susceptible, and the condition can spread to affect the coronary band. Treatment involves cleaning, drying, and topical antimicrobials; preventing re-exposure to mud is essential.</div>
+    </div>
+    <div class="term-entry" data-terms="mustang roll wild horse trim natural hoof care">
+      <div class="term-header"><span class="term-name">Mustang Roll</span><span class="term-tag tag-procedure">Procedure</span></div>
+      <div class="term-def">A trimming technique that bevels the outer edge of the hoof wall from the ground surface upward, mimicking the natural wear pattern of wild horses moving on abrasive terrain. The roll removes the sharp outer edge of the wall, reduces flaring tendency, and encourages the hoof to roll into breakover more naturally. A standard feature of barefoot trimming methodology and increasingly used by farriers on shod horses as well.</div>
+    </div>
+  </div>
+</div>
+
+<!-- N -->
+<div class="letter-section" id="N">
+  <h2>N <span class="letter-count">5 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="nail horseshoe nail head shank point cut head">
+      <div class="term-header"><span class="term-name">Nail, Horseshoe</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A specially designed nail for attaching shoes to hooves. The head sits in the shoe's crease; the shank tapers and has a slight bevel that causes it to angle outward as it rises through the hoof wall, emerging at the correct height (typically 3/4 to 1 inch above the shoe) to be clinched. Sizes are numbered (3, 4, 5, etc.) based on shank diameter. Nail placement in the white line — not into sensitive tissue — is critical.</div>
+    </div>
+    <div class="term-entry" data-terms="navicular bone shuttle bone sesamoid DDFT bursa palmar foot">
+      <div class="term-header"><span class="term-name">Navicular Bone</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-alt">Also called: Distal Sesamoid Bone, Shuttle Bone</div>
+      <div class="term-def">A small, boat-shaped bone located at the back of the coffin joint that acts as a pulley for the DDFT. The tendon passes under and around the navicular bone, cushioned by the navicular bursa. Degeneration of the navicular bone, its cartilage, the bursa, or associated ligaments causes palmar foot pain (navicular syndrome) — one of the most common causes of chronic front-end lameness.</div>
+    </div>
+    <div class="term-entry" data-terms="navicular bursa fluid sac cushion DDFT navicular bone">
+      <div class="term-header"><span class="term-name">Navicular Bursa</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">A fluid-filled sac between the DDFT and the navicular bone that reduces friction as the tendon slides over the bone. Inflammation of the bursa (bursitis) is a component of navicular syndrome. Can be injected directly (under ultrasound guidance) with corticosteroids for diagnostic and therapeutic purposes.</div>
+    </div>
+    <div class="term-entry" data-terms="navicular syndrome palmar foot pain caudal heel pain lameness chronic">
+      <div class="term-header"><span class="term-name">Navicular Syndrome</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-alt">Also called: Palmar Foot Pain, Caudal Heel Pain</div>
+      <div class="term-def">A chronic pain syndrome originating in the heel area — involving the navicular bone, navicular bursa, DDFT, impar ligament, or suspensory ligaments of the navicular bone. One of the leading causes of front-end lameness. Diagnosis requires nerve blocks and imaging. Management (not cure) includes corrective shoeing (egg bar, raised heels, pads), controlled exercise, and medications. MRI has refined diagnosis significantly by identifying soft tissue involvement invisible on radiograph.</div>
+    </div>
+    <div class="term-entry" data-terms="neurectomy nerve block desensitize palmar digital nerves navicular">
+      <div class="term-header"><span class="term-name">Neurectomy (Nerving)</span><span class="term-tag tag-procedure">Procedure</span></div>
+      <div class="term-def">Surgical removal of a section of the palmar digital nerves to desensitize the heel area — used as a last resort in navicular syndrome when other management has failed. Eliminates heel pain but also removes sensation, which means foot injuries may go undetected. Horses must be carefully monitored after neurectomy. A significant, permanent procedure — not undertaken lightly.</div>
+    </div>
+  </div>
+</div>
+
+<!-- O -->
+<div class="letter-section" id="O">
+  <h2>O <span class="letter-count">2 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="ossification bone calcification lateral cartilage sidebone ringbone">
+      <div class="term-header"><span class="term-name">Ossification</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The conversion of soft tissue (cartilage, ligament) into bone. In the horse's foot, relevant to sidebone (ossification of lateral cartilages) and ringbone (periosteal bone proliferation around joints). Ossification is generally a response to chronic stress, concussion, or inflammation. Once complete, the new bone is permanent.</div>
+    </div>
+    <div class="term-entry" data-terms="overreach grabbing hind shoe front heel wound bell boots">
+      <div class="term-header"><span class="term-name">Overreach (Grabbing)</span><span class="term-tag tag-gait">Gait Issue</span></div>
+      <div class="term-def">When the hind hoof strikes the heel or heel bulb of the front hoof during movement. Can cause serious wounds and pull front shoes. Common in horses working collected or jumping when tired. Addressed with bell boots on the front feet, adjusting shoe length on the hinds, or squaring toes to alter the hind breakover. A frequent cause of lost front shoes in performance horses.</div>
+    </div>
+  </div>
+</div>
+
+<!-- P -->
+<div class="letter-section" id="P">
+  <h2>P <span class="letter-count">8 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="pad shoe pad rim full leather rubber EVA sole protection">
+      <div class="term-header"><span class="term-name">Pad, Hoof</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">Material placed between the shoe and the hoof for protection or therapeutic purposes. <strong>Full pads</strong> cover the entire sole. <strong>Rim pads</strong> cover just the bearing surface. Materials include leather, rubber, plastic, and EVA foam. Pads protect thin soles from bruising, maintain moisture under the sole, and can be used to apply medicaments. The space under full pads is often packed with silicone or oakum to prevent debris packing.</div>
+    </div>
+    <div class="term-entry" data-terms="palmar foot pain navicular caudal heel pain diagnosis">
+      <div class="term-header"><span class="term-name">Palmar Foot Pain</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-see">See: Navicular Syndrome</div>
+    </div>
+    <div class="term-entry" data-terms="pastern bone P1 P2 proximal middle phalanx joint">
+      <div class="term-header"><span class="term-name">Pastern Bones (P1, P2)</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The two bones between the fetlock and the hoof: the <strong>long pastern bone (P1)</strong> between the fetlock joint and pastern joint, and the <strong>short pastern bone (P2)</strong> between the pastern joint and the coffin joint. The pastern joint (between P1 and P2) is the site of high ringbone. The coffin joint (between P2 and P3) is the site of low ringbone. Hoof angle directly affects the stress on these joints.</div>
+    </div>
+    <div class="term-entry" data-terms="periople outer coating varnish hoof wall protection gloss">
+      <div class="term-header"><span class="term-name">Periople</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">A thin, waxy coating produced by the perioplic corium at the top of the hoof wall that covers the outer surface of the wall and helps regulate moisture loss. Gives the hoof its natural gloss when healthy. Aggressive rasping of the outer hoof wall removes the periople and its protective function — a reason why rasping only the bearing surface (not the outer wall) is preferred unless flares must be addressed.</div>
+    </div>
+    <div class="term-entry" data-terms="periosteal stripping surgery foal angular limb deformity growth plate">
+      <div class="term-header"><span class="term-name">Periosteal Stripping</span><span class="term-tag tag-procedure">Procedure</span></div>
+      <div class="term-def">A surgical procedure used in foals with angular limb deformities to accelerate bone growth on the lagging side of the growth plate. The periosteum (bone membrane) is scraped on the concave side of the deviation, stimulating faster growth that corrects the alignment. Done early — typically before 3 months — while growth plates are responsive.</div>
+    </div>
+    <div class="term-entry" data-terms="pour-in pad polyurethane foam sole support custom fill">
+      <div class="term-header"><span class="term-name">Pour-In Pad</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A two-part polyurethane foam mixed and poured into the space between the shoe and sole while liquid. Sets quickly to a firm, slightly flexible material that provides custom-fitted support across the entire solar surface. Superior to flat pads for sole protection because it conforms exactly to the individual hoof. Used for thin soles, laminitis management, sole injuries, and horses competing on hard surfaces.</div>
+    </div>
+    <div class="term-entry" data-terms="PPID Cushing pituitary pars intermedia dysfunction laminitis">
+      <div class="term-header"><span class="term-name">PPID</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-see">See: Cushing's Disease</div>
+    </div>
+    <div class="term-entry" data-terms="pull-offs shoe pullers pliers remove shoe farrier tool">
+      <div class="term-header"><span class="term-name">Pull-Offs (Shoe Pullers)</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">Specialized pliers with curved jaws designed to safely pry and remove shoes after clinches are cut. The jaws work under the shoe from heel to toe, leveraging against the shoe rather than the hoof wall. Available in various jaw sizes for different shoe weights. Always used after a clinch cutter — never pull a shoe with clinches intact.</div>
+    </div>
+  </div>
+</div>
+
+<!-- R -->
+<div class="letter-section" id="R">
+  <h2>R <span class="letter-count">6 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="rasp file hoof wall sole leveling smoothing farrier tool">
+      <div class="term-header"><span class="term-name">Rasp</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A large, double-sided file used to level the bearing surface of the hoof wall, smooth nail clinches, and remove flares. One side is coarser (for rapid material removal), the other finer (for finishing). The most used tool in a farrier's kit — and the one that wears out fastest. A dull rasp takes far longer and produces a less precise result. Many farriers use a new rasp every few horses.</div>
+    </div>
+    <div class="term-entry" data-terms="reset reset shoe same shoe re-nail trim replace rotation">
+      <div class="term-header"><span class="term-name">Reset</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">Re-nailing the same shoe after trimming the hoof — as opposed to applying new shoes. Common when the shoe has worn evenly and still has adequate material. A good shoe can typically be reset once before replacement. The farrier removes the shoe, trims the hoof, and re-fits and nails the same shoe back on. Cost is less than a full new set.</div>
+    </div>
+    <div class="term-entry" data-terms="rimpad pad rim shoe bearing surface">
+      <div class="term-header"><span class="term-name">Rim Pad</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A pad that sits only on the bearing surface of the shoe (the rim) without covering the sole. Provides some cushioning and a slight heel elevation while allowing sole contact with the ground. Less protective than a full pad but easier to manage — debris doesn't pack under the pad as it can with full pads.</div>
+    </div>
+    <div class="term-entry" data-terms="ringbone pastern coffin joint arthritis bone growth periosteal">
+      <div class="term-header"><span class="term-name">Ringbone</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">New bone growth (periosteal proliferation/osteoarthritis) around the pastern joint (high ringbone) or coffin joint (low ringbone). Articular ringbone involves the joint surface; periarticular ringbone surrounds the joint without directly involving the cartilage. Causes include concussion, poor conformation, repetitive stress, and injury. Management includes shoeing modifications to reduce concussion and range of motion. Some cases ankylose into functional soundness.</div>
+    </div>
+    <div class="term-entry" data-terms="rocker shoe toe rocker breakover laminitis DDFT ease">
+      <div class="term-header"><span class="term-name">Rocker Shoe</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A shoe with a curved or rocked toe that shifts the breakover point palmarly (toward the back) and allows the hoof to roll forward more easily. Reduces stress on the DDFT, navicular structures, and coffin joint. Used in navicular syndrome, laminitis, LTLH, and any condition where reducing toe leverage and easing breakover is beneficial.</div>
+    </div>
+    <div class="term-entry" data-terms="rotation coffin bone laminitis angle degree radiograph">
+      <div class="term-header"><span class="term-name">Rotation, Coffin Bone</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Movement of the coffin bone within the hoof capsule where the toe of the bone tips downward, driven by the pull of the DDFT as the lamellar bond fails. Measured in degrees on radiograph. Mild rotation (under 5°) may be managed successfully; severe rotation (15°+) carries a poorer prognosis. When the rotated tip of the coffin bone penetrates the sole, the condition is called "sinker" and is a grave emergency.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S -->
+<div class="letter-section" id="S">
+  <h2>S <span class="letter-count">12 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="seedy toe white line disease toe separation infection">
+      <div class="term-header"><span class="term-name">Seedy Toe</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-see">See: White Line Disease (toe region)</div>
+      <div class="term-def" style="margin-top:4px">White line disease specifically affecting the toe area — a fungal and bacterial infection producing crumbly, seed-like infected horn at the toe. Named for the texture of the tissue when debrided. Long toes are a primary risk factor. Treatment: debridement and antifungal treatment, correction of the underlying long toe.</div>
+    </div>
+    <div class="term-entry" data-terms="sensitive laminae vascular nerve lamellar bond coffin bone">
+      <div class="term-header"><span class="term-name">Sensitive Laminae</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The vascular, nerve-containing laminar tissue arising from the coffin bone's surface. Interdigitates with the insensitive laminae of the inner hoof wall to form the lamellar bond. Contains the blood supply that nourishes the hoof. When this tissue becomes inflamed (laminitis), the bond weakens. Nails driven into sensitive laminae cause immediate, severe pain — the nail placement skill of a farrier is measured by consistent avoidance of this tissue.</div>
+    </div>
+    <div class="term-entry" data-terms="sheared heels uneven heel height medial lateral stress pain">
+      <div class="term-header"><span class="term-name">Sheared Heels</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A condition where the medial and lateral heel bulbs are at significantly different heights, causing the heels to shear past each other during loading rather than compressing together. Creates intense stress at the quarter of the hoof and is associated with quarter cracks, coronary band trauma, and heel pain. Often related to medial-lateral hoof imbalance and requires corrective trimming and sometimes bar shoe support.</div>
+    </div>
+    <div class="term-entry" data-terms="sidebone lateral cartilage ossification calcification heel bone">
+      <div class="term-header"><span class="term-name">Sidebone</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The ossification (calcification) of the lateral cartilages into bone. Palpated as firm, non-springy structures at the heel above the coronary band where the cartilages should normally feel slightly flexible. Common in heavier breeds and working horses on hard ground. Often found incidentally on radiograph with no lameness. When painful, management focuses on reducing concussion through appropriate shoeing and footing.</div>
+    </div>
+    <div class="term-entry" data-terms="sinking laminitis vertical displacement coffin bone gravity">
+      <div class="term-header"><span class="term-name">Sinking (Coffin Bone)</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The vertical downward displacement of the coffin bone within the hoof capsule when the lamellar bond fails uniformly around the entire circumference — as opposed to rotation, which is tipping. Sinking is generally a more serious prognosis than rotation. The coronary band appears to sink or become level with the hoof wall. A grave emergency requiring immediate intensive treatment.</div>
+    </div>
+    <div class="term-entry" data-terms="slack tub quench bucket water cool hot shoe forge">
+      <div class="term-header"><span class="term-name">Slack Tub</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-alt">Also called: Quench Bucket</div>
+      <div class="term-def">A bucket of water at the forge used to cool hot shoes after shaping and checking fit. Plunging a shoe into the slack tub hardens it slightly through rapid quenching and prevents further unintended shape changes. Also used to test if a shoe is cool enough to handle — if it sizzles, it's still hot.</div>
+    </div>
+    <div class="term-entry" data-terms="snowball pad rubber bubble anti-snowball packed snow winter">
+      <div class="term-header"><span class="term-name">Snowball Pad</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A rubber pad designed to prevent snow from packing inside the shoe during winter work. The <strong>bubble style</strong> has a raised dome that flexes with each step, popping accumulated snow out. Without snowball pads, shod horses can accumulate dangerous ice balls inside their shoes, effectively walking on stilts with serious fall risk. A simple, inexpensive addition for any horse worked in snow.</div>
+    </div>
+    <div class="term-entry" data-terms="sole anatomy hoof bottom concave protection horn">
+      <div class="term-header"><span class="term-name">Sole</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The slightly concave plate of horn that covers the bottom of the hoof inside the hoof wall border. Should bear minimal weight — the hoof wall carries the load. Protects the sensitive solar corium and the coffin bone beneath it. Thin soles (less than 15mm) allow bruising from ground contact and are a significant performance limitation. Sole thickness is measurable on radiograph and ultrasound.</div>
+    </div>
+    <div class="term-entry" data-terms="sole pressure laminitis testing tester hoof tester exam">
+      <div class="term-header"><span class="term-name">Sole Pressure Test</span><span class="term-tag tag-procedure">Procedure</span></div>
+      <div class="term-def">Application of thumb pressure to various areas of the sole to identify pain points — suggesting abscess location, thin sole bruising, or foreign body. A simple first-level diagnostic before using hoof testers. Pain response (flinching, pulling away) on sole pressure at the toe in a laminitic horse indicates the coffin bone tip may be close to the solar surface.</div>
+    </div>
+    <div class="term-entry" data-terms="studs traction removable screw threaded shoe performance jumping">
+      <div class="term-header"><span class="term-name">Studs (Traction Devices)</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">Removable threaded plugs screwed into pre-tapped holes in the shoe to provide traction on specific footing conditions. Sizes range from small road studs (for wet grass) to large mud studs (for heavy going). Studs are removed when the horse is not working and holes plugged with cotton wool to prevent damage. Commonly used in jumping, eventing, and dressage. Studs must be balanced — equal size on medial and lateral to avoid uneven footing.</div>
+    </div>
+    <div class="term-entry" data-terms="sulci frog groove center central lateral groove thrush">
+      <div class="term-header"><span class="term-name">Sulci</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The grooves of the frog. The <strong>central sulcus</strong> runs down the middle of the frog; the <strong>lateral sulci</strong> run on either side between the frog and the bars. These grooves can be shallow and wide (healthy) or deep and narrow (contracted). Thrush preferentially colonizes deep sulci where anaerobic conditions are ideal. Daily picking to clear debris from the sulci is the primary prevention for thrush.</div>
+    </div>
+    <div class="term-entry" data-terms="support limb laminitis opposite leg injured overloaded weight">
+      <div class="term-header"><span class="term-name">Support Limb Laminitis</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">Laminitis that develops in a sound limb that has been bearing excessive weight because the opposite limb is injured or non-weight-bearing. A devastating complication of serious limb injuries. The increased and continuous loading reduces blood flow to the support limb's hoof laminae. Prevented by aggressive management — keeping the horse moving minimally, using deep bedding, and sometimes applying frog support pads to distribute load. Killed Barbaro following his 2006 Preakness injury.</div>
+    </div>
+  </div>
+</div>
+
+<!-- T -->
+<div class="letter-section" id="T">
+  <h2>T <span class="letter-count">7 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="thrush frog infection bacteria anaerobic smell black discharge">
+      <div class="term-header"><span class="term-name">Thrush</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A bacterial infection (primarily <em>Fusobacterium necrophorum</em>) of the frog and sulci, caused by anaerobic bacteria that thrive in packed, wet, oxygen-free environments. Produces a characteristic foul, rotten odor and black tarry discharge. Mild thrush causes no lameness; severe thrush invading sensitive tissue is painful and requires professional debridement. Treatment: clean daily, open sulci for air exposure, apply topical thrush remedies, and critically — improve footing conditions.</div>
+    </div>
+    <div class="term-entry" data-terms="tongs blacksmith farrier holding hot shoe forge anvil">
+      <div class="term-header"><span class="term-name">Tongs, Farrier</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">Long-handled pliers used to hold hot shoes on the anvil during shaping and carry them to the horse for fitting. Different jaw styles hold different shoe widths and types. Essential forge equipment — never handle a freshly forged shoe without tongs. A good farrier moves efficiently between tongs and hammer without losing shoe temperature.</div>
+    </div>
+    <div class="term-entry" data-terms="toe anatomy front of hoof wall point breakover">
+      <div class="term-header"><span class="term-name">Toe</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The front-facing portion of the hoof — the wall from approximately 10 o'clock to 2 o'clock positions when viewed from below. The last part of the hoof to leave the ground in each stride (the breakover point). Long toes create leverage stress on the laminae and increase DDFT tension. "Keeping the toe back" is one of the most repeated phrases in corrective farriery.</div>
+    </div>
+    <div class="term-entry" data-terms="toe crack grass crack front wall split grows up">
+      <div class="term-header"><span class="term-name">Toe Crack</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-def">A vertical crack in the toe of the hoof wall, typically starting at the ground surface and growing upward (grass crack). Often caused by a long toe creating excessive leverage, or dry-wet moisture cycling. Superficial toe cracks are cosmetic; cracks that extend to the coronary band, penetrate to sensitive tissue, or cause lameness require farrier treatment — including stabilization with wire, fiberglass patches, or clips.</div>
+    </div>
+    <div class="term-entry" data-terms="tubules horn tubular intertubular structure hoof wall keratin">
+      <div class="term-header"><span class="term-name">Tubules, Horn</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">Microscopic cylindrical structures running vertically through the hoof wall from coronary band to ground surface, embedded in intertubular horn. Tubules give hoof horn its directional strength — resistant to splitting along the tubule direction, weaker across it. The arrangement of tubular horn is why hoof cracks tend to run vertically (along tubule direction) rather than horizontally.</div>
+    </div>
+    <div class="term-entry" data-terms="turning hammer shaping forge anvil heavier forging metal">
+      <div class="term-header"><span class="term-name">Turning Hammer</span><span class="term-tag tag-tool">Tool</span></div>
+      <div class="term-def">A heavier hammer (typically 2–3 lbs) used for shaping hot shoes on the anvil. The flat face is used for general shaping; the cross-peen (narrow, rounded edge) for drawing metal out or making detailed modifications. Different from the lighter driving hammer used for nailing. A skilled farrier alternates between the two as naturally as a carpenter switches between hammers.</div>
+    </div>
+    <div class="term-entry" data-terms="thrombosis blood vessel clot laminitis vascular disruption">
+      <div class="term-header"><span class="term-name">Thrombosis, Digital</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">The formation of blood clots within the digital vessels, implicated in the vascular disruption that causes laminitis. One proposed mechanism of laminitis involves arteriovenous shunting — blood bypassing the lamellar capillaries through direct arteriovenous connections — combined with thrombosis in the lamellar vessels, cutting off blood supply to the sensitive laminae.</div>
+    </div>
+  </div>
+</div>
+
+<!-- U -->
+<div class="letter-section" id="U">
+  <h2>U <span class="letter-count">2 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="underrun heel collapsed heel low heel long toe">
+      <div class="term-header"><span class="term-name">Underrun Heel</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def">A heel where the hoof wall angle at the heel is significantly lower than the angle at the toe — the heel has "run forward" under the horse. The hoof's heel tubules angle forward rather than being nearly vertical. Severely underrun heels indicate long-standing long-toe/low-heel syndrome and significantly compromise the hoof's shock-absorbing capacity. Among the more difficult hoof conditions to correct.</div>
+    </div>
+    <div class="term-entry" data-terms="unshod barefoot natural no shoe trim only">
+      <div class="term-header"><span class="term-name">Unshod (Barefoot)</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A horse managed without metal shoes, relying on regular trimming to maintain hoof balance and wear. Does not mean "no hoof care" — barefoot horses still require regular farrier visits for trimming, typically every 6–8 weeks. Many horses thrive barefoot with appropriate diet, footing, and management. The barefoot movement has produced refined trimming methodologies (the "natural trim") based on wild horse hoof morphology.</div>
+    </div>
+  </div>
+</div>
+
+<!-- V -->
+<div class="letter-section" id="V">
+  <h2>V <span class="letter-count">3 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="valgus varus ALD angular limb deformity knock-kneed bow-legged foal">
+      <div class="term-header"><span class="term-name">Valgus / Varus</span><span class="term-tag tag-condition">Condition</span></div>
+      <div class="term-def"><strong>Valgus</strong>: an outward deviation of the limb below the affected joint (knock-kneed). <strong>Varus</strong>: an inward deviation (bow-legged). Both are types of angular limb deformity. The description always refers to the deviation of the limb distal to (below) the affected joint. Carpus valgus (knock-kneed at the knee) is the most common ALD in foals and frequently self-corrects. Fetlock varus is more serious and less likely to self-correct.</div>
+    </div>
+    <div class="term-entry" data-terms="vascular corium sensitive tissue blood supply hoof">
+      <div class="term-header"><span class="term-name">Vascular Corium</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-see">See: Corium</div>
+    </div>
+    <div class="term-entry" data-terms="venogram contrast radiograph laminitis blood flow vascular study">
+      <div class="term-header"><span class="term-name">Venogram</span><span class="term-tag tag-procedure">Procedure</span></div>
+      <div class="term-def">A radiographic technique where contrast dye is injected into the digital vessels and X-rays taken to visualize blood flow patterns within the hoof. Used in laminitis cases to assess the degree of vascular compromise and guide treatment decisions. Areas of poor or absent contrast uptake indicate tissue ischemia. Increasingly used as a diagnostic tool in serious laminitis management.</div>
+    </div>
+  </div>
+</div>
+
+<!-- W -->
+<div class="letter-section" id="W">
+  <h2>W <span class="letter-count">5 terms</span></h2>
+  <div class="term-list">
+    <div class="term-entry" data-terms="wall hoof outer shell keratin tubules coronary band growth">
+      <div class="term-header"><span class="term-name">Wall, Hoof</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The hard outer shell of the hoof — the visible, pigmented structure that bears the horse's weight and is nailed to when shoeing. Made of keratin organized in tubular and intertubular horn. Grows continuously from the coronary band downward at approximately 3/8 inch per month (full growth-out takes 9–12 months). The wall is divided into toe, quarters (sides), and heels.</div>
+    </div>
+    <div class="term-entry" data-terms="wedge pad heel elevation angle raise DDFT navicular">
+      <div class="term-header"><span class="term-name">Wedge Pad</span><span class="term-tag tag-shoeing">Shoeing</span></div>
+      <div class="term-def">A tapered pad placed under the shoe (thick at the heel, thin at the toe) to elevate the heel angle. Used to reduce DDFT tension in navicular syndrome and LTLH cases, or during the transition period while heel height is being rebuilt through trimming. Must be used carefully — excessive heel elevation long-term can cause other issues. Ideally a temporary measure while conformation improves.</div>
+    </div>
+    <div class="term-entry" data-terms="white line junction sole wall insensitive laminae nail placement">
+      <div class="term-header"><span class="term-name">White Line</span><span class="term-tag tag-anatomy">Anatomy</span></div>
+      <div class="term-def">The junction between the hoof wall and the sole, visible on the ground surface as a light-colored band running inside the hoof wall border. Marks the location of the insensitive laminae. The critical landmark for nail placement — horseshoe nails are driven just outside the white line into the insensitive hoof wall, never inside it (which would hit sensitive laminae). Separation or crumbling of the white line signals white line disease.</div>
+    </div>
+    <div class="term-entry" data-terms="white line disease seedy toe fungal bacterial infection separation wall">
+      <div class="term-header"><span class="term-name">White Line Disease</span><span class="term-tag tag-disease">Disease</span></div>
+      <div class="term-alt">Also called: Seedy Toe, Hollow Foot, Onychomycosis</div>
+      <div class="term-def">A fungal and bacterial infection of the non-pigmented inner hoof wall (the white line zone) that causes separation and degradation of horn. Appears as crumbly, chalky, or powdery material when the sole is probed at the wall junction. Does not smell strongly (unlike thrush). Ranges from superficial/cosmetic to extensive separation threatening coffin bone stability. Treatment requires debridement of all infected tissue and antifungal treatment, followed by months of regrowth.</div>
+    </div>
+    <div class="term-entry" data-terms="winging paddling gait fault outward inward arc leg flight path">
+      <div class="term-header"><span class="term-name">Winging / Paddling</span><span class="term-tag tag-gait">Gait Issue</span></div>
+      <div class="term-def"><strong>Winging</strong>: the hoof arcs outward during flight before landing — typically seen in toed-in horses. <strong>Paddling</strong>: the hoof arcs outward in a more exaggerated sweep. Both are related to the hoof's breakover point relative to the limb's axis. Trimming the breakover point in line with the limb can reduce but rarely eliminate these movement patterns in horses with conformational causes. Primarily cosmetic concerns unless the horse is interfering.</div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav-cards" aria-label="Explore more resources">
+  <a href="../faq/" class="nav-card">
+    <div class="label">Related</div>
+    <div class="title">Farrier FAQ</div>
+    <div class="arrow">Read FAQ →</div>
+  </a>
+  <a href="../hoof-care/" class="nav-card">
+    <div class="label">Foundation</div>
+    <div class="title">Hoof Care Basics</div>
+    <div class="arrow">Read Guide →</div>
+  </a>
+</nav>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+
+<script>
+const searchInput = document.getElementById('glossary-search');
+const countEl = document.getElementById('search-count');
+const noResults = document.getElementById('no-results');
+const entries = document.querySelectorAll('.term-entry');
+const sections = document.querySelectorAll('.letter-section');
+
+searchInput.addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  if (!q) {
+    entries.forEach(e => e.classList.remove('hidden'));
+    sections.forEach(s => s.classList.remove('hidden'));
+    noResults.classList.remove('show');
+    countEl.textContent = '';
+    return;
+  }
+  let visible = 0;
+  entries.forEach(e => {
+    const text = (e.dataset.terms + ' ' + e.textContent).toLowerCase();
+    if (text.includes(q)) { e.classList.remove('hidden'); visible++; }
+    else e.classList.add('hidden');
+  });
+  sections.forEach(s => {
+    const hasVisible = s.querySelectorAll('.term-entry:not(.hidden)').length > 0;
+    s.classList.toggle('hidden', !hasVisible);
+  });
+  noResults.classList.toggle('show', visible === 0);
+  countEl.textContent = visible > 0 ? visible + ' term' + (visible !== 1 ? 's' : '') + ' found' : '';
+});
+</script>
+</body>
+</html>
+HTMLEOF
+echo "Done. Lines: $(wc -l < /home/claude/horsefarrier/glossary/index.html)"

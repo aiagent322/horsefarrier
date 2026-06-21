@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#4A2D18">
 <title>Farrier FAQ — HorseFarrier.net</title>
-<meta name="description" content="50+ answers to the most common farrier and hoof care questions — shoeing schedules, barefoot vs. shod, costs, finding a farrier, laminitis, thrush, and more.">
+<meta name="description" content="40+ answers to the most common farrier and hoof care questions — shoeing schedules, barefoot vs. shod, costs, laminitis, thrush, navicular, corrective shoeing, and more.">
 <link rel="canonical" href="https://horsefarrier.net/faq/">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,25 +37,34 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
 .page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
 .page-hero h1 em{color:var(--rope-light);font-style:italic}
-.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:560px;margin:0 auto}
+.stat-row{display:flex;justify-content:center;gap:24px;margin-top:16px;flex-wrap:wrap}
+.stat-row span{font-size:0.78rem;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);padding:4px 12px;border-radius:12px}
 .content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+.toc{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 20px;margin-bottom:28px}
+.toc-title{font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:10px}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px}
+.toc a{color:var(--leather);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;min-height:36px;line-height:1.3}
+.toc a:hover{text-decoration:underline}
 .faq-category{margin-bottom:36px}
-.faq-category h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--ink);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale);display:flex;align-items:center;gap:10px}
+.faq-category h2{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:var(--ink);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale);display:flex;align-items:center;gap:10px}
 .faq-category h2 .cat-icon{font-size:1.1rem}
 details{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);margin-bottom:8px;overflow:hidden;transition:var(--transition)}
 details[open]{border-color:var(--border-strong);box-shadow:var(--shadow-md)}
-summary{padding:16px 18px;font-weight:700;font-size:0.93rem;color:var(--ink);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;line-height:1.4}
+summary{padding:15px 18px;font-weight:700;font-size:0.92rem;color:var(--ink);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;line-height:1.4}
 summary::-webkit-details-marker{display:none}
 summary::after{content:'+';font-size:1.3rem;font-weight:300;color:var(--leather);flex-shrink:0;transition:var(--transition)}
 details[open] summary::after{content:'−'}
 details[open] summary{color:var(--leather-dark);border-bottom:1px solid var(--border)}
-.faq-answer{padding:14px 18px 18px;font-size:0.9rem;color:var(--ink-soft);line-height:1.7}
+.faq-answer{padding:14px 18px 18px;font-size:0.9rem;color:var(--ink-soft);line-height:1.72}
 .faq-answer p{margin-bottom:10px}
 .faq-answer p:last-child{margin-bottom:0}
 .faq-answer ul,.faq-answer ol{padding-left:18px;margin-bottom:10px;display:flex;flex-direction:column;gap:5px}
-.faq-answer li{font-size:0.9rem;line-height:1.6}
+.faq-answer li{font-size:0.9rem;line-height:1.65}
 .faq-answer strong{color:var(--ink);font-weight:700}
-.faq-answer .callout{background:var(--sand);border-left:3px solid var(--rope);padding:10px 14px;border-radius:0 var(--radius) var(--radius) 0;font-size:0.86rem;color:var(--ink-soft);margin-top:10px}
+.faq-answer .note{background:var(--sand);border-left:3px solid var(--rope);padding:10px 14px;border-radius:0 var(--radius) var(--radius) 0;font-size:0.86rem;color:var(--ink-soft);margin:10px 0 0}
+.faq-answer .warning{background:var(--rust-light);border-left:3px solid var(--rust);padding:10px 14px;border-radius:0 var(--radius) var(--radius) 0;font-size:0.86rem;color:var(--ink-soft);margin:10px 0 0}
+.faq-answer .tip{background:var(--sage-light);border-left:3px solid var(--sage);padding:10px 14px;border-radius:0 var(--radius) var(--radius) 0;font-size:0.86rem;color:var(--ink-soft);margin:10px 0 0}
 .nav-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
 .nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
 .nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
@@ -70,15 +79,17 @@ footer a{color:var(--rope-light);text-decoration:none}
   .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
   .page-hero{padding:40px 24px 36px}.page-hero h1{font-size:2.1rem}
   .content-wrap{padding:32px 24px 56px}
-  summary{font-size:0.96rem}
+  summary{font-size:0.95rem}
 }
 :focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"How often does my horse need a farrier?","acceptedAnswer":{"@type":"Answer","text":"Most horses need farrier attention every 6 to 8 weeks, whether barefoot or shod. Performance horses in heavy work often need 5 to 6 week intervals. Young horses under 2 may need visits every 4 to 6 weeks for developmental corrections."}},
-  {"@type":"Question","name":"What is the difference between a trim and a full shoe?","acceptedAnswer":{"@type":"Answer","text":"A trim removes excess hoof wall growth and balances the hoof — no metal shoe is applied. A full shoe involves trimming plus nailing a metal shoe to the hoof wall for protection and support. Barefoot horses receive trims only; shod horses receive trim plus shoes."}},
-  {"@type":"Question","name":"How do I know if my horse has thrush?","acceptedAnswer":{"@type":"Answer","text":"Thrush has a distinctive foul, rotten smell and produces black, tarry discharge from the frog and the sulci (grooves alongside the frog). In mild cases the horse may show no lameness; in severe cases thrush can invade sensitive tissue and cause significant pain."}}
+{"@type":"Question","name":"How often does my horse need a farrier?","acceptedAnswer":{"@type":"Answer","text":"Most horses need farrier attention every 6 to 8 weeks year-round, whether barefoot or shod. Performance horses often need 5 to 6 week intervals. Young horses under 2 may need 4 to 6 week visits for developmental corrections."}},
+{"@type":"Question","name":"What is the difference between a trim and a shoe?","acceptedAnswer":{"@type":"Answer","text":"A trim removes excess hoof wall growth and balances the hoof with no metal shoe applied. A full shoe involves trimming plus nailing a metal shoe to the hoof wall for protection and support."}},
+{"@type":"Question","name":"What is navicular syndrome?","acceptedAnswer":{"@type":"Answer","text":"Navicular syndrome is a broad term for pain originating in the heel area of the front feet, involving the navicular bone, bursa, or deep digital flexor tendon. It is a leading cause of chronic front-end lameness and requires veterinary diagnosis and long-term management."}},
+{"@type":"Question","name":"How do I know if my horse has thrush?","acceptedAnswer":{"@type":"Answer","text":"Thrush produces a distinctive foul, rotten smell and black tarry discharge from the frog and sulci. Caused by anaerobic bacteria in wet, dirty conditions. Treat with a topical remedy and improve footing."}},
+{"@type":"Question","name":"What causes laminitis?","acceptedAnswer":{"@type":"Answer","text":"Laminitis is caused by disruption of blood flow to the sensitive laminae inside the hoof. Common triggers include grain overload, sudden access to lush pasture, systemic illness, Cushing's disease, and prolonged hard-surface standing on an unaffected leg while the other is injured."}}
 ]}
 </script>
 </head>
@@ -90,114 +101,517 @@ footer a{color:var(--rope-light);text-decoration:none}
     <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
   </a>
 </header>
+
 <div class="page-hero">
   <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / FAQ</div>
   <h1>Farrier &amp; Hoof Care <em>FAQ</em></h1>
-  <p>Honest answers to the most common questions horse owners ask about hoof care, farrier schedules, shoeing, and common problems.</p>
+  <p>Honest, no-fluff answers to the questions horse owners ask most — from basic schedules to serious lameness conditions.</p>
+  <div class="stat-row">
+    <span>📅 Schedules</span>
+    <span>🔩 Barefoot vs. Shod</span>
+    <span>⚠️ Diseases &amp; Injuries</span>
+    <span>🩺 Serious Conditions</span>
+    <span>💰 Costs</span>
+    <span>🐣 Young Horses</span>
+    <span>🌡️ Seasons</span>
+    <span>🔧 Corrective Shoeing</span>
+  </div>
 </div>
+
 <div class="content-wrap" id="main-content" role="main">
 
-  <div class="faq-category">
+  <nav class="toc" aria-label="FAQ categories">
+    <div class="toc-title">Jump to a Category</div>
+    <div class="toc-grid">
+      <a href="#schedules">📅 Schedules &amp; Frequency</a>
+      <a href="#barefoot">🔩 Barefoot vs. Shod</a>
+      <a href="#diseases">⚠️ Diseases &amp; Injuries</a>
+      <a href="#conditions">🩺 Serious Conditions</a>
+      <a href="#costs">💰 Costs &amp; Finding a Farrier</a>
+      <a href="#young">🐣 Young Horses</a>
+      <a href="#seasons">🌡️ Seasonal Care</a>
+      <a href="#corrective">🔧 Corrective Shoeing</a>
+    </div>
+  </nav>
+
+  <!-- SCHEDULES -->
+  <div class="faq-category" id="schedules">
     <h2><span class="cat-icon">📅</span> Schedules &amp; Frequency</h2>
+
     <details>
       <summary>How often does my horse need a farrier?</summary>
-      <div class="faq-answer"><p>Most horses need farrier attention every <strong>6 to 8 weeks</strong>, year-round. This applies whether the horse is barefoot or shod. Hooves grow continuously at roughly 3/8 inch per month and don't stop in winter.</p><p>Exceptions: Performance horses in heavy work often benefit from 5 to 6 week intervals. Young horses under age 2 may need visits every 4 to 6 weeks for developmental corrections. Horses rehabbing from laminitis may need even more frequent attention — your vet and farrier will set the schedule together.</p></div>
+      <div class="faq-answer">
+        <p>Most horses need farrier attention every <strong>6 to 8 weeks</strong>, year-round — whether barefoot or shod. Hooves grow continuously at roughly 3/8 inch per month and don't stop in winter.</p>
+        <p>Exceptions: Performance horses in heavy work often benefit from 5 to 6 week intervals. Young horses under 2 may need visits every 4 to 6 weeks for developmental corrections. Horses rehabbing from laminitis may need more frequent attention — vet and farrier set the schedule together.</p>
+        <div class="note">The 6–8 week rule applies even to horses that aren't being ridden. An unridden horse still grows hooves that go out of balance.</div>
+      </div>
     </details>
+
     <details>
-      <summary>Can I go longer than 8 weeks to save money?</summary>
-      <div class="faq-answer"><p>Technically yes — many owners push to 10 or 12 weeks. The real cost is paid in hoof imbalance, which creates stress on tendons, joints, and bones that compounds over time. A horse that goes 12 weeks between farrier visits repeatedly is a horse that will cost significantly more in veterinary bills over its lifetime. The savings on a single farrier visit rarely survive the first lameness episode caused by long-overdue hooves.</p></div>
+      <summary>Can I stretch intervals to 10 or 12 weeks to save money?</summary>
+      <div class="faq-answer">
+        <p>Technically possible — many owners do it. The real cost is paid later. Hooves that go too long between trims develop imbalances that progressively stress tendons, joints, and bones. A horse pushed to 12-week intervals repeatedly will accumulate damage that shows up as lameness, joint disease, or tendon injury — all of which cost far more than the farrier visits skipped.</p>
+        <p>If cost is the constraint, talk to your farrier. Many will work with you on a payment schedule or adjust scope (front shoes only instead of four) before they'd want you stretching intervals.</p>
+      </div>
     </details>
+
     <details>
       <summary>Do horses still need the farrier in winter?</summary>
-      <div class="faq-answer"><p>Yes. Hooves grow year-round, and imbalances accumulate regardless of season. Many horse owners maintain full-year schedules and simply remove shoes for the winter if the horse is on reduced work. Barefoot horses on winter turnover may grow slightly slower, but still need regular trimming. Horses kept shod through winter may need snowball pads to prevent dangerous snow packing in the shoe.</p></div>
+      <div class="faq-answer">
+        <p>Yes. Hooves grow year-round, and imbalances accumulate regardless of season or workload. Many owners maintain their full-year schedule and simply pull shoes for winter if the horse is on reduced work.</p>
+        <p>Horses kept shod through winter often benefit from <strong>snowball pads</strong> — a rubber pad that prevents dangerous snow from packing in the shoe and creating an ice ball under the hoof. Without them, a shod horse on snow can be walking on stilts.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>My horse is on pasture rest and not being ridden. Does he still need a farrier?</summary>
+      <div class="faq-answer">
+        <p>Yes. Hoof balance affects every step a horse takes, ridden or not. An unridden horse on uneven or soft pasture can develop long toes, flares, and imbalances just as quickly as a working horse. The difference is you may not notice the problem building because you're not riding and feeling it.</p>
+        <p>If the horse is on a hard, varied surface that wears hooves naturally, intervals might extend slightly for a barefoot horse. But a shod horse at pasture rest still needs regular resets — shoes that grow out beyond the hoof wall can torque and loosen dangerously.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How long does a farrier appointment take?</summary>
+      <div class="faq-answer">
+        <p>A straightforward trim on a well-behaved horse: <strong>20 to 30 minutes</strong>. A full set of four shoes on a cooperative horse: <strong>45 to 75 minutes</strong>. Hot shoeing or corrective work adds time — sometimes significantly. A difficult horse that won't stand can double the time for any appointment.</p>
+        <p>Plan your schedule to be present for the full appointment. Leaving your horse tied alone with a farrier is poor horsemanship and a safety issue — things can go wrong, and you should be there.</p>
+      </div>
     </details>
   </div>
 
-  <div class="faq-category">
+  <!-- BAREFOOT VS SHOD -->
+  <div class="faq-category" id="barefoot">
     <h2><span class="cat-icon">🔩</span> Barefoot vs. Shod</h2>
+
     <details>
-      <summary>Does my horse need shoes?</summary>
-      <div class="faq-answer"><p>Not necessarily. Many horses do well barefoot their entire lives — particularly those with naturally hard hooves, doing light to moderate work on soft ground, and receiving proper diet and regular trimming. Shoes are generally indicated when:</p><ul><li>The horse is doing heavy work on hard, abrasive surfaces</li><li>The horse has thin soles that bruise easily</li><li>Therapeutic or corrective support is needed</li><li>The hoof is not wearing evenly and trimming alone can't compensate</li></ul><p>The barefoot vs. shoes question is best answered by your farrier after observing your horse's specific hoof quality, conformation, and work demands.</p></div>
+      <summary>Does my horse actually need shoes?</summary>
+      <div class="faq-answer">
+        <p>Not necessarily. Horses evolved without shoes and many do beautifully barefoot. Shoes are generally indicated when:</p>
+        <ul>
+          <li>The horse is doing heavy work on hard, abrasive surfaces</li>
+          <li>The horse has thin soles that bruise easily without protection</li>
+          <li>Therapeutic or corrective support is needed that a trim alone can't provide</li>
+          <li>The horse's hoof wears faster than it grows in the current work environment</li>
+        </ul>
+        <p>The right answer depends on your specific horse's hoof quality, conformation, work demands, and footing. Your farrier's recommendation, made after seeing the horse move, matters more than general philosophy.</p>
+      </div>
     </details>
+
+    <details>
+      <summary>What is the difference between hot shoeing and cold shoeing?</summary>
+      <div class="faq-answer">
+        <p><strong>Cold shoeing</strong> means fitting a pre-made shoe to the hoof without heating it — bending it slightly if needed but fitting it as-is. Faster and requires less equipment, but the fit is always a compromise.</p>
+        <p><strong>Hot shoeing</strong> means heating the shoe in a forge, shaping it precisely on the anvil, and burning it briefly onto the hoof to check the fit before nailing. The burn seals the white line slightly and allows exact fitting. Hot shoeing produces a better-fitting shoe and is the mark of a skilled craftsman farrier. For horses with unusual hoof shapes or corrective needs, it's often the only way to get it right.</p>
+        <div class="tip">If your horse has persistent fitting problems, ask specifically for a farrier who hot shoes.</div>
+      </div>
+    </details>
+
     <details>
       <summary>Can I transition my shod horse to barefoot?</summary>
-      <div class="faq-answer"><p>Yes, but it takes time and shouldn't be rushed. When shoes are removed, horses that have been shod for years often have weakened frogs and underdeveloped digital cushions. Expect 6 to 12 months of gradual transition, starting with shorter work sessions on soft ground and building up. Hoof boots (Scoot Boots, Renegades, Cavallo) are valuable during transition for protecting tender soles.</p><div class="callout">Tip: The transition works best with a farrier who is knowledgeable about barefoot methodology — the trimming approach differs significantly from a standard shod trim.</div></div>
+      <div class="faq-answer">
+        <p>Yes, but expect a real transition period — typically <strong>6 to 12 months</strong>. Horses that have been shod for years often have underdeveloped frogs and digital cushions, and thin soles that haven't been toughened by ground contact. Pulling the shoes and immediately working on hard ground is asking for trouble.</p>
+        <p>A sensible transition: pull shoes, start with turnout on soft ground, use hoof boots (Scoot Boots, Renegades, Cavallo) for riding during the sensitive period, and work with a trimmer familiar with the barefoot approach — the trim differs significantly from a standard shod trim. Diet and mineral balance matter enormously during transition.</p>
+      </div>
     </details>
+
     <details>
-      <summary>What types of shoes are there and what do they do?</summary>
-      <div class="faq-answer"><p>Common shoe types include:</p><ul><li><strong>Plain fullered shoe:</strong> The standard everyday shoe — a crease around the perimeter for nail placement and traction.</li><li><strong>Egg bar shoe:</strong> Extends behind the heel for support — used for navicular syndrome, low heels, and suspensory issues.</li><li><strong>Heart bar shoe:</strong> Has a bar that supports the frog — used in laminitis treatment.</li><li><strong>Sliding plate:</strong> Wide, smooth, long shoe used in reining — allows the sliding stop.</li><li><strong>Sport boots / glue-on shoes:</strong> Adhesive-applied shoes for horses with poor hoof wall quality that won't hold nails.</li><li><strong>Aluminum shoes:</strong> Lighter than steel — common in racehorses and some sport horse disciplines.</li></ul></div>
+      <summary>What are hoof boots and when should I use them?</summary>
+      <div class="faq-answer">
+        <p>Hoof boots are removable protective covers — think of them as athletic shoes for horses. They slip on for riding or work and come off for turnout. They're useful for:</p>
+        <ul>
+          <li>Barefoot horses transitioning off shoes</li>
+          <li>Protecting a recently lost shoe until the farrier arrives</li>
+          <li>Trail riding on rocky terrain with a horse that's sound on soft ground</li>
+          <li>Horses with thin soles that are otherwise maintaining well barefoot</li>
+        </ul>
+        <p>Popular brands include Scoot Boots, Renegade, Cavallo, and EasyCare. Fit is critical — a poorly fitted hoof boot causes rubs and can be dangerous. Measure carefully and size accordingly.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What types of shoes exist and what does each do?</summary>
+      <div class="faq-answer">
+        <p>Common shoe types and their purposes:</p>
+        <ul>
+          <li><strong>Plain fullered shoe:</strong> Standard everyday shoe. The crease (fuller) around the perimeter improves nail placement and traction. Used on the vast majority of shod horses.</li>
+          <li><strong>Egg bar shoe:</strong> Extends behind the heel — provides support under the back of the hoof. Used for navicular syndrome, low heels, and suspensory problems.</li>
+          <li><strong>Heart bar shoe:</strong> Has a bar that bears against the frog, distributing load onto the frog and away from the wall. Used in laminitis treatment to offload the toe.</li>
+          <li><strong>Straight bar shoe:</strong> A bar across the heels — adds rigidity and support. Used for sheared heels, quarter cracks, and some tendon issues.</li>
+          <li><strong>Sliding plate:</strong> Wide, smooth, elongated shoe used in reining. The smooth steel allows the sliding stop.</li>
+          <li><strong>Rim shoe:</strong> Raised rim provides additional traction — common in jumping and eventing.</li>
+          <li><strong>Aluminum shoe:</strong> Lighter than steel — common in racehorses and some sport horse disciplines where weight matters.</li>
+          <li><strong>Glue-on shoe:</strong> Adhered with epoxy rather than nailed. Used when hoof wall is too damaged or thin to hold nails.</li>
+        </ul>
+      </div>
     </details>
   </div>
 
-  <div class="faq-category">
-    <h2><span class="cat-icon">⚠️</span> Common Problems</h2>
+  <!-- DISEASES & INJURIES -->
+  <div class="faq-category" id="diseases">
+    <h2><span class="cat-icon">⚠️</span> Diseases &amp; Injuries</h2>
+
     <details>
       <summary>How do I know if my horse has thrush?</summary>
-      <div class="faq-answer"><p>Thrush has a distinctive <strong>foul, rotten smell</strong> — unmistakable once you've encountered it. It produces black, tarry discharge from the frog and the sulci (grooves alongside the frog). In mild cases the horse shows no lameness. In severe cases thrush can invade sensitive tissue and cause significant pain and lameness.</p><p>Thrush is caused by anaerobic bacteria that thrive in the absence of oxygen — packed, wet footing feeds it. Treatment: clean the hoof thoroughly, open up the sulci, apply a topical thrush treatment (copper sulfate, Thrush Buster, or diluted bleach), and improve footing conditions. Chronic thrush means the living conditions need to change, not just the hoof.</p></div>
+      <div class="faq-answer">
+        <p>Thrush is unmistakable once you've smelled it — a <strong>foul, rotten odor</strong> coming from the frog area, accompanied by black, tarry discharge from the sulci (the grooves beside the frog). Mild cases cause no lameness. Severe cases where thrush has invaded sensitive tissue will cause significant pain, especially on hard ground.</p>
+        <p>Treatment: Thoroughly clean the hoof, open up the sulci with a hoof knife so air reaches the affected area, apply a topical treatment (copper sulfate solution, Thrush Buster, or diluted bleach), and repeat daily. Critically — improve the living conditions. A horse standing in wet manure will re-infect immediately. Chronic thrush is a management problem, not just a hoof problem.</p>
+        <div class="warning">If thrush has reached the sensitive frog and the horse is lame, call your farrier or vet — it may need to be debrided professionally.</div>
+      </div>
     </details>
+
     <details>
-      <summary>What is white line disease and how is it treated?</summary>
-      <div class="faq-answer"><p>White line disease (also called seedy toe or onychomycosis) is a fungal and bacterial infection that invades the non-pigmented inner hoof wall — the white line. It appears as crumbling, chalky material or a hollow cavity when the sole is probed. It does not smell as strongly as thrush.</p><p>Treatment requires a farrier to debride (cut away) all infected material — which can sometimes mean removing large sections of the hoof wall. The exposed area is then treated with an antifungal product and allowed to grow out. Untreated white line disease can create enough separation to destabilize the coffin bone.</p></div>
+      <summary>What is white line disease and how serious is it?</summary>
+      <div class="faq-answer">
+        <p>White line disease (also called seedy toe or onychomycosis) is a fungal and bacterial infection that invades the unpigmented inner hoof wall — the white line. It appears as crumbling, chalky or powdery material, or a hollow cavity when you probe the sole near the wall. Unlike thrush, it doesn't smell strongly.</p>
+        <p>Mild cases are cosmetic. Severe cases where the infection has traveled up the white line can create enough separation between the wall and the coffin bone to cause instability and serious lameness. Left untreated, a large infection can compromise the entire toe.</p>
+        <p>Treatment: A farrier debrides all infected material — which can mean removing significant sections of the hoof wall. The exposed cavity is treated with antifungal product and allowed to grow out from the coronary band down. Full resolution takes months.</p>
+      </div>
     </details>
+
     <details>
-      <summary>My horse threw a shoe — what do I do?</summary>
-      <div class="faq-answer"><p>First, find the shoe if possible and check it for bent nails — you don't want the horse stepping on it. Then examine the bare hoof for any remaining nail stubs. If nails are protruding from the hoof, call your farrier immediately — this is a lameness and infection risk.</p><p>If the hoof looks clean: protect it with a hoof boot if the horse needs to move on hard ground, and call your farrier for a repair appointment. A horse going barefoot on one foot and shod on three has an uneven balance that strains the opposite limb — don't leave it long.</p></div>
+      <summary>What causes hoof cracks and when are they serious?</summary>
+      <div class="faq-answer">
+        <p>Hoof cracks are vertical or horizontal splits in the hoof wall with varying causes and severity:</p>
+        <ul>
+          <li><strong>Grass cracks:</strong> Start at the ground surface and grow upward. Usually caused by a long toe or dry-wet moisture cycling. Cosmetic if shallow and short.</li>
+          <li><strong>Sand cracks:</strong> Start at the coronary band and grow downward — caused by coronary band injury, infection, or chronic imbalance. More serious because they originate at the growth source.</li>
+          <li><strong>Quarter cracks:</strong> Vertical cracks in the side wall — often caused by hoof imbalance, poor conformation, or heavy work. Can bleed and become infected. A common performance horse problem.</li>
+          <li><strong>Heel cracks:</strong> Horizontal cracks at the heels — often related to contracted heels or excessive moisture cycling.</li>
+        </ul>
+        <p>Any crack that <strong>bleeds, extends to the coronary band, causes lameness, or appears infected</strong> is a farrier call. Superficial cracks that stay short and don't flex are usually cosmetic and resolve with better care and nutrition.</p>
+      </div>
     </details>
+
     <details>
-      <summary>What are the early signs of laminitis?</summary>
-      <div class="faq-answer"><p>Laminitis is a veterinary emergency. Early signs include:</p><ul><li>Reluctance to walk or move, especially on hard surfaces</li><li>Shifting weight — rocking back onto the heels ("sawhorse stance")</li><li>Increased warmth in the hooves compared to normal</li><li>Bounding digital pulse (felt at the back of the fetlock)</li><li>Pawing or lying down more than usual</li></ul><p>If you suspect laminitis: remove the horse from pasture immediately, call your veterinarian — not just your farrier — and restrict movement. Do not wait to see if it improves on its own. Early treatment dramatically improves outcomes.</p></div>
+      <summary>What is an abscess and what should I do?</summary>
+      <div class="faq-answer">
+        <p>A hoof abscess is a pocket of infection — usually bacteria introduced through a crack, nail hole, or white line separation — trapped between the sensitive and insensitive structures of the hoof. The horse often goes suddenly, severely lame, sometimes appearing three-legged lame overnight. The affected hoof will be warm with a strong digital pulse.</p>
+        <p>What to do immediately: soak the hoof in warm Epsom salt water for 20 minutes to soften the hoof and draw the abscess. Then call your farrier or vet. They'll use hoof testers to locate the abscess, pare to it with a knife, and drain it. Relief is often dramatic within hours of draining.</p>
+        <p>After draining: keep the area clean and dry, pack with Animalintex or similar, wrap, and change daily until it closes. A course of antibiotics is sometimes prescribed if the infection was extensive.</p>
+        <div class="note">Abscesses occasionally burst on their own through the coronary band or heel bulbs — look for a small discharge point if the lameness suddenly improves without treatment.</div>
+      </div>
     </details>
+
     <details>
-      <summary>What causes hoof cracks and are they serious?</summary>
-      <div class="faq-answer"><p>Hoof cracks range from cosmetic to serious. Surface cracks that don't extend the full depth of the wall and don't reach the coronary band are usually cosmetic — caused by dry conditions or nutritional gaps — and close up with better care.</p><p>Serious cracks include:</p><ul><li><strong>Quarter cracks:</strong> Vertical cracks in the side wall — often caused by imbalance, conformation faults, or concussion. Can bleed and become infected.</li><li><strong>Toe cracks:</strong> Extending from the ground surface upward — common in long-toed horses. Become serious when they reach the coronary band.</li><li><strong>Heel cracks:</strong> Horizontal cracks at the heel — often related to contracted heels or poor hoof care.</li></ul><p>Any crack that bleeds, appears infected, extends to the coronary band, or causes lameness needs immediate farrier attention.</p></div>
+      <summary>My horse threw a shoe — what do I do right now?</summary>
+      <div class="faq-answer">
+        <p>Act in this order:</p>
+        <ol>
+          <li>Find the shoe and check it for bent nail stubs — don't let the horse or other animals step on it.</li>
+          <li>Examine the bare hoof. Look for nails still protruding from the hoof wall — if present, call your farrier same day, this is urgent.</li>
+          <li>Check the hoof wall for tearing or chunks pulled away where the shoe ripped off.</li>
+          <li>If the hoof looks intact and clean, fit a hoof boot if the horse needs to travel or work on hard ground.</li>
+          <li>Call your farrier for a repair appointment — don't wait until the next scheduled visit. A horse going barefoot on one foot and shod on three has severe bilateral imbalance that strains the opposite limb.</li>
+        </ol>
+        <div class="warning">A partially loose shoe that's still attached but flapping is more dangerous than a fully thrown shoe. A flapping shoe can drive nails into sensitive tissue. Call your farrier immediately and restrict the horse's movement until it's dealt with.</div>
+      </div>
     </details>
+
     <details>
-      <summary>What is an abscess and how is it treated?</summary>
-      <div class="faq-answer"><p>A hoof abscess is a localized pocket of infection — usually bacteria — between the sensitive and insensitive laminae. The horse often goes suddenly, severely lame (sometimes three-legged lame) with localized heat and a strong digital pulse. It can look alarming but is rarely life-threatening when treated promptly.</p><p>Treatment: A farrier or veterinarian locates the abscess (using hoof testers and a hoof knife), pares down to it, and drains it. Once drained, the lameness often improves dramatically within 24 hours. The area is then packed, wrapped, and kept clean until it closes. Soaking in warm Epsom salt water for 20 minutes prior to the farrier visit can help soften the hoof and encourage the abscess to "blow out."</p></div>
+      <summary>What is contracted heel and what causes it?</summary>
+      <div class="faq-answer">
+        <p>Contracted heels occur when the back of the hoof narrows and pinches inward, compressing the frog and reducing the hoof's ability to expand and absorb shock. The frog appears narrow, deep-seated, and often doesn't contact the ground properly.</p>
+        <p>Causes include: prolonged shoeing without allowing frog contact, long-toe/low-heel syndrome, lack of movement on varied terrain, and some hereditary conformation tendencies. Horses kept in stalls on soft bedding with limited movement are particularly susceptible.</p>
+        <p>Treatment is gradual — corrective trimming to lower the heels and encourage heel expansion, ideally combined with more turnout on varied ground. Full correction can take 12 to 18 months of consistent work. Some degree of contraction is permanent in severe long-standing cases.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is seedy toe?</summary>
+      <div class="faq-answer">
+        <p>Seedy toe is another name for white line disease affecting specifically the toe area — a separation and infection of the white line at the front of the hoof. It's named for the crumbly, seed-like texture of the infected tissue when it's pared away.</p>
+        <p>It's caused by the same organisms as white line disease generally — a combination of fungi and bacteria that invade through cracks, nail holes, or naturally weak spots. Long toes are a risk factor because the extended toe creates leverage that stresses and opens the white line.</p>
+        <p>The fix is the same: professional debridement, antifungal treatment, and growing out clean hoof from the coronary band down. Keeping toes properly trimmed is the best prevention.</div>
     </details>
   </div>
 
-  <div class="faq-category">
+  <!-- SERIOUS CONDITIONS -->
+  <div class="faq-category" id="conditions">
+    <h2><span class="cat-icon">🩺</span> Serious Conditions</h2>
+
+    <details>
+      <summary>What is laminitis and what causes it?</summary>
+      <div class="faq-answer">
+        <p>Laminitis is inflammation of the sensitive laminae — the tissue that bonds the coffin bone to the hoof wall. When the laminae become inflamed and begin to fail, the coffin bone can rotate downward (tip forward) or sink within the hoof capsule. This is a <strong>veterinary emergency</strong>.</p>
+        <p>Common triggers:</p>
+        <ul>
+          <li><strong>Dietary:</strong> Grain overload, sudden access to lush spring or fall pasture, high-sugar hay</li>
+          <li><strong>Metabolic:</strong> Equine Metabolic Syndrome (EMS), Cushing's disease (PPID) — the most common causes in mature horses</li>
+          <li><strong>Systemic illness:</strong> Retained placenta, severe colic, grain founder, black walnut shaving exposure</li>
+          <li><strong>Mechanical:</strong> Prolonged standing on hard surfaces, or "support limb laminitis" — when an injured horse overloads one good leg</li>
+        </ul>
+        <div class="warning">If you suspect laminitis: move the horse off pasture immediately, provide deep bedding, call your vet — not just your farrier — and restrict all movement. Do not wait to see if it improves on its own. Hours matter.</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>What are the signs of laminitis?</summary>
+      <div class="faq-answer">
+        <p>Classic signs to watch for:</p>
+        <ul>
+          <li>Reluctance or refusal to move, especially on hard ground</li>
+          <li><strong>Sawhorse stance</strong> — leaning back with front feet extended, shifting weight onto the heels</li>
+          <li>Increased heat in the hooves compared to normal</li>
+          <li>Bounding or pounding digital pulse (felt by pressing two fingers against the back of the fetlock)</li>
+          <li>Short, pottery gait — tiny, careful steps</li>
+          <li>Lying down more than usual, reluctance to rise</li>
+          <li>Rings on the hoof wall that diverge at the toe (a sign of previous laminitis episodes)</li>
+        </ul>
+        <p>Laminitis most commonly affects the front feet, though all four can be involved. Ponies and easy-keeper breeds (Morgans, native breeds, draft crosses) are disproportionately susceptible.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is navicular syndrome?</summary>
+      <div class="faq-answer">
+        <p>Navicular syndrome (more precisely called palmar foot pain or caudal heel pain) is a broad term for chronic pain originating in the heel area — involving the navicular bone, the navicular bursa (a fluid sac), the deep digital flexor tendon, or the supporting ligaments. It is a leading cause of chronic front-end lameness.</p>
+        <p>Signs: subtle, bilateral front-end lameness that worsens on hard ground and circles; the horse may point a foot when resting; performance often drops gradually before lameness becomes obvious. Diagnosis requires nerve blocks and imaging (X-ray, MRI, or ultrasound).</p>
+        <p>Management (not cure) includes: corrective shoeing (egg bar shoes, raised heels, pads), controlled exercise, medications (isoxsuprine, bisphosphonates), and in some cases, nerve cutting (neurectomy) as a last resort. Many horses are managed successfully for years.</p>
+        <div class="note">True navicular bone disease is different from soft tissue pain in the same area — diagnosis matters because management differs. Don't accept a navicular diagnosis without imaging.</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is ringbone?</summary>
+      <div class="faq-answer">
+        <p>Ringbone is the growth of new bone (periosteal proliferation) around the pastern or coffin joints. It's a form of osteoarthritis. <strong>High ringbone</strong> affects the pastern joint between P1 and P2. <strong>Low ringbone</strong> affects the coffin joint between P2 and P3 inside the hoof capsule — the more serious of the two.</p>
+        <p>Causes: concussion, poor conformation (upright pasterns, toed-in or toed-out), repetitive stress, or injury. Thoroughbreds and warmbloods doing high-concussion work are over-represented.</p>
+        <p>Shoeing can help manage comfort — rolled toe shoes, pads, and appropriate heel height reduce the range of motion and concussion through the affected joint. When the joint fuses naturally (ankylosing), many horses become comfortable and serviceably sound, particularly with high ringbone.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is sidebone?</summary>
+      <div class="faq-answer">
+        <p>Sidebone is the ossification (calcification) of the lateral cartilages — the flexible cartilage wings at the back of the coffin bone that you can feel just above the coronary band at the heel. When these calcify into bone, they lose their natural flexibility.</p>
+        <p>Common in heavier breeds and horses doing repetitive work on hard ground. Often found incidentally on X-ray in horses without lameness. In some horses it causes pain and lameness; in others, once calcification is complete, the horse is comfortable. Shoeing adjustments — particularly addressing heel balance — can help manage the transition period.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is canker?</summary>
+      <div class="faq-answer">
+        <p>Canker is a chronic, progressive infection of the frog and sole involving abnormal, hypertrophied (overgrown) horn tissue. It looks like cauliflower-like white or gray proliferating tissue growing from the frog area. It bleeds easily and has a characteristic foul smell. Unlike thrush, which is a surface infection, canker invades the underlying sensitive tissue.</p>
+        <p>Canker is far rarer than thrush but far more serious. It requires aggressive veterinary and farrier treatment — debridement under sedation, topical chemotherapy agents, and meticulous bandaging for weeks to months. Recurrence is common. Draft breeds and horses in chronically wet conditions are most often affected.</p>
+        <div class="warning">If you suspect canker rather than thrush — proliferating tissue, not just black discharge — get a vet involved immediately. Thrush remedies alone will not resolve canker.</div>
+      </div>
+    </details>
+  </div>
+
+  <!-- COSTS -->
+  <div class="faq-category" id="costs">
     <h2><span class="cat-icon">💰</span> Costs &amp; Finding a Farrier</h2>
+
     <details>
       <summary>How much does a farrier cost?</summary>
-      <div class="faq-answer"><p>Costs vary significantly by region, discipline, and work required. Rough national ranges as of 2025–2026:</p><ul><li><strong>Barefoot trim:</strong> $35–$80</li><li><strong>Front shoes only:</strong> $80–$150</li><li><strong>Full set of four shoes:</strong> $120–$250+</li><li><strong>Corrective / therapeutic shoeing:</strong> $200–$450+</li></ul><p>Urban and suburban markets typically run higher. Farriers who hot shoe, do corrective work, or specialize in sport horses charge at the top of or above these ranges. A farrier who charges less than $50 for a full set of shoes is either very new, cutting corners, or both. Quality farrier work is worth paying for.</p></div>
+      <div class="faq-answer">
+        <p>Costs vary by region, discipline, and complexity. Rough national ranges (2025–2026):</p>
+        <ul>
+          <li><strong>Barefoot trim:</strong> $35–$80</li>
+          <li><strong>Front shoes only:</strong> $80–$160</li>
+          <li><strong>Full set of four shoes:</strong> $120–$260+</li>
+          <li><strong>Hot shoeing premium:</strong> Add $20–$50 over cold</li>
+          <li><strong>Corrective / therapeutic shoeing:</strong> $200–$500+</li>
+          <li><strong>Emergency / after-hours call:</strong> Add $50–$150</li>
+        </ul>
+        <p>Urban and coastal markets run higher. A farrier charging significantly below market is usually either very new, cutting corners, or both. Quality farrier work is worth paying for — it's far cheaper than the vet bills caused by bad hoof care.</p>
+      </div>
     </details>
+
     <details>
       <summary>How do I find a good farrier?</summary>
-      <div class="faq-answer"><p>The best referral sources, in order of reliability:</p><ul><li><strong>Your equine veterinarian:</strong> Vets work with every farrier in the area and see whose work holds up. Their referral carries real weight.</li><li><strong>Other horse owners you respect:</strong> Ask someone whose horses consistently look well-maintained.</li><li><strong>AFA (American Farrier's Association) directory:</strong> afa.net lists certified farriers by state. Certification indicates baseline knowledge and commitment to the trade.</li></ul><p>Green flags: shows up on time, communicates clearly, explains what he's doing and why, coordinates with your vet on problem cases, maintains clean equipment. Red flags: unreliable scheduling, dismisses your questions, discourages vet involvement.</p></div>
+      <div class="faq-answer">
+        <p>Best referral sources in order of reliability:</p>
+        <ul>
+          <li><strong>Your equine veterinarian:</strong> Vets see whose work holds up over time. Their referral is worth more than any other.</li>
+          <li><strong>Horse owners whose horses consistently look well-maintained:</strong> Ask who their farrier is and whether they'd recommend them.</li>
+          <li><strong>AFA directory (afa.net):</strong> The American Farrier's Association lists certified farriers by state. Certification requires demonstrated knowledge and ongoing education.</li>
+        </ul>
+        <p><strong>Green flags:</strong> Shows up on time consistently, explains what he's doing and why, communicates proactively about problems he sees, coordinates with your vet, keeps clean equipment, handles horses calmly.</p>
+        <p><strong>Red flags:</strong> Unreliable scheduling, dismisses your questions, never suggests involving a vet, works too fast, can't explain why he's making the choices he's making.</p>
+      </div>
     </details>
+
     <details>
       <summary>Should I tip my farrier?</summary>
-      <div class="faq-answer"><p>Tipping is not a standard expectation in the farrier industry the way it is in service industries. Most farriers set their prices to reflect the value of their work. That said, tipping for exceptional service, holidays, or difficult situations (a horse that was particularly hard to handle, an emergency same-day call) is always appreciated and not unusual. Cold drinks, a clean work area, and a well-behaved horse are worth more than any tip.</p></div>
+      <div class="faq-answer">
+        <p>Tipping is not a standard expectation in the farrier industry. Most farriers price their work to reflect its value. That said, tipping for exceptional work, holiday visits, same-day emergency calls, or an unusually difficult horse is always appreciated.</p>
+        <p>What farriers consistently say matters more than money: have your horse caught, clean, and standing in a good spot before they arrive. Have water available. Keep dogs, children, and loose horses away from the work area. A horse that stands well and an owner who respects their time is worth more than any tip.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What happens if I can't find a farrier in my area?</summary>
+      <div class="faq-answer">
+        <p>Rural horse owners in under-served areas face this genuinely. Options:</p>
+        <ul>
+          <li>Ask your vet — they often know farriers willing to travel further for the right client.</li>
+          <li>Contact the AFA for certified farriers in the wider region.</li>
+          <li>Ask at feed stores, saddle shops, and local horse clubs — word travels in the equestrian community.</li>
+          <li>Consider learning basic hoof picking and emergency boot application yourself as a bridge between visits.</li>
+          <li>Some owners in remote areas learn basic trimming for maintenance between longer-interval farrier visits — this requires proper instruction and tools, not YouTube videos.</li>
+        </ul>
+        <div class="note">Some farrier schools offer discounted work by students under supervision — worth asking if you're near one.</div>
+      </div>
     </details>
   </div>
 
-  <div class="faq-category">
+  <!-- YOUNG HORSES -->
+  <div class="faq-category" id="young">
     <h2><span class="cat-icon">🐣</span> Young Horses</h2>
+
     <details>
       <summary>When should a foal first see a farrier?</summary>
-      <div class="faq-answer"><p>Ideally within the first few weeks of life — not for a full trim, but for an assessment and to begin desensitizing the foal to having its feet handled. Foals that are handled consistently from birth are dramatically easier to manage for their entire lives.</p><p>If the foal has conformational issues (toed-in, toed-out, knees that don't track straight), early intervention at 4 to 8 weeks can guide bone development while growth plates are still open. Once the foal is past 6 months, correction becomes more difficult. A farrier experienced with young stock is essential for developmental work.</p></div>
+      <div class="faq-answer">
+        <p>Ideally within the <strong>first few weeks of life</strong> — not for a full trim, but for an assessment and to begin desensitizing the foal to having its feet handled. Foals started early are dramatically easier to manage for their entire lives.</p>
+        <p>If the foal has conformational issues — toed-in, toed-out, knees that don't track straight — early intervention between <strong>4 and 8 weeks</strong> can guide bone development while growth plates are still open and responsive. A fetlock or knee deviation that's correctable at 6 weeks may be permanent by 6 months. Don't wait.</p>
+      </div>
     </details>
+
     <details>
-      <summary>How do I teach my horse to stand for the farrier?</summary>
-      <div class="faq-answer"><p>Start with daily hoof handling from the ground — pick up each foot, hold it briefly, tap it gently, set it down. Build duration gradually. The goal is a horse that yields its foot easily, holds it up without pulling, and stays relaxed.</p><p>Key principles: reward relaxation, not the act of giving the foot. Don't release a foot the horse is fighting to pull away — hold until there's a moment of softness, then release. A horse that has never had its feet handled before its first farrier appointment is an unfair situation for everyone. Do the prep work.</p></div>
+      <summary>What is angular limb deformity and can it be fixed?</summary>
+      <div class="faq-answer">
+        <p>Angular limb deformity (ALD) refers to deviations in the limbs when viewed from the front or back — the leg doesn't track straight. <strong>Valgus</strong> means the leg deviates outward (knock-kneed); <strong>varus</strong> means it deviates inward (bow-legged).</p>
+        <p>Many foals are born with mild ALDs that self-correct in the first weeks of life. Moderate deviations benefit from corrective trimming — removing material on one side of the hoof to encourage the limb to straighten as it loads. Severe deviations may require surgical intervention (periosteal stripping or transphyseal bridging) before the growth plates close.</p>
+        <p>The window for correction is short. A qualified vet and a farrier experienced with foals need to be involved early — the combination of surgical and farrier approaches is often most effective.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I teach my young horse to stand for the farrier?</summary>
+      <div class="faq-answer">
+        <p>Start from day one of ownership or birth — don't wait for the first farrier appointment to introduce hoof handling. Daily sessions:</p>
+        <ol>
+          <li>Ask for the foot, hold it briefly, set it down. Reward relaxation.</li>
+          <li>Build duration gradually — from 5 seconds to 30 seconds to a minute.</li>
+          <li>Tap the sole and hoof wall with your knuckles or a hoof pick handle to simulate the farrier's tools.</li>
+          <li>Pick the foot up in the position a farrier would hold it, not just straight up.</li>
+        </ol>
+        <p>The key rule: don't release a foot the horse is actively fighting to pull away. Wait for one moment of softness, then release. Releasing under pressure teaches the horse that pulling works. A horse that's never had its feet handled before its first farrier appointment is unfair to the horse, the farrier, and you.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>At what age can a young horse be shod?</summary>
+      <div class="faq-answer">
+        <p>There's no hard rule, but most farriers and vets agree that routine shoeing before age 2 is rarely necessary and can interfere with normal hoof development by restricting natural expansion. Corrective or therapeutic shoes may be applied earlier when there's a specific clinical need.</p>
+        <p>Young horses starting work at 2 to 3 often begin with front shoes only, or remain barefoot if their work is light and footing is soft. The decision should be based on the individual horse's hoof quality, the work being asked of it, and the footing — not habit or assumption.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- SEASONAL -->
+  <div class="faq-category" id="seasons">
+    <h2><span class="cat-icon">🌡️</span> Seasonal Hoof Care</h2>
+
+    <details>
+      <summary>How does dry summer heat affect hooves?</summary>
+      <div class="faq-answer">
+        <p>Heat and dry conditions cause hooves to lose moisture rapidly, making them brittle, prone to cracking, and harder to nail through. The hoof wall shrinks slightly, which can cause shoes to become loose earlier than usual.</p>
+        <p>Management: ensure horses have access to water at all times (dehydration affects hooves from the inside out). A water trough with moist ground around it gives horses a natural opportunity to moisturize their hooves by standing briefly. If your horse's hooves are severely dry and cracking, a water-based hoof conditioner applied to the coronary band and hoof wall — not the sole — can help. Oil-based products seal moisture out as often as they seal it in.</p>
+        <div class="tip">Applying conditioner after picking hooves, while the surface is still slightly damp, is more effective than applying to a completely dry hoof.</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>How does wet weather and mud affect hooves?</summary>
+      <div class="faq-answer">
+        <p>Prolonged wet conditions soften the hoof wall, making it more vulnerable to bruising, white line invasion, and thrush. Shoes are more likely to pull off in deep mud. The constant wet-dry cycling as horses move between mud and dry areas is particularly damaging — it's more stressful to hooves than consistently wet or consistently dry conditions.</p>
+        <p>Management: provide a dry area for horses to stand — a run-in shed with dry footing, rubber mats, or a gravel pad. Pick hooves daily to remove packed mud. Consider applying a light film of petroleum jelly around (not on) the coronary band to reduce water absorption during peak wet periods. Check for thrush frequently.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Should I pull my horse's shoes for winter?</summary>
+      <div class="faq-answer">
+        <p>Many owners pull shoes for winter if the horse's work significantly decreases — it saves money on resets, reduces snowball packing risk, and gives the hooves a break. This makes sense if the horse will be on pasture or light turnout on soft or snowy ground.</p>
+        <p>Reasons to keep shoes on through winter: the horse continues to work regularly, the horse has weak hooves that chip and crack badly barefoot, the horse needs therapeutic shoes year-round, or the footing is icy and the horse needs traction devices (studs, borium, road nails) for safety.</p>
+        <p>If you pull shoes, give the horse 2 to 4 weeks to adjust before asking for significant work on hard frozen ground.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What are snowball pads and do I need them?</summary>
+      <div class="faq-answer">
+        <p>Snowball pads are rubber pads fitted between the shoe and the hoof that prevent snow and ice from packing into the space inside the shoe. Without them, a shod horse walking in snow can develop a dangerously large ball of packed ice under each foot — essentially walking on stilts, with serious fall risk.</p>
+        <p>If your shod horse will be turned out or worked in snow, snowball pads are worth having. They come in full pad and bubble pad styles — the bubble style (with a dome in the center) works by having the dome flex each step, popping accumulated snow out. They add minimal cost to a shoe reset.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- CORRECTIVE SHOEING -->
+  <div class="faq-category" id="corrective">
+    <h2><span class="cat-icon">🔧</span> Corrective &amp; Therapeutic Shoeing</h2>
+
+    <details>
+      <summary>What is corrective shoeing?</summary>
+      <div class="faq-answer">
+        <p>Corrective shoeing uses shoe shape, placement, and modifications to address specific problems — conformational flaws, gait defects, lameness, or injury. It goes beyond routine shoeing to actively influence how a horse loads and breaks over.</p>
+        <p>Common corrective applications include: egg bar shoes for heel support, heart bar shoes for laminitis, wedge pads to adjust heel angle, rolled or rockered toes to ease breakover, side weights in gaited horses to alter gait, and pads for sole protection. Corrective work requires a farrier who understands biomechanics and ideally works in close coordination with your veterinarian.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What does "long toe, low heel" mean and why does it matter?</summary>
+      <div class="faq-answer">
+        <p>Long toe, low heel (LTLH) is one of the most common and damaging hoof imbalances — and one of the most often overlooked until it causes serious problems. The toe grows long while the heel collapses, creating a broken-back hoof-pastern axis.</p>
+        <p>The consequences are significant: the deep digital flexor tendon (DDFT) is put under excessive tension with every step. Over time this contributes to navicular syndrome, DDFT tears, heel pain, and coffin joint arthritis. The horse looks like he's standing downhill in front.</p>
+        <p>Correction: regular farrier attention to maintain appropriate heel height and keep the toe back. Once LTLH is established, the horse often needs elevated heel pads or wedges during the correction period to avoid overstressing the DDFT while the heel is rebuilt.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is a farrier's role in laminitis treatment?</summary>
+      <div class="faq-answer">
+        <p>The farrier is a critical member of the laminitis treatment team — not a secondary one. Once a vet has stabilized the horse medically and taken radiographs to assess coffin bone position, the farrier's job is to shoe the horse in a way that:</p>
+        <ul>
+          <li>Offloads the toe (where the coffin bone is pressing) and transfers weight to the frog and heel</li>
+          <li>Provides sole protection if the coffin bone has dropped near the sole surface</li>
+          <li>Supports the back of the foot to reduce tension on the DDFT</li>
+        </ul>
+        <p>Heart bar shoes, reverse shoes, wide web aluminum shoes, and deep bedding combined with pads are all tools. The exact approach depends on the rotation angle and the individual case. Vet radiographs and farrier collaboration are non-negotiable for serious laminitis.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can shoeing fix a horse that forges or interferes?</summary>
+      <div class="faq-answer">
+        <p><strong>Forging</strong> is when the hind toe strikes the bottom of the front shoe — you hear a clicking sound at the trot. <strong>Interfering</strong> is when one leg strikes the inside of the opposite leg.</p>
+        <p>Both can be addressed through shoeing modifications:</p>
+        <ul>
+          <li>A <strong>rolled or squared toe</strong> on the front shoe speeds up breakover, getting the front foot out of the way faster before the hind arrives</li>
+          <li><strong>Shortening the front shoe at the toe</strong> also helps with forging</li>
+          <li><strong>Weighted shoes or boots</strong> on the hinds slow the hind breakover</li>
+          <li>For interfering, <strong>lateral extensions</strong> or modified shoe placement helps shift the foot's path</li>
+        </ul>
+        <p>Shoeing helps but isn't always a complete solution — poor fitness, lack of collection, or underlying conformation issues may need to be addressed alongside the shoeing changes.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is a pour-in pad and when is it used?</summary>
+      <div class="faq-answer">
+        <p>A pour-in pad is a two-part polyurethane foam that a farrier mixes and pours into the space between the shoe and the sole while it's still liquid. It sets quickly into a firm but slightly flexible pad that completely fills the sole space, providing uniform support across the entire bottom of the hoof.</p>
+        <p>Used for: horses with thin, sensitive soles that bruise on hard or rocky ground; horses recovering from abscesses or sole injuries; laminitic horses needing uniform frog and sole support; and performance horses competing on hard arena surfaces. More supportive and custom-fitted than a flat pad, but also more expensive and requires skill to apply correctly.</p>
+      </div>
     </details>
   </div>
 
   <nav class="nav-cards" aria-label="Explore more resources">
-    <a href="../nutrition/" class="nav-card">
-      <div class="label">Related</div>
-      <div class="title">Nutrition &amp; Hooves</div>
-      <div class="arrow">← Explore</div>
-    </a>
     <a href="../hoof-care/" class="nav-card">
-      <div class="label">Start Here</div>
+      <div class="label">Foundation</div>
       <div class="title">Hoof Care Basics</div>
       <div class="arrow">Read Guide →</div>
     </a>
+    <a href="../nutrition/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Nutrition &amp; Hooves</div>
+      <div class="arrow">Explore →</div>
+    </a>
   </nav>
 </div>
+
 <footer>
   <div class="footer-logo">Horse<span>Farrier</span>.net</div>
   <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>

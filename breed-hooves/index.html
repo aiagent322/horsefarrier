@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Breed-Specific Hoof Needs — HorseFarrier.net</title>
+<meta name="description" content="Hoof care by breed — Quarter Horses, Thoroughbreds, Arabians, Draft horses, Warmbloods, Mustangs, and more. Breed-specific trimming, shoeing, and common hoof problems.">
+<link rel="canonical" href="https://horsefarrier.net/breed-hooves/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:none;align-items:center;flex-shrink:0}
+@media(min-width:600px){.bb-logo-link{display:flex}}
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--sage-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.content-wrap{max-width:960px;margin:0 auto;padding:24px 16px 40px}
+.intro{font-size:0.95rem;color:var(--ink-soft);line-height:1.7;margin-bottom:28px;max-width:740px}
+.breed-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:36px}
+.breed-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+.breed-card:hover{box-shadow:var(--shadow-lg);border-color:var(--border-strong)}
+.breed-header{padding:16px 18px 12px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.breed-emoji{font-size:1.6rem;flex-shrink:0}
+.breed-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink)}
+.breed-tag{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-top:2px}
+.tag-hard{background:var(--sage-light);color:var(--sage-dark)}
+.tag-soft{background:var(--rust-light);color:var(--rust)}
+.tag-moderate{background:var(--rope-pale);color:var(--leather-dark)}
+.tag-variable{background:#FFF8E6;color:#8B6914}
+.breed-body{padding:14px 18px 16px;display:grid;grid-template-columns:1fr;gap:12px}
+.breed-col h4{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:6px}
+.breed-col ul{padding-left:16px;display:flex;flex-direction:column;gap:4px}
+.breed-col li{font-size:0.85rem;color:var(--ink-soft);line-height:1.55}
+.breed-col p{font-size:0.85rem;color:var(--ink-soft);line-height:1.6}
+.section-title{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--ink);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.callout{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;margin:24px 0}
+.callout h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:6px}
+.callout p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65}
+.nav-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+@media(min-width:600px){
+  .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}.page-hero h1{font-size:2.1rem}
+  .content-wrap{padding:32px 24px 56px}
+  .breed-body{grid-template-columns:1fr 1fr 1fr}
+}
+@media(min-width:900px){.breed-grid{grid-template-columns:repeat(2,1fr)}}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</header>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Breed-Specific Hoof Needs</div>
+  <h1>Breed-Specific <em>Hoof Needs</em></h1>
+  <p>Every breed has distinct hoof characteristics. Find yours and learn what it means for trimming intervals, shoe selection, and common problems to watch for.</p>
+</div>
+<div class="content-wrap" id="main-content" role="main">
+  <p class="intro">Hoof quality, shape, and common problems vary significantly by breed — the result of genetics, selective breeding priorities, and the original environments these horses evolved in. What works for a Thoroughbred may be wrong for a Draft horse. This guide covers the most common breeds encountered by North American horse owners.</p>
+
+  <div class="section-title">Light Horse Breeds</div>
+  <div class="breed-grid">
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🤠</div>
+        <div><div class="breed-name">American Quarter Horse</div><div class="breed-tag tag-moderate">Moderate hoof quality</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Compact, round hoof</li><li>Thick, dense hoof wall</li><li>Well-developed frog</li><li>Generally good quality</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Contracted heels (especially in stalled horses)</li><li>Founder susceptibility in easy keepers</li><li>White line disease in wet climates</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Generally easy to shoe. Performance horses often benefit from sliding plates or bell boots for protection. Monitor diet closely — easy keepers are laminitis-prone.</p></div>
+      </div>
+    </div>
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🏇</div>
+        <div><div class="breed-name">Thoroughbred</div><div class="breed-tag tag-soft">Softer, thinner hooves</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Larger, flatter hoof</li><li>Thinner hoof wall</li><li>Less concavity in sole</li><li>Often more brittle</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Thin soles — bruising on hard ground</li><li>Cracking and chipping of wall</li><li>Nail holes weakening the wall</li><li>Quarter cracks under stress</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Nail placement is critical with thin walls. Many TBs benefit from hoof supplements. Some work better in rim pads or with pour-in pads for sole protection. Tighter trim intervals often needed.</p></div>
+      </div>
+    </div>
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🌙</div>
+        <div><div class="breed-name">Arabian</div><div class="breed-tag tag-hard">Generally hard, dense hooves</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Smaller, dense, oval hoof</li><li>Naturally hard wall</li><li>Well-arched sole</li><li>Compact, efficient structure</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Small hooves under-support body mass in heavy individuals</li><li>Upright "club" foot tendency in some lines</li><li>Abscesses in very dry conditions</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Often the easiest breed to maintain barefoot. The naturally hard hoof can be difficult to nail through — sharp nails and properly placed nail holes are essential. Many Arabians go indefinitely without shoes.</p></div>
+      </div>
+    </div>
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🏔️</div>
+        <div><div class="breed-name">Mustang / Wild-type</div><div class="breed-tag tag-hard">Exceptionally hard hooves</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Tight, concave, self-maintaining</li><li>Extremely hard wall</li><li>Thick, callused sole</li><li>Well-developed digital cushion</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Difficulty transitioning to soft footing</li><li>Hard to nail — wall resists</li><li>Long adjustment period after domestication</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Mustangs and Mustang crosses are often held up as the ideal for barefoot advocates — their naturally selected hooves are remarkably strong. Minimal intervention is often the best approach. Many never need shoes.</p></div>
+      </div>
+    </div>
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🎠</div>
+        <div><div class="breed-name">Warmblood (KWPN, Hanoverian, etc.)</div><div class="breed-tag tag-variable">Variable — breed-dependent</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Large hooves relative to body size</li><li>Varies widely by breeding</li><li>Some lines have excellent quality; others are soft</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>White line disease in wet climates</li><li>Thrush in large, open frogs</li><li>Some lines prone to thin soles</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Sport horses do significant work on hard arena surfaces — hoof protection is usually necessary. A good farrier familiar with sport horse disciplines is worth finding. Hoof supplements are widely used in this discipline.</p></div>
+      </div>
+    </div>
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🎵</div>
+        <div><div class="breed-name">Tennessee Walking Horse</div><div class="breed-tag tag-variable">Modified by discipline</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Naturally moderate quality</li><li>Show horses grown to extreme lengths</li><li>Trail horses often go naturally</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Show practices (pads, chains) create welfare concerns</li><li>Long toes stress the deep digital flexor tendon</li><li>Soring history affects regulatory environment</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Natural TWHs kept for trail or pleasure work are easy to maintain barefoot or with standard shoeing. The natural gait emerges without the extreme shoeing packages used in show rings. Avoid long toes regardless of discipline.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Draft & Heavy Breeds</div>
+  <div class="breed-grid">
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">💪</div>
+        <div><div class="breed-name">Draft Breeds (Clydesdale, Percheron, Belgian)</div><div class="breed-tag tag-soft">Soft, feathered hooves</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Very large, wide hooves</li><li>Feathering traps moisture</li><li>Softer wall than light breeds</li><li>Large frog and digital cushion</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Chronic progressive lymphedema (CPL)</li><li>Scratches / mud fever in pasterns</li><li>Thrush from large moist frog</li><li>Difficulty maintaining balance in heavy individuals</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Draft farriery is physically demanding and requires specialized large shoes. The feathering (hair) must be kept clean and dry to prevent scratches. Many draft owners clip the feathers for easier management. Larger nails and nail counts typical.</p></div>
+      </div>
+    </div>
+    <div class="breed-card">
+      <div class="breed-header">
+        <div class="breed-emoji">🍎</div>
+        <div><div class="breed-name">Pony Breeds (Welsh, Shetland, Connemara)</div><div class="breed-tag tag-hard">Hardy, hard hooves</div></div>
+      </div>
+      <div class="breed-body">
+        <div class="breed-col"><h4>Hoof Characteristics</h4><ul><li>Compact, very hard hooves</li><li>Excellent natural quality</li><li>Strong, self-maintaining in many cases</li></ul></div>
+        <div class="breed-col"><h4>Common Problems</h4><ul><li>Extreme laminitis susceptibility — easy keeper metabolism</li><li>Overgrown hooves if neglected</li><li>Grass founder in spring and fall</li></ul></div>
+        <div class="breed-col"><h4>Farrier Notes</h4><p>Ponies have evolved on sparse, rough terrain — their hooves reflect it. Many go barefoot their entire lives. However, diet management is critical: laminitis in ponies kills. Grazing muzzles and dry lots are essential tools.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <h3>A Note on Individual Variation</h3>
+    <p>Breed tendencies are a starting point, not a prescription. Individual horses within any breed vary enormously — influenced by parentage, diet, environment, workload, and management history. The best farrier approach is always based on what's in front of you, not what the breed "usually" looks like. Use these profiles to know what to watch for, then let your farrier's eyes make the call.</p>
+  </div>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="../farrier-tools/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Farrier Tools Guide</div>
+      <div class="arrow">← Explore</div>
+    </a>
+    <a href="../nutrition/" class="nav-card">
+      <div class="label">Next Up</div>
+      <div class="title">Nutrition &amp; Hooves</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+</div>
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+</body>
+</html>

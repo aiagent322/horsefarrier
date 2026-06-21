@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<meta name="format-detection" content="telephone=no, address=no, date=no, email=no">
+<title>HorseFarrier.net — The Complete Hoof Care Resource</title>
+<meta name="description" content="Your complete horse hoof care resource — farrier tools guide, breed-specific hoof needs, nutrition for healthy hooves, hoof care basics, and FAQ. A Bridle & Bit Magazine public service.">
+<link rel="canonical" href="https://horsefarrier.net/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="HorseFarrier.net — The Complete Hoof Care Resource">
+<meta property="og:description" content="Hoof care basics, farrier tools, breed-specific needs, nutrition, and FAQ — everything horse owners need to know about farrier care.">
+<meta property="og:url" content="https://horsefarrier.net/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* MOBILE-FIRST — defaults target ~380px */
+:root{
+  --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
+
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{display:none}
+.topbar-tagline{display:none}
+.bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
+@media(min-width:600px){.bb-logo-link{display:flex}}
+
+/* HERO */
+.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 50%,#3A2010 100%);padding:30px max(16px,env(safe-area-inset-right)) 26px max(16px,env(safe-area-inset-left));text-align:center;position:relative;overflow:hidden}
+.hero-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.hero-icon{font-size:2.4rem;margin-bottom:10px;position:relative}
+.hero-title{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px;position:relative}
+.hero-title em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.7);font-size:0.9rem;max-width:560px;margin:0 auto;line-height:1.55;position:relative;overflow-wrap:break-word}
+
+/* STAT BAR */
+.stat-bar{background:var(--leather-dark);border-bottom:2px solid var(--rope);padding:10px max(16px,env(safe-area-inset-right));display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.stat-bar::-webkit-scrollbar{display:none}
+.stat-item{display:flex;flex-direction:column;align-items:center;padding:4px 18px;border-right:1px solid rgba(196,162,101,0.2);flex-shrink:0;min-width:80px}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--rope-light);line-height:1}
+.stat-label{font-size:0.68rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;white-space:nowrap}
+
+/* CARDS */
+.cards-wrap{max-width:1100px;margin:0 auto;padding:20px 12px 12px}
+.section-label{font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:12px;padding-left:2px}
+.cards-hero{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.cards-grid{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 18px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:var(--transition);position:relative;overflow:hidden;will-change:transform}
+.card:active{transform:scale(0.98);box-shadow:none}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:var(--radius-lg) 0 0 var(--radius-lg);transition:var(--transition)}
+.card-badge{display:inline-flex;align-items:center;align-self:flex-start;font-size:0.7rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:4px 11px;border-radius:14px;margin-bottom:10px;min-height:28px}
+.card-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px;transition:var(--transition);overflow-wrap:break-word;word-break:break-word}
+.card-hero .card-title{font-size:1.25rem}
+.card-desc{font-size:0.86rem;color:var(--ink-muted);line-height:1.55;flex:1;overflow-wrap:break-word}
+.card-hero .card-desc{font-size:0.9rem}
+.card-arrow{margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--leather);transition:var(--transition)}
+
+/* Card color themes */
+.card.c-basics::before{background:var(--leather)}
+.card.c-basics .card-badge{background:var(--rope-pale);color:var(--leather-dark);border:1px solid var(--border-strong)}
+.card.c-tools::before{background:var(--steel)}
+.card.c-tools .card-badge{background:var(--steel-light);color:var(--steel);border:1px solid rgba(26,111,163,0.2)}
+.card.c-breeds::before{background:var(--sage)}
+.card.c-breeds .card-badge{background:var(--sage-light);color:var(--sage-dark);border:1px solid rgba(74,114,57,0.2)}
+.card.c-nutrition::before{background:var(--gold)}
+.card.c-nutrition .card-badge{background:#FFF8E6;color:#8B6914;border:1px solid rgba(139,105,20,0.2)}
+.card.c-faq::before{background:var(--rust)}
+.card.c-faq .card-badge{background:var(--rust-light);color:var(--rust);border:1px solid rgba(184,81,42,0.2)}
+
+/* INTRO STRIP */
+.intro-strip{background:var(--sand);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:20px max(16px,env(safe-area-inset-right))}
+.intro-inner{max-width:760px;margin:0 auto;text-align:center}
+.intro-inner h2{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.intro-inner p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65}
+
+/* QUICK TIPS */
+.tips-strip{max-width:1100px;margin:0 auto 8px;padding:0 12px}
+.tips-grid{display:grid;grid-template-columns:1fr;gap:10px}
+.tip-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.tip-icon{font-size:1.5rem;flex-shrink:0;line-height:1}
+.tip-body{}
+.tip-title{font-weight:700;font-size:0.88rem;color:var(--ink);margin-bottom:3px}
+.tip-text{font-size:0.82rem;color:var(--ink-muted);line-height:1.5}
+
+/* CTA */
+.cta-strip{max-width:1100px;margin:20px auto 30px;padding:0 12px}
+.cta-box{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:24px 20px;text-align:center}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin-bottom:8px}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:0.86rem;margin-bottom:16px;max-width:440px;margin-left:auto;margin-right:auto;overflow-wrap:break-word}
+.cta-btns{display:flex;flex-direction:column;gap:10px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;background:var(--rope);color:var(--leather-deeper);text-decoration:none;border-radius:25px;font-weight:700;font-size:0.88rem;transition:var(--transition);min-height:var(--tap)}
+.cta-btn.secondary{background:rgba(255,255,255,0.1);color:var(--rope-light);border:1px solid rgba(196,162,101,0.3)}
+
+/* FOOTER */
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-items:center;padding:6px 4px;min-height:44px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:12px 0}
+
+/* HOVER */
+@media(hover:hover){
+  .card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--border-strong)}
+  .card:hover .card-title{color:var(--leather-dark)}
+  .card:hover .card-arrow{transform:translateX(4px);color:var(--leather-dark)}
+  .cta-btn:hover{background:var(--rope-light);transform:translateY(-1px)}
+  .cta-btn.secondary:hover{background:rgba(255,255,255,0.18)}
+  footer a:hover{text-decoration:underline}
+}
+
+/* TABLET 600px+ */
+@media(min-width:600px){
+  .topbar{padding:14px 20px}
+  .topbar-logo{font-size:1.35rem}
+  .topbar-divider{display:block;width:1px;height:32px;background:rgba(255,255,255,0.2)}
+  .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
+  .hero-banner{padding:44px 24px 40px}
+  .hero-icon{font-size:3rem}
+  .hero-title{font-size:2.3rem;margin-bottom:12px}
+  .hero-sub{font-size:0.96rem}
+  .cards-wrap{padding:32px 16px 20px}
+  .cards-hero{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:20px}
+  .cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:40px}
+  .card{padding:26px 22px}
+  .card-title{font-size:1.1rem}
+  .card-hero .card-title{font-size:1.3rem}
+  .tips-grid{grid-template-columns:repeat(2,1fr)}
+  .cta-strip{margin:20px auto 40px;padding:0 16px}
+  .cta-box{padding:32px}
+  .cta-box h3{font-size:1.3rem}
+  .cta-btns{flex-direction:row;justify-content:center;gap:12px;flex-wrap:wrap}
+  footer{padding:32px 20px calc(32px + env(safe-area-inset-bottom));font-size:0.82rem}
+  .intro-strip{padding:28px 24px}
+  .intro-inner h2{font-size:1.4rem}
+  .intro-inner p{font-size:0.92rem}
+}
+
+/* DESKTOP 1024px+ */
+@media(min-width:1024px){
+  .hero-banner{padding:52px 24px 48px}
+  .hero-title{font-size:clamp(2rem,6vw,3.2rem);line-height:1.05}
+  .cards-wrap{padding:36px 16px 20px}
+  .cards-grid{grid-template-columns:repeat(3,1fr)}
+  .tips-grid{grid-template-columns:repeat(4,1fr)}
+  .tips-strip{padding:0 16px}
+}
+
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"HorseFarrier.net",
+  "url":"https://horsefarrier.net",
+  "description":"The complete horse hoof care and farrier resource — hoof care basics, farrier tools, breed-specific needs, nutrition, and FAQ.",
+  "publisher":{
+    "@type":"Organization",
+    "name":"Bridle & Bit Magazine",
+    "url":"https://www.bridleandbit.com"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+    <div class="topbar-brand">
+      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-tagline">
+        The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a>
+      </div>
+    </div>
+  </div>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+  </a>
+</header>
+
+<div class="hero-banner">
+  <div class="hero-icon">🐴</div>
+  <h1 class="hero-title">The Complete <em>Hoof Care</em> Resource</h1>
+  <p class="hero-sub">Everything horse owners need to know about farrier care — from basic hoof anatomy to breed-specific needs, tools, nutrition, and the most common questions answered.</p>
+</div>
+
+<div class="stat-bar" role="region" aria-label="Site highlights">
+  <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Resource Guides</div></div>
+  <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Breed Profiles</div></div>
+  <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">FAQ Answered</div></div>
+  <div class="stat-item"><div class="stat-num">20+</div><div class="stat-label">Farrier Tools</div></div>
+  <div class="stat-item"><div class="stat-num">Free</div><div class="stat-label">Always</div></div>
+</div>
+
+<div class="intro-strip">
+  <div class="intro-inner">
+    <h2>Why Hoof Care Matters</h2>
+    <p>"No hoof, no horse" is the oldest truth in horsemanship. Proper farrier care — on the right schedule, with the right tools, tailored to your horse's breed and diet — is the foundation of soundness, performance, and a long working life. This site is your free, no-fluff guide to getting it right.</p>
+  </div>
+</div>
+
+<div class="cards-wrap" id="main-content" role="main">
+  <div class="section-label">Core Resources</div>
+  <div class="cards-hero">
+    <a href="hoof-care/index.html" class="card card-hero c-basics">
+      <div class="card-badge">🪄 Start Here</div>
+      <div class="card-title">Hoof Care Basics</div>
+      <div class="card-desc">Hoof anatomy, trimming schedules, cleaning routines, signs of trouble, and how to build a productive relationship with your farrier. The essential foundation every horse owner needs.</div>
+      <div class="card-arrow">Learn the Basics →</div>
+    </a>
+    <a href="farrier-tools/index.html" class="card card-hero c-tools">
+      <div class="card-badge">🔧 Tools Guide</div>
+      <div class="card-title">Farrier Tools Guide</div>
+      <div class="card-desc">From hoof picks to forge equipment — what every farrier tool does, when it's used, and what horse owners should keep on hand between visits. Illustrated descriptions of 20+ tools.</div>
+      <div class="card-arrow">Explore the Tools →</div>
+    </a>
+  </div>
+
+  <div class="cards-grid">
+    <a href="breed-hooves/index.html" class="card c-breeds">
+      <div class="card-badge">🐎 By Breed</div>
+      <div class="card-title">Breed-Specific Hoof Needs</div>
+      <div class="card-desc">Quarter Horses, Thoroughbreds, Arabians, Draft breeds, and 25+ more — each breed has unique hoof characteristics that affect trimming intervals, shoe selection, and common problems.</div>
+      <div class="card-arrow">Find Your Breed →</div>
+    </a>
+    <a href="nutrition/index.html" class="card c-nutrition">
+      <div class="card-badge">🌾 Nutrition</div>
+      <div class="card-title">Horse Nutrition & Hooves</div>
+      <div class="card-desc">Biotin, zinc, methionine, and the right forage — what your horse eats directly determines hoof quality. Learn which supplements actually work and which are marketing fluff.</div>
+      <div class="card-arrow">Nutrition for Hooves →</div>
+    </a>
+    <a href="faq/index.html" class="card c-faq">
+      <div class="card-badge">❓ FAQ</div>
+      <div class="card-title">Frequently Asked Questions</div>
+      <div class="card-desc">How often should my horse be shod? What's the difference between a trim and a shoe? Can I do it myself? Answers to 50+ questions from horse owners just like you.</div>
+      <div class="card-arrow">Read the FAQ →</div>
+    </a>
+  </div>
+
+  <div class="section-label">Quick Tips</div>
+  <div class="tips-strip">
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">📅</div>
+        <div class="tip-body">
+          <div class="tip-title">Trim Every 6–8 Weeks</div>
+          <div class="tip-text">Most horses need farrier attention every 6 to 8 weeks, whether shod or barefoot. Longer intervals cause imbalance and long-term joint stress.</div>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🧹</div>
+        <div class="tip-body">
+          <div class="tip-title">Pick Hooves Daily</div>
+          <div class="tip-text">Daily hoof picking removes packed dirt, manure, and debris that cause thrush, white line disease, and abscesses. Two minutes a day prevents weeks of lameness.</div>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">💧</div>
+        <div class="tip-body">
+          <div class="tip-title">Watch Moisture Balance</div>
+          <div class="tip-text">Hooves that cycle between wet and dry crack and chip. Consistent footing, proper drainage, and hoof conditioner applied to the coronary band make a real difference.</div>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🌿</div>
+        <div class="tip-body">
+          <div class="tip-title">Biotin Takes Time</div>
+          <div class="tip-text">Hoof supplements like biotin show results in 9–12 months — the time it takes a full hoof to grow out. Start early, be consistent, and don't expect overnight miracles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-strip">
+  <div class="cta-box">
+    <h3>Part of the Bridle &amp; Bit Network</h3>
+    <p>HorseFarrier.net is a free public resource from Bridle &amp; Bit Magazine — Arizona's premier equestrian publication since 1978. Explore our full network of horse care, training, and industry resources.</p>
+    <div class="cta-btns">
+      <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" class="cta-btn">Visit Bridle &amp; Bit Magazine</a>
+      <a href="https://reininghorses.ai" target="_blank" rel="noopener" class="cta-btn secondary">ReiningHorses.ai</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div style="margin-bottom:10px;">The Complete Hoof Care Resource</div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="hoof-care/index.html">Hoof Care Basics</a>
+    <a href="farrier-tools/index.html">Farrier Tools</a>
+    <a href="breed-hooves/index.html">Breed Hoof Needs</a>
+    <a href="nutrition/index.html">Nutrition & Hooves</a>
+    <a href="faq/index.html">FAQ</a>
+  </nav>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> — Arizona's premier equestrian publication since 1978.</div>
+  <div style="margin-top:8px;color:rgba(255,255,255,0.35);font-size:0.75rem;">&copy; 2026 HorseFarrier.net. All rights reserved.</div>
+</footer>
+</body>
+</html>

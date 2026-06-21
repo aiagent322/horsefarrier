@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Hoof Care Basics — HorseFarrier.net</title>
+<meta name="description" content="Complete guide to horse hoof care — anatomy, trimming schedules, daily cleaning, warning signs, and working with your farrier. Free resource from HorseFarrier.net.">
+<link rel="canonical" href="https://horsefarrier.net/hoof-care/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
+@media(min-width:600px){.bb-logo-link{display:flex}}
+
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+
+.content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+
+.toc{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:32px}
+.toc-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:10px}
+.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.toc a{color:var(--leather);text-decoration:none;font-size:0.88rem;font-weight:600;display:inline-flex;align-items:center;min-height:36px}
+.toc a:hover{text-decoration:underline}
+
+.section{margin-bottom:36px}
+.section h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.section h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--leather-dark);margin:18px 0 8px}
+.section p{font-size:0.93rem;color:var(--ink-soft);margin-bottom:12px;line-height:1.7}
+.section ul,.section ol{padding-left:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
+.section li{font-size:0.93rem;color:var(--ink-soft);line-height:1.6}
+.section strong{color:var(--ink);font-weight:700}
+
+.callout{background:var(--rust-light);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:16px 0}
+.callout.sage{background:var(--sage-light);border-color:var(--sage)}
+.callout.gold{background:#FFF8E6;border-color:var(--gold)}
+.callout-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--rust);margin-bottom:4px}
+.callout.sage .callout-title{color:var(--sage-dark)}
+.callout.gold .callout-title{color:#8B6914}
+.callout p{font-size:0.88rem;color:var(--ink-soft);margin:0;line-height:1.6}
+
+.anatomy-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0}
+.anatomy-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.anatomy-item .name{font-weight:700;font-size:0.9rem;color:var(--leather-dark);margin-bottom:4px}
+.anatomy-item .desc{font-size:0.84rem;color:var(--ink-muted);line-height:1.55}
+
+.schedule-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem}
+.schedule-table th{background:var(--leather-deeper);color:var(--cream);padding:10px 12px;text-align:left;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em}
+.schedule-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.schedule-table tr:nth-child(even) td{background:var(--sand)}
+
+.warning-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0}
+.warning-item{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;padding:12px 14px}
+.warning-item .w-title{font-weight:700;font-size:0.88rem;color:var(--rust);margin-bottom:3px}
+.warning-item .w-desc{font-size:0.83rem;color:var(--ink-muted);line-height:1.5}
+
+.nav-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+
+@media(min-width:600px){
+  .topbar{padding:14px 20px}
+  .topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}
+  .page-hero h1{font-size:2.1rem}
+  .page-hero p{font-size:0.94rem}
+  .content-wrap{padding:32px 24px 56px}
+  .anatomy-grid{grid-template-columns:repeat(2,1fr)}
+  .warning-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:900px){
+  .anatomy-grid{grid-template-columns:repeat(3,1fr)}
+}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Hoof Care Basics","description":"Complete guide to horse hoof care basics including anatomy, trimming schedules, daily cleaning routines, warning signs, and working with your farrier.","url":"https://horsefarrier.net/hoof-care/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Hoof Care Basics</div>
+  <h1>Hoof Care <em>Basics</em></h1>
+  <p>Anatomy, trimming schedules, daily routines, warning signs, and everything you need to know to work effectively with your farrier.</p>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+  <nav class="toc" aria-label="Page contents">
+    <div class="toc-title">On This Page</div>
+    <ol>
+      <li><a href="#anatomy">Hoof Anatomy</a></li>
+      <li><a href="#schedule">Trimming & Shoeing Schedule</a></li>
+      <li><a href="#daily">Daily Hoof Care Routine</a></li>
+      <li><a href="#warning">Warning Signs to Watch For</a></li>
+      <li><a href="#farrier">Working With Your Farrier</a></li>
+    </ol>
+  </nav>
+
+  <section class="section" id="anatomy">
+    <h2>Hoof Anatomy</h2>
+    <p>Understanding what's inside the hoof capsule helps you spot problems early and communicate clearly with your farrier. The horse's hoof is a marvel of engineering — designed to absorb shock, pump blood, and bear weight across a wide range of terrain.</p>
+    <div class="anatomy-grid">
+      <div class="anatomy-item"><div class="name">Hoof Wall</div><div class="desc">The hard outer shell made of keratin — the same protein as human fingernails. Grows continuously from the coronary band downward at roughly 3/8" per month.</div></div>
+      <div class="anatomy-item"><div class="name">Sole</div><div class="desc">The slightly concave bottom surface of the hoof. Protects internal structures from ground contact. Should not bear significant weight — the wall bears the load.</div></div>
+      <div class="anatomy-item"><div class="name">Frog</div><div class="desc">The V-shaped rubbery structure in the center of the sole. Acts as a shock absorber and traction device. Must contact the ground to function properly.</div></div>
+      <div class="anatomy-item"><div class="name">White Line</div><div class="desc">The junction between the hoof wall and sole. A critical shoeing landmark — nails are driven just outside it. Separation here signals "white line disease."</div></div>
+      <div class="anatomy-item"><div class="name">Coronary Band</div><div class="desc">The soft band at the top of the hoof wall where new hoof grows. Injuries here can permanently alter hoof growth. Keep it clean and supple.</div></div>
+      <div class="anatomy-item"><div class="name">Digital Cushion</div><div class="desc">A fibrocartilaginous pad in the heel that absorbs concussion. Develops with movement — horses kept on soft ground may have underdeveloped cushions.</div></div>
+      <div class="anatomy-item"><div class="name">Coffin Bone</div><div class="desc">The main bone inside the hoof capsule (also called P3 or the distal phalanx). In laminitis, this bone can rotate or sink — a life-threatening emergency.</div></div>
+      <div class="anatomy-item"><div class="name">Navicular Bone</div><div class="desc">A small boat-shaped bone in the heel area. Navicular syndrome — inflammation and degeneration here — is a leading cause of front-end lameness.</div></div>
+      <div class="anatomy-item"><div class="name">Laminae</div><div class="desc">Interlocking leaf-like structures that bond the coffin bone to the hoof wall. Sensitive laminae contain blood vessels and nerves. Insensitive laminae form the inner hoof wall.</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="schedule">
+    <h2>Trimming &amp; Shoeing Schedule</h2>
+    <p>The single most common farrier mistake horse owners make is waiting too long between appointments. Hooves grow continuously — neglect creates imbalances that stress tendons, joints, and bones far faster than most people realize.</p>
+
+    <div class="callout gold">
+      <div class="callout-title">The Golden Rule</div>
+      <p>Most horses need farrier attention every <strong>6 to 8 weeks</strong>, year-round — not just in the riding season. Hooves don't stop growing in winter.</p>
+    </div>
+
+    <table class="schedule-table">
+      <thead><tr><th>Horse Type</th><th>Recommended Interval</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Barefoot horses on soft ground</td><td>6–8 weeks</td><td>May need more frequent attention if hooves chip or flare</td></tr>
+        <tr><td>Barefoot horses on hard/rocky ground</td><td>8–10 weeks</td><td>Natural wear may extend interval; monitor closely</td></tr>
+        <tr><td>Shod horses (light work)</td><td>6–8 weeks</td><td>Shoes loosen and hoof grows past the shoe edge quickly</td></tr>
+        <tr><td>Shod horses (heavy work)</td><td>5–6 weeks</td><td>Performance horses need tighter intervals for balance</td></tr>
+        <tr><td>Young horses (under 2)</td><td>4–6 weeks</td><td>Frequent early trims correct developmental problems</td></tr>
+        <tr><td>Senior horses</td><td>6–8 weeks</td><td>Older horses often have slower growth but more complex needs</td></tr>
+        <tr><td>Laminitis rehab</td><td>4–6 weeks or more</td><td>Work closely with your vet and farrier — case by case</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Barefoot vs. Shod</h3>
+    <p>The barefoot vs. shoes debate is not one-size-fits-all. Horses with naturally hard, well-shaped hooves doing light work on soft ground often do beautifully barefoot. Horses in heavy work, with conformational challenges, or on hard surfaces frequently benefit from shoes. Your farrier's recommendation, backed by observation of your specific horse's hoof quality and work demands, matters more than any general philosophy.</p>
+  </section>
+
+  <section class="section" id="daily">
+    <h2>Daily Hoof Care Routine</h2>
+    <p>Daily hoof care takes less than five minutes per horse and prevents the majority of common hoof problems. Make it a non-negotiable part of your handling routine.</p>
+
+    <h3>Picking Hooves</h3>
+    <p>Pick all four hooves every day — before and after riding. Work from heel to toe with a hoof pick, clearing packed dirt, manure, rocks, and debris from the frog and sulci (the grooves alongside the frog). Pay attention to what you're finding: excessive moisture, black discharge, or a foul smell signals thrush.</p>
+
+    <h3>What to Look For Every Day</h3>
+    <ul>
+      <li><strong>Heat:</strong> Localized heat in a hoof compared to the others often signals inflammation, an abscess brewing, or early laminitis.</li>
+      <li><strong>Pulse:</strong> An abnormally strong digital pulse (felt at the back of the fetlock) accompanies many hoof problems, especially laminitis.</li>
+      <li><strong>Cracks:</strong> Small superficial cracks are common; cracks that extend upward toward the coronary band or are deep enough to flex need farrier attention.</li>
+      <li><strong>Loose or thrown shoes:</strong> A partially loose shoe is a lameness emergency — it can torque the hoof and drive nails into sensitive tissue. Call your farrier same day.</li>
+      <li><strong>Discharge or odor:</strong> Black, foul-smelling material from the frog area is thrush. White, chalky material along the white line may indicate white line disease.</li>
+    </ul>
+
+    <h3>Hoof Conditioners and Dressings</h3>
+    <p>Use conditioners sparingly and strategically. A horse in a consistently dry environment may benefit from a water-based conditioner applied to the coronary band and hoof wall. A horse in consistently wet conditions generally needs no conditioner — and heavy dressings can actually trap moisture and soften the hoof wall excessively. When in doubt, ask your farrier for a product recommendation specific to your horse's hoof condition and environment.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">Pro Tip</div>
+      <p>The coronary band is where new hoof grows. Gentle daily massage of the coronary band with your fingers or a conditioning product promotes circulation and healthy hoof growth.</p>
+    </div>
+  </section>
+
+  <section class="section" id="warning">
+    <h2>Warning Signs to Watch For</h2>
+    <p>Caught early, most hoof problems are manageable. Caught late, many become career-ending or life-threatening. Know these warning signs and act quickly.</p>
+    <div class="warning-grid">
+      <div class="warning-item"><div class="w-title">Laminitis</div><div class="w-desc">Leaning back on heels, reluctance to move, hot hooves, strong digital pulse, "sawhorse stance." A veterinary emergency. Do not wait.</div></div>
+      <div class="warning-item"><div class="w-title">Abscess</div><div class="w-desc">Sudden severe lameness (often appearing overnight), localized heat and pulse. Horse may be non-weight-bearing. Farrier or vet can locate and drain.</div></div>
+      <div class="warning-item"><div class="w-title">Thrush</div><div class="w-desc">Black, foul-smelling discharge from the frog and sulci. Caused by anaerobic bacteria in wet, dirty conditions. Treat with a topical thrush remedy and improve footing.</div></div>
+      <div class="warning-item"><div class="w-title">White Line Disease</div><div class="w-desc">Crumbling, chalky separation of the white line — often showing as a cavity when probed. Fungal and bacterial in origin. Requires farrier debridement.</div></div>
+      <div class="warning-item"><div class="w-title">Cracks</div><div class="w-desc">Toe cracks, quarter cracks, and heel cracks range from cosmetic to serious. Any crack that bleeds, extends to the coronary band, or causes lameness needs immediate attention.</div></div>
+      <div class="warning-item"><div class="w-title">Contracted Heels</div><div class="w-desc">Heels pinching inward, frog appearing narrow and deep-seated. Often from long-toe/low-heel syndrome or lack of movement. Corrective trimming over time can restore normal shape.</div></div>
+    </div>
+    <div class="callout">
+      <div class="callout-title">When to Call the Vet vs. the Farrier</div>
+      <p>Sudden severe lameness, suspected laminitis, or puncture wounds to the hoof require a veterinarian first. For most other hoof issues — loose shoes, cracks, thrush, white line disease — your farrier is the first call. When in doubt, call both and let them coordinate.</p>
+    </div>
+  </section>
+
+  <section class="section" id="farrier">
+    <h2>Working With Your Farrier</h2>
+    <p>A good farrier relationship is built on communication, consistency, and mutual respect. Here's how to make the most of every visit.</p>
+
+    <h3>Before the Appointment</h3>
+    <ul>
+      <li>Have your horse caught, haltered, and in a clean, dry, well-lit area with level footing.</li>
+      <li>Pick hooves out before the farrier arrives — it's a basic courtesy and saves time.</li>
+      <li>Note any changes in soundness, footing, or work intensity since the last visit.</li>
+      <li>Have clean water and a safe tie spot ready. A distracted or poorly tied horse is a safety hazard.</li>
+    </ul>
+
+    <h3>During the Appointment</h3>
+    <ul>
+      <li>Stay present but don't hover. Your farrier needs to concentrate.</li>
+      <li>Keep dogs, children, and other horses out of the work area.</li>
+      <li>Ask questions between hooves, not mid-nail. Respect the work.</li>
+      <li>If your horse is difficult to handle, tell your farrier in advance — never surprise them.</li>
+    </ul>
+
+    <h3>What to Tell Your Farrier</h3>
+    <ul>
+      <li>Changes in work level or discipline (starting jumping, transitioning to trail work, etc.)</li>
+      <li>Any lameness or stiffness you've noticed</li>
+      <li>Changes in diet or supplements that might affect hoof quality</li>
+      <li>Footing changes at your facility (new gravel, wetter paddocks, etc.)</li>
+    </ul>
+
+    <div class="callout sage">
+      <div class="callout-title">Finding a Good Farrier</div>
+      <p>Look for certification through the American Farrier's Association (AFA) or the Guild of Professional Farriers. Ask your veterinarian for referrals — vets work with many farriers and know whose work holds up. A farrier who communicates clearly, shows up on schedule, and coordinates with your vet is worth keeping.</p>
+    </div>
+  </section>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="../farrier-tools/" class="nav-card">
+      <div class="label">Next Up</div>
+      <div class="title">Farrier Tools Guide</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="../breed-hooves/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Breed-Specific Hoof Needs</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+</body>
+</html>

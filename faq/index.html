@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Farrier FAQ — HorseFarrier.net</title>
+<meta name="description" content="50+ answers to the most common farrier and hoof care questions — shoeing schedules, barefoot vs. shod, costs, finding a farrier, laminitis, thrush, and more.">
+<link rel="canonical" href="https://horsefarrier.net/faq/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:none;align-items:center;flex-shrink:0}
+@media(min-width:600px){.bb-logo-link{display:flex}}
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,#6B2818 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+.faq-category{margin-bottom:36px}
+.faq-category h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--ink);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale);display:flex;align-items:center;gap:10px}
+.faq-category h2 .cat-icon{font-size:1.1rem}
+details{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);margin-bottom:8px;overflow:hidden;transition:var(--transition)}
+details[open]{border-color:var(--border-strong);box-shadow:var(--shadow-md)}
+summary{padding:16px 18px;font-weight:700;font-size:0.93rem;color:var(--ink);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;line-height:1.4}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:1.3rem;font-weight:300;color:var(--leather);flex-shrink:0;transition:var(--transition)}
+details[open] summary::after{content:'−'}
+details[open] summary{color:var(--leather-dark);border-bottom:1px solid var(--border)}
+.faq-answer{padding:14px 18px 18px;font-size:0.9rem;color:var(--ink-soft);line-height:1.7}
+.faq-answer p{margin-bottom:10px}
+.faq-answer p:last-child{margin-bottom:0}
+.faq-answer ul,.faq-answer ol{padding-left:18px;margin-bottom:10px;display:flex;flex-direction:column;gap:5px}
+.faq-answer li{font-size:0.9rem;line-height:1.6}
+.faq-answer strong{color:var(--ink);font-weight:700}
+.faq-answer .callout{background:var(--sand);border-left:3px solid var(--rope);padding:10px 14px;border-radius:0 var(--radius) var(--radius) 0;font-size:0.86rem;color:var(--ink-soft);margin-top:10px}
+.nav-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+@media(min-width:600px){
+  .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}.page-hero h1{font-size:2.1rem}
+  .content-wrap{padding:32px 24px 56px}
+  summary{font-size:0.96rem}
+}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"How often does my horse need a farrier?","acceptedAnswer":{"@type":"Answer","text":"Most horses need farrier attention every 6 to 8 weeks, whether barefoot or shod. Performance horses in heavy work often need 5 to 6 week intervals. Young horses under 2 may need visits every 4 to 6 weeks for developmental corrections."}},
+  {"@type":"Question","name":"What is the difference between a trim and a full shoe?","acceptedAnswer":{"@type":"Answer","text":"A trim removes excess hoof wall growth and balances the hoof — no metal shoe is applied. A full shoe involves trimming plus nailing a metal shoe to the hoof wall for protection and support. Barefoot horses receive trims only; shod horses receive trim plus shoes."}},
+  {"@type":"Question","name":"How do I know if my horse has thrush?","acceptedAnswer":{"@type":"Answer","text":"Thrush has a distinctive foul, rotten smell and produces black, tarry discharge from the frog and the sulci (grooves alongside the frog). In mild cases the horse may show no lameness; in severe cases thrush can invade sensitive tissue and cause significant pain."}}
+]}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</header>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / FAQ</div>
+  <h1>Farrier &amp; Hoof Care <em>FAQ</em></h1>
+  <p>Honest answers to the most common questions horse owners ask about hoof care, farrier schedules, shoeing, and common problems.</p>
+</div>
+<div class="content-wrap" id="main-content" role="main">
+
+  <div class="faq-category">
+    <h2><span class="cat-icon">📅</span> Schedules &amp; Frequency</h2>
+    <details>
+      <summary>How often does my horse need a farrier?</summary>
+      <div class="faq-answer"><p>Most horses need farrier attention every <strong>6 to 8 weeks</strong>, year-round. This applies whether the horse is barefoot or shod. Hooves grow continuously at roughly 3/8 inch per month and don't stop in winter.</p><p>Exceptions: Performance horses in heavy work often benefit from 5 to 6 week intervals. Young horses under age 2 may need visits every 4 to 6 weeks for developmental corrections. Horses rehabbing from laminitis may need even more frequent attention — your vet and farrier will set the schedule together.</p></div>
+    </details>
+    <details>
+      <summary>Can I go longer than 8 weeks to save money?</summary>
+      <div class="faq-answer"><p>Technically yes — many owners push to 10 or 12 weeks. The real cost is paid in hoof imbalance, which creates stress on tendons, joints, and bones that compounds over time. A horse that goes 12 weeks between farrier visits repeatedly is a horse that will cost significantly more in veterinary bills over its lifetime. The savings on a single farrier visit rarely survive the first lameness episode caused by long-overdue hooves.</p></div>
+    </details>
+    <details>
+      <summary>Do horses still need the farrier in winter?</summary>
+      <div class="faq-answer"><p>Yes. Hooves grow year-round, and imbalances accumulate regardless of season. Many horse owners maintain full-year schedules and simply remove shoes for the winter if the horse is on reduced work. Barefoot horses on winter turnover may grow slightly slower, but still need regular trimming. Horses kept shod through winter may need snowball pads to prevent dangerous snow packing in the shoe.</p></div>
+    </details>
+  </div>
+
+  <div class="faq-category">
+    <h2><span class="cat-icon">🔩</span> Barefoot vs. Shod</h2>
+    <details>
+      <summary>Does my horse need shoes?</summary>
+      <div class="faq-answer"><p>Not necessarily. Many horses do well barefoot their entire lives — particularly those with naturally hard hooves, doing light to moderate work on soft ground, and receiving proper diet and regular trimming. Shoes are generally indicated when:</p><ul><li>The horse is doing heavy work on hard, abrasive surfaces</li><li>The horse has thin soles that bruise easily</li><li>Therapeutic or corrective support is needed</li><li>The hoof is not wearing evenly and trimming alone can't compensate</li></ul><p>The barefoot vs. shoes question is best answered by your farrier after observing your horse's specific hoof quality, conformation, and work demands.</p></div>
+    </details>
+    <details>
+      <summary>Can I transition my shod horse to barefoot?</summary>
+      <div class="faq-answer"><p>Yes, but it takes time and shouldn't be rushed. When shoes are removed, horses that have been shod for years often have weakened frogs and underdeveloped digital cushions. Expect 6 to 12 months of gradual transition, starting with shorter work sessions on soft ground and building up. Hoof boots (Scoot Boots, Renegades, Cavallo) are valuable during transition for protecting tender soles.</p><div class="callout">Tip: The transition works best with a farrier who is knowledgeable about barefoot methodology — the trimming approach differs significantly from a standard shod trim.</div></div>
+    </details>
+    <details>
+      <summary>What types of shoes are there and what do they do?</summary>
+      <div class="faq-answer"><p>Common shoe types include:</p><ul><li><strong>Plain fullered shoe:</strong> The standard everyday shoe — a crease around the perimeter for nail placement and traction.</li><li><strong>Egg bar shoe:</strong> Extends behind the heel for support — used for navicular syndrome, low heels, and suspensory issues.</li><li><strong>Heart bar shoe:</strong> Has a bar that supports the frog — used in laminitis treatment.</li><li><strong>Sliding plate:</strong> Wide, smooth, long shoe used in reining — allows the sliding stop.</li><li><strong>Sport boots / glue-on shoes:</strong> Adhesive-applied shoes for horses with poor hoof wall quality that won't hold nails.</li><li><strong>Aluminum shoes:</strong> Lighter than steel — common in racehorses and some sport horse disciplines.</li></ul></div>
+    </details>
+  </div>
+
+  <div class="faq-category">
+    <h2><span class="cat-icon">⚠️</span> Common Problems</h2>
+    <details>
+      <summary>How do I know if my horse has thrush?</summary>
+      <div class="faq-answer"><p>Thrush has a distinctive <strong>foul, rotten smell</strong> — unmistakable once you've encountered it. It produces black, tarry discharge from the frog and the sulci (grooves alongside the frog). In mild cases the horse shows no lameness. In severe cases thrush can invade sensitive tissue and cause significant pain and lameness.</p><p>Thrush is caused by anaerobic bacteria that thrive in the absence of oxygen — packed, wet footing feeds it. Treatment: clean the hoof thoroughly, open up the sulci, apply a topical thrush treatment (copper sulfate, Thrush Buster, or diluted bleach), and improve footing conditions. Chronic thrush means the living conditions need to change, not just the hoof.</p></div>
+    </details>
+    <details>
+      <summary>What is white line disease and how is it treated?</summary>
+      <div class="faq-answer"><p>White line disease (also called seedy toe or onychomycosis) is a fungal and bacterial infection that invades the non-pigmented inner hoof wall — the white line. It appears as crumbling, chalky material or a hollow cavity when the sole is probed. It does not smell as strongly as thrush.</p><p>Treatment requires a farrier to debride (cut away) all infected material — which can sometimes mean removing large sections of the hoof wall. The exposed area is then treated with an antifungal product and allowed to grow out. Untreated white line disease can create enough separation to destabilize the coffin bone.</p></div>
+    </details>
+    <details>
+      <summary>My horse threw a shoe — what do I do?</summary>
+      <div class="faq-answer"><p>First, find the shoe if possible and check it for bent nails — you don't want the horse stepping on it. Then examine the bare hoof for any remaining nail stubs. If nails are protruding from the hoof, call your farrier immediately — this is a lameness and infection risk.</p><p>If the hoof looks clean: protect it with a hoof boot if the horse needs to move on hard ground, and call your farrier for a repair appointment. A horse going barefoot on one foot and shod on three has an uneven balance that strains the opposite limb — don't leave it long.</p></div>
+    </details>
+    <details>
+      <summary>What are the early signs of laminitis?</summary>
+      <div class="faq-answer"><p>Laminitis is a veterinary emergency. Early signs include:</p><ul><li>Reluctance to walk or move, especially on hard surfaces</li><li>Shifting weight — rocking back onto the heels ("sawhorse stance")</li><li>Increased warmth in the hooves compared to normal</li><li>Bounding digital pulse (felt at the back of the fetlock)</li><li>Pawing or lying down more than usual</li></ul><p>If you suspect laminitis: remove the horse from pasture immediately, call your veterinarian — not just your farrier — and restrict movement. Do not wait to see if it improves on its own. Early treatment dramatically improves outcomes.</p></div>
+    </details>
+    <details>
+      <summary>What causes hoof cracks and are they serious?</summary>
+      <div class="faq-answer"><p>Hoof cracks range from cosmetic to serious. Surface cracks that don't extend the full depth of the wall and don't reach the coronary band are usually cosmetic — caused by dry conditions or nutritional gaps — and close up with better care.</p><p>Serious cracks include:</p><ul><li><strong>Quarter cracks:</strong> Vertical cracks in the side wall — often caused by imbalance, conformation faults, or concussion. Can bleed and become infected.</li><li><strong>Toe cracks:</strong> Extending from the ground surface upward — common in long-toed horses. Become serious when they reach the coronary band.</li><li><strong>Heel cracks:</strong> Horizontal cracks at the heel — often related to contracted heels or poor hoof care.</li></ul><p>Any crack that bleeds, appears infected, extends to the coronary band, or causes lameness needs immediate farrier attention.</p></div>
+    </details>
+    <details>
+      <summary>What is an abscess and how is it treated?</summary>
+      <div class="faq-answer"><p>A hoof abscess is a localized pocket of infection — usually bacteria — between the sensitive and insensitive laminae. The horse often goes suddenly, severely lame (sometimes three-legged lame) with localized heat and a strong digital pulse. It can look alarming but is rarely life-threatening when treated promptly.</p><p>Treatment: A farrier or veterinarian locates the abscess (using hoof testers and a hoof knife), pares down to it, and drains it. Once drained, the lameness often improves dramatically within 24 hours. The area is then packed, wrapped, and kept clean until it closes. Soaking in warm Epsom salt water for 20 minutes prior to the farrier visit can help soften the hoof and encourage the abscess to "blow out."</p></div>
+    </details>
+  </div>
+
+  <div class="faq-category">
+    <h2><span class="cat-icon">💰</span> Costs &amp; Finding a Farrier</h2>
+    <details>
+      <summary>How much does a farrier cost?</summary>
+      <div class="faq-answer"><p>Costs vary significantly by region, discipline, and work required. Rough national ranges as of 2025–2026:</p><ul><li><strong>Barefoot trim:</strong> $35–$80</li><li><strong>Front shoes only:</strong> $80–$150</li><li><strong>Full set of four shoes:</strong> $120–$250+</li><li><strong>Corrective / therapeutic shoeing:</strong> $200–$450+</li></ul><p>Urban and suburban markets typically run higher. Farriers who hot shoe, do corrective work, or specialize in sport horses charge at the top of or above these ranges. A farrier who charges less than $50 for a full set of shoes is either very new, cutting corners, or both. Quality farrier work is worth paying for.</p></div>
+    </details>
+    <details>
+      <summary>How do I find a good farrier?</summary>
+      <div class="faq-answer"><p>The best referral sources, in order of reliability:</p><ul><li><strong>Your equine veterinarian:</strong> Vets work with every farrier in the area and see whose work holds up. Their referral carries real weight.</li><li><strong>Other horse owners you respect:</strong> Ask someone whose horses consistently look well-maintained.</li><li><strong>AFA (American Farrier's Association) directory:</strong> afa.net lists certified farriers by state. Certification indicates baseline knowledge and commitment to the trade.</li></ul><p>Green flags: shows up on time, communicates clearly, explains what he's doing and why, coordinates with your vet on problem cases, maintains clean equipment. Red flags: unreliable scheduling, dismisses your questions, discourages vet involvement.</p></div>
+    </details>
+    <details>
+      <summary>Should I tip my farrier?</summary>
+      <div class="faq-answer"><p>Tipping is not a standard expectation in the farrier industry the way it is in service industries. Most farriers set their prices to reflect the value of their work. That said, tipping for exceptional service, holidays, or difficult situations (a horse that was particularly hard to handle, an emergency same-day call) is always appreciated and not unusual. Cold drinks, a clean work area, and a well-behaved horse are worth more than any tip.</p></div>
+    </details>
+  </div>
+
+  <div class="faq-category">
+    <h2><span class="cat-icon">🐣</span> Young Horses</h2>
+    <details>
+      <summary>When should a foal first see a farrier?</summary>
+      <div class="faq-answer"><p>Ideally within the first few weeks of life — not for a full trim, but for an assessment and to begin desensitizing the foal to having its feet handled. Foals that are handled consistently from birth are dramatically easier to manage for their entire lives.</p><p>If the foal has conformational issues (toed-in, toed-out, knees that don't track straight), early intervention at 4 to 8 weeks can guide bone development while growth plates are still open. Once the foal is past 6 months, correction becomes more difficult. A farrier experienced with young stock is essential for developmental work.</p></div>
+    </details>
+    <details>
+      <summary>How do I teach my horse to stand for the farrier?</summary>
+      <div class="faq-answer"><p>Start with daily hoof handling from the ground — pick up each foot, hold it briefly, tap it gently, set it down. Build duration gradually. The goal is a horse that yields its foot easily, holds it up without pulling, and stays relaxed.</p><p>Key principles: reward relaxation, not the act of giving the foot. Don't release a foot the horse is fighting to pull away — hold until there's a moment of softness, then release. A horse that has never had its feet handled before its first farrier appointment is an unfair situation for everyone. Do the prep work.</p></div>
+    </details>
+  </div>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="../nutrition/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Nutrition &amp; Hooves</div>
+      <div class="arrow">← Explore</div>
+    </a>
+    <a href="../hoof-care/" class="nav-card">
+      <div class="label">Start Here</div>
+      <div class="title">Hoof Care Basics</div>
+      <div class="arrow">Read Guide →</div>
+    </a>
+  </nav>
+</div>
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+</body>
+</html>

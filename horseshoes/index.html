@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Types of Horseshoes & Therapeutic Shoeing — HorseFarrier.net</title>
+<meta name="description" content="Complete guide to horseshoe types — factory vs. custom, materials, disciplines, and a deep dive into therapeutic shoeing for laminitis, navicular, tendon injuries, and more.">
+<link rel="canonical" href="https://horsefarrier.net/horseshoes/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:none;align-items:center;flex-shrink:0}
+@media(min-width:600px){.bb-logo-link{display:flex}}
+
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,#2C1A0A 50%,#1A3A2C 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px;position:relative}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:10px;position:relative}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.72);font-size:0.9rem;max-width:580px;margin:0 auto 14px;position:relative}
+.hero-tags{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;position:relative}
+.hero-tag{font-size:0.75rem;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);padding:4px 12px;border-radius:12px}
+
+.content-wrap{max-width:880px;margin:0 auto;padding:24px 16px 48px}
+
+/* TOC */
+.toc-box{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:36px}
+.toc-box h2{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--ink-muted);margin-bottom:12px}
+.toc-cols{display:grid;grid-template-columns:1fr;gap:4px}
+.toc-cols a{color:var(--leather);text-decoration:none;font-size:0.88rem;font-weight:600;display:flex;align-items:center;gap:8px;min-height:36px;padding:2px 0;border-bottom:1px solid var(--border);line-height:1.3}
+.toc-cols a:last-child{border-bottom:none}
+.toc-cols a:hover{text-decoration:underline}
+.toc-cols a .toc-num{font-size:0.72rem;font-weight:700;color:var(--ink-muted);min-width:20px}
+
+/* SECTIONS */
+.page-section{margin-bottom:48px}
+.section-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--rope-pale)}
+.section-icon{font-size:2rem;flex-shrink:0;line-height:1;margin-top:2px}
+.section-header-text h2{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--ink);line-height:1.1;margin-bottom:4px}
+.section-header-text p{font-size:0.86rem;color:var(--ink-muted);line-height:1.5}
+.prose{font-size:0.93rem;color:var(--ink-soft);line-height:1.75;margin-bottom:14px}
+.prose strong{color:var(--ink);font-weight:700}
+.prose a{color:var(--leather);text-decoration:underline}
+
+/* SUBSECTION */
+.subsection{margin-bottom:28px}
+.subsection h3{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--leather-dark);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.subsection h3 .sub-icon{font-size:1rem}
+
+/* SHOE CARDS */
+.shoe-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
+.shoe-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+.shoe-card:hover{box-shadow:var(--shadow-lg);border-color:var(--border-strong)}
+.shoe-card-head{padding:14px 18px 10px;display:flex;align-items:flex-start;gap:12px}
+.shoe-emoji{font-size:1.6rem;flex-shrink:0;line-height:1}
+.shoe-name-wrap{}
+.shoe-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:3px}
+.shoe-also{font-size:0.75rem;color:var(--ink-muted);font-style:italic}
+.shoe-tags{display:flex;flex-wrap:wrap;gap:4px;padding:0 18px 10px}
+.shoe-tag{font-size:0.67rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:2px 8px;border-radius:8px}
+.st-factory{background:var(--steel-light);color:var(--steel)}
+.st-custom{background:var(--rust-light);color:var(--rust)}
+.st-both{background:var(--rope-pale);color:var(--leather-dark)}
+.st-therapeutic{background:var(--sage-light);color:var(--sage-dark)}
+.st-performance{background:#EDE8FF;color:#5A3E9B}
+.st-material{background:#FFF8E6;color:#8B6914}
+.shoe-body{padding:0 18px 16px;font-size:0.87rem;color:var(--ink-muted);line-height:1.65}
+.shoe-body strong{color:var(--ink-soft);font-weight:700}
+.shoe-use{margin-top:8px;padding:8px 12px;background:var(--sand);border-radius:var(--radius);font-size:0.82rem;color:var(--ink-soft)}
+.shoe-use strong{color:var(--leather-dark);font-weight:700}
+
+/* COMPARE TABLE */
+.compare-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.86rem}
+.compare-table th{background:var(--leather-deeper);color:var(--cream);padding:10px 14px;text-align:left;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top;line-height:1.55}
+.compare-table tr:nth-child(even) td{background:var(--sand)}
+.compare-table td strong{color:var(--ink);font-weight:700}
+
+/* CALLOUTS */
+.callout{border-radius:var(--radius-lg);padding:16px 18px;margin:16px 0}
+.callout-leather{background:var(--rope-pale);border-left:4px solid var(--leather)}
+.callout-sage{background:var(--sage-light);border-left:4px solid var(--sage)}
+.callout-rust{background:var(--rust-light);border-left:4px solid var(--rust)}
+.callout-gold{background:#FFF8E6;border-left:4px solid var(--gold)}
+.callout-steel{background:var(--steel-light);border-left:4px solid var(--steel)}
+.callout-title{font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px}
+.callout-leather .callout-title{color:var(--leather-dark)}
+.callout-sage .callout-title{color:var(--sage-dark)}
+.callout-rust .callout-title{color:var(--rust)}
+.callout-gold .callout-title{color:#8B6914}
+.callout-steel .callout-title{color:var(--steel)}
+.callout p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65;margin:0}
+
+/* THERAPEUTIC CONDITION CARDS */
+.condition-grid{display:grid;grid-template-columns:1fr;gap:16px;margin:16px 0}
+.condition-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.condition-card-head{background:linear-gradient(135deg,var(--leather-deeper),var(--leather-dark));padding:14px 18px;display:flex;align-items:center;gap:10px}
+.condition-card-head .c-icon{font-size:1.4rem;flex-shrink:0}
+.condition-card-head h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--cream);line-height:1.2}
+.condition-card-head h3 small{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.72rem;font-weight:500;color:rgba(255,255,255,0.6);margin-top:2px}
+.condition-card-body{padding:16px 18px}
+.condition-card-body p{font-size:0.88rem;color:var(--ink-soft);line-height:1.68;margin-bottom:10px}
+.condition-card-body p:last-child{margin-bottom:0}
+.condition-card-body ul{padding-left:18px;display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+.condition-card-body li{font-size:0.87rem;color:var(--ink-soft);line-height:1.6}
+.condition-card-body strong{color:var(--ink);font-weight:700}
+.rx-label{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--sage-dark);background:var(--sage-light);padding:3px 9px;border-radius:8px;margin-bottom:6px}
+
+/* MANUFACTURER BRANDS */
+.brand-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0}
+.brand-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.brand-initial{width:42px;height:42px;border-radius:var(--radius);background:var(--leather-deeper);color:var(--rope-light);font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.brand-body{}
+.brand-name{font-weight:700;font-size:0.92rem;color:var(--ink);margin-bottom:3px}
+.brand-desc{font-size:0.83rem;color:var(--ink-muted);line-height:1.55}
+
+/* NAV */
+.nav-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+
+@media(min-width:600px){
+  .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
+  .page-hero{padding:42px 24px 38px}.page-hero h1{font-size:2.2rem}
+  .content-wrap{padding:32px 24px 56px}
+  .toc-cols{grid-template-columns:1fr 1fr}
+  .shoe-grid{grid-template-columns:repeat(2,1fr)}
+  .condition-grid{grid-template-columns:repeat(2,1fr)}
+  .brand-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:960px){
+  .shoe-grid{grid-template-columns:repeat(3,1fr)}
+  .brand-grid{grid-template-columns:repeat(3,1fr)}
+}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Types of Horseshoes & Therapeutic Shoeing — A Complete Guide","description":"Complete guide to factory and custom horseshoe types, materials, and therapeutic shoeing applications for laminitis, navicular, tendon injuries, and more.","url":"https://horsefarrier.net/horseshoes/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Horseshoe Types &amp; Therapeutic Shoeing</div>
+  <h1>Horseshoe Types &amp; <em>Therapeutic Shoeing</em></h1>
+  <p>From the factory floor to the farrier's forge — every type of shoe explained, plus a deep dive into therapeutic shoeing for laminitis, navicular, tendon injuries, and more.</p>
+  <div class="hero-tags">
+    <span class="hero-tag">🏭 Factory Shoes</span>
+    <span class="hero-tag">🔥 Custom Forged</span>
+    <span class="hero-tag">⚙️ Materials</span>
+    <span class="hero-tag">🏇 By Discipline</span>
+    <span class="hero-tag">🩺 Therapeutic</span>
+    <span class="hero-tag">💊 Condition-Specific</span>
+  </div>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+
+  <nav class="toc-box" aria-label="Page contents">
+    <h2>On This Page</h2>
+    <div class="toc-cols">
+      <a href="#factory-vs-custom"><span class="toc-num">01</span>Factory vs. Custom — What's the Difference?</a>
+      <a href="#materials"><span class="toc-num">02</span>Shoe Materials: Steel, Aluminum, Titanium &amp; More</a>
+      <a href="#factory-types"><span class="toc-num">03</span>Factory Shoe Types — Every Style Explained</a>
+      <a href="#custom-forged"><span class="toc-num">04</span>Custom Forged Shoes — What a Farrier Makes by Hand</a>
+      <a href="#by-discipline"><span class="toc-num">05</span>Shoeing by Discipline</a>
+      <a href="#major-brands"><span class="toc-num">06</span>Major Manufacturers &amp; Brands</a>
+      <a href="#therapeutic-intro"><span class="toc-num">07</span>Therapeutic Shoeing — Principles &amp; Goals</a>
+      <a href="#condition-specific"><span class="toc-num">08</span>Condition-Specific Therapeutic Approaches</a>
+      <a href="#vet-farrier"><span class="toc-num">09</span>The Vet–Farrier Partnership</a>
+    </div>
+  </nav>
+
+  <!-- 01 FACTORY VS CUSTOM -->
+  <div class="page-section" id="factory-vs-custom">
+    <div class="section-header">
+      <div class="section-icon">🏭</div>
+      <div class="section-header-text">
+        <h2>Factory vs. Custom — What's the Difference?</h2>
+        <p>Understanding where shoes come from, and why it matters to your horse</p>
+      </div>
+    </div>
+
+    <p class="prose">The overwhelming majority of horseshoes applied every day come from a factory — machines stamp them from steel or aluminum bar stock, punch the nail holes, and press the crease in a process that produces thousands of identical shoes per hour. These are pre-made, sized, and sold in boxes. A skilled farrier modifies them at the anvil before nailing — bending, shaping, adding clips or extensions — but the base shoe began its life on a production line.</p>
+
+    <p class="prose">Custom shoes are made from bar stock by the farrier at the forge, starting from nothing. Every dimension — width, thickness, length, branch width, toe shape, clip position, heel length — is determined by the farrier for that specific horse's hoof and clinical need. Custom work is slower, requires more equipment and skill, and costs more. It is also the only way to achieve certain therapeutic outcomes and the mark of the highest level of the trade.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr><th>Factor</th><th>Factory Shoe</th><th>Custom Forged</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Starting point</strong></td><td>Pre-made, stamped blank in standard sizes</td><td>Raw bar stock — steel, aluminum, or specialty metal</td></tr>
+        <tr><td><strong>Fit</strong></td><td>Good with modification; ideal for standard hooves</td><td>Exact — built for the individual hoof</td></tr>
+        <tr><td><strong>Time</strong></td><td>Faster — modification only</td><td>Slower — built from scratch</td></tr>
+        <tr><td><strong>Cost</strong></td><td>Lower material cost; passed on as standard shoeing price</td><td>Higher — premium charged for craft and time</td></tr>
+        <tr><td><strong>Best for</strong></td><td>Sound horses, routine maintenance, most discipline applications</td><td>Unusual hoof shapes, complex therapeutic needs, specialty disciplines</td></tr>
+        <tr><td><strong>Customization</strong></td><td>Limited — welding, bending, clip addition at the anvil</td><td>Unlimited — every dimension under the farrier's control</td></tr>
+        <tr><td><strong>Farrier skill required</strong></td><td>Journeyman level</td><td>Advanced — significant forge experience required</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-leather">
+      <div class="callout-title">The Reality in the Field</div>
+      <p>Most horses in most situations are well-served by quality factory shoes properly fitted and applied. The distinction matters most for horses with therapeutic needs, unusual conformations, or discipline-specific requirements where off-the-shelf solutions can't achieve the exact outcome needed. A farrier who can make his own shoes has options that a farrier who can only modify factory shoes doesn't.</p>
+    </div>
+  </div>
+
+  <!-- 02 MATERIALS -->
+  <div class="page-section" id="materials">
+    <div class="section-header">
+      <div class="section-icon">⚙️</div>
+      <div class="section-header-text">
+        <h2>Shoe Materials: Steel, Aluminum, Titanium &amp; More</h2>
+        <p>What shoes are made of determines weight, durability, traction, and therapeutic properties</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🔩</span> Mild Steel</h3>
+      <p class="prose">The standard material for the vast majority of horseshoes — both factory-made and hand-forged. Low-carbon mild steel is affordable, workable at forge temperatures, and durable enough for most applications. It welds well, holds clips, and accepts borium or road nail additions easily. Factory shoes are typically made from medium-carbon steel for slightly more hardness. A standard steel shoe on a performance horse lasts 6–8 weeks before the combination of hoof growth and shoe wear requires replacement.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🥈</span> Aluminum</h3>
+      <p class="prose">Aluminum shoes weigh approximately one-third as much as comparable steel shoes — a significant advantage in disciplines where limb weight affects performance. Racehorses have been shod in aluminum (called "plates") since the 19th century. Modern aluminum alloys are far stronger than early versions, but aluminum remains softer than steel and wears faster on hard surfaces. Used extensively in Thoroughbred racing, standardbred harness racing, and some sport horse disciplines.</p>
+      <p class="prose"><strong>Advantages:</strong> dramatically lighter (30–50g vs 150–200g for steel), reduces energy cost per stride, dissipates concussion differently than steel. <strong>Disadvantages:</strong> wears faster, more expensive per shoe, harder to nail (softer metal requires precision), not ideal for horses worked on pavement or hard terrain.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🔧</span> Titanium</h3>
+      <p class="prose">The premium material — titanium shoes offer the best strength-to-weight ratio of any horseshoe metal. Lighter than steel, stronger than aluminum, extraordinarily durable. A titanium shoe may last two or three reset cycles where a steel shoe would be worn through. The catch is cost: titanium shoes are expensive and difficult to work, requiring specialized equipment. Used primarily in elite sport horses where the investment is justified by the horse's value and the precision required.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🌿</span> Copper &amp; Brass Inserts / Alloys</h3>
+      <p class="prose">Some specialty shoes incorporate copper or brass inserts — not for structural reasons but because copper is thought to have antimicrobial properties that may reduce thrush in the frog area. Evidence is limited but the concept is sound: copper in contact with the moist frog environment may inhibit bacterial growth. These are niche products, more common in Europe than North America.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🧲</span> Polyurethane &amp; Composite Shoes</h3>
+      <p class="prose">Plastic and composite shoes — made from high-density polyurethane, fiberglass-reinforced polymers, or rubber compounds — have grown significantly in availability and quality. They offer exceptional shock absorption (plastic dissipates concussion dramatically better than metal), are lighter than steel, and are gentler on arena and barn floors. Applied with adhesive rather than nails in some systems, or nailed through metal inserts in others.</p>
+      <p class="prose">Brands like Sigafoos, Imprint, and Nanric's Ultimate Cuff have advanced composite shoeing significantly. Particularly valuable for horses with thin soles, high concussion sensitivity, or post-laminitic hooves where metal may conduct too much force to damaged laminae.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🦀</span> Magnesium Alloys</h3>
+      <p class="prose">Even lighter than aluminum, magnesium alloys are used in some ultra-lightweight racing plates. Extremely expensive, difficult to work, and not widely available — primarily a specialist racing application where every gram of limb weight saved translates to improved performance economics.</p>
+    </div>
+
+    <table class="compare-table">
+      <thead>
+        <tr><th>Material</th><th>Relative Weight</th><th>Durability</th><th>Cost</th><th>Best Application</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Mild Steel</strong></td><td>Heavy (baseline)</td><td>Excellent</td><td>$</td><td>Everyday work horses, drafts, most disciplines</td></tr>
+        <tr><td><strong>Aluminum</strong></td><td>Light (~⅓ steel)</td><td>Moderate — wears faster</td><td>$$</td><td>Racing, sport horses, performance where weight matters</td></tr>
+        <tr><td><strong>Titanium</strong></td><td>Light (~½ steel)</td><td>Exceptional</td><td>$$$$</td><td>Elite sport horses, horses needing maximum durability + low weight</td></tr>
+        <tr><td><strong>Polyurethane/Composite</strong></td><td>Very light</td><td>Variable</td><td>$$$</td><td>Thin soles, high concussion, post-laminitic horses, glue-on applications</td></tr>
+        <tr><td><strong>Magnesium Alloy</strong></td><td>Ultralight</td><td>Poor — specialist only</td><td>$$$$$</td><td>Elite sprint racing</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 03 FACTORY SHOE TYPES -->
+  <div class="page-section" id="factory-types">
+    <div class="section-header">
+      <div class="section-icon">🏭</div>
+      <div class="section-header-text">
+        <h2>Factory Shoe Types — Every Style Explained</h2>
+        <p>The complete catalog of production horseshoes and what each is designed to accomplish</p>
+      </div>
+    </div>
+
+    <div class="shoe-grid">
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🔘</div><div class="shoe-name-wrap"><div class="shoe-name">Plain Stamped Shoe</div><div class="shoe-also">Also: Keg Shoe, Stock Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-both">Universal</span></div>
+        <div class="shoe-body">The simplest and cheapest factory shoe — a flat bar of steel formed into a U, punched with nail holes, but with no fuller (crease). Rare today; mostly replaced by fullered shoes. Still used in some draft applications where simplicity and weight are priorities. The term "keg shoe" originally referred to shoes sold by the keg — a barrel of ready-made shoes that made the farrier's job faster.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Draft horses, some work horses, developing countries where fullered shoes are less available.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">⭕</div><div class="shoe-name-wrap"><div class="shoe-name">Fullered (Creased) Shoe</div><div class="shoe-also">Also: Grooved Shoe, Standard Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-both">Universal</span></div>
+        <div class="shoe-body">The overwhelmingly dominant shoe type — a groove (the fuller) pressed into the ground-facing surface around the perimeter. The fuller improves nail placement accuracy, provides ground traction, reduces shoe weight compared to a solid bar, and gives the shoe a consistent appearance. Available in hundreds of size and weight combinations. This is the shoe on the vast majority of horses in North America.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Standard shoeing on any horse in any discipline not requiring specialty shoes.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🥚</div><div class="shoe-name-wrap"><div class="shoe-name">Egg Bar Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-therapeutic">Therapeutic</span></div>
+        <div class="shoe-body">The branches extend behind the heels and connect in a curved bar, giving the shoe an egg-like oval shape. Extends the base of support behind the limb, unloads the dorsal laminae, reduces tension on the navicular apparatus and DDFT. Available in factory form from several manufacturers, or hand-forged for a custom fit.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Navicular syndrome, low-heel conformation, palmar foot pain, suspensory support.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">❤️</div><div class="shoe-name-wrap"><div class="shoe-name">Heart Bar Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-custom">Custom</span><span class="shoe-tag st-therapeutic">Therapeutic</span></div>
+        <div class="shoe-body">A bar shoe with a V-shaped or heart-shaped bar welded or forged to contact and load the frog. Transfers weight away from the wall and onto the frog — critical in laminitis where the lamellar bond is failing. The bar must contact the frog with precise, calibrated pressure. Requires radiographs for proper fitting. More often custom-made than factory-purchased due to the precision required.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Laminitis, coffin bone rotation, sole prolapse support.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">➖</div><div class="shoe-name-wrap"><div class="shoe-name">Straight Bar Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span><span class="shoe-tag st-therapeutic">Therapeutic</span></div>
+        <div class="shoe-body">A straight bar connects the two heel branches across the back of the shoe. Provides heel stability, prevents shoe shifting, and can be positioned to load the frog to varying degrees depending on placement. Less frog-loading than a heart bar. Used for sheared heels, quarter cracks (prevents the hoof from flexing across the crack), and heel support without the full palmar extension of an egg bar.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Quarter cracks, sheared heels, heel stability, some tendon support applications.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🏂</div><div class="shoe-name-wrap"><div class="shoe-name">Sliding Plate</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Wide, flat, elongated shoes with minimal toe and heel traction that allow the hind foot to slide freely on hard ground — the signature of reining horses. The sliding stop, where a horse plants its hind feet and slides 20–40 feet, is only possible with the right plate combination. Available in various widths, lengths, and branch sizes — reining horses are fitted individually based on their stopping style and conformation.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Reining, cutting (modified), ranch horse classes requiring sliding work.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🔲</div><div class="shoe-name-wrap"><div class="shoe-name">Racing Plate</div><div class="shoe-also">Also: Training Plate, Race Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-performance">Performance</span><span class="shoe-tag st-material">Aluminum</span></div>
+        <div class="shoe-body">Ultra-thin, lightweight aluminum shoes — some weighing under 60g — designed for Thoroughbred, Standardbred, and Quarter Horse racing. Sized precisely to the individual horse and changed at every shoeing cycle since they wear quickly. Farriers working at racetracks are highly specialized — they may shoe 20+ horses a day and must work with extreme speed and precision. Different plate styles for dirt vs. turf, sprint vs. route races.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> All forms of horse racing. Different track surfaces require different sole and heel configurations.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">⬆️</div><div class="shoe-name-wrap"><div class="shoe-name">Rim Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Has a raised rim on the ground surface that provides significantly enhanced traction — the hoof essentially grips the ground through the rim's edges. Standard in show jumping, eventing, and polo. The rim creates more grip than a fullered shoe without the bulk of studs. Available in steel and aluminum. The inside of the rim is recessed so the center of the shoe doesn't contact the ground, further concentrating force on the traction rim.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Jumping, eventing, polo, any discipline requiring reliable traction in varied conditions.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🔩</div><div class="shoe-name-wrap"><div class="shoe-name">Stud Shoe</div><div class="shoe-also">Also: Tapped Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Standard fullered or rim shoes with threaded holes (tapped holes) pre-drilled in the heel and/or toe areas to accept removable threaded studs. The farrier taps the holes; the rider inserts appropriate studs for each surface condition. Studs range from small road studs for wet grass to large mud studs for deep going. Used extensively in jumping and eventing where footing varies. Holes are plugged with cotton wool when studs aren't in use.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Show jumping, eventing, dressage on grass, polo — any discipline where traction requirements vary by event.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🎠</div><div class="shoe-name-wrap"><div class="shoe-name">Swedge Shoe</div><div class="shoe-also">Also: Creased Toe/Grooved Heel</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">A specialty shoe where the ground surface has a pronounced, deep groove (the swedge) pressed into it — more aggressive than a standard fuller. Common in working cow horses, ranch horses, and western performance where additional grip is needed without studs. The deep swedge bites into arena footing and provides consistent traction regardless of conditions.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Western performance, cow work, ranch horses, trail horses on soft terrain.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🐎</div><div class="shoe-name-wrap"><div class="shoe-name">Patten Shoe</div><div class="shoe-also">Also: Elevation Shoe, Patten Bar</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-custom">Custom</span><span class="shoe-tag st-therapeutic">Therapeutic</span></div>
+        <div class="shoe-body">A shoe raised dramatically off the ground at the heel — sometimes 1–2 inches — to severely unload the toe. Used in extreme laminitis cases where the coffin bone tip is penetrating or close to the sole, and the goal is to relieve all possible pressure from the dorsal structures. Requires significant custom fabrication and is part of intensive laminitis management protocols. The horse effectively walks on an elevated heel platform.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Severe laminitis with solar prolapse or imminent coffin bone penetration.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🔄</div><div class="shoe-name-wrap"><div class="shoe-name">Reverse Shoe</div><div class="shoe-also">Also: Backwards Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span><span class="shoe-tag st-therapeutic">Therapeutic</span></div>
+        <div class="shoe-body">A standard shoe applied with the toe branches pointing backward — the widest part of the shoe is now at the heel, and the shoe extends past the toe rather than the heel. Dramatically shifts the breakover point forward and the support platform backward. Used in severe laminitis management to simultaneously relieve toe pressure and extend heel support. A counterintuitive but effective therapeutic tool.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Severe laminitis, extreme low-heel/long-toe conformation correction.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">👟</div><div class="shoe-name-wrap"><div class="shoe-name">Glue-On Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span><span class="shoe-tag st-therapeutic">Therapeutic</span></div>
+        <div class="shoe-body">Applied entirely with polyurethane adhesive — no nails. The shoe has side tabs or a cuff that provides gluing surface area against the hoof wall. Essential when the hoof wall is too thin, damaged, or diseased to hold nails. Systems include the Dalric, Imprint, Easy Fit, and various others. Application requires dry conditions and proper surface preparation. Most last a full shoeing cycle; some need replacement sooner.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> White line disease, laminitis with wall separation, post-abscess wall damage, foals needing corrective extensions without nailing.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🦺</div><div class="shoe-name-wrap"><div class="shoe-name">Tennessee Walker Show Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">A heavy, long-toed shoe — often with a built-in wedge and combined with thick pads — designed to exaggerate the action and stride of Tennessee Walking Horses in the show ring. Controversial due to welfare concerns; the "soring" history of this discipline has led to regulatory oversight (the Horse Protection Act). Natural TWHs shown under pleasure rules use much more moderate shoeing or none at all.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Regulated Tennessee Walking Horse show performance only. Not appropriate for welfare-conscious horsekeeping.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🎶</div><div class="shoe-name-wrap"><div class="shoe-name">Gaited Horse Shoe</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">A range of specialty shoe configurations — including toed-in shoes, side-weighted shoes, and various weighted front shoes — designed to influence the gait timing and action of gaited breeds (Paso Fino, Peruvian Paso, Missouri Fox Trotter, Rocky Mountain Horse, etc.). The addition of toe weight slows breakover; side weights influence the direction of limb flight. Gaited horseshoeing is a specialized discipline within farriery.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Gaited breed show and performance horses where gait precision is required.</div>
+      </div>
+
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🧊</div><div class="shoe-name-wrap"><div class="shoe-name">Caulked Shoe</div><div class="shoe-also">Also: Calked Shoe, Road Calks</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span></div>
+        <div class="shoe-body">Shoes with permanently forged-in projections (calks or caulks) at the heels and/or toe for traction — as opposed to removable studs. Traditional on draft horses working on wet, slippery ground and on farm workhorses. The calks are part of the shoe itself — hardened and shaped during manufacture or forging. Toe calks risk the horse striking itself and are used carefully. Heel calks are more common and safer.</div>
+        <div class="shoe-use"><strong>Typical use:</strong> Draft horses on slippery terrain, working horses in wet environments, logging horses.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 04 CUSTOM FORGED -->
+  <div class="page-section" id="custom-forged">
+    <div class="section-header">
+      <div class="section-icon">🔥</div>
+      <div class="section-header-text">
+        <h2>Custom Forged Shoes — What a Farrier Makes by Hand</h2>
+        <p>When factory shoes reach their limit, the forge is where the real work begins</p>
+      </div>
+    </div>
+
+    <p class="prose">A farrier who can work a forge and anvil to create shoes from bar stock is operating at the highest level of the trade. The American Farrier's Association's Certified Journeyman Farrier (CJF) examination requires the candidate to hand-forge shoes to specification — because the ability to make any shoe needed for any situation is the mark of true mastery. Custom forging isn't just for unusual cases; it's the standard of excellence that separates journeyman farriers from craftsmen.</p>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">🔧</span> What a Farrier Can Create from Bar Stock</h3>
+      <p class="prose">Starting from straight bar stock — purchased in steel, aluminum, or specialty metals — a skilled farrier can produce:</p>
+      <ul style="padding-left:20px;margin:12px 0;display:flex;flex-direction:column;gap:8px;font-size:0.92rem;color:var(--ink-soft);line-height:1.65">
+        <li><strong>Any standard shoe type in any size:</strong> A custom-built fullered shoe for a draft horse with unusual hoof dimensions that no factory size fits properly.</li>
+        <li><strong>Modified toe shapes:</strong> Rolled, rockered, squared, pointed, or any combination — each changing how the hoof breaks over at the end of the stride.</li>
+        <li><strong>Clips:</strong> Clips are tabs of metal folded up from the shoe surface that fit against the hoof wall to prevent shoe shifting. Quarter clips (sides), toe clips (front), and heel clips can be added anywhere on a custom shoe. Factory shoes come with limited clip options; custom forging allows clips wherever the hoof needs them.</li>
+        <li><strong>Extensions and branches:</strong> A branch extended laterally beyond the hoof wall on one side — medial or lateral — to correct or support a limb deviation. The exact length and angle can only be determined at the forge.</li>
+        <li><strong>Combination bars:</strong> An egg bar fused to a heart bar, creating simultaneous palmar support and frog loading. Not available from any factory — only buildable by hand.</li>
+        <li><strong>Patten bars and elevation shoes:</strong> Any degree of heel elevation, built to the millimeter required by the horse's specific rotation angle as shown on radiograph.</li>
+        <li><strong>Racing plates to exact specification:</strong> Top-level racing plate farriers build custom plates sized and balanced for the individual horse's stride characteristics.</li>
+        <li><strong>Specialty therapeutic shapes:</strong> The Nanric Ultimate shoe, the Steward Clog, and other advanced therapeutic footwear are examples of farrier-designed shoes that began as custom forge work before becoming commercially produced.</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="sub-icon">⚒️</span> The Forge Process</h3>
+      <p class="prose">Bar stock is heated in a propane forge to working temperature — bright orange or yellow-orange, roughly 1,800–2,200°F. At this temperature, steel moves under the hammer like stiff clay. The farrier works quickly — a shoe cools to non-workable temperature in 30–60 seconds. Multiple heats are typically required: one to rough-shape the shoe, another to refine, another to add the fuller, another to punch nail holes. Each step requires the steel to return to the forge.</p>
+      <p class="prose">The anvil's different surfaces — the flat table, the rounded horn, the step, the hardy hole — each serve different shaping functions. A skilled farrier reads the glowing steel's color to judge temperature and acts precisely on each heat. The result is a shoe built exactly to the hoof in front of him — something no factory can replicate.</p>
+    </div>
+
+    <div class="callout callout-gold">
+      <div class="callout-title">🏆 AFA Journeyman Certification — The Forge Standard</div>
+      <p>The American Farrier's Association's Certified Journeyman Farrier (CJF) exam requires candidates to hand-forge a specific set of shoes to defined tolerances under time pressure, in addition to a shoeing practical and written examination. This ensures that certified journeyman farriers can produce custom work when the situation demands it — not just modify factory blanks. When choosing a farrier for a horse with complex needs, AFA CJF certification indicates this level of forge competency.</p>
+    </div>
+  </div>
+
+  <!-- 05 BY DISCIPLINE -->
+  <div class="page-section" id="by-discipline">
+    <div class="section-header">
+      <div class="section-icon">🏇</div>
+      <div class="section-header-text">
+        <h2>Shoeing by Discipline</h2>
+        <p>How the demands of different equestrian sports drive specific shoeing choices</p>
+      </div>
+    </div>
+
+    <div class="shoe-grid">
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🤠</div><div class="shoe-name-wrap"><div class="shoe-name">Reining</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Sliding plates on the hinds — wide, flat, smooth, and elongated — allow the sliding stop. The longer the plate's heel extension, the more slide potential. Front shoes are typically standard fullered shoes or may be aluminum for reduced weight. The farrier works closely with the trainer to dial in the exact plate configuration for that horse's stopping style, body type, and arena surface. Bell boots and protective boots are standard equipment to protect the front heels from overreaching sliders.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🐄</div><div class="shoe-name-wrap"><div class="shoe-name">Cutting &amp; Cow Horse</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Working cow horses need traction for quick direction changes and the ability to slide stops — a combination less extreme than pure reining. Modified sliding plates with slightly more toe grip, or standard shoes with a swedge, are common. Front shoes often have toe or quarter clips to prevent shifting during explosive cow work. Hind feet may carry shorter, lighter sliding plates than a reining horse since the work is less specialized.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🏊</div><div class="shoe-name-wrap"><div class="shoe-name">Show Jumping</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Traction is paramount — a horse that slips on takeoff or landing is a safety catastrophe. Rim shoes provide consistent grip; stud shoes allow fine-tuning traction to the day's footing. Heel studs are standard; toe studs are used more selectively as they can affect how the hoof breaks over. Some horses jump in simple fullered shoes with no studs on familiar good footing. Front shoe weight matters less than hind shoe traction.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🎪</div><div class="shoe-name-wrap"><div class="shoe-name">Eventing</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Three phases — dressage, cross-country, show jumping — with different traction requirements for each. Many eventers run in different shoe configurations for different phases, or in stud shoes that allow swapping studs. Cross-country on varied natural terrain needs maximum grip, particularly in wet conditions. Road studs for firmer going; longer, more aggressive studs for deep or muddy ground. Some horses jump cross-country barefoot on the fronts if their sole quality allows it.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🎼</div><div class="shoe-name-wrap"><div class="shoe-name">Dressage</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Arena footing and collection work means traction needs are moderate — rim shoes or standard shoes with occasional small studs are typical. Many dressage horses work on predictable indoor footing without any traction modifications. Front shoe weight affects collected movement — some trainers prefer aluminum fronts to reduce limb fatigue during extended work. Hoof balance precision matters enormously at the highest levels because judges evaluate every step.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🏁</div><div class="shoe-name-wrap"><div class="shoe-name">Thoroughbred Racing</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span><span class="shoe-tag st-material">Aluminum</span></div>
+        <div class="shoe-body">Weight minimization is everything — race plates may weigh 50–80g on the fronts. Aluminum alloy throughout. Turf shoes typically have toe grabs (a raised lip at the toe) for grip; dirt track shoes may have various heel and toe grab combinations. Track farriers are highly specialized — they may shoe 15–25 horses before morning training, working at speeds that would horrify a general farrier. Plates are replaced at every shoeing; resets are uncommon.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🎯</div><div class="shoe-name-wrap"><div class="shoe-name">Barrel Racing &amp; Rodeo</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
+        <div class="shoe-body">Quarter Horses running at speed and turning tight require traction without excessive grip that could torque a limb on turns. Fullered shoes, often with side clips to prevent shifting, are standard. Some barrel racers use borium on heel calks for grip on dirt. Roping horses need good overall traction and the durability to work on varied outdoor surfaces. Hind shoes on roping horses often carry quarter clips to prevent slipping when a steer is caught.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🏔️</div><div class="shoe-name-wrap"><div class="shoe-name">Trail &amp; Endurance</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span></div>
+        <div class="shoe-body">Durability and versatility across varied terrain — rocky, muddy, sandy, paved — are the priorities. Many endurance horses compete barefoot with hoof boots for technical terrain. Shod endurance horses often use steel shoes with borium tips on heels and toe for traction and durability on rock. Lighter aluminum shoes are used by some to reduce fatigue on long-distance rides. Hoof condition monitoring at vet checks makes good basic hoof care as important as shoe selection.</div>
+      </div>
+      <div class="shoe-card">
+        <div class="shoe-card-head"><div class="shoe-emoji">🚜</div><div class="shoe-name-wrap"><div class="shoe-name">Draft &amp; Work Horses</div></div></div>
+        <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span></div>
+        <div class="shoe-body">Heavy steel shoes — sometimes weighing 2–3 lbs each — are standard on drafts. Working farm horses on pavement get borium-tipped or calked shoes for grip. Show drafts wear polish and may have modified shoes for enhanced action. Draft farriery requires specialized equipment and physical strength — the horseshoes themselves are substantially larger and heavier than light horse shoes, and the horses are more difficult to hold up during work.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 MAJOR BRANDS -->
+  <div class="page-section" id="major-brands">
+    <div class="section-header">
+      <div class="section-icon">🏷️</div>
+      <div class="section-header-text">
+        <h2>Major Manufacturers &amp; Brands</h2>
+        <p>The companies that supply the shoes in most farriers' trucks</p>
+      </div>
+    </div>
+    <p class="prose">The horseshoe manufacturing market is dominated by a handful of companies that supply the global farriery trade. Most farriers develop brand loyalties based on the nail hole placement, steel quality, fuller consistency, and availability of specialty sizes. Some brands are better for hot-fitting; others are designed primarily for cold application.</p>
+
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-initial">M</div>
+        <div class="brand-body">
+          <div class="brand-name">Mustad / Diamond</div>
+          <div class="brand-desc">Norwegian-origin company, one of the oldest and largest horseshoe manufacturers globally. Mustad nails are the industry standard in North America. Their shoe lines span standard fullered shoes through therapeutic designs. Diamond brand (US) produces a wide range of keg and specialty shoes used extensively in the American market.</div>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-initial">C</div>
+        <div class="brand-body">
+          <div class="brand-name">Capewell</div>
+          <div class="brand-desc">One of the oldest American nail manufacturers, dating to the 19th century. Capewell nails and horseshoes are widely used across the US market. Known for consistent nail quality — critical for proper clinching.</div>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-initial">O</div>
+        <div class="brand-body">
+          <div class="brand-name">Kerckhaert</div>
+          <div class="brand-desc">Belgian manufacturer producing premium shoes used extensively in Europe and increasingly in North America. Known for quality steel, consistent fuller placement, and a comprehensive range including therapeutic designs. Widely used by sport horse farriers.</div>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-initial">N</div>
+        <div class="brand-body">
+          <div class="brand-name">Nanric / Gene Ovnicek</div>
+          <div class="brand-desc">Developed by farrier and researcher Gene Ovnicek, Nanric produces the "Ultimate" shoe system — a ground-surface-relief shoe based on wild horse hoof morphology research. A significant contribution to therapeutic shoeing methodology used worldwide.</div>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-initial">E</div>
+        <div class="brand-body">
+          <div class="brand-name">EasyCare / Scoot Boots</div>
+          <div class="brand-desc">The leading manufacturers of hoof boots — removable protective footwear for barefoot horses. EasyCare produces the Easyboot and Glove lines; Scoot Boots offers a streamlined slip-on design. Both have become standard tools for the barefoot horse community and transitioning horses.</div>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-initial">I</div>
+        <div class="brand-body">
+          <div class="brand-name">Imprint / Dalric</div>
+          <div class="brand-desc">Producers of glue-on shoe systems — composite and synthetic shoes applied with urethane adhesive rather than nails. Used in therapeutic applications where nailing is contraindicated. The Imprint system includes both a shoe and purpose-made adhesive. Dalric produces cuff-style glue-ons widely used in laminitis management.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 THERAPEUTIC INTRO -->
+  <div class="page-section" id="therapeutic-intro">
+    <div class="section-header">
+      <div class="section-icon">🩺</div>
+      <div class="section-header-text">
+        <h2>Therapeutic Shoeing — Principles &amp; Goals</h2>
+        <p>The science and philosophy behind using the shoe as a medical tool</p>
+      </div>
+    </div>
+
+    <p class="prose">Therapeutic shoeing is the use of specific shoe designs, materials, placements, pads, and modifications to manage or treat lameness conditions. It is not a substitute for veterinary diagnosis — it is a complement to it. The best therapeutic outcomes come from a precise diagnosis (which requires imaging, nerve blocks, and veterinary examination), followed by a collaborative plan between the veterinarian and farrier, executed by a farrier with both the mechanical skills and the anatomical knowledge to implement it correctly.</p>
+
+    <p class="prose">The fundamental tools of therapeutic shoeing manipulate five variables:</p>
+
+    <ul style="padding-left:20px;margin:12px 0 20px;display:flex;flex-direction:column;gap:10px;font-size:0.92rem;color:var(--ink-soft);line-height:1.7">
+      <li><strong>Breakover point:</strong> Where and how the hoof pivots at the end of the stride. Moving the breakover point palmarly (toward the heel) reduces DDFT tension and coffin joint stress. Achieved through rolled toes, squared toes, or set-back shoes.</li>
+      <li><strong>Heel height and angle:</strong> Raising or lowering the heel changes the angle of the coffin bone and the tension in the DDFT. Wedge pads, elevated heel shoes, or heel lowering through trimming all alter this variable.</li>
+      <li><strong>Base of support:</strong> The area of ground contact under the hoof. Extending the base palmarly (egg bars, bar shoes) provides support behind the limb and reduces load on the palmar structures. Reducing the base at the toe reduces leverage on the laminae.</li>
+      <li><strong>Load distribution:</strong> Where weight is borne — wall, frog, sole, or some combination. Heart bars load the frog; pour-in pads distribute load uniformly; full pads protect the sole; glue-on systems can unload the wall entirely.</li>
+      <li><strong>Concussion and vibration:</strong> What the shoe transmits to the hoof at impact. Steel transmits more concussion than aluminum; polyurethane absorbs significantly more. For conditions where impact force contributes to pain, material selection matters.</li>
+    </ul>
+
+    <div class="callout callout-steel">
+      <div class="callout-title">🔬 Imaging-Guided Therapeutic Shoeing</div>
+      <p>Modern therapeutic shoeing is increasingly guided by radiography and MRI. A farrier working with radiographs of a laminitic horse can measure the exact rotation angle, sole depth remaining, and coffin bone position to calculate precisely how much toe to remove, what heel elevation is needed, and where the breakover point must be. Without this data, therapeutic shoeing is educated guesswork. With it, it's precision medicine. If your horse has a serious lameness condition and your farrier has never asked to see radiographs, ask why.</p>
+    </div>
+  </div>
+
+  <!-- 08 CONDITION SPECIFIC -->
+  <div class="page-section" id="condition-specific">
+    <div class="section-header">
+      <div class="section-icon">💊</div>
+      <div class="section-header-text">
+        <h2>Condition-Specific Therapeutic Approaches</h2>
+        <p>A deep dive into how shoeing addresses the most common serious hoof and lameness conditions</p>
+      </div>
+    </div>
+
+    <div class="condition-grid">
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🔥</div>
+          <h3>Laminitis &amp; Founder<small>Inflammatory failure of the lamellar bond</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Therapeutic Shoeing</div>
+          <p>Laminitis management is the most complex area of therapeutic shoeing — and the one where farrier skill most directly affects survival and recovery. The objectives are: relieve pressure on the rotating toe, support the sinking coffin bone, provide frog and sole support, and reduce DDFT tension that pulls the coffin bone further into rotation.</p>
+          <p><strong>Acute phase (first 72 hours):</strong> The primary goal is simply removing the horse from any contributory cause (pasture, grain) and providing deep bedding that allows the horse to offload as it chooses. Some farriers apply frog support pads immediately; others prefer to wait for veterinary assessment and radiographs before intervening mechanically.</p>
+          <p><strong>Subacute and chronic management:</strong> Once radiographs establish rotation angle and sole depth, the farrier's plan becomes specific. Common approaches:</p>
+          <ul>
+            <li><strong>Heart bar shoes:</strong> Load the frog to transfer weight from the compromised wall laminae. Must be fitted precisely — pressure calibrated based on sole depth on radiograph.</li>
+            <li><strong>Reverse shoes:</strong> Extend support behind the limb while eliminating toe leverage. Counterintuitive but effective for moderate to severe rotation.</li>
+            <li><strong>Deep toe removal (dorsal wall resection):</strong> Removing the outer wall at the toe eliminates the mechanical leverage pulling the laminae apart. The exposed area is protected with pads and wraps while new wall grows.</li>
+            <li><strong>Wedge pad or elevated heel:</strong> Reduces DDFT tension by reducing the angle differential. The elevation needed is calculated from the rotation angle on radiograph.</li>
+            <li><strong>Pour-in pad:</strong> Provides uniform sole support, protecting the sole surface from ground contact as the coffin bone drops toward it.</li>
+            <li><strong>Glue-on systems:</strong> When wall quality fails — the common consequence of severe or repeated laminitis — glue-on shoes eliminate nailing and reduce wall stress entirely.</li>
+          </ul>
+          <p>Laminitis management is measured in months and years, not weeks. Repeated radiographs track progress. The farrier-vet relationship here is not optional — it is the treatment.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🦴</div>
+          <h3>Navicular Syndrome<small>Palmar foot pain — the leading cause of chronic front-end lameness</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Therapeutic Shoeing</div>
+          <p>Navicular syndrome is managed — rarely cured — through a combination of veterinary treatment (nerve blocks, bisphosphonates, corticosteroid injections) and corrective shoeing. The shoeing objectives are: reduce DDFT tension, extend the base of support palmarly, and ease breakover. These three goals address the mechanical contributors to pain even when the underlying pathology cannot be reversed.</p>
+          <p><strong>Egg bar shoes:</strong> The workhorse of navicular management. The extended heel bar moves the base of support behind the limb, reducing the loading on the navicular apparatus and providing a more comfortable landing. Many navicular horses show immediate comfort improvement when fitted with egg bars for the first time.</p>
+          <p><strong>Raised heels:</strong> Elevating the heel angle reduces the angle between the DDFT and navicular bone, reducing tension. Wedge pads of 2–6 degrees are commonly used, either inside the shoe or as a built-in wedge on some shoe types. This is a management tool — the underlying problem remains. Some horses require permanent heel elevation.</p>
+          <p><strong>Rolled or rockered toe:</strong> Shifting the breakover point rearward reduces the duration and force of DDFT loading at each stride. A simple and highly effective modification, often combined with egg bars.</p>
+          <p><strong>Wide web shoes:</strong> A wider shoe distributes load across a larger area of the hoof wall, reducing peak pressure at any point. Used when the palmar foot is painful to direct pressure.</p>
+          <p><strong>Pads and pour-ins:</strong> For horses with additional sole sensitivity or thin soles alongside navicular syndrome, pads protect the sole while the shoe addresses the mechanical issue above.</p>
+          <p>Long-term navicular management often requires the horse to be on a shorter trim cycle — 5–6 weeks — to prevent the heel from collapsing and the toe from growing long between visits, both of which worsen the condition.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🔗</div>
+          <h3>Tendon &amp; Ligament Injuries<small>DDFT tears, SDFT injuries, suspensory damage</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Therapeutic Shoeing</div>
+          <p>Tendon injuries are managed with shoeing changes that reduce the mechanical load through the injured structure during the healing period. The specific modification depends on which tendon or ligament is injured.</p>
+          <p><strong>Deep Digital Flexor Tendon (DDFT) tears:</strong> The DDFT is the primary focus of most therapeutic rear-of-foot shoeing. Elevating the heel reduces the angular load on the DDFT as the horse moves — typically achieved with wedge pads of 4–8 degrees or elevated heel shoes. Easing breakover reduces the peak DDFT loading at the push-off phase. Egg bars extend the base of support and further reduce DDFT load.</p>
+          <p><strong>Superficial Digital Flexor Tendon (SDFT) injuries:</strong> The classic "bowed tendon" injury. Like DDFT injuries, heel elevation reduces loading — but the degree of elevation appropriate for SDFT vs. DDFT injuries may differ. Veterinary-farrier collaboration guided by ultrasound imaging of the lesion is essential for appropriate management.</p>
+          <p><strong>Suspensory ligament injuries:</strong> The suspensory apparatus (proximal suspensory ligament and suspensory branches) is loaded at the moment the fetlock drops under weight. Shoeing modifications that raise the heels reduce fetlock drop and therefore reduce peak suspensory loading. This is a significant and often overlooked application of heel elevation.</p>
+          <p><strong>Check ligament (inferior and superior):</strong> Desmitis (inflammation/tearing) of the accessory ligaments is managed similarly to tendon injuries — reducing load through the affected structure while it heals. Specific elevation required varies by location and severity of lesion.</p>
+          <p>Throughout tendon and ligament rehab, shoeing changes should be monitored with repeat imaging at each farrier visit (or more frequently) to ensure the changes are producing the desired mechanical effect as the horse returns to work.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🧱</div>
+          <h3>Quarter Cracks<small>Vertical wall splits — a performance horse nemesis</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Therapeutic Shoeing</div>
+          <p>Quarter cracks are vertical splits in the hoof wall at the quarter — the side of the foot — that can extend from the ground up to (or down from) the coronary band. They cause lameness when the crack edges flex against each other during loading, pinching sensitive tissue and occasionally causing bleeding and infection.</p>
+          <p><strong>The goal of therapeutic shoeing is to immobilize the crack edges so they cannot flex against each other.</strong></p>
+          <p><strong>Bar shoe:</strong> A straight bar shoe prevents the heels from spreading and contracting with each step, reducing flex throughout the hoof wall including at the quarter crack. The most basic approach.</p>
+          <p><strong>Crack repair with wire or fiberglass:</strong> The crack is cleaned, debrided, and the edges are laced together with wire (stainless or copper) or bonded with fiberglass/acrylic. This mechanical immobilization prevents flex at the crack regardless of the shoe.</p>
+          <p><strong>Clips:</strong> A quarter clip on the affected side of the shoe, positioned near the crack, prevents the hoof from sliding away from the shoe during loading — a significant source of crack-flexing force. Clips are a simple and highly effective addition to quarter crack management.</p>
+          <p><strong>Correcting the underlying imbalance:</strong> Quarter cracks almost always have a biomechanical cause — uneven medial-lateral balance causing excessive loading on one quarter. Correcting the balance through trimming is as important as the crack repair itself. Without addressing the cause, cracks return.</p>
+          <p>Full resolution requires the crack to grow out from the coronary band to the ground surface — 9–12 months. The repair and supportive shoeing must be maintained throughout.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🦶</div>
+          <h3>White Line Disease &amp; Hoof Wall Resection<small>When the wall must be removed to heal</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Therapeutic Shoeing + Debridement</div>
+          <p>White line disease that has progressed into a significant cavity — or any condition requiring substantial removal of hoof wall — creates a shoeing challenge: the conventional nail placement zone may be compromised or absent.</p>
+          <p><strong>After wall resection,</strong> the exposed sensitive corium must be protected while new wall grows in from the coronary band. Simultaneously, the horse still needs foot support and may need to remain in work.</p>
+          <p><strong>Glue-on shoes:</strong> If the nail zone is compromised, glue-on systems allow shoe application without driving nails through weakened wall. The adhesive distributes load across the remaining sound wall and the shoe's cuff.</p>
+          <p><strong>Foot cast or hospital plate:</strong> For severe resections, a hospital plate shoe — a shoe with a removable sole plate — allows the farrier and vet to access and treat the exposed area at each dressing change while maintaining foot support between treatments.</p>
+          <p><strong>Fiberglass or acrylic patching:</strong> Once the infection is eliminated and the cavity is clean, the void can be filled with fiberglass-reinforced acrylic, rebuilding the missing wall artificially while the natural wall grows in from above.</p>
+          <p>Timeline for resolution depends on the extent of the resection — a large toe resection may take 12–18 months of careful management to fully resolve. The farrier visits the horse every 3–4 weeks during active management.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">📐</div>
+          <h3>Ringbone &amp; Joint Arthritis<small>Reducing range of motion and concussion through the affected joint</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Therapeutic Shoeing</div>
+          <p>Ringbone — bone proliferation around the pastern or coffin joint — causes pain through joint capsule distension and altered mechanics during movement. The shoeing objective is to reduce the forces acting through the affected joint.</p>
+          <p><strong>Rolled or rockered toe:</strong> Reducing the moment of force through the coffin joint at breakover significantly reduces pain in low ringbone cases. The hoof rolls forward rather than pivoting sharply, spreading the stress across a longer arc. Often one of the most effective modifications for coffin joint arthritis.</p>
+          <p><strong>Rocker shoe (full rocker):</strong> A shoe rocked from heel to toe — the entire shoe is curved so there is no flat section. The hoof rolls continuously in any direction with minimal joint stress. More extreme than a rolled toe and used for more advanced or bilateral joint disease.</p>
+          <p><strong>Wide web, full pads:</strong> Reducing concussion through the affected joint is a secondary but meaningful objective. Wide web shoes distribute ground impact; pads absorb it.</p>
+          <p><strong>Ankylosing for soundness:</strong> When high ringbone ankylosing (fusing) is anticipated — and fusion will eliminate joint-surface pain — the farrier's goal shifts to supporting the horse through the fusion process until the joint is stable. The rocker allows movement while reducing pain during this period.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🌀</div>
+          <h3>Sheared Heels &amp; Medial-Lateral Imbalance<small>When the heels move independently and the hoof shears</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Corrective Trimming + Shoeing</div>
+          <p>Sheared heels — where one heel is significantly higher than the other, causing them to shear past each other under loading — create intense local stress at the hoof quarters and are associated with quarter cracks, coronary band trauma, and heel pain.</p>
+          <p><strong>Trimming to address the imbalance:</strong> The primary treatment is trimming — bringing the medial and lateral walls to equal height so the heels land evenly and compress together rather than shearing. This is often a gradual process; aggressive immediate correction can cause lameness as tissues adjust to the new loading pattern.</p>
+          <p><strong>Bar shoe:</strong> A straight bar shoe connects the two heels rigidly, preventing shearing movement regardless of landing pattern. Provides immediate mechanical relief while the trimming correction takes effect over multiple shoeing cycles.</p>
+          <p><strong>Clips:</strong> Quarter clips on both sides of the shoe prevent the hoof from sliding across the shoe surface during loading — a source of shearing force. A simple and effective adjunct to bar shoeing.</p>
+          <p><strong>Wide web at the heel:</strong> A wider branch at the affected heel provides more bearing surface and reduces peak pressure at the damaged quarter.</p>
+        </div>
+      </div>
+
+      <div class="condition-card">
+        <div class="condition-card-head">
+          <div class="c-icon">🏋️</div>
+          <h3>Support Limb Laminitis Prevention<small>Protecting the good foot when the other is injured</small></h3>
+        </div>
+        <div class="condition-card-body">
+          <div class="rx-label">Rx: Preventive Therapeutic Shoeing</div>
+          <p>When a horse has a serious injury to one limb that causes it to bear the vast majority of its weight on the opposite leg, that "good" leg is at risk of developing support limb laminitis — one of the most catastrophic complications in equine medicine. Prevention is far more effective than treatment.</p>
+          <p><strong>Frog support pads:</strong> Applied to the support limb's shoe immediately when a serious contralateral injury is diagnosed. By loading the frog and distributing force away from the lamellar wall, frog pads reduce the peak lamellar stress that triggers inflammation.</p>
+          <p><strong>Deep bedding:</strong> Not a shoeing modification, but the most important environmental intervention. Deep shavings or sand allow the horse to shift and settle at will, distributing load constantly rather than bearing statically on one spot.</p>
+          <p><strong>Egg bar with frog support:</strong> Extending the base of support while simultaneously loading the frog — the combination of an egg bar and a frog support pad — provides maximum protection to the support limb's heel and lamellar structures.</p>
+          <p><strong>Monitoring:</strong> Daily digital pulse checks, hoof temperature checks, and prompt farrier involvement if any change is noted in the support limb. This is a situation where early detection of developing laminitis — before rotation begins — makes an enormous difference in outcome. Famously, Barbaro's support limb laminitis was recognized early and intensively managed but ultimately could not be stopped.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 09 VET-FARRIER -->
+  <div class="page-section" id="vet-farrier">
+    <div class="section-header">
+      <div class="section-icon">🤝</div>
+      <div class="section-header-text">
+        <h2>The Vet–Farrier Partnership</h2>
+        <p>Why therapeutic shoeing only works when both professionals are in the room</p>
+      </div>
+    </div>
+
+    <p class="prose">Therapeutic shoeing is a team sport. The veterinarian brings the diagnostic tools — radiographs, ultrasound, MRI, nerve blocks, blood panels, lameness evaluation — that identify exactly what is wrong and how severe it is. The farrier brings the mechanical knowledge and physical skills to build and apply what the diagnosis demands. Neither can do the other's job, and the horse suffers when they try.</p>
+
+    <p class="prose">The most effective therapeutic shoeing relationships involve direct communication between vet and farrier — ideally with both present at the same appointment, or at minimum with the farrier having access to the imaging and the vet's specific mechanical objectives before picking up a tool. A farrier who receives a vague referral ("this horse has navicular, please shoe accordingly") is working without the information needed to optimize the outcome.</p>
+
+    <div class="callout callout-sage">
+      <div class="callout-title">✅ What Good Collaboration Looks Like</div>
+      <p>The veterinarian provides: a specific diagnosis with imaging, the rotation angle and sole depth in millimeters (for laminitis), the location and grade of the tendon lesion (for tendon injuries), and a clear mechanical objective in plain language ("we need to reduce DDFT tension and ease breakover"). The farrier provides: confirmation of what's possible given the current hoof condition, estimated timeline for each approach, and feedback from subsequent visits on how the horse is responding. Both adjust the plan together as the case evolves.</p>
+    </div>
+
+    <p class="prose">For horse owners navigating a serious lameness case, the best thing you can do is ensure your vet and farrier are communicating directly — not through you as an imperfect relay. Facilitate a joint appointment where both professionals see the horse together, review the imaging together, and agree on a plan. This single step dramatically improves therapeutic outcomes and reduces the trial-and-error period that wastes time and money and leaves horses in pain longer than necessary.</p>
+
+    <div class="callout callout-rust">
+      <div class="callout-title">⚠️ Red Flags in Therapeutic Cases</div>
+      <p>Be cautious when: your farrier is making significant therapeutic changes without any veterinary imaging; your vet recommends therapeutic shoeing but hasn't spoken to your farrier directly; two consecutive shoeing cycles haven't produced any detectable improvement in comfort; or either professional dismisses the input of the other. A horse that isn't improving on a therapeutic shoeing program deserves a reassessment of the diagnosis, not just a continuation of the same approach.</p>
+    </div>
+  </div>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="../hoof-care/" class="nav-card">
+      <div class="label">Foundation</div>
+      <div class="title">Hoof Care Basics</div>
+      <div class="arrow">Read Guide →</div>
+    </a>
+    <a href="../faq/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Farrier FAQ</div>
+      <div class="arrow">Read FAQ →</div>
+    </a>
+    <a href="../glossary/" class="nav-card">
+      <div class="label">Reference</div>
+      <div class="title">Farrier Glossary</div>
+      <div class="arrow">Browse →</div>
+    </a>
+    <a href="../farrier-tools/" class="nav-card">
+      <div class="label">Tools</div>
+      <div class="title">Farrier Tools Guide</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+</body>
+</html>

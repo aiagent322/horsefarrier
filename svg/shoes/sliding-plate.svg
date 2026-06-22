@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 160" role="img">
+<title>Reining sliding plate — wide flat smooth shoe for sliding stops</title>
+<defs>
+<style>
+.sh{fill:#C8C0B4;stroke:#5A5048;stroke-width:1.5}
+.sh-dk{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.sh-al{fill:#D4D0C8;stroke:#808078;stroke-width:1}
+.sh-cp{fill:#C0BCCC;stroke:#6060A0;stroke-width:1.5}
+.fl{fill:none;stroke:#484038;stroke-width:1.8}
+.nh{fill:#3A3028}
+.ft{fill:none;stroke:#8B5E3C;stroke-width:1.8}
+.bar{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.lbl{font-family:sans-serif;font-size:10px;fill:#746556;text-anchor:middle}
+</style>
+</defs>
+
+<path class="sh-dk" d="M60,20 Q100,13 140,20 L156,28 Q164,34 166,44 L170,68 L170,118 Q170,132 160,136 L154,138 L140,142 Q100,146 60,142 L46,138 L40,136 Q30,132 30,118 L30,68 L34,44 Q36,34 44,28 Z"/>
+<text class="lbl" x="100" y="156">wide flat section — no crease</text>
+<circle class="nh" cx="42" cy="60" r="4"/>
+<circle class="nh" cx="38" cy="82" r="4"/>
+<circle class="nh" cx="158" cy="60" r="4"/>
+<circle class="nh" cx="162" cy="82" r="4"/>
+
+</svg>

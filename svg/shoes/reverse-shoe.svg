@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 160" role="img">
+<title>Reverse shoe — applied backwards to shift breakover palmarly</title>
+<defs>
+<style>
+.sh{fill:#C8C0B4;stroke:#5A5048;stroke-width:1.5}
+.sh-dk{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.sh-al{fill:#D4D0C8;stroke:#808078;stroke-width:1}
+.sh-cp{fill:#C0BCCC;stroke:#6060A0;stroke-width:1.5}
+.fl{fill:none;stroke:#484038;stroke-width:1.8}
+.nh{fill:#3A3028}
+.ft{fill:none;stroke:#8B5E3C;stroke-width:1.8}
+.bar{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.lbl{font-family:sans-serif;font-size:10px;fill:#746556;text-anchor:middle}
+</style>
+</defs>
+
+<path class="sh" d="M70,32 Q100,26 130,32 L142,38 Q148,42 150,50 L154,70 L154,118 Q154,130 144,133 L138,135 L100,138 L62,135 L56,133 Q46,130 46,118 L46,70 L50,50 Q52,42 58,38 Z"/>
+<path class="fl" d="M73,38 Q100,33 127,38 L136,42 Q141,46 143,52 L146,70 L146,118 Q146,128 138,130 L133,132 L100,134 L67,132 L62,130 Q54,128 54,118 L54,70 L57,52 Q59,46 63,42 Z" fill="none"/>
+<path style="fill:none;stroke:#8B5E3C;stroke-width:1.8;stroke-dasharray:5,3" d="M100,28 L100,10"/>
+<text class="lbl" x="100" y="8">breakover shifted</text>
+<circle class="nh" cx="55" cy="64" r="4"/>
+<circle class="nh" cx="50" cy="84" r="4"/>
+<circle class="nh" cx="145" cy="64" r="4"/>
+<circle class="nh" cx="150" cy="84" r="4"/>
+
+</svg>

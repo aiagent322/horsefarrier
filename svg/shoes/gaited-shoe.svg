@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 160" role="img">
+<title>Gaited horse shoe — side-weighted with toe rocker for gait modification</title>
+<defs>
+<style>
+.sh{fill:#C8C0B4;stroke:#5A5048;stroke-width:1.5}
+.sh-dk{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.sh-al{fill:#D4D0C8;stroke:#808078;stroke-width:1}
+.sh-cp{fill:#C0BCCC;stroke:#6060A0;stroke-width:1.5}
+.fl{fill:none;stroke:#484038;stroke-width:1.8}
+.nh{fill:#3A3028}
+.ft{fill:none;stroke:#8B5E3C;stroke-width:1.8}
+.bar{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.lbl{font-family:sans-serif;font-size:10px;fill:#746556;text-anchor:middle}
+</style>
+</defs>
+
+<path class="sh" d="M70,18 Q100,12 130,18 L142,24 Q148,28 150,36 L154,58 L154,108 Q154,122 144,126 L138,128 L130,130 Q100,134 70,130 L62,128 L56,126 Q46,122 46,108 L46,58 L50,36 Q52,28 58,24 Z"/>
+<path class="fl" d="M73,24 Q100,19 127,24 L137,29 Q142,32 144,39 L147,58 L147,108 Q147,119 139,122 L133,124 L127,126 Q100,129 73,126 L67,124 L61,122 Q53,119 53,108 L53,58 L56,39 Q58,32 63,29 Z" fill="none"/>
+<rect style="fill:#A8A098;stroke:#5A5048;stroke-width:1" x="46" y="52" width="8" height="58" rx="2"/>
+<path style="fill:none;stroke:#8B5E3C;stroke-width:2.5;stroke-linecap:round" d="M73,20 Q100,15 127,20"/>
+
+<circle class="nh" cx="55" cy="52" r="4"/>
+<circle class="nh" cx="50" cy="72" r="4"/>
+<circle class="nh" cx="48" cy="92" r="4"/>
+<circle class="nh" cx="145" cy="52" r="4"/>
+<circle class="nh" cx="150" cy="72" r="4"/>
+<circle class="nh" cx="152" cy="92" r="4"/>
+<text class="lbl" x="30" y="152">weight</text>
+<text class="lbl" x="130" y="10">toe rocker</text>
+
+</svg>

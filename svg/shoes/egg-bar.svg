@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 160" role="img">
+<title>Egg bar horseshoe — navicular and heel support</title>
+<defs>
+<style>
+.sh{fill:#C8C0B4;stroke:#5A5048;stroke-width:1.5}
+.sh-dk{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.sh-al{fill:#D4D0C8;stroke:#808078;stroke-width:1}
+.sh-cp{fill:#C0BCCC;stroke:#6060A0;stroke-width:1.5}
+.fl{fill:none;stroke:#484038;stroke-width:1.8}
+.nh{fill:#3A3028}
+.ft{fill:none;stroke:#8B5E3C;stroke-width:1.8}
+.bar{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.lbl{font-family:sans-serif;font-size:10px;fill:#746556;text-anchor:middle}
+</style>
+</defs>
+
+<path class="sh" d="M70,18 Q100,12 130,18 L142,24 Q148,28 150,36 L154,58 L154,104 Q154,116 144,122 L138,126 Q124,138 120,146 Q110,156 100,158 Q90,156 80,146 Q76,138 62,126 L56,122 Q46,116 46,104 L46,58 L50,36 Q52,28 58,24 Z"/>
+<path class="fl" d="M73,24 Q100,19 127,24 L137,29 Q141,32 143,38 L146,58 L146,104 Q146,114 138,119 L133,123 Q120,133 117,141 Q109,149 100,151 Q91,149 83,141 Q80,133 67,123 L62,119 Q54,114 54,104 L54,58 L57,38 Q59,32 63,29 Z" fill="none"/>
+
+<circle class="nh" cx="55" cy="52" r="4"/>
+<circle class="nh" cx="50" cy="76" r="4"/>
+<circle class="nh" cx="145" cy="52" r="4"/>
+<circle class="nh" cx="150" cy="76" r="4"/>
+
+</svg>

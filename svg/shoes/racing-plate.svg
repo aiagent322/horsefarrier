@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 160" role="img">
+<title>Aluminum racing plate — Thoroughbred racing, ultra lightweight</title>
+<defs>
+<style>
+.sh{fill:#C8C0B4;stroke:#5A5048;stroke-width:1.5}
+.sh-dk{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.sh-al{fill:#D4D0C8;stroke:#808078;stroke-width:1}
+.sh-cp{fill:#C0BCCC;stroke:#6060A0;stroke-width:1.5}
+.fl{fill:none;stroke:#484038;stroke-width:1.8}
+.nh{fill:#3A3028}
+.ft{fill:none;stroke:#8B5E3C;stroke-width:1.8}
+.bar{fill:#A8A098;stroke:#5A5048;stroke-width:1.5}
+.lbl{font-family:sans-serif;font-size:10px;fill:#746556;text-anchor:middle}
+</style>
+</defs>
+
+<path class="sh-al" d="M74,22 Q100,18 126,22 L135,27 Q139,30 140,36 L143,54 L143,104 Q143,113 137,116 L132,118 L126,120 Q100,123 74,120 L68,118 L63,116 Q57,113 57,104 L57,54 L60,36 Q61,30 65,27 Z"/>
+<rect style="fill:#B8B4AA;stroke:#707068;stroke-width:1" x="70" y="15" width="60" height="9" rx="2"/>
+<text class="lbl" x="100" y="12">toe grab</text>
+<circle class="nh" cx="63" cy="52" r="3"/>
+<circle class="nh" cx="60" cy="68" r="3"/>
+<circle class="nh" cx="137" cy="52" r="3"/>
+<circle class="nh" cx="140" cy="68" r="3"/>
+<text class="lbl" x="100" y="140">aluminum — 50-100g</text>
+
+</svg>

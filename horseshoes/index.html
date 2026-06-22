@@ -88,6 +88,10 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .st-performance{background:#EDE8FF;color:#5A3E9B}
 .st-material{background:#FFF8E6;color:#8B6914}
 .shoe-img{width:100%;height:160px;object-fit:contain;background:var(--sand);border-bottom:1px solid var(--border);padding:12px;display:block}
+.shoe-card-link{text-decoration:none;color:inherit;display:block}
+.shoe-card-link .shoe-card{transition:box-shadow 0.2s,transform 0.2s,border-color 0.2s}
+.shoe-card-link:hover .shoe-card{box-shadow:0 8px 32px rgba(44,24,16,0.14);transform:translateY(-3px);border-color:var(--border-strong)}
+.shoe-card-cta{display:flex;align-items:center;justify-content:space-between;padding:10px 18px 14px;font-size:0.82rem;font-weight:700;color:var(--leather);border-top:1px solid var(--border)}
 .shoe-body{padding:0 18px 16px;font-size:0.87rem;color:var(--ink-muted);line-height:1.65}
 .shoe-body strong{color:var(--ink-soft);font-weight:700}
 .shoe-use{margin-top:8px;padding:8px 12px;background:var(--sand);border-radius:var(--radius);font-size:0.82rem;color:var(--ink-soft)}
@@ -538,51 +542,87 @@ footer a{color:var(--rope-light);text-decoration:none}
     </div>
 
     <div class="shoe-grid">
+      <a href="/disciplines/reining/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🤠</div><div class="shoe-name-wrap"><div class="shoe-name">Reining</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
         <div class="shoe-body">Sliding plates on the hinds — wide, flat, smooth, and elongated — allow the sliding stop. The longer the plate's heel extension, the more slide potential. Front shoes are typically standard fullered shoes or may be aluminum for reduced weight. The farrier works closely with the trainer to dial in the exact plate configuration for that horse's stopping style, body type, and arena surface. Bell boots and protective boots are standard equipment to protect the front heels from overreaching sliders.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Reining Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/cutting/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🐄</div><div class="shoe-name-wrap"><div class="shoe-name">Cutting &amp; Cow Horse</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
         <div class="shoe-body">Working cow horses need traction for quick direction changes and the ability to slide stops — a combination less extreme than pure reining. Modified sliding plates with slightly more toe grip, or standard shoes with a swedge, are common. Front shoes often have toe or quarter clips to prevent shifting during explosive cow work. Hind feet may carry shorter, lighter sliding plates than a reining horse since the work is less specialized.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Cutting & Cow Horse Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/show-jumping/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🏊</div><div class="shoe-name-wrap"><div class="shoe-name">Show Jumping</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
         <div class="shoe-body">Traction is paramount — a horse that slips on takeoff or landing is a safety catastrophe. Rim shoes provide consistent grip; stud shoes allow fine-tuning traction to the day's footing. Heel studs are standard; toe studs are used more selectively as they can affect how the hoof breaks over. Some horses jump in simple fullered shoes with no studs on familiar good footing. Front shoe weight matters less than hind shoe traction.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Show Jumping Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/eventing/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🎪</div><div class="shoe-name-wrap"><div class="shoe-name">Eventing</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
         <div class="shoe-body">Three phases — dressage, cross-country, show jumping — with different traction requirements for each. Many eventers run in different shoe configurations for different phases, or in stud shoes that allow swapping studs. Cross-country on varied natural terrain needs maximum grip, particularly in wet conditions. Road studs for firmer going; longer, more aggressive studs for deep or muddy ground. Some horses jump cross-country barefoot on the fronts if their sole quality allows it.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Eventing Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/dressage/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🎼</div><div class="shoe-name-wrap"><div class="shoe-name">Dressage</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
         <div class="shoe-body">Arena footing and collection work means traction needs are moderate — rim shoes or standard shoes with occasional small studs are typical. Many dressage horses work on predictable indoor footing without any traction modifications. Front shoe weight affects collected movement — some trainers prefer aluminum fronts to reduce limb fatigue during extended work. Hoof balance precision matters enormously at the highest levels because judges evaluate every step.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Dressage Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/thoroughbred-racing/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🏁</div><div class="shoe-name-wrap"><div class="shoe-name">Thoroughbred Racing</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span><span class="shoe-tag st-material">Aluminum</span></div>
         <div class="shoe-body">Weight minimization is everything — race plates may weigh 50–80g on the fronts. Aluminum alloy throughout. Turf shoes typically have toe grabs (a raised lip at the toe) for grip; dirt track shoes may have various heel and toe grab combinations. Track farriers are highly specialized — they may shoe 15–25 horses before morning training, working at speeds that would horrify a general farrier. Plates are replaced at every shoeing; resets are uncommon.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Thoroughbred Racing Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/barrel-racing/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🎯</div><div class="shoe-name-wrap"><div class="shoe-name">Barrel Racing &amp; Rodeo</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-performance">Performance</span></div>
         <div class="shoe-body">Quarter Horses running at speed and turning tight require traction without excessive grip that could torque a limb on turns. Fullered shoes, often with side clips to prevent shifting, are standard. Some barrel racers use borium on heel calks for grip on dirt. Roping horses need good overall traction and the durability to work on varied outdoor surfaces. Hind shoes on roping horses often carry quarter clips to prevent slipping when a steer is caught.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Barrel Racing & Rodeo Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/trail-endurance/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🏔️</div><div class="shoe-name-wrap"><div class="shoe-name">Trail &amp; Endurance</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-both">Factory / Custom</span></div>
         <div class="shoe-body">Durability and versatility across varied terrain — rocky, muddy, sandy, paved — are the priorities. Many endurance horses compete barefoot with hoof boots for technical terrain. Shod endurance horses often use steel shoes with borium tips on heels and toe for traction and durability on rock. Lighter aluminum shoes are used by some to reduce fatigue on long-distance rides. Hoof condition monitoring at vet checks makes good basic hoof care as important as shoe selection.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Trail & Endurance Shoeing <span>→</span></div>
       </div>
+      </a>
+      <a href="/disciplines/draft-horses/" class="shoe-card-link">
       <div class="shoe-card">
         <div class="shoe-card-head"><div class="shoe-emoji">🚜</div><div class="shoe-name-wrap"><div class="shoe-name">Draft &amp; Work Horses</div></div></div>
         <div class="shoe-tags"><span class="shoe-tag st-factory">Factory</span></div>
         <div class="shoe-body">Heavy steel shoes — sometimes weighing 2–3 lbs each — are standard on drafts. Working farm horses on pavement get borium-tipped or calked shoes for grip. Show drafts wear polish and may have modified shoes for enhanced action. Draft farriery requires specialized equipment and physical strength — the horseshoes themselves are substantially larger and heavier than light horse shoes, and the horses are more difficult to hold up during work.</div>
+      
+        <div class="shoe-card-cta">Deep Dive: Draft & Work Horses Shoeing <span>→</span></div>
       </div>
+      </a>
     </div>
   </div>
 

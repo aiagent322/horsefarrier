@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Dressage — Shoeing Guide — HorseFarrier.net</title>
+<meta name="description" content="Dressage farriery is characterized by precision over drama — hoof balance and breakover affect every movement a judge evaluates. The difference between a 7">
+<link rel="canonical" href="https://horsefarrier.net/disciplines/dressage/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;
+  --white:#FFFFFF;--sand:#F5F0E8;--steel:#1A6FA3;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:none;align-items:center;flex-shrink:0}
+/* NAV MENU */
+.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px}
+.nav-link{display:flex;align-items:center;padding:0 14px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
+.nav-link:hover{color:var(--rope-light);border-bottom-color:var(--rope)}
+.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
+.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
+.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
+.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
+.nav-drawer.open{display:flex}
+.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
+.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
+@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}.bb-logo-link{display:flex}}
+.page-hero{background:linear-gradient(160deg,#2A1A4A 0%,#1A0A3A 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero .hero-intro{color:rgba(255,255,255,0.72);font-size:0.9rem;max-width:600px;margin:0 auto}
+.content-wrap{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+.disc-section{margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+.disc-section:last-of-type{border-bottom:none}
+.disc-section h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--ink);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.disc-section p{font-size:0.93rem;color:var(--ink-soft);line-height:1.72;margin-bottom:12px}
+.disc-section p strong{color:var(--ink);font-weight:700}
+.disc-img-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}
+.disc-img-wrap{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.disc-img{width:100%;height:160px;object-fit:contain;background:var(--sand);padding:12px;display:block}
+.disc-img-caption{padding:8px 12px;font-size:0.75rem;color:var(--ink-muted);text-align:center;border-top:1px solid var(--border);line-height:1.4}
+.disc-facts{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px;margin:14px 0;background:var(--sand);border-radius:var(--radius-lg);padding:16px 18px}
+.disc-facts li{font-size:0.88rem;color:var(--ink-soft);line-height:1.6;padding-left:0}
+.disc-facts li strong{color:var(--leather-dark);font-weight:700;display:inline-block;min-width:0;margin-right:4px}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:700;color:var(--leather);text-decoration:none;margin-bottom:28px;padding:8px 0}
+.back-link:hover{text-decoration:underline}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:10px 0}
+@media(min-width:768px){
+  .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}.page-hero h1{font-size:2.1rem}
+  .content-wrap{padding:32px 24px 56px}
+  .disc-img-grid{grid-template-columns:repeat(3,1fr)}
+}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+  <div class="topbar">
+    <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+        <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+      </a>
+    </div>
+  </div>
+  <nav class="nav-bar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
+      <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
+      <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
+      <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
+      <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
+      <a href="/faq/" class="nav-link">FAQ</a>
+      <a href="/glossary/" class="nav-link">Glossary</a>
+    </div>
+  </nav>
+  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
+    <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
+    <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
+    <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
+    <a href="/faq/" class="nav-link">❓ FAQ</a>
+    <a href="/glossary/" class="nav-link">📖 Glossary</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / <a href="/horseshoes/">Horseshoe Types</a> / Dressage</div>
+  <h1>🎼 <em>Dressage</em></h1>
+  <p class="hero-intro">Dressage farriery is characterized by precision over drama — hoof balance and breakover affect every movement a judge evaluates. The difference between a 7 and an 8 on a piaffe or passage can come down to whether the front hooves break over evenly and on time.</p>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+  <a href="/horseshoes/#by-discipline" class="back-link">← Back to Shoeing by Discipline</a>
+  
+  <div class="disc-section">
+    <h2>Shoe Selection for Collection Work</h2>
+    <div class="disc-img-grid"><div class="disc-img-wrap">
+          <img src="https://kerckhaert.com/hubfs/raw_assets/public/KERCKHAERT/images/products/0-Kerckhaert-df.jpg" alt="Kerckhaert DF — standard dressage shoe, allround front" class="disc-img" loading="lazy">
+          <div class="disc-img-caption">Kerckhaert DF — standard dressage shoe, allround front</div>
+        </div>
+<div class="disc-img-wrap">
+          <img src="https://kerckhaert.com/hubfs/raw_assets/public/KERCKHAERT/images/products/1-Kerckhaert-alu-comfort-front-front.jpg" alt="Kerckhaert Alu Comfort — lightweight aluminum for dressage fronts" class="disc-img" loading="lazy">
+          <div class="disc-img-caption">Kerckhaert Alu Comfort — lightweight aluminum for dressage fronts</div>
+        </div>
+<div class="disc-img-wrap">
+          <img src="https://kerckhaert.com/hubfs/raw_assets/public/KERCKHAERT/images/products/1-Kerckhaert-steel-comfort-front.jpg" alt="Kerckhaert Steel Comfort — front shoe designed for ease of movement" class="disc-img" loading="lazy">
+          <div class="disc-img-caption">Kerckhaert Steel Comfort — front shoe designed for ease of movement</div>
+        </div>
+</div>
+    <p>Most dressage horses work on predictable indoor arena footing — rubber-covered sand or fiber-sand mixtures — where traction is consistent and major grip interventions are not needed. Rim shoes or standard fullered shoes without studs are the everyday choice. <strong>Aluminum front shoes</strong> are widely used in dressage because reducing front limb weight reduces the energy cost of elevated collected movements — over hours of collected work, lighter shoes reduce fatigue. The hindquarters in dressage provide the power; the fronts display the expression. A horse working through Grand Prix movements is asking its front limbs to perform extremely elevated, timed work — every gram of shoe weight and every millimeter of breakover affects whether that expression is effortless or labored.</p>
+    <ul class="disc-facts"><li><strong>Front shoe preference:</strong> Aluminum widely used to reduce weight and fatigue in collection</li><li><strong>Hind shoe:</strong> Standard steel fullered shoe — hinds provide power, traction matters more</li><li><strong>Studs:</strong> Occasionally small road studs on grass competition surfaces only</li><li><strong>Sole relief:</strong> Shoes with concave ground surface (sole relief) prevent sole pressure on sensitive-soled horses</li></ul>
+  </div>
+
+  <div class="disc-section">
+    <h2>The Precision Demand: Hoof Balance in Dressage</h2>
+    
+    <p>At the highest levels of dressage, judges score movement quality to tenths of a point. Uneven medial-lateral balance causes asymmetric joint loading that shows as uneven steps — visible in the rhythmic work of passage and piaffe. A broken-back hoof-pastern axis (long toe, low heel) causes late, labored breakover that reads as a lack of suspension in the trot. These are not subtle problems — they show on camera and in the judge's book. <strong>Dressage farriers at the top level</strong> often work in close collaboration with the rider and trainer, watching horses work under saddle and fine-tuning breakover and balance with every reset. The rolled toe has become increasingly standard in dressage farriery for exactly this reason — it produces earlier, more consistent breakover that improves movement quality.</p>
+    <ul class="disc-facts"><li><strong>Balance standard:</strong> Medial-lateral balance must be precise — asymmetry shows in collected gaits</li><li><strong>HPA alignment:</strong> Broken-back axis produces late breakover visible in extended trot</li><li><strong>Common modification:</strong> Rolled or squared toe on fronts to optimize breakover for collected work</li><li><strong>Reset interval:</strong> 5–6 weeks at competition level — balance deteriorates as hoof grows</li><li><strong>Farrier observation:</strong> Top dressage farriers watch horses work under saddle — not just stand on the cross-tie</li></ul>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <nav class="footer-nav">
+    <a href="/hoof-care/">Hoof Care Basics</a>
+    <a href="/farrier-tools/">Farrier Tools</a>
+    <a href="/horseshoes/">Horseshoe Types</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/glossary/">Glossary</a>
+  </nav>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var drawer=document.getElementById('nav-drawer');
+  if(!btn||!drawer)return;
+  btn.addEventListener('click',function(){
+    var open=drawer.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+    btn.querySelector('svg').innerHTML=open
+      ?'<line x1="3" y1="6" x2="21" y2="18"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="21" y1="6" x2="3" y2="18"/>'
+      :'<line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>';
+  });
+})();
+</script>
+</body>
+</html>

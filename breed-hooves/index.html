@@ -31,7 +31,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none}
 .topbar-logo span{color:var(--rope-light)}
 .bb-logo-link{display:none;align-items:center;flex-shrink:0}
-@media(min-width:600px){.bb-logo-link{display:flex}}
+/* bb-logo-link moved into tablet block */
 .page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--sage-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
 .page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
 .page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
@@ -70,13 +70,13 @@ footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:c
 footer a{color:var(--rope-light);text-decoration:none}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
 .footer-logo span{color:var(--rope-light)}
-@media(min-width:600px){
+@media(min-width:768px){.bb-logo-link{display:flex}
   .topbar{padding:14px 20px}.topbar-logo{font-size:1.3rem}
   .page-hero{padding:40px 24px 36px}.page-hero h1{font-size:2.1rem}
   .content-wrap{padding:32px 24px 56px}
   .breed-body{grid-template-columns:1fr 1fr 1fr}
 }
-@media(min-width:900px){.breed-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.breed-grid{grid-template-columns:repeat(2,1fr)}}
 :focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
 
 /* NAV MENU */
@@ -91,7 +91,7 @@ footer a{color:var(--rope-light);text-decoration:none}
 .nav-drawer.open{display:flex}
 .nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
 .nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
-@media(min-width:700px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
 </style>
 </head>
 <body>

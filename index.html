@@ -105,6 +105,24 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .tip-title{font-weight:700;font-size:0.88rem;color:var(--ink);margin-bottom:3px}
 .tip-text{font-size:0.82rem;color:var(--ink-muted);line-height:1.5}
 
+/* VIDEOS STRIP */
+.videos-strip{max-width:1100px;margin:0 auto 30px;padding:0 12px}
+.videos-section{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;overflow:hidden}
+.featured-videos{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:16px}
+.featured-video{background:var(--sand);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border)}
+.video-frame{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+.video-label{padding:12px 14px}
+.video-cat{display:inline-flex;align-items:center;font-size:0.67rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:8px;background:var(--rope-pale);color:var(--leather-dark);margin-bottom:6px}
+.video-text{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--ink);line-height:1.3;margin-bottom:3px}
+.video-by{font-size:0.75rem;color:var(--ink-muted);font-weight:600}
+.view-all-videos{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:11px 20px;background:var(--leather-deeper);color:var(--cream);text-decoration:none;border-radius:20px;font-weight:700;font-size:0.88rem;transition:var(--transition);min-height:44px;width:100%}
+.view-all-videos:hover{background:var(--leather-dark);transform:translateY(-2px)}
+@media(min-width:768px){
+  .featured-videos{grid-template-columns:repeat(2,1fr);gap:18px}
+  .view-all-videos{width:auto;justify-content:center}
+}
+
 /* CTA */
 .cta-strip{max-width:1100px;margin:20px auto 30px;padding:0 12px}
 .cta-box{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:24px 20px;text-align:center}
@@ -345,6 +363,35 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="videos-strip">
+  <div class="section-label">Learn by Watching</div>
+  <div class="videos-section">
+    <div class="featured-videos">
+      <div class="featured-video">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/cZbnSRVBkTw?rel=0" title="I Almost Gave Up on This Hoof" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-label">
+          <span class="video-cat">🔨 Restoration</span>
+          <div class="video-text">I Almost Gave Up on This Hoof</div>
+          <div class="video-by">Maupin Farrier Co</div>
+        </div>
+      </div>
+      <div class="featured-video">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/kshpWz-o9CI?rel=0" title="Therapeutic Horseshoeing" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-label">
+          <span class="video-cat">⚕️ Therapeutic</span>
+          <div class="video-text">Painful Horse Hoof | Therapeutic Horseshoeing</div>
+          <div class="video-by">S&amp;S Horseshoeing</div>
+        </div>
+      </div>
+    </div>
+    <a href="videos/index.html" class="view-all-videos">View All 20 Videos →</a>
   </div>
 </div>
 

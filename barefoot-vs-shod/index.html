@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Barefoot vs. Shod — The Complete Decision Guide | HorseFarrier.net</title>
+<meta name="description" content="The complete guide to barefoot vs. shod horses — when shoes are necessary, when they aren't, the science behind each approach, transition protocols, hoof boots, and how to make the right decision for your horse.">
+<link rel="canonical" href="https://horsefarrier.net/barefoot-vs-shod/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:flex;align-items:center;line-height:0;flex-shrink:0}
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+.toc{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:32px}
+.toc-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:10px}
+.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.toc a{color:var(--leather);text-decoration:none;font-size:0.88rem;font-weight:600;display:inline-flex;align-items:center;min-height:36px}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:36px}
+.section h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.section h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--leather-dark);margin:18px 0 8px}
+.section p{font-size:0.93rem;color:var(--ink-soft);margin-bottom:12px;line-height:1.7}
+.section ul,.section ol{padding-left:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
+.section li{font-size:0.93rem;color:var(--ink-soft);line-height:1.6}
+.section strong{color:var(--ink);font-weight:700}
+.callout{background:var(--rust-light);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:16px 0}
+.callout.sage{background:var(--sage-light);border-color:var(--sage)}
+.callout.gold{background:#FFF8E6;border-color:var(--gold)}
+.callout-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--rust);margin-bottom:4px}
+.callout.sage .callout-title{color:var(--sage-dark)}
+.callout.gold .callout-title{color:#8B6914}
+.callout p{font-size:0.88rem;color:var(--ink-soft);margin:0;line-height:1.6}
+/* comparison table */
+.comp-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem}
+.comp-table th{padding:10px 12px;text-align:left;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em}
+.comp-table th:first-child{background:var(--leather-deeper);color:var(--cream)}
+.comp-table th.barefoot-h{background:var(--sage);color:#fff}
+.comp-table th.shod-h{background:var(--leather-dark);color:var(--cream)}
+.comp-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;font-size:0.87rem;color:var(--ink-soft)}
+.comp-table td:first-child{font-weight:700;color:var(--ink);background:var(--sand)}
+.comp-table tr:last-child td{border-bottom:none}
+/* decision grid */
+.decision-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
+.d-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.d-card.go-barefoot{border-left:4px solid var(--sage)}
+.d-card.stay-shod{border-left:4px solid var(--leather-dark)}
+.d-title{font-family:'Playfair Display',serif;font-weight:900;font-size:0.95rem;margin-bottom:8px}
+.d-card.go-barefoot .d-title{color:var(--sage-dark)}
+.d-card.stay-shod .d-title{color:var(--leather-dark)}
+.d-card ul{padding-left:16px;display:flex;flex-direction:column;gap:4px}
+.d-card li{font-size:0.87rem;color:var(--ink-soft);line-height:1.55}
+/* transition steps */
+.trans-steps{display:flex;flex-direction:column;gap:0;margin:16px 0;position:relative}
+.trans-steps::before{content:'';position:absolute;left:17px;top:0;bottom:0;width:2px;background:var(--rope-pale)}
+.ts-item{display:flex;gap:16px;padding-bottom:22px;position:relative}
+.ts-num{width:34px;height:34px;background:var(--leather-deeper);border:3px solid var(--rope);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;z-index:1;font-family:'Playfair Display',serif;font-size:0.78rem;font-weight:900;color:var(--rope-light);margin-top:2px}
+.ts-body{flex:1;padding-top:4px}
+.ts-title{font-weight:700;font-size:0.92rem;color:var(--ink);margin-bottom:4px}
+.ts-text{font-size:0.88rem;color:var(--ink-soft);line-height:1.6}
+/* boot table */
+.boot-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.87rem}
+.boot-table th{background:var(--leather-deeper);color:var(--cream);padding:9px 12px;text-align:left;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em}
+.boot-table td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.boot-table tr:nth-child(even) td{background:var(--sand)}
+.boot-table strong{color:var(--ink)}
+/* nav cards */
+.nav-cards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+@media(min-width:768px){
+  .bb-logo-link{display:flex}
+  .topbar{padding:13px 20px}
+  .topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}
+  .page-hero h1{font-size:2.1rem}
+  .page-hero p{font-size:0.94rem}
+  .content-wrap{padding:32px 24px 56px}
+  .decision-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1024px){.page-hero h1{font-size:2.4rem}}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+/* ═══ SITE NAV ═══ */
+.site-nav{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.1);border-bottom:2px solid var(--rope);position:sticky;top:var(--topbar-h,54px);z-index:150;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.site-nav-inner{display:flex;align-items:stretch;overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 4px;max-width:1200px;margin:0 auto}
+.site-nav-inner::-webkit-scrollbar{display:none}
+.sn-link{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;border-top:3px solid transparent;transition:color 0.18s,border-color 0.18s,background 0.18s;letter-spacing:0.01em}
+.sn-link:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-link.active{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.06)}
+.sn-drop{position:relative;display:flex;align-items:stretch;flex-shrink:0}
+.sn-drop-btn{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);background:none;border:none;border-bottom:3px solid transparent;border-top:3px solid transparent;white-space:nowrap;cursor:pointer;font-family:inherit;letter-spacing:0.01em;transition:color 0.18s,border-color 0.18s,background 0.18s}
+.sn-drop-btn:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-drop-panel{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.12);border-top:2px solid var(--rope);border-radius:0 0 var(--radius) var(--radius);box-shadow:0 8px 24px rgba(0,0,0,0.35);z-index:200;padding:4px 0}
+.sn-drop:hover .sn-drop-panel,.sn-drop:focus-within .sn-drop-panel,.sn-drop.open .sn-drop-panel{display:block}
+.sn-drop-link{display:flex;align-items:center;padding:11px 18px;font-size:0.83rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;border-left:3px solid transparent;transition:color 0.15s,background 0.15s,border-color 0.15s;white-space:nowrap;gap:8px}
+.sn-drop-link:hover,.sn-drop-link.active{color:var(--rope-light);background:rgba(255,255,255,0.06);border-left-color:var(--rope)}
+.sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+@media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
+@media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
+/* VIDEO FACADE */
+.video-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:16px}
+.video-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+@media(hover:hover){.video-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--border-strong)}}
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:14px 16px 16px}
+.video-tag{display:inline-flex;align-items:center;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px;background:var(--rope-pale);color:var(--leather-dark)}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px;overflow-wrap:break-word}
+.video-channel{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+@media(min-width:768px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Barefoot vs. Shod — The Complete Decision Guide","description":"The complete guide to barefoot vs. shod horses — when shoes are necessary, when they aren't, the science, transition protocols, hoof boots, and the decision framework every owner needs.","url":"https://horsefarrier.net/barefoot-vs-shod/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/hoof-care/" class="sn-link active">Hoof Care</a>
+    <a href="/farrier-tools/" class="sn-link">Farrier Tools</a>
+    <a href="/horseshoes/" class="sn-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="sn-link">Hoof Issues</a>
+    <div class="sn-div" aria-hidden="true"></div>
+    <div class="sn-drop">
+      <button class="sn-drop-btn" aria-haspopup="true" aria-expanded="false" aria-controls="disc-panel">Disciplines ▾</button>
+      <div class="sn-drop-panel" id="disc-panel" role="menu">
+        <a href="/disciplines/reining/" class="sn-drop-link" role="menuitem">🤠 Reining</a>
+        <a href="/disciplines/cutting/" class="sn-drop-link" role="menuitem">🐄 Cutting &amp; Cow Horse</a>
+        <a href="/disciplines/barrel-racing/" class="sn-drop-link" role="menuitem">🏁 Barrel Racing</a>
+        <a href="/disciplines/dressage/" class="sn-drop-link" role="menuitem">🎩 Dressage</a>
+        <a href="/disciplines/show-jumping/" class="sn-drop-link" role="menuitem">🏇 Show Jumping</a>
+        <a href="/disciplines/eventing/" class="sn-drop-link" role="menuitem">⛰️ Eventing</a>
+        <a href="/disciplines/thoroughbred-racing/" class="sn-drop-link" role="menuitem">🏆 Thoroughbred Racing</a>
+        <a href="/disciplines/trail-endurance/" class="sn-drop-link" role="menuitem">🌲 Trail &amp; Endurance</a>
+        <a href="/disciplines/draft-horses/" class="sn-drop-link" role="menuitem">🐎 Draft Horses</a>
+      </div>
+    </div>
+    <div class="sn-div" aria-hidden="true"></div>
+    <a href="/breed-hooves/" class="sn-link">Breed Hooves</a>
+    <a href="/nutrition/" class="sn-link">Nutrition</a>
+    <a href="/corrective-shoeing/" class="sn-link">Corrective Shoeing</a>
+    <a href="/foal-hoof-care/" class="sn-link">Foal Hoof Care</a>
+    <a href="/find-a-farrier/" class="sn-link">Find a Farrier</a>
+    <a href="/faq/" class="sn-link">FAQ</a>
+    <a href="/glossary/" class="sn-link">Glossary</a>
+    <a href="/videos/" class="sn-link">Videos</a>
+  </div>
+</nav>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Barefoot vs. Shod</div>
+  <h1>Barefoot vs. <em>Shod</em></h1>
+  <p>The complete decision guide — when shoes are genuinely necessary, when they aren't, what the science says, how to transition, and how to choose the right approach for your specific horse.</p>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+
+  <nav class="toc" aria-label="Page contents">
+    <div class="toc-title">On This Page</div>
+    <ol>
+      <li><a href="#the-debate">The Debate — and Why It's Often Wrong</a></li>
+      <li><a href="#what-shoes-do">What Shoes Actually Do</a></li>
+      <li><a href="#what-barefoot-does">What Going Barefoot Actually Does</a></li>
+      <li><a href="#science">What the Science Shows</a></li>
+      <li><a href="#decision">The Decision Framework</a></li>
+      <li><a href="#when-shoes">When Shoes Are Necessary</a></li>
+      <li><a href="#when-barefoot">When Barefoot Works</a></li>
+      <li><a href="#transition">Transitioning from Shod to Barefoot</a></li>
+      <li><a href="#hoof-boots">Hoof Boots — The Middle Ground</a></li>
+      <li><a href="#discipline">By Discipline</a></li>
+      <li><a href="#videos">Watch &amp; Learn</a></li>
+    </ol>
+  </nav>
+
+  <section class="section" id="the-debate">
+    <h2>The Debate — and Why It's Often Wrong</h2>
+    <p>The barefoot versus shod debate is one of the most polarized conversations in equine management — and one of the least productive. Passionate advocates on both sides have turned a practical management decision into an ideological position, which doesn't serve horses.</p>
+    <p>The barefoot movement, which gained significant momentum from the 1990s onward, made an important contribution: it forced the industry to examine whether routine shoeing was always necessary, and whether conventional trimming practices were optimal for hoof health. Many of those questions were good ones. Some of the conclusions drawn went further than the evidence supported.</p>
+    <p>The conventional shoeing community, for its part, sometimes defaulted to tradition rather than evidence — shoeing horses because that's what had always been done, without examining whether a particular horse in particular circumstances actually needed shoes.</p>
+    <p>The honest position, supported by both veterinary science and experienced farriery, is that <strong>neither barefoot nor shod is universally superior</strong>. The right answer depends on the individual horse's hoof quality, conformation, work demands, footing, and health history. Some horses do beautifully barefoot for their entire working lives. Others need shoes for protection, therapeutic support, or performance reasons that barefoot cannot provide. Most horses fall somewhere in between, and the ideal approach may shift as their circumstances change.</p>
+    <div class="callout gold">
+      <div class="callout-title">The Only Question That Matters</div>
+      <p>Not "is barefoot better?" or "is shoeing better?" — but "what does this horse, doing this work, on this footing, with this hoof quality, need right now?" That question has a specific, observable answer. The ideological question doesn't.</p>
+    </div>
+  </section>
+
+  <section class="section" id="what-shoes-do">
+    <h2>What Shoes Actually Do</h2>
+    <p>Understanding what a shoe actually changes — mechanically and physiologically — is the foundation of a rational decision. Shoes are not neutral. They alter the hoof in significant ways, for better and for worse depending on the horse's situation.</p>
+
+    <h3>What Shoes Provide</h3>
+    <ul>
+      <li><strong>Protection from wear:</strong> The most fundamental function. A horse whose hoof wears faster than it grows on its working surface will become sore without protection. Shoes prevent this by substituting metal wear for hoof wall wear.</li>
+      <li><strong>Traction control:</strong> Shoes can be modified with studs, borium, road nails, or specialized profiles to provide grip on specific surfaces — wet grass, ice, arena sand, pavement — that a bare hoof cannot reliably achieve.</li>
+      <li><strong>Therapeutic support:</strong> Specific shoe types, pads, and wedges address lameness conditions — laminitis, navicular syndrome, tendon injuries, sheared heels — in ways that a trim alone cannot. See the <a href="/corrective-shoeing/">Corrective &amp; Therapeutic Shoeing</a> guide.</li>
+      <li><strong>Sole protection:</strong> Horses with thin soles or flat feet that bruise on hard or rocky footing need the protection a full pad inside a shoe provides.</li>
+      <li><strong>Hoof wall support:</strong> Poor-quality, brittle, or damaged hoof wall may not be maintainable barefoot. A shoe gives the weakened wall a platform to grow from without constant chipping and cracking.</li>
+    </ul>
+
+    <h3>What Shoes Restrict or Change</h3>
+    <ul>
+      <li><strong>Hoof expansion:</strong> The natural hoof expands with every footfall, pumping blood through the foot and absorbing concussion. A nailed shoe restricts this expansion — the heels are somewhat constrained. A 2019 study found coronary band circumference decreased more when horses were shod than when barefoot over a seven-week period, indicating the hoof capsule is genuinely affected by shoeing.</li>
+      <li><strong>Frog contact:</strong> A shoe elevates the hoof off the ground. The frog — designed to contact the ground with every step, stimulating blood circulation and digital cushion development — now has to descend through the shoe's opening to reach the ground. On soft footing it may not reach at all. Reduced frog stimulation over time can contribute to contraction and reduced digital cushion development.</li>
+      <li><strong>Proprioception:</strong> Barefoot horses have direct sensory feedback from ground contact through the sole and frog. Research suggests this heightened sensitivity contributes to more careful, accurate footfall on uneven terrain. A metal shoe between hoof and ground reduces this feedback.</li>
+      <li><strong>Concussion transmission:</strong> Steel is a rigid material that transmits ground impact efficiently up the limb. Barefoot hooves absorb and dissipate concussion through hoof expansion and the frog/digital cushion complex. The difference is meaningful for horses doing high-impact work over many years.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="what-barefoot-does">
+    <h2>What Going Barefoot Actually Does</h2>
+    <p>Going barefoot is not simply the absence of shoes — it requires active management and an appropriate environment to produce good outcomes. A neglected barefoot horse on the wrong terrain is worse off than a well-shod horse. Barefoot success is the result of management, not just shoe removal.</p>
+
+    <h3>Structural Benefits of Barefoot</h3>
+    <ul>
+      <li><strong>Full hoof mechanism function:</strong> The entire hoof wall, sole, frog, and bars work together as designed — expanding on loading, contracting on unloading, pumping blood and absorbing concussion through the full range of motion. Research by Proske et al. (2017) found that barefoot horses had significantly greater hoof range of motion than shod horses, and increased digital cushion depth after transitioning barefoot — indicating progressive structural improvement.</li>
+      <li><strong>Frog stimulation:</strong> Ground contact at every step stimulates the frog and digital cushion, driving their fibrocartilaginous development over time. This is particularly important in young horses but continues throughout life — barefoot horses on varied terrain actively build better internal foot structure.</li>
+      <li><strong>Natural wear patterns:</strong> A barefoot hoof wears to the terrain it lives on, creating a customized geometry that reflects the horse's movement and footing. Wild horse hooves are used as the gold standard for natural hoof shape precisely because this process produces functionally optimized feet.</li>
+      <li><strong>Reduced concussion:</strong> Barefoot hooves on appropriate footing absorb more concussion than shod hooves on the same surface. The hoof mechanism — expansion, contraction, frog loading — distributes impact forces that a metal shoe transmits directly to bone and joint.</li>
+    </ul>
+
+    <h3>Requirements for Barefoot Success</h3>
+    <p>Barefoot is not a low-maintenance option. The conditions that produce good barefoot outcomes are specific:</p>
+    <ul>
+      <li><strong>Appropriate hoof quality:</strong> Horses with naturally hard, dense, well-shaped hooves are far better candidates than those with flat soles, thin walls, or chronic hoof quality problems. Breed matters — Arabians, Mustangs, and many warm-climate breeds typically have harder hooves than Thoroughbreds or some Warmbloods.</li>
+      <li><strong>Matched footing:</strong> A horse that lives and works primarily on soft ground (pasture grass, arena sand, soft dirt) is a much better barefoot candidate than one regularly working on gravel roads, pavement, or rocky terrain. The footing the horse encounters daily essentially determines how much protection the hoof needs to maintain.</li>
+      <li><strong>Regular, competent trimming:</strong> Barefoot horses need trimming every 4–6 weeks in most cases — often more frequently than shod horses. And the trim is different: a barefoot trim maintains the mustang roll, manages the sole carefully, and shapes the hoof to promote optimal wear patterns. A farrier applying a standard shod trim to a barefoot horse is not doing barefoot correctly.</li>
+      <li><strong>Adequate movement:</strong> Natural wear requires movement. A barefoot horse in a stall or small paddock doesn't wear its hooves at all — it overgrows without the abrasive wear that naturally controlled wild horse hooves. Barefoot horses need regular turnout and movement across varied terrain to develop and maintain hoof quality.</li>
+      <li><strong>Balanced nutrition:</strong> Hoof quality is substantially nutritional. Biotin, zinc, copper, methionine, and adequate protein are the key drivers of hoof wall quality and growth rate. A horse with chronic nutritional deficiencies will not produce adequate hoof wall barefoot regardless of management. See the <a href="/nutrition/">Nutrition &amp; Hooves</a> guide.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="science">
+    <h2>What the Science Shows</h2>
+    <p>The scientific literature on barefoot versus shod is more nuanced than either advocacy camp typically acknowledges. Here is a balanced summary of what peer-reviewed research has found:</p>
+
+    <h3>Hoof Shape and Structure</h3>
+    <p>Clayton et al. (2011) found that barefoot trimming resulted in increased heel angle and improved solar angle of the distal phalanx compared to conventional shod trims — findings that barefoot advocates correctly cite as evidence of improved morphology. A 2019 crossover study of 11 horses found coronary band circumference decreased more significantly when shod than barefoot, and hoof angle decreased when shod but increased when barefoot over a seven-week period. These findings suggest that routine shoeing does produce measurable changes in hoof capsule geometry, and that barefoot management tends toward improved angles under controlled conditions.</p>
+
+    <h3>Digital Cushion Development</h3>
+    <p>Proske et al. (2017) found altered locomotion in shod versus barefoot horses alongside increased digital cushion depth after a period of barefoot management — pointing toward more optimal internal foot structure developing without shoes. Bowker's work at Michigan State University established that the digital cushion transitions from adipose (fatty) tissue to fibrocartilage through mechanical stimulation, and that this process is inhibited by reduced frog contact — which shoeing can cause if frog ground contact is lost.</p>
+
+    <h3>Concussion and Lameness</h3>
+    <p>Research on concussion is consistent: barefoot hooves on appropriate footing absorb and dissipate ground impact more effectively than metal-shod hooves. The clinical implication — that long-term shoeing may predispose to lameness through cumulative concussion — is biologically plausible but difficult to prove definitively in controlled studies because of the many confounding variables in horse management over years.</p>
+
+    <h3>Performance</h3>
+    <p>The performance evidence is genuinely mixed. Barefoot horses have competed successfully at elite level in endurance, dressage, and some jumping disciplines. They have also failed at these disciplines when hoof quality or terrain demanded more protection than they could provide. Shod horses dominate high-intensity performance disciplines — racing, cutting, high-level reining — where the specific mechanical requirements (traction, protection, therapeutic support) consistently indicate shoeing.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">What the Science Cannot Tell You</div>
+      <p>No study can tell you whether your specific horse should be barefoot or shod. Population-level research describes averages across groups — it doesn't resolve the individual case. The research informs the framework; your horse's specific hoof quality, work demands, and response to management determine the answer.</p>
+    </div>
+  </section>
+
+  <section class="section" id="decision">
+    <h2>The Decision Framework</h2>
+    <p>The right question is not "is barefoot better?" but "what does my horse actually need?" Answer these five questions honestly and the decision becomes clear.</p>
+
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th class="barefoot-h">Points toward barefoot</th>
+          <th class="shod-h">Points toward shoes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hoof quality?</td>
+          <td>Hard, dense, well-shaped walls; adequate sole depth; naturally good angles</td>
+          <td>Thin walls; flat or thin soles; chronic poor quality; brittle or crumbly wall</td>
+        </tr>
+        <tr>
+          <td>Primary footing?</td>
+          <td>Soft ground — pasture, arena sand, soft dirt — most of the time</td>
+          <td>Gravel, pavement, rocky trails, or hard arena surfaces regularly</td>
+        </tr>
+        <tr>
+          <td>Work demands?</td>
+          <td>Light to moderate work; leisure riding; low-impact disciplines</td>
+          <td>Heavy work; high-impact disciplines; racing; performance requiring traction modification</td>
+        </tr>
+        <tr>
+          <td>Health history?</td>
+          <td>Sound, no chronic lameness, no therapeutic needs</td>
+          <td>History of laminitis, navicular, tendon issues, or any condition requiring mechanical support</td>
+        </tr>
+        <tr>
+          <td>Movement &amp; turnout?</td>
+          <td>Regular daily turnout on varied terrain; adequate movement for natural wear</td>
+          <td>Limited turnout; primarily stalled; insufficient movement for hoof conditioning</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>No single factor is decisive. A horse with excellent hoof quality doing heavy arena work may still need fronts for traction and protection. A horse with moderate hoof quality that lives on soft pasture 23 hours a day may do perfectly well barefoot. Weigh all five factors together and consult your farrier — who can assess hoof quality directly — before making a change.</p>
+  </section>
+
+  <section class="section" id="when-shoes">
+    <h2>When Shoes Are Necessary</h2>
+    <p>These are the situations where barefoot is genuinely contraindicated — not a philosophical choice, but a practical necessity.</p>
+
+    <div class="decision-grid">
+      <div class="d-card stay-shod">
+        <div class="d-title">Wear Exceeds Growth</div>
+        <ul>
+          <li>Horse works regularly on abrasive surfaces</li>
+          <li>Hooves chip, crack, and wear faster than they grow</li>
+          <li>Horse becomes progressively sore between trims</li>
+          <li>The hoof simply cannot sustain the work without protection</li>
+        </ul>
+      </div>
+      <div class="d-card stay-shod">
+        <div class="d-title">Therapeutic Need</div>
+        <ul>
+          <li>Active laminitis or founder requiring rotation management</li>
+          <li>Navicular syndrome requiring egg bars and heel elevation</li>
+          <li>Tendon or ligament injury requiring load reduction</li>
+          <li>Any condition in the corrective shoeing guide</li>
+        </ul>
+      </div>
+      <div class="d-card stay-shod">
+        <div class="d-title">Traction Requirements</div>
+        <ul>
+          <li>Work on ice, wet pavement, or slippery surfaces</li>
+          <li>Performance disciplines requiring studs or borium</li>
+          <li>Horse that slips on its primary working surface barefoot</li>
+          <li>Safety requirements that a bare hoof cannot meet</li>
+        </ul>
+      </div>
+      <div class="d-card stay-shod">
+        <div class="d-title">Poor Hoof Quality</div>
+        <ul>
+          <li>Chronically thin walls that crumble and chip excessively barefoot</li>
+          <li>Flat soles that bruise on any hard surface</li>
+          <li>Poor hoof quality unresponsive to nutritional management</li>
+          <li>Hoof wall integrity insufficient for barefoot work</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Front Shoes Only — The Common Middle Ground</div>
+      <p>Many horses need front shoes but not hinds. The front limbs bear roughly 60% of the horse's weight and bear more concussion impact — they wear faster and are more prone to bruising on hard surfaces. Horses with adequate hind hoof quality often go comfortably barefoot behind while wearing front shoes. This is a rational and common approach that balances protection with natural hoof function.</p>
+    </div>
+  </section>
+
+  <section class="section" id="when-barefoot">
+    <h2>When Barefoot Works</h2>
+    <p>These are the conditions under which barefoot management consistently produces good outcomes.</p>
+
+    <div class="decision-grid">
+      <div class="d-card go-barefoot">
+        <div class="d-title">The Ideal Barefoot Candidate</div>
+        <ul>
+          <li>Naturally hard, dense hoof wall with adequate wall thickness</li>
+          <li>Good sole concavity and adequate sole depth</li>
+          <li>Well-developed frog and digital cushion</li>
+          <li>Lives primarily on varied terrain with good movement</li>
+          <li>Light to moderate work on soft or mixed surfaces</li>
+          <li>Sound, no history of chronic lameness</li>
+          <li>Balanced diet supporting good hoof quality</li>
+        </ul>
+      </div>
+      <div class="d-card go-barefoot">
+        <div class="d-title">Situations Where Barefoot Excels</div>
+        <ul>
+          <li>Horses at pasture rest or in light trail work</li>
+          <li>Endurance horses on appropriate terrain with hoof boots for technical sections</li>
+          <li>Young horses in development (under 2–3 years)</li>
+          <li>Contracted heel rehabilitation — barefoot often the fastest route to expansion</li>
+          <li>Winter rest periods for horses that return to shoes for the competition season</li>
+          <li>Horses being transitioned off therapeutic shoes after rehabilitation</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>The Seasonal Barefoot Approach</h3>
+    <p>Many performance horse owners shoe for the competition season and pull shoes for the winter when work is reduced and footing is softer. This "periodic barefoot" approach gives the hoof a rest from the constraints of shoeing, allows the frog to contact the ground and stimulate blood flow through the winter months, and often produces noticeably better hoof quality by the time shoes go back on in spring. It requires proper barefoot trimming during the shoeless period — not neglect — and hoof boots for any work on hard or rocky ground.</p>
+  </section>
+
+  <section class="section" id="transition">
+    <h2>Transitioning from Shod to Barefoot</h2>
+    <p>The most common mistake in barefoot transitions is speed. Pulling shoes and immediately resuming normal work is the fastest way to a sore, reluctant horse and a decision that barefoot "doesn't work." A proper transition takes months — 6 to 12 is the standard range, and 18 months for horses shod for many years doing heavy work.</p>
+    <p>The reason: years of shoeing produce underdeveloped frogs and digital cushions, sometimes contracted heels, and soles that haven't been toughened by ground contact. The transition period is the time required for those structures to develop and harden. It cannot be skipped.</p>
+
+    <div class="trans-steps">
+      <div class="ts-item">
+        <div class="ts-num">1</div>
+        <div class="ts-body">
+          <div class="ts-title">Pull the Shoes and Assess</div>
+          <div class="ts-text">Have your farrier assess hoof quality at shoe removal. Note sole depth, wall thickness, frog development, and heel condition. This assessment sets the baseline and informs whether the transition is realistic for this horse. A horse with severely flat soles or chronically thin walls may need more preparation before transitioning.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">2</div>
+        <div class="ts-body">
+          <div class="ts-title">Apply a Proper Barefoot Trim</div>
+          <div class="ts-text">A barefoot trim is not a shoe-ready trim without a shoe. The mustang roll (beveled hoof wall edge), careful sole management, and attention to frog health are essential. Work with a farrier or trimmer experienced in barefoot horses — the approach differs meaningfully from conventional trimming. The initial trim may feel unfamiliar to the horse as the angles change.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">3</div>
+        <div class="ts-body">
+          <div class="ts-title">Start on Soft Ground</div>
+          <div class="ts-text">Begin with turnout on soft footing — pasture, arena sand, grass — and limit or eliminate work on hard or rocky surfaces for the first 4–8 weeks. The sole and frog need time to toughen. A horse that was comfortable in the first week of transition and becomes sore in week three is not "failing" barefoot — it has moved from soft to harder footing before the hoof was ready.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">4</div>
+        <div class="ts-body">
+          <div class="ts-title">Use Hoof Boots for Work</div>
+          <div class="ts-text">Hoof boots allow the horse to continue working on mixed or harder terrain during the transition without damaging the still-developing sole and frog. This is not a compromise — it is the correct management approach. A horse that is comfortable and working in boots is doing the transition correctly. Boots come off for turnout so the hoof continues to develop naturally through ground contact.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">5</div>
+        <div class="ts-body">
+          <div class="ts-title">Gradually Introduce Harder Surfaces</div>
+          <div class="ts-text">As the sole toughens and the frog develops — typically visible as a denser, more rubbery frog and a firmer, more concave sole — progressively introduce harder surfaces without boots. Start with packed dirt, then gravel, then harder terrain. Watch the horse carefully for any sign of discomfort. A horse that moves freely on one surface may need boots on a harder one for several more months.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">6</div>
+        <div class="ts-body">
+          <div class="ts-title">Maintain 4–6 Week Trim Intervals</div>
+          <div class="ts-text">Barefoot horses need trimming as regularly as shod horses — often more frequently during the transition, when uneven wear and growth patterns may develop. Do not let the hoof go untrimmed for longer than 6 weeks during the transition. An overgrown barefoot hoof develops flares and leverage problems as quickly as an overgrown shod hoof.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">7</div>
+        <div class="ts-body">
+          <div class="ts-title">Review Nutrition</div>
+          <div class="ts-text">Diet and mineral balance significantly affect hoof quality during transition. Ensure adequate biotin (20mg/day minimum for a horse with known hoof quality issues), zinc, copper, and methionine. Excess sugar and starch in the diet can slow hoof quality improvement and increase laminitis risk. A hay analysis is worth doing if hoof quality is struggling to improve despite good management.</div>
+        </div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">8</div>
+        <div class="ts-body">
+          <div class="ts-title">Know When to Stop</div>
+          <div class="ts-text">Some horses don't successfully transition to barefoot, and that is a legitimate outcome — not a failure of the approach. If a horse remains sore on appropriate footing after 6–9 months of correct management, with boots providing the only comfortable work environment, it may need shoes. Hoof quality that doesn't improve with nutritional management, severe flat soles, or chronic thin walls are realistic barriers. Return to shoes without guilt.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Pulling Shoes Is Not the Transition</div>
+      <p>Shoe removal is the beginning of the transition, not the transition itself. The actual transition is the 6–18 months of progressive conditioning, careful trimming, nutritional management, and graduated surface exposure that follows. Owners who pull shoes and consider the matter resolved in week one are not doing a barefoot transition — they are simply leaving a horse unshod and unmanaged.</p>
+    </div>
+  </section>
+
+  <section class="section" id="hoof-boots">
+    <h2>Hoof Boots — The Middle Ground</h2>
+    <p>Hoof boots are removable protective covers that slip on for riding or specific conditions and come off for normal turnout. They have evolved significantly over the past 20 years and are now legitimate performance equipment — not a compromise solution or a sign that the horse can't go barefoot.</p>
+    <p>Hoof boots allow a barefoot horse to work on terrain its unprotected hoof cannot handle, without the permanent constraints of metal shoes. They are the essential bridge during transitions and a permanent tool for many horses that thrive barefoot at home but need protection for specific terrain or work.</p>
+
+    <h3>When to Use Hoof Boots</h3>
+    <ul>
+      <li>During the shod-to-barefoot transition — for all riding on mixed or hard surfaces while the sole and frog toughen</li>
+      <li>Endurance horses — on technical rocky or paved sections, often front boots only for the most exposed terrain</li>
+      <li>Trail horses — for rocky or gravelly terrain with a horse that is otherwise sound barefoot on home footing</li>
+      <li>After a lost shoe — immediate protection until the farrier arrives; eliminates the severe bilateral imbalance of three shoes and one bare foot</li>
+      <li>Thin-soled horses — protection on hard footing during turnout or riding when the horse would otherwise be sore</li>
+    </ul>
+
+    <h3>Boot Fit Is Critical</h3>
+    <p>A poorly fitted hoof boot causes rubs, sores, and can be dangerous if it slips during work. Measure carefully using the manufacturer's sizing guide — trace the hoof on paper and measure width and length precisely. When in doubt between sizes, try both before buying. The boot should fit snugly without pinching and stay on securely during work without wiggling.</p>
+
+    <h3>Popular Hoof Boot Options</h3>
+    <table class="boot-table">
+      <thead><tr><th>Boot</th><th>Best For</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Scoot Boot</strong></td><td>Trail, endurance, transition</td><td>Lightweight, easy on/off, good for varied terrain. Minimal hardware. Popular for endurance.</td></tr>
+        <tr><td><strong>Renegade</strong></td><td>Endurance, heavy trail use</td><td>Excellent retention on aggressive terrain. Adjustable cable system. Strong track record in endurance competition.</td></tr>
+        <tr><td><strong>EasyCare Glove</strong></td><td>Transition, light trail</td><td>Very close-fitting, minimal bulk. Requires precise sizing. Good for horses with well-trimmed, consistent hoof shape.</td></tr>
+        <tr><td><strong>Cavallo Simple</strong></td><td>Paddock use, rehabilitation, turnout protection</td><td>Easy to fit, forgiving sizing. Best for slow work and turnout protection rather than active riding.</td></tr>
+        <tr><td><strong>Soft Ride</strong></td><td>Therapeutic — laminitis recovery, post-shoeing</td><td>Deep foam insert for maximum cushioning. Not for riding — for standing comfort during acute lameness episodes.</td></tr>
+        <tr><td><strong>Glue-on hoof boots</strong></td><td>Competition, horses who lose boots</td><td>Bonded with adhesive for the shoeing cycle. Remove with solvent. Used when conventional boots won't stay on or for competition.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" id="discipline">
+    <h2>By Discipline</h2>
+    <p>The barefoot-versus-shod answer varies meaningfully by discipline. Here is the practical reality across common riding uses.</p>
+
+    <h3>Endurance &amp; Trail</h3>
+    <p>The discipline with the most successful barefoot culture. Significant numbers of endurance horses, including top-10 finishers and Tevis Cup competitors, complete demanding distances barefoot with hoof boots on technical sections. The key factors: hardened hooves from years of conditioning on varied terrain, appropriate boot selection for difficult sections, and the reality that endurance terrain varies significantly — what works in Florida sand may not work in the Sierra Nevada. Shod is still the majority practice at upper levels where footing is unpredictable and the consequences of boot loss in rocky terrain are serious.</p>
+
+    <h3>Dressage</h3>
+    <p>Increasingly, lower-level dressage horses work barefoot on suitable arena footing. The flat, consistent, managed surfaces of indoor arenas are among the most barefoot-friendly work environments. Higher-level horses and those working on outdoor or mixed footing more commonly require fronts at minimum. The key consideration is that collected work puts significant downward force on the hoof — good sole depth is essential.</p>
+
+    <h3>Show Jumping &amp; Eventing</h3>
+    <p>Barefoot is rare in these disciplines at any competitive level. The combination of hard take-off and landing surfaces, studs required for grass footing, and the forces involved in jumping make shoes functionally necessary for most horses. Some lower-level horses jump small courses barefoot on forgiving footing, but this is the exception. Eventing's cross-country phase — combining speed, varying footing, and significant obstacles — virtually always requires shoeing.</p>
+
+    <h3>Western Performance (Reining, Cutting, Barrel Racing)</h3>
+    <p>Shoeing is universal in serious western performance. Reining horses require sliding plates on the hinds — a shoe type that is foundational to the discipline. Cutting horses need the specific traction pattern their shoes provide for the explosive lateral movements the work demands. Barrel horses need traction for tight turns at speed. These disciplines define their shoeing requirements; barefoot is not a viable option at competition level.</p>
+
+    <h3>Pleasure Riding &amp; Light Work</h3>
+    <p>This is where barefoot most often succeeds. A horse doing weekend trail rides on soft terrain, light arena work, or occasional hacking is an excellent candidate. The work demands don't exceed what a well-conditioned hoof can handle on appropriate surfaces, and the lack of intense performance requirements means traction and protection are rarely critical. Hoof quality and footing remain the deciding factors.</p>
+
+    <h3>Pasture &amp; Retired Horses</h3>
+    <p>The clearest case for barefoot. A horse at pasture rest with no work requirements is almost always better off without shoes — they can be genuinely harmful on a horse that isn't working, restricting hoof mechanism and frog development without providing any protective benefit. Pulling shoes on retirement and maintaining with regular trims is the standard recommendation from most farriers and vets.</p>
+  </section>
+
+  <section class="section" id="videos">
+    <h2>Watch &amp; Learn</h2>
+    <p>Four videos covering the barefoot decision, transition process, and hoof boot selection — tap any thumbnail to play.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="vid-facade" data-vid="rvw6mlP1cYA" data-title="Barefoot Trim vs Shod Trim — A Farrier Explains the Difference" role="button" tabindex="0" aria-label="Play: Barefoot Trim vs Shod Trim — A Farrier Explains the Difference">
+          <img src="https://img.youtube.com/vi/rvw6mlP1cYA/hqdefault.jpg" alt="Barefoot Trim vs Shod Trim — A Farrier Explains the Difference" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">🐎 Barefoot &amp; Shod</div>
+          <div class="video-title">Barefoot Trim vs Shod Trim — A Farrier Explains the Difference</div>
+          <div class="video-channel">Harry Spinks Farrier</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="i096oepzk5o" data-title="Horse Hoof Care: Barefoot vs. Shod" role="button" tabindex="0" aria-label="Play: Horse Hoof Care: Barefoot vs. Shod">
+          <img src="https://img.youtube.com/vi/i096oepzk5o/hqdefault.jpg" alt="Horse Hoof Care: Barefoot vs. Shod" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">🐎 Barefoot &amp; Shod</div>
+          <div class="video-title">Horse Hoof Care: Barefoot vs. Shod</div>
+          <div class="video-channel">Professional Equine Grooms</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="jq4FHfqPug8" data-title="Transitioning from Shod to Barefoot" role="button" tabindex="0" aria-label="Play: Transitioning from Shod to Barefoot">
+          <img src="https://img.youtube.com/vi/jq4FHfqPug8/hqdefault.jpg" alt="Transitioning from Shod to Barefoot" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">🐎 Barefoot &amp; Shod</div>
+          <div class="video-title">Transitioning from Shod to Barefoot</div>
+          <div class="video-channel">Olsen Equine CJF</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="_zwaM-_WbrQ" data-title="Selecting the Right Hoof Boot — Renegade vs Scoot Boot" role="button" tabindex="0" aria-label="Play: Selecting the Right Hoof Boot — Renegade vs Scoot Boot">
+          <img src="https://img.youtube.com/vi/_zwaM-_WbrQ/hqdefault.jpg" alt="Selecting the Right Hoof Boot — Renegade vs Scoot Boot" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">🐎 Barefoot &amp; Shod</div>
+          <div class="video-title">Selecting the Right Hoof Boot — Renegade vs Scoot Boot</div>
+          <div class="video-channel">Dawn Champion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="/hoof-care/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Hoof Care Basics</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/corrective-shoeing/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Corrective &amp; Therapeutic Shoeing</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/nutrition/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Nutrition &amp; Hooves</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/find-a-farrier/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Find a Good Farrier</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.sn-drop-btn');
+  var drop=btn&&btn.closest('.sn-drop');
+  if(btn&&drop){
+    btn.addEventListener('click',function(){var o=drop.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.textContent=o?'Disciplines ▴':'Disciplines ▾';});
+    drop.addEventListener('focusout',function(e){if(!drop.contains(e.relatedTarget)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
+    document.addEventListener('click',function(e){if(!drop.contains(e.target)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
+  }
+})();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid,t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
+</script>
+</body>
+</html>

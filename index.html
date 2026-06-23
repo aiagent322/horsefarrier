@@ -190,33 +190,135 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
 :focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
 
-/* NAV MENU */
-.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
-.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px}
-.nav-link{display:flex;align-items:center;padding:0 14px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
-.nav-link:hover{color:var(--rope-light);border-bottom-color:var(--rope)}
-.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
-.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
-.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
-.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
-.nav-drawer.open{display:flex}
-.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
-.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
-@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
-/* DISCIPLINES DROPDOWN */
-.nav-dropdown{position:relative;display:inline-flex;align-items:center}
-.nav-drop-btn{background:none;border:none;cursor:pointer;font-family:inherit;white-space:nowrap}
-.nav-drop-btn:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
-.nav-drop-menu{display:none;position:absolute;top:100%;left:0;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.1);border-radius:0 0 var(--radius) var(--radius);min-width:200px;z-index:200;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
-.nav-dropdown:hover .nav-drop-menu,.nav-dropdown:focus-within .nav-drop-menu{display:block}
-.nav-drop-item{display:block;padding:10px 16px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-left:3px solid transparent;transition:color 0.2s,background 0.2s,border-color 0.2s}
-.nav-drop-item:hover,.nav-drop-item.active{color:var(--rope-light);background:rgba(255,255,255,0.05);border-left-color:var(--rope)}
-.nav-dropdown.active .nav-drop-btn{color:var(--rope-light);border-bottom-color:var(--rope)}
-/* MOBILE DISCIPLINES DRAWER */
-.nav-disc-toggle{background:none;border:none;cursor:pointer;font-family:inherit;text-align:left;width:100%}
-.nav-disc-drawer{display:none;flex-direction:column}
-.nav-disc-drawer.open{display:flex}
-.nav-sub{padding-left:32px!important;font-size:0.85rem;opacity:0.9}
+
+/* ═══════════════════════════════════════════════════
+   SITE NAV — always-visible, mobile-first
+   320px: single scrollable row
+   768px: wraps to show all, Disciplines dropdown
+   1024px: full bar, no scroll needed
+═══════════════════════════════════════════════════ */
+.site-nav{
+  background:var(--leather-dark);
+  border-top:1px solid rgba(255,255,255,0.1);
+  border-bottom:2px solid var(--rope);
+  position:sticky;
+  top:var(--topbar-h,54px);
+  z-index:90;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+.site-nav-inner{
+  display:flex;
+  align-items:stretch;
+  overflow-x:auto;
+  overflow-y:visible;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  padding:0 4px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.site-nav-inner::-webkit-scrollbar{display:none}
+
+/* base link — 44px tap target, mobile */
+.sn-link{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+  padding:0 13px;
+  height:44px;
+  font-size:0.8rem;
+  font-weight:700;
+  color:rgba(255,255,255,0.72);
+  text-decoration:none;
+  white-space:nowrap;
+  border-bottom:3px solid transparent;
+  border-top:3px solid transparent;
+  transition:color 0.18s, border-color 0.18s, background 0.18s;
+  letter-spacing:0.01em;
+}
+.sn-link:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-link.active{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.06)}
+
+/* Disciplines dropdown wrapper */
+.sn-drop{position:relative;display:flex;align-items:stretch;flex-shrink:0}
+.sn-drop-btn{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+  padding:0 13px;
+  height:44px;
+  font-size:0.8rem;
+  font-weight:700;
+  color:rgba(255,255,255,0.72);
+  background:none;
+  border:none;
+  border-bottom:3px solid transparent;
+  border-top:3px solid transparent;
+  white-space:nowrap;
+  cursor:pointer;
+  font-family:inherit;
+  letter-spacing:0.01em;
+  transition:color 0.18s, border-color 0.18s, background 0.18s;
+}
+.sn-drop-btn:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-drop.active .sn-drop-btn{color:var(--rope-light);border-bottom-color:var(--rope)}
+.sn-drop-btn:focus-visible{outline:3px solid var(--rope);outline-offset:-3px}
+
+/* dropdown panel — hidden by default, shown on hover/focus/open */
+.sn-drop-panel{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  min-width:210px;
+  background:var(--leather-deeper);
+  border:1px solid rgba(255,255,255,0.12);
+  border-top:2px solid var(--rope);
+  border-radius:0 0 var(--radius) var(--radius);
+  box-shadow:0 8px 24px rgba(0,0,0,0.35);
+  z-index:200;
+  padding:4px 0;
+}
+.sn-drop:hover .sn-drop-panel,
+.sn-drop:focus-within .sn-drop-panel,
+.sn-drop.open .sn-drop-panel{display:block}
+
+.sn-drop-link{
+  display:flex;
+  align-items:center;
+  padding:11px 18px;
+  font-size:0.83rem;
+  font-weight:600;
+  color:rgba(255,255,255,0.75);
+  text-decoration:none;
+  border-left:3px solid transparent;
+  transition:color 0.15s, background 0.15s, border-color 0.15s;
+  white-space:nowrap;
+  gap:8px;
+}
+.sn-drop-link:hover,.sn-drop-link.active{
+  color:var(--rope-light);
+  background:rgba(255,255,255,0.06);
+  border-left-color:var(--rope);
+}
+
+/* divider between groups */
+.sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+
+/* tablet 768px — slightly larger text, show BB logo */
+@media(min-width:768px){
+  .bb-logo-link{display:flex}
+  .topbar{padding:13px 20px}
+  .topbar-logo{font-size:1.3rem}
+  .sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}
+}
+
+/* desktop 1024px — full comfortable spacing */
+@media(min-width:1024px){
+  .sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}
+  .site-nav-inner{padding:0 8px}
+}
+
 </style>
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -239,74 +341,44 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
 <header>
 <div class="topbar">
-  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
-    <div class="topbar-brand">
-      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
-      <div class="topbar-divider"></div>
-      <div class="topbar-tagline">
-        The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a>
-      </div>
-    </div>
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1">
+    <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+    <div class="topbar-divider"></div>
+    <div class="topbar-tagline">The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a></div>
   </div>
-  <div style="display:flex;align-items:center;gap:8px">
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
-      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
-      <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
-    </a>
-  </div>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+  </a>
 </div>
-  <nav class="nav-bar" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="/hoof-care/" class="nav-link ">Hoof Care Basics</a>
-      <a href="/farrier-tools/" class="nav-link ">Farrier Tools</a>
-      <a href="/horseshoes/" class="nav-link ">Horseshoe Types</a>
-      <a href="/hoof-issues/" class="nav-link ">Hoof Issues</a>
-      <div class="nav-dropdown ">
-        <button class="nav-link nav-drop-btn" aria-expanded="false" aria-haspopup="true">Disciplines ▾</button>
-        <div class="nav-drop-menu">
-          <a href="/disciplines/reining/" class="nav-drop-item ">🤠 Reining</a>
-          <a href="/disciplines/cutting/" class="nav-drop-item ">🐄 Cutting &amp; Cow Horse</a>
-          <a href="/disciplines/barrel-racing/" class="nav-drop-item ">🏁 Barrel Racing</a>
-          <a href="/disciplines/dressage/" class="nav-drop-item ">🎩 Dressage</a>
-          <a href="/disciplines/show-jumping/" class="nav-drop-item ">🏇 Show Jumping</a>
-          <a href="/disciplines/eventing/" class="nav-drop-item ">⛰️ Eventing</a>
-          <a href="/disciplines/thoroughbred-racing/" class="nav-drop-item ">🏆 Thoroughbred Racing</a>
-          <a href="/disciplines/trail-endurance/" class="nav-drop-item ">🌲 Trail &amp; Endurance</a>
-          <a href="/disciplines/draft-horses/" class="nav-drop-item ">🐎 Draft Horses</a>
-        </div>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/hoof-care/" class="sn-link ">Hoof Care</a>
+    <a href="/farrier-tools/" class="sn-link ">Farrier Tools</a>
+    <a href="/horseshoes/" class="sn-link ">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="sn-link ">Hoof Issues</a>
+    <div class="sn-div" aria-hidden="true"></div>
+    <div class="sn-drop ">
+      <button class="sn-drop-btn" aria-haspopup="true" aria-expanded="false" aria-controls="disc-panel">Disciplines ▾</button>
+      <div class="sn-drop-panel" id="disc-panel" role="menu">
+        <a href="/disciplines/reining/" class="sn-drop-link " role="menuitem">🤠 Reining</a>
+        <a href="/disciplines/cutting/" class="sn-drop-link " role="menuitem">🐄 Cutting &amp; Cow Horse</a>
+        <a href="/disciplines/barrel-racing/" class="sn-drop-link " role="menuitem">🏁 Barrel Racing</a>
+        <a href="/disciplines/dressage/" class="sn-drop-link " role="menuitem">🎩 Dressage</a>
+        <a href="/disciplines/show-jumping/" class="sn-drop-link " role="menuitem">🏇 Show Jumping</a>
+        <a href="/disciplines/eventing/" class="sn-drop-link " role="menuitem">⛰️ Eventing</a>
+        <a href="/disciplines/thoroughbred-racing/" class="sn-drop-link " role="menuitem">🏆 Thoroughbred Racing</a>
+        <a href="/disciplines/trail-endurance/" class="sn-drop-link " role="menuitem">🌲 Trail &amp; Endurance</a>
+        <a href="/disciplines/draft-horses/" class="sn-drop-link " role="menuitem">🐎 Draft Horses</a>
       </div>
-      <a href="/breed-hooves/" class="nav-link ">Breed Hoof Needs</a>
-      <a href="/nutrition/" class="nav-link ">Nutrition</a>
-      <a href="/faq/" class="nav-link ">FAQ</a>
-      <a href="/glossary/" class="nav-link ">Glossary</a>
-      <a href="/videos/" class="nav-link ">Videos</a>
     </div>
-  </nav>
-  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
-    <a href="/hoof-care/" class="nav-link ">🪄 Hoof Care Basics</a>
-    <a href="/farrier-tools/" class="nav-link ">🔧 Farrier Tools</a>
-    <a href="/horseshoes/" class="nav-link ">🔩 Horseshoe Types</a>
-    <a href="/hoof-issues/" class="nav-link ">🏥 Hoof Issues</a>
-    <button class="nav-link nav-disc-toggle" aria-expanded="false">🏇 Disciplines ▾</button>
-    <div class="nav-disc-drawer" id="disc-drawer">
-      <a href="/disciplines/reining/" class="nav-link nav-sub ">🤠 Reining</a>
-      <a href="/disciplines/cutting/" class="nav-link nav-sub ">🐄 Cutting &amp; Cow Horse</a>
-      <a href="/disciplines/barrel-racing/" class="nav-link nav-sub ">🏁 Barrel Racing</a>
-      <a href="/disciplines/dressage/" class="nav-link nav-sub ">🎩 Dressage</a>
-      <a href="/disciplines/show-jumping/" class="nav-link nav-sub ">🏇 Show Jumping</a>
-      <a href="/disciplines/eventing/" class="nav-link nav-sub ">⛰️ Eventing</a>
-      <a href="/disciplines/thoroughbred-racing/" class="nav-link nav-sub ">🏆 Thoroughbred Racing</a>
-      <a href="/disciplines/trail-endurance/" class="nav-link nav-sub ">🌲 Trail &amp; Endurance</a>
-      <a href="/disciplines/draft-horses/" class="nav-link nav-sub ">🐎 Draft Horses</a>
-    </div>
-    <a href="/breed-hooves/" class="nav-link ">🐎 Breed Hoof Needs</a>
-    <a href="/nutrition/" class="nav-link ">🌾 Nutrition</a>
-    <a href="/faq/" class="nav-link ">❓ FAQ</a>
-    <a href="/glossary/" class="nav-link ">📖 Glossary</a>
-    <a href="/videos/" class="nav-link ">🎬 Videos</a>
-  </nav>
+    <div class="sn-div" aria-hidden="true"></div>
+    <a href="/breed-hooves/" class="sn-link ">Breed Hooves</a>
+    <a href="/nutrition/" class="sn-link ">Nutrition</a>
+    <a href="/faq/" class="sn-link ">FAQ</a>
+    <a href="/glossary/" class="sn-link ">Glossary</a>
+    <a href="/videos/" class="sn-link ">Videos</a>
+  </div>
+</nav>
 </header>
 
 <div class="hero-banner">
@@ -479,24 +551,54 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 </footer>
 <script>
 (function(){
-  var btn=document.querySelector('.nav-toggle');
-  var drawer=document.getElementById('nav-drawer');
-  if(btn&&drawer){
-    btn.addEventListener('click',function(){
-      var open=drawer.classList.toggle('open');
-      btn.setAttribute('aria-expanded',open);
-      btn.querySelector('svg').innerHTML=open
-        ?'<line x1="3" y1="6" x2="21" y2="18"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="21" y1="6" x2="3" y2="18"/>'
-        :'<line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>';
+  var btn = document.querySelector('.sn-drop-btn');
+  var drop = btn && btn.closest('.sn-drop');
+  if(btn && drop){
+    btn.addEventListener('click', function(){
+      var isOpen = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.textContent = isOpen ? 'Disciplines ▴' : 'Disciplines ▾';
+    });
+    drop.addEventListener('focusout', function(e){
+      if(!drop.contains(e.relatedTarget)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!drop.contains(e.target)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
     });
   }
-  var discBtn=document.querySelector('.nav-disc-toggle');
-  var discDrawer=document.getElementById('disc-drawer');
-  if(discBtn&&discDrawer){
-    discBtn.addEventListener('click',function(){
-      var open=discDrawer.classList.toggle('open');
-      discBtn.setAttribute('aria-expanded',open);
-      discBtn.textContent=(open?'🏇 Disciplines ▴':'🏇 Disciplines ▾');
+})();
+</script>
+<script>
+(function(){
+  var btn = document.querySelector('.sn-drop-btn');
+  var drop = btn && btn.closest('.sn-drop');
+  if(btn && drop){
+    btn.addEventListener('click', function(){
+      var isOpen = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.textContent = isOpen ? 'Disciplines ▴' : 'Disciplines ▾';
+    });
+    drop.addEventListener('focusout', function(e){
+      if(!drop.contains(e.relatedTarget)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!drop.contains(e.target)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
     });
   }
 })();

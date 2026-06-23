@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<meta name="format-detection" content="telephone=no, address=no, date=no, email=no">
+<title>Thin Soles in Horses — Causes, Protection & Treatment | HorseFarrier.net</title>
+<meta name="description" content="Complete guide to thin soles in horses — what causes inadequate sole depth, how farriers protect and build sole thickness, management strategies, and prevention for flat-footed horses.">
+<link rel="canonical" href="https://horsefarrier.net/hoof-issues/thin-soles/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Thin Soles in Horses — Causes, Protection & Treatment">
+<meta property="og:description" content="Everything horse owners need to know about thin soles — bruising, sensitivity on rocky ground, farrier protection options, and building sole depth over time.">
+<meta property="og:url" content="https://horsefarrier.net/hoof-issues/thin-soles/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* MOBILE-FIRST — 320px base */
+:root{
+  --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --alert:#8B1A1A;--alert-light:#FDF0F0;
+  --ts:#8B6914;--ts-dark:#5C4509;--ts-light:#FFF8E6;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{display:none}
+.topbar-tagline{display:none}
+.bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
+.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px;flex-wrap:wrap}
+.nav-link{display:flex;align-items:center;padding:0 12px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
+.nav-link:hover,.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
+.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
+.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
+.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
+.nav-drawer.open{display:flex}
+.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
+.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
+@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+.breadcrumb{background:var(--sand);border-bottom:1px solid var(--border);padding:10px max(16px,env(safe-area-inset-right))}
+.breadcrumb-inner{max-width:860px;margin:0 auto;font-size:0.78rem;color:var(--ink-muted);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.breadcrumb-inner a{color:var(--leather);text-decoration:none;font-weight:600}
+.breadcrumb-inner a:hover{text-decoration:underline}
+.breadcrumb-sep{opacity:0.5}
+.hero{background:linear-gradient(160deg,var(--ts) 0%,var(--ts-dark) 55%,#2A1500 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23C4A265' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.hero-inner{max-width:860px;margin:0 auto;position:relative}
+.series-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:12px}
+.hero h1{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:10px}
+.hero h1 em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.72);font-size:0.9rem;line-height:1.6;max-width:640px;margin-bottom:16px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.8);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:14px}
+.severity-banner{background:var(--ts-light);border-left:4px solid var(--ts);padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0;margin:20px 0}
+.severity-banner strong{color:var(--ts-dark);display:block;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.severity-banner p{font-size:0.88rem;color:var(--ink);line-height:1.5}
+.page-wrap{max-width:860px;margin:0 auto;padding:0 16px 40px}
+.section-head{margin:32px 0 16px}
+.section-head h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px}
+.section-head p{font-size:0.9rem;color:var(--ink-muted);line-height:1.6}
+.section-divider{height:3px;background:linear-gradient(90deg,var(--ts) 0%,transparent 100%);border-radius:2px;margin-bottom:18px}
+.anatomy-box{background:var(--ts-light);border:1px solid rgba(139,105,20,0.2);border-radius:var(--radius-lg);padding:18px;margin-bottom:20px}
+.anatomy-box h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ts-dark);margin-bottom:10px}
+.anatomy-box p{font-size:0.87rem;color:var(--ink);line-height:1.65}
+.anatomy-box p+p{margin-top:8px}
+.anatomy-box strong{color:var(--ts-dark)}
+.what-grid{display:flex;flex-direction:column;gap:14px}
+.what-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 16px}
+.what-card h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.what-card p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65}
+.what-card ul{font-size:0.88rem;color:var(--ink-soft);line-height:1.65;padding-left:18px;margin-top:8px}
+.what-card ul li{margin-bottom:5px}
+.causes-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.cause-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;display:flex;gap:14px;align-items:flex-start}
+.cause-icon{font-size:1.4rem;flex-shrink:0;line-height:1;margin-top:2px}
+.cause-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:3px}
+.cause-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+/* SOLE DEPTH SCALE */
+.depth-scale{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:24px}
+.depth-scale-head{background:var(--sand);padding:14px 18px;border-bottom:1px solid var(--border)}
+.depth-scale-head h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink)}
+.depth-row{display:flex;gap:0;border-bottom:1px solid var(--border)}
+.depth-row:last-child{border-bottom:none}
+.depth-stage{flex:0 0 100px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 10px;text-align:center;font-weight:700;font-size:0.78rem;border-right:1px solid var(--border)}
+.depth-stage.critical{background:#FFEBEE;color:#C62828}
+.depth-stage.thin{background:#FFF8E1;color:#F57F17}
+.depth-stage.adequate{background:#E8F5E9;color:#2E7D32}
+.depth-stage.ideal{background:#E3F2FD;color:#1565C0}
+.depth-detail{padding:14px 16px;flex:1}
+.depth-detail strong{display:block;font-size:0.85rem;color:var(--ink);margin-bottom:5px}
+.depth-detail p{font-size:0.83rem;color:var(--ink-muted);line-height:1.55}
+.quick-ref{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:22px 18px;margin:24px 0}
+.quick-ref h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--cream);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12)}
+.quick-ref-grid{display:flex;flex-direction:column;gap:10px}
+.qr-item{display:flex;gap:12px;align-items:flex-start}
+.qr-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--rope-light);flex:0 0 90px}
+.qr-val{font-size:0.85rem;color:rgba(255,255,255,0.8);line-height:1.5}
+.role-tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin:24px 0 0;overflow-x:auto;scrollbar-width:none}
+.role-tabs::-webkit-scrollbar{display:none}
+.role-tab{padding:10px 16px;font-size:0.82rem;font-weight:700;color:var(--ink-muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;transition:0.2s;margin-bottom:-2px;min-height:44px}
+.role-tab.active{color:var(--ts-dark);border-bottom-color:var(--ts)}
+.role-panel{display:none;padding:20px 0}
+.role-panel.active{display:block}
+.role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
+.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
+.role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
+.role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
+.treatment-steps{display:flex;flex-direction:column;gap:12px}
+.step{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.step-num{background:var(--ts);color:var(--cream);font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:900;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-body strong{display:block;font-size:0.9rem;color:var(--ink);font-weight:700;margin-bottom:4px}
+.step-body p{font-size:0.85rem;color:var(--ink-soft);line-height:1.6}
+.step-body ul{font-size:0.85rem;color:var(--ink-soft);line-height:1.6;padding-left:16px;margin-top:6px}
+.step-body ul li{margin-bottom:4px}
+.product-grid{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.product-card{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.product-card h4{font-size:0.88rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.product-card p{font-size:0.82rem;color:var(--ink-muted);line-height:1.55}
+.product-tag{display:inline-flex;font-size:0.68rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:3px 9px;border-radius:8px;margin-bottom:6px}
+.product-tag.rx{background:#E8F4FD;color:var(--steel)}
+.product-tag.farrier{background:var(--ts-light);color:var(--ts-dark)}
+.product-tag.otc{background:var(--sage-light);color:var(--sage-dark)}
+.product-tag.mgmt{background:var(--rope-pale);color:var(--leather-dark)}
+.caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
+.caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+.tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
+.tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+.prevention-grid{display:flex;flex-direction:column;gap:12px}
+.prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
+.prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+.video-section{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:8px}
+.video-grid{display:flex;flex-direction:column;gap:0}
+.video-card{border-bottom:1px solid var(--border)}
+.video-card:last-child{border-bottom:none}
+.video-frame{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-meta{padding:14px 16px}
+.video-cat{display:inline-flex;align-items:center;font-size:0.67rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:8px;background:var(--ts-light);color:var(--ts-dark);margin-bottom:7px}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px}
+.video-by{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:16px 18px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:52px}
+.faq-q .faq-arrow{font-size:0.9rem;color:var(--leather);transition:transform 0.2s;flex-shrink:0}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 18px 16px;font-size:0.86rem;color:var(--ink-soft);line-height:1.65}
+.faq-item.open .faq-a{display:block}
+.series-nav{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;margin:28px 0}
+.series-nav h3{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--ink);margin-bottom:12px}
+.series-list{display:flex;flex-direction:column;gap:6px}
+.series-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--radius);background:var(--white);border:1px solid var(--border);text-decoration:none;color:var(--ink);font-size:0.85rem;font-weight:600;transition:var(--transition)}
+.series-item.current{background:var(--ts);color:var(--cream);border-color:var(--ts)}
+.series-item.current .series-num{background:rgba(255,255,255,0.2);color:var(--cream)}
+.series-item.done{border-color:var(--border-strong)}
+.series-item.coming{opacity:0.5;pointer-events:none;cursor:default}
+.series-num{background:var(--sand-dark);color:var(--ink-muted);font-size:0.72rem;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.series-item.done .series-num{background:var(--sage-light);color:var(--sage-dark)}
+.cta-strip{background:var(--sand);border-top:1px solid var(--border);padding:28px max(16px,env(safe-area-inset-right))}
+.cta-box{max-width:860px;margin:0 auto;text-align:center}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.cta-box p{font-size:0.86rem;color:var(--ink-muted);line-height:1.6;max-width:560px;margin:0 auto 16px}
+.cta-btns{display:flex;flex-direction:column;gap:10px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:22px;font-weight:700;font-size:0.88rem;text-decoration:none;transition:var(--transition);min-height:48px}
+.cta-btn.primary{background:var(--leather-deeper);color:var(--cream)}
+.cta-btn.secondary{background:var(--white);color:var(--leather-dark);border:1px solid var(--border-strong)}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-items:center;padding:6px 4px;min-height:44px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:12px 0}
+@media(hover:hover){
+  footer a:hover{text-decoration:underline}
+  .cta-btn.primary:hover{background:var(--leather-dark);transform:translateY(-2px)}
+  .cta-btn.secondary:hover{background:var(--sand);transform:translateY(-2px)}
+  .series-item:not(.current):not(.coming):hover{background:var(--sand);border-color:var(--border-strong)}
+}
+@media(min-width:768px){
+  .topbar-divider{display:block;width:1px;height:20px;background:rgba(255,255,255,0.2);flex-shrink:0}
+  .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.55)}
+  .bb-logo-link{display:flex}
+  .hero h1{font-size:2.4rem}
+  .what-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .causes-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .prevention-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .quick-ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cta-btns{flex-direction:row;justify-content:center}
+  footer{font-size:0.82rem}
+  .series-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .video-grid{display:grid;grid-template-columns:1fr 1fr}
+  .video-card{border-bottom:none;border-right:1px solid var(--border)}
+  .video-card:nth-child(even){border-right:none}
+  .video-card:nth-child(1),.video-card:nth-child(2){border-bottom:1px solid var(--border)}
+}
+@media(min-width:1024px){
+  .what-grid{grid-template-columns:1fr 1fr 1fr}
+  .causes-grid{grid-template-columns:1fr 1fr 1fr}
+  .prevention-grid{grid-template-columns:1fr 1fr 1fr}
+  .hero h1{font-size:2.6rem}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Thin Soles in Horses — Causes, Protection & Treatment",
+  "url":"https://horsefarrier.net/hoof-issues/thin-soles/",
+  "description":"Complete guide to thin soles in horses — causes, sole depth assessment, farrier protection strategies, and building sole thickness long-term.",
+  "about":{"@type":"MedicalCondition","name":"Equine Thin Soles","alternateName":"Flat soles; Inadequate sole depth; Solar sensitivity"},
+  "publisher":{"@type":"Organization","name":"Bridle & Bit Magazine","url":"https://www.bridleandbit.com"},
+  "isPartOf":{"@type":"WebSite","name":"HorseFarrier.net","url":"https://horsefarrier.net"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+    <div class="topbar-brand">
+      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-tagline">The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a></div>
+    </div>
+  </div>
+  <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="nav-bar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
+    <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
+    <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
+    <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="nav-link active">Top 10 Hoof Issues</a>
+    <a href="/faq/" class="nav-link">FAQ</a>
+    <a href="/glossary/" class="nav-link">Glossary</a>
+    <a href="/videos/" class="nav-link">Videos</a>
+  </div>
+</nav>
+<nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+  <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
+  <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
+  <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
+  <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
+  <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
+  <a href="/hoof-issues/" class="nav-link active">🏥 Top 10 Hoof Issues</a>
+  <a href="/faq/" class="nav-link">❓ FAQ</a>
+  <a href="/glossary/" class="nav-link">📖 Glossary</a>
+  <a href="/videos/" class="nav-link">🎬 Videos</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">HorseFarrier.net</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>Thin Soles</span>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="series-badge">🏥 Issue #8 of Top 10 Hoof Problems</div>
+    <h1><em>Thin</em> Soles</h1>
+    <p class="hero-sub">A horse that moves freely on arena sand but flinches on gravel, hesitates over pebbles, or goes footy on hard ground is likely dealing with thin soles. Inadequate sole depth is one of the most common limiting factors in performance horses — and one of the most manageable with the right farrier approach and long-term strategy.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">🪨 Sensitivity to Ground</span>
+      <span class="hero-tag">🐎 Common in TBs</span>
+      <span class="hero-tag">🔨 Farrier-Managed</span>
+      <span class="hero-tag">⏳ Improvable Over Time</span>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" class="page-wrap">
+
+  <div class="severity-banner">
+    <strong>⚠️ Severity: Mild to Moderate — But Limits Performance</strong>
+    <p>Thin soles rarely cause catastrophic lameness, but they significantly limit where and how a horse can work. A thin-soled horse on rocky trail or hard arena footing is perpetually at risk of bruising, abscess, and chronic foot soreness. The good news: sole depth can be improved — but it requires protecting the sole from paring, correct nutritional support, and patience measured in months, not weeks.</p>
+  </div>
+
+  <!-- WHAT IS IT -->
+  <div class="section-head">
+    <div class="section-divider"></div>
+    <h2>What Are Thin Soles?</h2>
+    <p>The anatomy of the horse's sole and why depth matters so much.</p>
+  </div>
+
+  <div class="anatomy-box">
+    <h3>🔬 The Sole — Your Horse's Primary Ground Shield</h3>
+    <p>The <strong>sole</strong> is the bottom of the hoof — the curved, concave plate of horn that spans the ground surface between the hoof wall and the frog. A correctly conformed sole is concave (dished inward) and thick enough to protect the sensitive corium, coffin bone, and digital cushion from ground contact and impact. In a horse with adequate sole depth, the coffin bone floats above the ground surface with a protective layer of horn between it and the earth. In a thin-soled horse, that protective layer is reduced — sometimes to just a few millimeters.</p>
+    <p>Sole depth is measured from the ground surface of the sole to the outer surface of the coffin bone beneath it. <strong>Adequate sole depth is generally considered 15mm (about 5/8 inch) or more</strong>. Many performance horses, particularly Thoroughbreds and horses with flat or low-set coffin bones, have sole depths of 8–12mm — enough to manage on soft surfaces but insufficient for rocky, hard, or varied terrain. Sole depth under 10mm predisposes horses to bruising from virtually any firm surface impact.</p>
+    <p>The sole is <strong>not the same as the white line</strong>, and it is not the frog. It is the broad, curved plate of non-sensitive horn that a farrier should never aggressively pare — every millimeter removed is a millimeter of protection lost.</p>
+  </div>
+
+  <!-- SOLE DEPTH SCALE -->
+  <div class="section-head" style="margin-top:8px;">
+    <div class="section-divider"></div>
+    <h2>Sole Depth — What the Numbers Mean</h2>
+    <p>Sole depth can be estimated by the farrier with hoof testers or measured precisely by the vet using radiographs. Here is what each range means for your horse's management.</p>
+  </div>
+
+  <div class="depth-scale">
+    <div class="depth-scale-head">
+      <h3>📏 Sole Depth Categories — Measured from Ground Surface to Coffin Bone</h3>
+    </div>
+    <div class="depth-row">
+      <div class="depth-stage critical">CRITICAL<br>&lt; 8mm</div>
+      <div class="depth-detail">
+        <strong>Dangerously Thin — Coffin Bone Nearly Unprotected</strong>
+        <p>At this depth, even moderate ground irregularities can cause coffin bone bruising. The horse is likely foot-sore on any firm surface, may show a consistently positive sole pressure response to hoof testers, and is at high risk of subsolar abscesses. Full pads with pour-in packing are required immediately. Radiographs essential. Ride only on soft, even footing if at all.</p>
+      </div>
+    </div>
+    <div class="depth-row">
+      <div class="depth-stage thin">THIN<br>8–14mm</div>
+      <div class="depth-detail">
+        <strong>Insufficient — Sensitive on Hard or Rocky Terrain</strong>
+        <p>The most common range for flat-footed performance horses. Manageable on arena sand and grass but problematic on gravel, road, or rocky trail. Bruising risk is significant on hard footing. Full pads, wide-web shoes, and pour-in packing provide important protection. The goal of management is building toward adequate depth through correct farrier care and nutrition.</p>
+      </div>
+    </div>
+    <div class="depth-row">
+      <div class="depth-stage adequate">ADEQUATE<br>15–20mm</div>
+      <div class="depth-detail">
+        <strong>Good — Normal Range for Most Horses</strong>
+        <p>Most horses with good-quality soles and correct trimming fall in this range. Comfortable on most terrain types. Some protection still appreciated on very rocky footing or road work. Standard shoeing appropriate. Continue the management practices that have maintained this depth.</p>
+      </div>
+    </div>
+    <div class="depth-row">
+      <div class="depth-stage ideal">IDEAL<br>&gt; 20mm</div>
+      <div class="depth-detail">
+        <strong>Excellent — Maximum Protection and Durability</strong>
+        <p>Thick, well-developed soles seen in horses with optimal genetics, nutrition, and farrier care. Comfortable on most terrain without pads. Characteristic of horses that have never had their soles aggressively pared, have had consistent nutrition, and have developed sole naturally over time. The target for any thin-soled horse rehabilitation program.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT IS FLAT FOOT -->
+  <div class="what-grid" style="margin-bottom:24px;">
+    <div class="what-card">
+      <h3>🔍 How to Identify Thin Soles at Home</h3>
+      <p>Signs that suggest thin or inadequate sole depth:</p>
+      <ul>
+        <li><strong>Footiness on gravel or hard ground</strong> — the horse picks its way carefully, shortens stride, or appears sore on rocky or firm terrain but moves freely on soft surfaces</li>
+        <li><strong>Flat or convex sole</strong> — a healthy sole is concave (dished). A flat or "dropped" sole that bulges downward indicates the coffin bone is close to the ground surface</li>
+        <li><strong>Positive sole pressure response</strong> — when thumb pressure or hoof testers are applied to the center of the sole, the horse flinches; sensitive soles react quickly and clearly</li>
+        <li><strong>Frequent subsolar bruises</strong> — red or purple discoloration visible in the sole when the foot is cleaned, indicating hemorrhage from stone impacts</li>
+        <li><strong>Recurrent abscesses in the same location</strong> — thin soles allow stone bruises to progress to abscesses repeatedly</li>
+        <li><strong>Radiographic confirmation</strong> — the most accurate assessment; your vet can measure sole depth precisely from lateral foot X-rays</li>
+      </ul>
+    </div>
+    <div class="what-card">
+      <h3>🐎 Breeds Most Commonly Affected</h3>
+      <p>Thin soles are significantly more common in certain breeds and types:</p>
+      <ul>
+        <li><strong>Thoroughbreds</strong> — the breed most associated with thin soles; flat, low-profile feet with limited sole depth are nearly universal in racing stock and common in sport horse crosses</li>
+        <li><strong>Warmbloods with Thoroughbred influence</strong> — sport horse crosses inherit TBflatness frequently</li>
+        <li><strong>Standardbreds</strong> — similar flat foot tendency to Thoroughbreds</li>
+        <li><strong>Hot-blooded horses generally</strong> — Arabian-type hoof conformation sometimes features flatter, less concave soles than cold-blooded or draft types</li>
+        <li><strong>Any horse post-laminitis</strong> — coffin bone rotation reduces the distance between bone and ground; chronic laminitic horses frequently develop flat or even convex soles as the bone presses downward</li>
+      </ul>
+      <p style="margin-top:8px;">Draft horses, mountain breeds (Haflingers, Fjords, Icelandics), and Quarter Horses with stocky foot conformation typically have excellent natural sole depth by comparison.</p>
+    </div>
+    <div class="what-card">
+      <h3>⚠️ The Flat Foot Distinction</h3>
+      <p><strong>Flat feet</strong> and <strong>thin soles</strong> are related but not identical. A flat foot describes a hoof with reduced concavity — the sole is close to the level of the hoof wall rather than dished inward. A thin sole describes inadequate sole depth regardless of concavity. A horse can have a flat foot with reasonable sole depth, or a horse can have some concavity but still have thin soles. In practice, the two commonly co-exist — flat-footed horses tend toward thin soles — but they require separate assessment. Sole depth from the ground surface to the coffin bone is the measurement that matters for protection; the visual appearance of flatness alone does not determine sensitivity.</p>
+    </div>
+  </div>
+
+  <!-- CAUSES -->
+  <div class="section-head" style="margin-top:8px;">
+    <div class="section-divider"></div>
+    <h2>What Causes Thin Soles</h2>
+  </div>
+
+  <div class="causes-grid">
+    <div class="cause-card">
+      <div class="cause-icon">🧬</div>
+      <div class="cause-body">
+        <h4>Genetics and Breed Conformation</h4>
+        <p>The single largest factor. Thoroughbreds were selectively bred for speed — light, flat feet reduce weight and increase stride efficiency. The trade-off is reduced sole depth and sensitivity on anything other than groomed turf. A horse inherits its basic foot shape and sole-producing potential from its parents. No amount of management fully overcomes extreme genetic flatness, though it can be meaningfully improved.</p>
+      </div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-icon">✂️</div>
+      <div class="cause-body">
+        <h4>Over-Paring by the Farrier</h4>
+        <p>The most correctable cause. Farriers who aggressively pare the sole at each visit to "clean it up" or check for sole depth remove horn that took weeks to grow. The sole grows slowly — approximately 1–2mm per month. A farrier who removes 3–4mm of sole per visit is perpetually thinner than the horse's biology can replace. The correct approach for thin-soled horses: leave the sole entirely alone, removing only exfoliating flakes.</p>
+      </div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-icon">🌡️</div>
+      <div class="cause-body">
+        <h4>Previous or Chronic Laminitis</h4>
+        <p>Laminitis causes the coffin bone to rotate downward toward the sole. As the bone tip approaches the ground surface, the sole between bone and ground is compressed and the distance shrinks. Chronic laminitic horses frequently develop flat or convex soles (dropped soles) as the coffin bone presses against the inner sole surface. This is among the most difficult thin-sole situations to manage because the structural geometry of the foot has changed.</p>
+      </div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-icon">🥗</div>
+      <div class="cause-body">
+        <h4>Poor Nutrition</h4>
+        <p>Sole horn quality and thickness depend on the same nutritional building blocks as hoof wall — biotin, zinc, copper, methionine, and essential fatty acids. Horses on deficient diets (hay-only without mineral supplementation, or with mineral imbalances) produce thinner, softer, lower-quality sole horn that wears and bruises more easily. Nutritional improvement is slow but measurable over 9–12 months.</p>
+      </div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-icon">💧</div>
+      <div class="cause-body">
+        <h4>Chronic Wet Conditions</h4>
+        <p>Sole horn that is continuously wet becomes soft and loses structural integrity. Horses standing in wet paddocks, muddy stalls, or boggy pastures develop sole horn that compresses easily under load — effectively functioning as if it were thinner than its actual measurement, because soft horn provides less protection than firm, dry horn of the same thickness.</p>
+      </div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-icon">🏃</div>
+      <div class="cause-body">
+        <h4>High Mileage on Abrasive Surfaces</h4>
+        <p>Horses worked extensively on abrasive footing — hard packed arenas, roads, rocky trails — wear the sole faster than it can regenerate, particularly if baseline sole depth is already limited. Trail horses and horses in consistent road work on thin soles need proactive protection — pads, boots, or pour-in packing — to prevent the sole from being worn thinner than the horse's biology can maintain.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK REF -->
+  <div class="quick-ref">
+    <h3>⚡ Quick Reference — Thin Soles at a Glance</h3>
+    <div class="quick-ref-grid">
+      <div class="qr-item"><div class="qr-label">Definition</div><div class="qr-val">Inadequate sole depth between ground surface and coffin bone — typically under 15mm</div></div>
+      <div class="qr-item"><div class="qr-label">Key Signs</div><div class="qr-val">Footiness on gravel, flat or convex sole, sole bruising, positive pressure response, recurrent abscesses</div></div>
+      <div class="qr-item"><div class="qr-label">Top Causes</div><div class="qr-val">Genetics (TB), over-paring, laminitis, poor nutrition, wet conditions, abrasive surfaces</div></div>
+      <div class="qr-item"><div class="qr-label">Diagnosis</div><div class="qr-val">Visual assessment + hoof tester response + radiographs for precise measurement</div></div>
+      <div class="qr-item"><div class="qr-label">Farrier Fix</div><div class="qr-val">Stop paring sole + full pads + pour-in packing + wide-web shoe + Venice turpentine</div></div>
+      <div class="qr-item"><div class="qr-label">Vet Role</div><div class="qr-val">Radiographs for sole depth measurement; rule out laminitis as underlying cause</div></div>
+      <div class="qr-item"><div class="qr-label">Timeline</div><div class="qr-val">Protection immediate; meaningful sole growth 6–12 months with correct management</div></div>
+      <div class="qr-item"><div class="qr-label">Best Breeds</div><div class="qr-val">Thoroughbreds, sport horse crosses, Standardbreds, any post-laminitis horse</div></div>
+    </div>
+  </div>
+
+  <!-- TREATMENT — THREE ROLES -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>Treatment — Three Roles, Three Approaches</h2>
+    <p>Thin sole management has two simultaneous goals: immediate protection from bruising and pain, and long-term building of sole depth. The farrier leads both. The vet provides the diagnostic baseline. The owner manages footing and nutrition daily.</p>
+  </div>
+
+  <div class="role-tabs" role="tablist" aria-label="Treatment by role">
+    <button class="role-tab active" role="tab" aria-selected="true" aria-controls="panel-farrier" id="tab-farrier">🔨 The Farrier</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-vet" id="tab-vet">🩺 The Veterinarian</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-owner" id="tab-owner">🧤 The Horse Owner</button>
+  </div>
+
+  <!-- FARRIER PANEL -->
+  <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
+    <div class="role-header">
+      <div class="role-icon">🔨</div>
+      <div class="role-header-text">
+        <h3>The Farrier's Role — Protection First, Then Sole Development</h3>
+        <p>For a thin-soled horse, the farrier's two mandates are: protect what's there right now, and stop doing anything that prevents more from growing. Both of these — protection and non-interference — are equally important. A farrier who provides excellent pads but continues to aggressively pare the sole defeats half the purpose.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Stop Paring the Sole — The Most Important Change</strong>
+          <p>This is the single most impactful farrier change for a thin-soled horse. The sole should not be pared at all in horses with inadequate sole depth. Only exfoliating material — dead, flaky horn that comes away with minimal pressure — should be removed. The firm, waxy sole that resists the knife should be left completely untouched. This is a significant change of practice for many farriers trained to "clean up" the sole at each visit. For thin-soled horses, the benefit of leaving that horn in place dramatically outweighs any cosmetic or diagnostic value of paring. Communicate this specifically to your farrier: "I would like you to leave as much sole as possible."</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Wide-Web Shoe — Broader Ground Coverage</strong>
+          <p>A wider-than-standard shoe provides a broader bearing surface, distributing the horse's weight over more of the hoof and reducing peak pressure on any single point of the thin sole. For thin-soled horses on any firm footing:</p>
+          <ul>
+            <li>A wide-web steel or aluminum shoe (broader than standard) reduces the open area through which ground objects can contact the sole</li>
+            <li>The shoe is fitted to cover as much of the white line as possible without interfering with sole function</li>
+            <li>A rolled or rockered toe reduces breakover effort and the loading stress on the toe area of the sole</li>
+            <li>Bar shoes (egg bar or straight bar) close off the heel area and reduce the gap through which stones can press against the sole at the back of the foot</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Full Pads — Immediate Sole Protection</strong>
+          <p>A full pad placed between the shoe and hoof covers the entire solar surface, physically blocking ground contact from any object that would otherwise contact the sole. This is the fastest way to provide protection:</p>
+          <ul>
+            <li><strong>Leather pads</strong> — traditional choice; conforms to the sole shape, breathes, allows some natural moisture exchange; long used by Thoroughbred horsemen</li>
+            <li><strong>Plastic pads (polyurethane)</strong> — more durable than leather; good protection on hard, rocky footing; doesn't breathe as well</li>
+            <li><strong>Foam or EVA pads</strong> — provides cushioning in addition to protection; good for horses with sensitivity to vibration on hard surfaces</li>
+            <li>All full pads must be used with packing material to fill the solar void — a pad applied over an empty sole space creates a pocket where debris packs in and moisture accumulates</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Pour-In Packing — The Gold Standard for Thin Soles</strong>
+          <p>Pour-in polyurethane packing material (Vettec Equi-Pak, Mustad 3D Hoof Cushion, or similar) is injected into the solar space between the pad (or directly under a shoe) while still liquid, then sets to a firm, conforming cushion within minutes. This provides:</p>
+          <ul>
+            <li>Complete, seamless coverage of the entire solar surface — no voids where debris can pack</li>
+            <li>A cushioned, energy-absorbing layer between the sole and ground that actively reduces impact forces</li>
+            <li>Support for the sole itself — the cured packing material presses gently upward against the sole, providing frog and sole support that encourages natural sole development over time</li>
+            <li>A sealed environment under the shoe that significantly reduces the risk of debris-related abscesses</li>
+          </ul>
+          Pour-in packing has become the standard of care for thin-soled performance horses and is strongly recommended over open solar pads for horses with critical or thin sole depth.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Venice Turpentine — Hardening and Building the Sole</strong>
+          <p>Venice turpentine (gum turpentine) applied to the sole and white line has been used by farriers for generations to harden sole horn, stimulate sole production, and create an inhospitable environment for bacteria under pads. Applied warm at shoeing time to the cleaned sole surface before packing, it penetrates the horn tubules and promotes the dense, firm sole growth that provides real protection. It is also mildly antifungal — important when pads create a less-ventilated environment. Many experienced farriers with thin-soled horses apply Venice turpentine at every shoeing as a matter of routine.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Sole Hardener Application</strong>
+          <p>Between shoeings, the farrier may recommend regular application of a sole hardener to encourage denser horn production and reduce sensitivity:</p>
+          <ul>
+            <li><strong>Keratex Hoof Hardener</strong> — applied to the sole (not just the wall); cross-links keratin proteins in the horn tubules, producing firmer, less compressible sole horn</li>
+            <li><strong>Venice turpentine (owner-applied)</strong> — painted on the sole surface 2–3 times per week between shoeings; available at most farm supply stores</li>
+            <li><strong>Thrush treatments on the sole</strong> — copper sulfate or dilute iodine applied to the sole surface also has a mild hardening effect while protecting against bacterial invasion through thin horn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Pour-In Packing (Vettec Equi-Pak / Mustad 3D)</h4>
+        <p>Liquid polyurethane injected into the solar space and cured in place. Provides conforming cushion and support across the entire sole. Gold standard protection for thin-soled performance horses. Applied at shoeing; lasts the full shoeing cycle.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Venice Turpentine</h4>
+        <p>Traditional sole hardener and conditioner. Applied warm to the solar surface before packing. Penetrates horn tubules, stimulates denser sole growth, provides mild antifungal protection under pads. Standard practice for thin-soled horses among experienced farriers.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Full Leather or Polyurethane Pad</h4>
+        <p>Placed between shoe and hoof, covering the solar surface. Physically blocks ground contact with the sole. Used with packing material to fill the void. Leather conforms well and breathes; polyurethane is more durable on hard abrasive surfaces.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Wide-Web Shoe (Steel or Aluminum)</h4>
+        <p>Broader-than-standard shoe that covers more of the white line and reduces the open solar area through which ground objects can contact the sole. Combined with pads and packing for maximum protection in thin-soled horses.</p>
+      </div>
+    </div>
+
+    <div class="caution-box">
+      <div class="caution-icon">⛔</div>
+      <div class="caution-body">
+        <strong>Never Pare the Sole of a Thin-Soled Horse</strong>
+        <p>If your horse has thin soles, tell every farrier who works on them: do not pare the sole. This applies to temporary farriers, emergency farriers, and anyone who shoes your horse when your regular farrier is unavailable. The sole grows at approximately 1–2mm per month. A single aggressive paring session can remove 6–9 months of growth. Make it a standing instruction, written down if necessary. Some farriers will resist — a thin sole looks "untidy" and "needs cleaning up." Hold firm. The sole that looks untidy is protecting your horse's coffin bone.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VET PANEL -->
+  <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
+    <div class="role-header">
+      <div class="role-icon">🩺</div>
+      <div class="role-header-text">
+        <h3>The Veterinarian's Role — Measurement, Diagnosis, and Underlying Causes</h3>
+        <p>The vet's primary contribution to thin sole management is accurate diagnosis — specifically, measuring actual sole depth via radiographs and ruling out laminitis as an underlying driver. Without radiographs, sole depth is estimated, not known, and management decisions are less precise.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Radiographs — Measure Sole Depth Precisely</strong>
+          <p>A lateral radiograph of the foot, taken with a radio-opaque marker placed on the ground surface of the sole, allows the vet to measure the exact distance from the ground to the outer cortex of the coffin bone. This measurement tells the farrier:</p>
+          <ul>
+            <li>Exactly how thin the sole is — not an estimate, not a visual impression, but a number in millimeters</li>
+            <li>Whether the coffin bone has rotated (laminitic rotation reduces apparent sole depth even when actual sole growth is normal)</li>
+            <li>The relationship between the coffin bone angle and the hoof wall — essential for trimming decisions</li>
+            <li>Whether the solar surface of the coffin bone shows remodeling or "dishng" — bone changes visible in chronic thin-sole cases with repeated bruising</li>
+          </ul>
+          Radiographs for sole depth assessment are inexpensive and quick — two views per foot is all that's needed, and standing low-field digital X-ray makes this a simple farm call procedure.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Rule Out Laminitis</strong>
+          <p>Any horse with flat or convex soles — particularly if the flatness is progressive, if the horse has been on lush pasture, or if there are growth rings on the hoof wall — should have laminitis assessed as an underlying cause. Key investigations:</p>
+          <ul>
+            <li>Radiographs assessing coffin bone rotation or sinking</li>
+            <li>Insulin and glucose blood panel — rule out EMS driving subclinical laminitis</li>
+            <li>ACTH test — rule out PPID in horses over 10–12 years</li>
+          </ul>
+          A flat sole that is actually a dropped sole from laminitic rotation is managed very differently from a genetically thin sole — the laminitis must be controlled first or sole depth will never improve regardless of farrier care.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Manage Sole Bruising and Abscesses</strong>
+          <p>Thin-soled horses that work on varied terrain frequently develop subsolar bruises and abscesses. The vet's role during active bruising or abscess events:</p>
+          <ul>
+            <li>NSAIDs (phenylbutazone or firocoxib) for pain management during acute bruising events</li>
+            <li>Drainage and treatment if bruising progresses to abscess — see our full <a href="/hoof-issues/abscesses/" style="color:var(--ts);font-weight:600;">Hoof Abscesses guide</a></li>
+            <li>Antibiotics if infection has penetrated sensitive tissue</li>
+            <li>Guidance on restricting work on hard footing during healing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Nutritional Assessment</strong>
+          <p>For horses with persistently poor sole quality despite correct farrier management, the vet can assess nutritional status:</p>
+          <ul>
+            <li>Blood panel for zinc, copper, and selenium levels</li>
+            <li>Hay analysis if nutritional deficiency is suspected</li>
+            <li>Review of current supplementation for adequacy and balance</li>
+          </ul>
+          Nutritional causes of thin soles are correctable, but changes take 9–12 months to manifest in the hoof capsule — patience and consistency are required.
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-icon">💡</div>
+      <div class="tip-body">
+        <strong>Get a Baseline Radiograph — Then Recheck in 6 Months</strong>
+        <p>If your horse is thin-soled, ask your vet for a lateral foot X-ray to establish a measured baseline. Record the sole depth number. Then repeat the X-ray 6 months into the new management program (no sole paring, pads, correct nutrition). Comparing the two gives you objective data on whether sole depth is improving — far more reliable than visual assessment of sole depth progress. Most horse owners who do this are surprised by how much improvement can be achieved with consistent correct management.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OWNER PANEL -->
+  <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
+    <div class="role-header">
+      <div class="role-icon">🧤</div>
+      <div class="role-header-text">
+        <h3>The Horse Owner's Role — Footing, Nutrition, Protection, and Patience</h3>
+        <p>The owner manages the two most important long-term factors in sole development: footing and nutrition. Neither produces overnight results, but both produce real, measurable improvement over 6–12 months of consistent application.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Manage Footing — Match Work to Sole Depth</strong>
+          <p>Until sole depth improves, footing choices are the most direct daily protection available:</p>
+          <ul>
+            <li><strong>Work on appropriate surfaces</strong> — arena sand, grass, and soft dirt are safe for thin-soled horses; gravel, road, and rocky terrain require full pads or hoof boots</li>
+            <li><strong>Avoid hard-packed arenas</strong> — arena sand that has become packed and firm (often in corners and along rail lines) is hard enough to cause bruising in thin-soled horses; advocate for regular arena maintenance</li>
+            <li><strong>Turnout footing matters too</strong> — horses standing on rocky paddock edges or gravel footing accumulate bruising even when not being ridden; provide soft turnout areas or use hoof boots during turnout if paddock footing is firm</li>
+            <li><strong>Trail and road work with protection</strong> — hoof boots over bare feet, or full pads when shod; never take a thin-soled horse on rocky trail without protection</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Nutrition for Sole Development — The Long Game</strong>
+          <p>Sole horn is made of the same keratin as hoof wall — its quality and thickness respond to the same nutritional inputs, just more slowly because the sole grows from the corium inward rather than the coronary band downward. Key supplements:</p>
+          <ul>
+            <li><strong>Biotin 20mg/day</strong> — the most evidence-supported hoof supplement; improves horn density and quality throughout the hoof capsule including the sole; allow 9–12 months</li>
+            <li><strong>Zinc and copper in correct ratio</strong> — essential for keratin cross-linking; most hay-based diets are deficient; a balanced mineral supplement addresses both</li>
+            <li><strong>Methionine</strong> — sulfur-containing amino acid critical for strong horn production</li>
+            <li><strong>Omega-3 fatty acids</strong> — ground flaxseed or fish oil supports horn cell membrane integrity and reduces inflammation</li>
+            <li>Begin supplementation immediately and continue for the full duration — the first 6 months of correct supplementation often produce the most dramatic visible sole improvement</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Use Hoof Boots for Unshod Horses or Pad-Free Days</strong>
+          <p>For barefoot horses with thin soles, or on days when shoes are off for inspection or shoeing appointments, hoof boots provide immediate protection:</p>
+          <ul>
+            <li>Easyboot, Cavallo, Scoot Boot, and similar products provide ground coverage equivalent to a shod foot with pads</li>
+            <li>Boots with built-in insoles (Easyboot Glove with pad) provide additional cushioning</li>
+            <li>Use boots during any period on hard footing — the brief time during a shod horse's "shoe-off" visit can still cause bruising on rocky barn aisles or gravel driveways</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Apply Venice Turpentine Between Shoeings</strong>
+          <p>If pads are not in use, or if your farrier recommends it between pad changes:</p>
+          <ul>
+            <li>After picking and cleaning the hoof, paint Venice turpentine onto the sole and white line area with a small brush or cotton swab</li>
+            <li>Apply 2–3 times per week to maintain hardening effect</li>
+            <li>It feels slightly tacky when applied and dries within minutes — the horse can be turned out immediately</li>
+            <li>Available at most farm supply stores; inexpensive and genuinely effective for sole toughening over time</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Monitor for Bruising and Abscess Signs</strong>
+          <p>Thin-soled horses need more frequent monitoring than horses with adequate sole protection:</p>
+          <ul>
+            <li>Pick hooves daily — look for red or purple discoloration in the sole (bruising), soft spots, or dark tracts in the white line (abscess formation)</li>
+            <li>Monitor gait after work on firm surfaces — a subtle shortening of stride or slight footiness after riding on hard ground suggests a bruising event; reduce work on hard footing until the horse moves freely again</li>
+            <li>Check digital pulse regularly — a bounding digital pulse after work on firm terrain indicates inflammation from bruising</li>
+            <li>Call your farrier promptly if you see abscess signs (bounding pulse + sudden lameness) — thin-soled horses are higher-risk for bruise-to-abscess progression</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag mgmt">Management</div>
+        <h4>Venice Turpentine</h4>
+        <p>Painted onto the clean sole 2–3 times per week. Hardens sole horn over time, stimulates denser production, provides mild antiseptic barrier. Inexpensive, traditional, and genuinely effective for thin-sole management between shoeings.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Hoof Boot with Pad (Easyboot, Cavallo)</h4>
+        <p>Worn during turnout or riding when protection is needed without shoes. Essential for barefoot thin-soled horses and shod horses during shoe-off periods. Look for models with removable insole pads for additional cushioning.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Keratex Hoof Hardener</h4>
+        <p>Applied to the sole surface (in addition to the wall) to cross-link keratin proteins and produce firmer horn. Use every 3–4 days on a clean, dry sole. Works synergistically with Venice turpentine for sole hardening.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Complete Hoof Supplement (Biotin-Based)</h4>
+        <p>Farrier's Formula, Equine Hoof Care, or similar — containing biotin, methionine, zinc, and copper. Begin immediately and maintain for 12 months minimum. Sole quality improvement is real but slow — commit to the full timeline.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREVENTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Building &amp; Protecting Sole Depth — Long-Term Strategy</h2>
+    <p>For genetically thin-soled horses, "prevention" means ongoing management rather than elimination of the problem. The goal is building maximum possible sole depth and protecting what exists.</p>
+  </div>
+
+  <div class="prevention-grid">
+    <div class="prev-card">
+      <div class="prev-icon">✂️</div>
+      <div class="prev-body">
+        <h4>Never Pare the Sole</h4>
+        <p>Repeat this to every farrier who works on your thin-soled horse. Leave all firm sole material in place. Remove only true exfoliate — dead, chalky, or loose material that separates with minimal pressure. This one change produces more improvement in sole depth than any other single intervention.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🌾</div>
+      <div class="prev-body">
+        <h4>Long-Term Nutrition — Year-Round</h4>
+        <p>Biotin, zinc, copper, and methionine year-round, without gaps. Sole horn improvements visible at 6 months become significant at 12 months and continue beyond. Stopping supplementation reverses gains within the next hoof growth cycle.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🏟️</div>
+      <div class="prev-body">
+        <h4>Match Footing to Current Sole Depth</h4>
+        <p>Don't work a thin-soled horse on terrain that exceeds their current protection capacity, then wonder why they're perpetually foot-sore and developing abscesses. Build sole depth on appropriate footing, then gradually introduce harder terrain as depth improves.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">📅</div>
+      <div class="prev-body">
+        <h4>Regular Shoeing Intervals</h4>
+        <p>Thin-soled horses benefit from shorter shoeing intervals — 5–6 weeks — so the farrier can check pad condition, replace worn packing, and ensure shoes haven't shifted and begun contacting sole areas. A shifted shoe pressing on the sole causes exactly the bruising the pad was intended to prevent.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">💧</div>
+      <div class="prev-body">
+        <h4>Maintain Horn Quality with Consistent Moisture</h4>
+        <p>Chronically wet sole horn is softer and less protective regardless of thickness. Dry stall bedding, avoiding prolonged standing in mud, and applying Venice turpentine to maintain horn integrity in wet seasons all support the quality of whatever sole depth the horse has.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">📊</div>
+      <div class="prev-body">
+        <h4>Track Progress with Annual Radiographs</h4>
+        <p>The only way to know if sole depth is genuinely improving is to measure it. An annual lateral radiograph with a ground marker takes minutes and gives you objective data. Most owners who implement correct management are rewarded with measurable improvement — seeing the numbers change is motivating and confirms the approach is working.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Thin Soles Videos — Watch &amp; Learn</h2>
+    <p>See farriers working with thin-soled and flat-footed horses — pad application, pour-in packing, and the flat-foot correction approach.</p>
+  </div>
+
+  <div class="video-section">
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/Ig7eZEm9QEM" title="Helping a horse that has really thin Soles" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Farrier Approach</div>
+          <div class="video-title">Helping a Horse That Has Really Thin Soles</div>
+          <div class="video-by">Chris Niclas, RJF, CLS</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/JJGKKPmkE5c" title='How to "stand up" a flat footed horse' loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Flat Foot Correction</div>
+          <div class="video-title">How to "Stand Up" a Flat-Footed Horse</div>
+          <div class="video-by">The Western States Farrier</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/frPYOoD6BbI" title="Horse Hoof Bruising" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🩺 Bruising Overview</div>
+          <div class="video-title">Horse Hoof Bruising</div>
+          <div class="video-by">SmartPak</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/ELlSdrEK214" title="Yogi Sharp shows how to use the 3D pads and Hoof Cushion" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Pour-In Pad Demo</div>
+          <div class="video-title">How to Use 3D Pads and Hoof Cushion</div>
+          <div class="video-by">Mustad Australia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Thin Soles — Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Can thin soles be permanently improved, or is it always just management? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Both, depending on the cause. For horses with thin soles primarily from over-paring by the farrier, poor nutrition, or wet conditions — yes, genuine permanent improvement in sole depth is achievable. Many horses produce adequate or even excellent sole depth once the paring stops and nutrition improves, and maintain that depth with correct ongoing care. For horses with thin soles due to genetics (particularly Thoroughbreds with naturally flat, low-set coffin bones), improvement is possible but limited by what the horse's anatomy can produce. These horses will always need more management than average — better footing, pads when working hard — but even they can often develop meaningfully better sole depth than they had under incorrect care. The answer is almost always "better than it is now" regardless of cause.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My farrier keeps paring my horse's sole. How do I convince them to stop? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Have the conversation directly, backed by your vet's radiograph showing the actual sole depth measurement. A number — "my horse has 9mm of sole depth and I need to build it to 15mm" — is harder to dismiss than "I read somewhere to leave the sole." If your farrier won't change their approach after a clear conversation about your horse's specific measurement, find a different farrier. A farrier who refuses to adjust technique for a specific horse's documented needs is not serving that horse's welfare. Many experienced farriers already take a conservative approach to sole paring in flat-footed horses — it is not an unusual or fringe position.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How long do pads and pour-in packing last between shoeings? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Full pads typically last one full shoeing cycle (5–8 weeks) with normal use. Pour-in packing lasts the same duration — the cured polyurethane is durable and does not compress significantly with normal work. Leather pads may absorb moisture and compress slightly faster than synthetic pads in wet conditions. Your farrier replaces both the pad and packing at each shoeing. If a pad shifts, tears, or the packing separates from the sole before the next shoeing cycle, call your farrier for an interim visit — a shifted pad pressing on the solar surface is worse than no pad at all.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Is barefoot better than shod for thin-soled horses? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">For many thin-soled horses on appropriate terrain, barefoot with careful trimming can actually improve sole depth faster than shod management — because the sole is never pared and receives constant natural stimulation from the ground. The natural hardening and concavity development that occurs when a previously over-pared sole is left alone is genuinely impressive in some horses. However, barefoot is only appropriate if the horse can be kept on soft, appropriate footing and not worked on surfaces that cause pain and bruising. A thin-soled barefoot horse on rocky terrain develops chronic bruising — the opposite of what you want. The question is not barefoot vs. shod but rather: what does this horse need to be comfortable on the terrain it lives and works on? Hoof boots for barefoot thin-soled horses on varied terrain are the middle path many owners choose during rehabilitation.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My horse keeps getting abscesses in the toe area. Is thin sole the cause? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Recurrent abscesses in the same location — particularly the toe or quarter — in a horse you know has thin soles is very likely related. The sequence is: thin sole → stone bruise or ground-contact bruising at the toe → damaged tissue becomes an abscess nidus → abscess forms and drains → heals → another bruise in the same location → another abscess. Breaking this cycle requires protecting the sole from further bruising — full pads with pour-in packing are the most effective intervention. Until you protect the sole, the same location will keep bruising and abscessing. Ask your farrier about full pads at the next shoeing, and restrict work on hard footing in the meantime.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What is the difference between a thin sole and a dropped sole? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">A thin sole describes inadequate distance between the ground and the coffin bone — the sole horn layer is not thick enough. A dropped sole (also called a convex sole) describes a sole that bulges downward — the sole surface is no longer concave but flat or convex, projecting toward or past the level of the hoof wall. A dropped sole is almost always a consequence of laminitic coffin bone rotation — the rotating bone tip pushes against the inner sole surface, flattening or inverting the normal concavity. A dropped sole may or may not be thin in terms of absolute sole depth measurement, but the geometry means the coffin bone is very close to the ground regardless. Dropped soles require laminitis management as the primary intervention; thin soles without drop are managed differently.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How do I know if my horse is sore from thin soles or something else? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">The key distinguishing feature of thin-sole pain is its footing-dependence: the horse is sound or nearly sound on soft surfaces and foot-sore specifically on hard, rocky, or uneven ground. If your horse moves freely on arena sand but picks its feet carefully or shortens its stride on gravel, a driveway, or packed dirt, thin soles are the likely explanation. If the horse is lame on all footing regardless of surface, or if the lameness is worse in a specific foot at the trot in circles (rather than surface-dependent), the cause is more likely navicular syndrome, a developing abscess, or a structural issue — not just thin soles. When in doubt, your vet's lameness evaluation with nerve blocks will separate thin-sole sensitivity from other causes of lameness.</div>
+    </div>
+  </div>
+
+  <!-- SERIES NAV -->
+  <div class="series-nav" style="margin-top:36px;">
+    <h3>🏥 Top 10 Hoof Issues for Horse Owners</h3>
+    <div class="series-list">
+      <a href="/hoof-issues/thrush/" class="series-item done"><div class="series-num">1</div>Thrush ✓</a>
+      <a href="/hoof-issues/white-line-disease/" class="series-item done"><div class="series-num">2</div>White Line Disease ✓</a>
+      <a href="/hoof-issues/laminitis/" class="series-item done"><div class="series-num">3</div>Laminitis &amp; Founder ✓</a>
+      <a href="/hoof-issues/navicular/" class="series-item done"><div class="series-num">4</div>Navicular Syndrome ✓</a>
+      <a href="/hoof-issues/cracked-hooves/" class="series-item done"><div class="series-num">5</div>Cracked Hooves ✓</a>
+      <a href="/hoof-issues/abscesses/" class="series-item done"><div class="series-num">6</div>Hoof Abscesses ✓</a>
+      <a href="/hoof-issues/contracted-heels/" class="series-item done"><div class="series-num">7</div>Contracted Heels ✓</a>
+      <a href="/hoof-issues/thin-soles/" class="series-item current"><div class="series-num">8</div>Thin Soles — You Are Here</a>
+      <span class="series-item coming"><div class="series-num">9</div>Sheared Heels</span>
+      <span class="series-item coming"><div class="series-num">10</div>Canker</span>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<div class="cta-strip">
+  <div class="cta-box">
+    <h3>Part of the Bridle &amp; Bit Network</h3>
+    <p>HorseFarrier.net is a free public resource from Bridle &amp; Bit Magazine — Arizona's premier equestrian publication since 1978.</p>
+    <div class="cta-btns">
+      <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" class="cta-btn primary">Visit Bridle &amp; Bit Magazine</a>
+      <a href="/hoof-issues/" class="cta-btn secondary">All Top 10 Hoof Issues →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div style="margin-bottom:10px;">The Complete Hoof Care Resource</div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="/hoof-care/">Hoof Care Basics</a>
+    <a href="/farrier-tools/">Farrier Tools</a>
+    <a href="/breed-hooves/">Breed Hoof Needs</a>
+    <a href="/nutrition/">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/">Horseshoe Types</a>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/glossary/">Glossary</a>
+    <a href="/videos/">Videos</a>
+  </nav>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> — Arizona's premier equestrian publication since 1978.</div>
+  <div style="margin-top:8px;color:rgba(255,255,255,0.35);font-size:0.75rem;">&copy; 2026 HorseFarrier.net. All rights reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var drawer=document.getElementById('nav-drawer');
+  if(btn&&drawer){
+    btn.addEventListener('click',function(){
+      var open=drawer.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+    });
+  }
+  var tabs=document.querySelectorAll('.role-tab');
+  var panels=document.querySelectorAll('.role-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+      panels.forEach(function(p){p.classList.remove('active');});
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      var panel=document.getElementById(tab.getAttribute('aria-controls'));
+      if(panel){panel.classList.add('active');}
+    });
+  });
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var b=item.querySelector('.faq-q');
+    if(b){b.addEventListener('click',function(){
+      var open=item.classList.toggle('open');
+      b.setAttribute('aria-expanded',open);
+    });}
+  });
+})();
+</script>
+</body>
+</html>

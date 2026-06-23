@@ -295,6 +295,27 @@ footer a{color:var(--rope-light);text-decoration:none}
   .site-nav-inner{padding:0 8px}
 }
 
+
+/* ── VIDEO FACADE ─────────────────────────────────── */
+.video-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:16px}
+.video-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+@media(hover:hover){.video-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--border-strong)}}
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:14px 16px 16px}
+.video-tag{display:inline-flex;align-items:center;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px}
+.video-tag.t-forge{background:var(--rope-pale);color:var(--leather-dark)}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px;overflow-wrap:break-word}
+.video-channel{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+@media(min-width:768px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+/* ── end video ─────────────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Types of Horseshoes & Therapeutic Shoeing — A Complete Guide","description":"Complete guide to factory and custom horseshoe types, materials, and therapeutic shoeing applications for laminitis, navicular, tendon injuries, and more.","url":"https://horsefarrier.net/horseshoes/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
@@ -1063,6 +1084,57 @@ footer a{color:var(--rope-light);text-decoration:none}
     </div>
   </div>
 
+  <div class="page-section" id="videos">
+    <h2>Watch &amp; Learn — Custom Horseshoe Forging</h2>
+    <p>Four videos showing the craft of custom horseshoe creation — from bar stock to finished shoe. Tap any thumbnail to play.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="vid-facade" data-vid="xQGsebFCz3I" data-title="Forging a Horseshoe" role="button" tabindex="0" aria-label="Play: Forging a Horseshoe">
+          <img src="https://img.youtube.com/vi/xQGsebFCz3I/hqdefault.jpg" alt="Forging a Horseshoe" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-forge">🔨 Custom Forging</div>
+          <div class="video-title">Forging a Horseshoe</div>
+          <div class="video-channel">Christophe Van de Rostyne (EAEF)</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="Cx-mcLgLoSo" data-title="Shaping in Just 7 Hammer Blows: Hind Shoe" role="button" tabindex="0" aria-label="Play: Shaping in Just 7 Hammer Blows: Hind Shoe">
+          <img src="https://img.youtube.com/vi/Cx-mcLgLoSo/hqdefault.jpg" alt="Shaping in Just 7 Hammer Blows: Hind Shoe" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-forge">🔨 Custom Forging</div>
+          <div class="video-title">Shaping in Just 7 Hammer Blows: Hind Shoe</div>
+          <div class="video-channel">Heartland Horseshoeing School</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="aNmxmbxSZDI" data-title="How to Build a Beveled Horseshoe" role="button" tabindex="0" aria-label="Play: How to Build a Beveled Horseshoe">
+          <img src="https://img.youtube.com/vi/aNmxmbxSZDI/hqdefault.jpg" alt="How to Build a Beveled Horseshoe" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-forge">🔨 Custom Forging</div>
+          <div class="video-title">How to Build a Beveled Horseshoe</div>
+          <div class="video-channel">PNW Farrier</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="23gK2odvGOQ" data-title="Custom Horseshoe Forging from Bar Stock" role="button" tabindex="0" aria-label="Play: Custom Horseshoe Forging from Bar Stock">
+          <img src="https://img.youtube.com/vi/23gK2odvGOQ/hqdefault.jpg" alt="Custom Horseshoe Forging from Bar Stock" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-forge">🔨 Custom Forging</div>
+          <div class="video-title">Custom Horseshoe Forging from Bar Stock</div>
+          <div class="video-channel">Noble Farriery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <nav class="nav-cards" aria-label="Explore more resources">
     <a href="../hoof-care/" class="nav-card">
       <div class="label">Foundation</div>
@@ -1146,6 +1218,19 @@ footer a{color:var(--rope-light);text-decoration:none}
     });
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid,t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>How to Find a Good Farrier — HorseFarrier.net</title>
+<meta name="description" content="How to find, evaluate, and keep a good farrier. AFA certification levels explained, green and red flags, what to ask, how to read the work, and what makes a great working relationship.">
+<link rel="canonical" href="https://horsefarrier.net/find-a-farrier/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:flex;align-items:center;line-height:0;flex-shrink:0}
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+.toc{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:32px}
+.toc-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:10px}
+.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.toc a{color:var(--leather);text-decoration:none;font-size:0.88rem;font-weight:600;display:inline-flex;align-items:center;min-height:36px}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:36px}
+.section h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.section h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--leather-dark);margin:18px 0 8px}
+.section p{font-size:0.93rem;color:var(--ink-soft);margin-bottom:12px;line-height:1.7}
+.section ul,.section ol{padding-left:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
+.section li{font-size:0.93rem;color:var(--ink-soft);line-height:1.6}
+.section strong{color:var(--ink);font-weight:700}
+.callout{background:var(--rust-light);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:16px 0}
+.callout.sage{background:var(--sage-light);border-color:var(--sage)}
+.callout.gold{background:#FFF8E6;border-color:var(--gold)}
+.callout-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--rust);margin-bottom:4px}
+.callout.sage .callout-title{color:var(--sage-dark)}
+.callout.gold .callout-title{color:#8B6914}
+.callout p{font-size:0.88rem;color:var(--ink-soft);margin:0;line-height:1.6}
+/* cert table */
+.cert-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem}
+.cert-table th{background:var(--leather-deeper);color:var(--cream);padding:10px 12px;text-align:left;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em}
+.cert-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.cert-table tr:nth-child(even) td{background:var(--sand)}
+.cert-table strong{color:var(--ink)}
+/* flags grid */
+.flags-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
+.flag-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.flag-card.green{border-left:4px solid var(--sage)}
+.flag-card.red{border-left:4px solid var(--rust)}
+.flag-title{font-weight:700;font-size:0.88rem;margin-bottom:6px}
+.flag-card.green .flag-title{color:var(--sage-dark)}
+.flag-card.red .flag-title{color:var(--rust)}
+.flag-card ul{padding-left:16px;display:flex;flex-direction:column;gap:4px}
+.flag-card li{font-size:0.86rem;color:var(--ink-soft);line-height:1.55}
+/* question list */
+.q-list{display:flex;flex-direction:column;gap:10px;margin:16px 0}
+.q-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;font-size:0.9rem;color:var(--ink-soft);line-height:1.6}
+.q-item strong{color:var(--ink);display:block;margin-bottom:3px}
+/* nav cards */
+.nav-cards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+@media(min-width:768px){
+  .bb-logo-link{display:flex}
+  .topbar{padding:13px 20px}
+  .topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}
+  .page-hero h1{font-size:2.1rem}
+  .page-hero p{font-size:0.94rem}
+  .content-wrap{padding:32px 24px 56px}
+  .flags-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1024px){
+  .page-hero h1{font-size:2.4rem}
+}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+
+/* ═══ SITE NAV ═══ */
+.site-nav{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.1);border-bottom:2px solid var(--rope);position:sticky;top:var(--topbar-h,54px);z-index:150;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.site-nav-inner{display:flex;align-items:stretch;overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 4px;max-width:1200px;margin:0 auto}
+.site-nav-inner::-webkit-scrollbar{display:none}
+.sn-link{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;border-top:3px solid transparent;transition:color 0.18s,border-color 0.18s,background 0.18s;letter-spacing:0.01em}
+.sn-link:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-link.active{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.06)}
+.sn-drop{position:relative;display:flex;align-items:stretch;flex-shrink:0}
+.sn-drop-btn{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);background:none;border:none;border-bottom:3px solid transparent;border-top:3px solid transparent;white-space:nowrap;cursor:pointer;font-family:inherit;letter-spacing:0.01em;transition:color 0.18s,border-color 0.18s,background 0.18s}
+.sn-drop-btn:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-drop-panel{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.12);border-top:2px solid var(--rope);border-radius:0 0 var(--radius) var(--radius);box-shadow:0 8px 24px rgba(0,0,0,0.35);z-index:200;padding:4px 0}
+.sn-drop:hover .sn-drop-panel,.sn-drop:focus-within .sn-drop-panel,.sn-drop.open .sn-drop-panel{display:block}
+.sn-drop-link{display:flex;align-items:center;padding:11px 18px;font-size:0.83rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;border-left:3px solid transparent;transition:color 0.15s,background 0.15s,border-color 0.15s;white-space:nowrap;gap:8px}
+.sn-drop-link:hover,.sn-drop-link.active{color:var(--rope-light);background:rgba(255,255,255,0.06);border-left-color:var(--rope)}
+.sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+@media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
+@media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Find a Good Farrier","description":"How to find, evaluate, and keep a qualified farrier — AFA certification levels, referral sources, green and red flags, questions to ask, and how to read the work.","url":"https://horsefarrier.net/find-a-farrier/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+<div class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/hoof-care/" class="sn-link">Hoof Care</a>
+    <a href="/farrier-tools/" class="sn-link">Farrier Tools</a>
+    <a href="/horseshoes/" class="sn-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="sn-link">Hoof Issues</a>
+    <div class="sn-div" aria-hidden="true"></div>
+    <div class="sn-drop">
+      <button class="sn-drop-btn" aria-haspopup="true" aria-expanded="false" aria-controls="disc-panel">Disciplines ▾</button>
+      <div class="sn-drop-panel" id="disc-panel" role="menu">
+        <a href="/disciplines/reining/" class="sn-drop-link" role="menuitem">🤠 Reining</a>
+        <a href="/disciplines/cutting/" class="sn-drop-link" role="menuitem">🐄 Cutting &amp; Cow Horse</a>
+        <a href="/disciplines/barrel-racing/" class="sn-drop-link" role="menuitem">🏁 Barrel Racing</a>
+        <a href="/disciplines/dressage/" class="sn-drop-link" role="menuitem">🎩 Dressage</a>
+        <a href="/disciplines/show-jumping/" class="sn-drop-link" role="menuitem">🏇 Show Jumping</a>
+        <a href="/disciplines/eventing/" class="sn-drop-link" role="menuitem">⛰️ Eventing</a>
+        <a href="/disciplines/thoroughbred-racing/" class="sn-drop-link" role="menuitem">🏆 Thoroughbred Racing</a>
+        <a href="/disciplines/trail-endurance/" class="sn-drop-link" role="menuitem">🌲 Trail &amp; Endurance</a>
+        <a href="/disciplines/draft-horses/" class="sn-drop-link" role="menuitem">🐎 Draft Horses</a>
+      </div>
+    </div>
+    <div class="sn-div" aria-hidden="true"></div>
+    <a href="/breed-hooves/" class="sn-link">Breed Hooves</a>
+    <a href="/nutrition/" class="sn-link">Nutrition</a>
+    <a href="/faq/" class="sn-link">FAQ</a>
+    <a href="/glossary/" class="sn-link">Glossary</a>
+    <a href="/videos/" class="sn-link">Videos</a>
+  </div>
+</nav>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Find a Farrier</div>
+  <h1>How to Find a <em>Good Farrier</em></h1>
+  <p>Where to look, what to ask, how to evaluate the work, and what makes a farrier-client relationship worth keeping for the long term.</p>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+
+  <nav class="toc" aria-label="Page contents">
+    <div class="toc-title">On This Page</div>
+    <ol>
+      <li><a href="#why-it-matters">Why Finding the Right Farrier Matters</a></li>
+      <li><a href="#where-to-look">Where to Find Farriers</a></li>
+      <li><a href="#certification">Understanding AFA Certification</a></li>
+      <li><a href="#first-call">What to Ask Before You Hire</a></li>
+      <li><a href="#flags">Green Flags &amp; Red Flags</a></li>
+      <li><a href="#reading-work">How to Read the Work</a></li>
+      <li><a href="#relationship">Building a Good Working Relationship</a></li>
+      <li><a href="#rural">If You Can't Find Anyone</a></li>
+    </ol>
+  </nav>
+
+  <section class="section" id="why-it-matters">
+    <h2>Why Finding the Right Farrier Matters</h2>
+    <p>The farrier is one of the most consequential professionals in your horse's life. A good farrier catches problems before they become lameness, coordinates with your vet, and gives you honest feedback about what they see. A bad one can cause lasting structural damage — and may do it slowly enough that you don't notice until it's serious.</p>
+    <p>Farriery is largely unregulated in the United States. Anyone can hang a sign and call themselves a farrier — no license required. This makes choosing one far more consequential than choosing, say, a plumber. The variation in skill, knowledge, and professionalism between a certified journeyman farrier with twenty years of experience and someone who took a weekend course is enormous.</p>
+    <p>This is not a purchasing decision to make based on who's cheapest or who's available next week. Take the time to find someone qualified, and once you have them, treat the relationship like an asset.</p>
+    <div class="callout gold">
+      <div class="callout-title">No Hoof, No Horse</div>
+      <p>The old saying is not hyperbole. Hoof balance affects the entire limb — tendons, ligaments, joints, and posture. A horse shod incorrectly over months or years develops problems that can take years to correct, if they can be corrected at all. Get the farrier right from the start.</p>
+    </div>
+  </section>
+
+  <section class="section" id="where-to-look">
+    <h2>Where to Find Farriers</h2>
+    <p>The best farriers in any area are rarely advertised. They operate on referral and often have waiting lists. Here are the most reliable sources, ranked by quality of the lead they produce:</p>
+
+    <h3>Your Equine Veterinarian</h3>
+    <p>This is the single most valuable referral you can get. Vets work alongside farriers constantly — they see whose horses come back sound, whose work holds up over radiographs, and who communicates professionally under pressure. A vet who refers a farrier is vouching for them based on ongoing direct observation. Ask your vet specifically: "Who do you call when a horse needs corrective work?" The answer to that question is worth more than any online search.</p>
+
+    <h3>Horse Owners Whose Horses Look Well</h3>
+    <p>At any barn or show ground, look at the feet. Horses with balanced, well-maintained hooves — consistent angles, clean clinches, shoes that fit — have a farrier worth asking about. Ask the owner directly. Word of mouth in the equestrian community is extremely reliable because owners have skin in the game.</p>
+
+    <h3>AFA Certified Farrier Directory</h3>
+    <p>The American Farrier's Association maintains a searchable directory of certified members at <strong>afa.net</strong>. Certification doesn't guarantee excellence, but it does guarantee that the farrier has met a demonstrated minimum standard of knowledge and practical skill — and has committed to ongoing education. In areas where you don't have personal referrals, this is the place to start.</p>
+
+    <h3>Feed Stores, Tack Shops, and Equine Vets' Bulletin Boards</h3>
+    <p>Old-fashioned community boards still work in equestrian communities. Cards posted at the feed store tend to be from local working farriers. Ask the feed store staff — they often know who the regulars are recommending.</p>
+
+    <h3>Farrier Schools</h3>
+    <p>If you're near a farrier school, students working under qualified instructors can offer discounted work. The work is supervised, and you may get more careful attention than from a busy professional rushing through a full schedule. Not appropriate for horses with complex needs, but fine for straightforward maintenance situations.</p>
+
+    <div class="callout">
+      <div class="callout-title">What Not to Do</div>
+      <p>Don't hire based on Facebook posts, lowest price, or fastest availability alone. The best farriers are usually booked out — that's a signal, not a problem. Being willing to wait two to three weeks for a qualified farrier is almost always the right call.</p>
+    </div>
+  </section>
+
+  <section class="section" id="certification">
+    <h2>Understanding AFA Certification</h2>
+    <p>The American Farrier's Association offers a tiered certification system that is the most widely recognized benchmark in U.S. farriery. Understanding what each level means helps you evaluate what you're getting.</p>
+
+    <table class="cert-table">
+      <thead>
+        <tr><th>Certification</th><th>Abbreviation</th><th>What It Requires</th><th>What It Means</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Farrier</strong></td>
+          <td>CF</td>
+          <td>Written exam covering anatomy, pathology, and hoof care; basic practical evaluation</td>
+          <td>Demonstrated foundational knowledge. A reasonable baseline for routine maintenance horses.</td>
+        </tr>
+        <tr>
+          <td><strong>Journeyman Farrier</strong></td>
+          <td>CJF</td>
+          <td>Written exam plus a demanding practical examination including hand-forging shoes to tolerance under time pressure</td>
+          <td>The industry's most meaningful credential. Requires genuine forge competency — the ability to make any shoe a horse needs from bar stock. The standard for complex or performance horses.</td>
+        </tr>
+        <tr>
+          <td><strong>Therapeutic Endorsement</strong></td>
+          <td>CJF TE</td>
+          <td>CJF plus additional written and practical exam covering corrective and therapeutic shoeing</td>
+          <td>Indicates specialized training in working with laminitis, navicular, and other pathological conditions. Highly valuable for horses with ongoing hoof health issues.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Certification matters most for horses with complex needs. A straightforward pasture horse getting routine trims every eight weeks doesn't necessarily require a CJF. A performance horse, a horse with navicular or laminitis history, or any horse you're investing significant money in absolutely warrants a certified journeyman at minimum.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">Certification Is a Floor, Not a Ceiling</div>
+      <p>The best farriers in the world may or may not be AFA certified — some excellent practitioners have never pursued the credential. Certification is a reliable signal of minimum competency, not a guarantee of greatness. Use it as a filter, not a final verdict. What actually matters is the quality of the work on your horse over time.</p>
+    </div>
+
+    <h3>Other Credentials Worth Knowing</h3>
+    <ul>
+      <li><strong>Guild of Professional Farriers (GPF):</strong> UK-origin certification recognized in the US, rigorous practical standards.</li>
+      <li><strong>Brotherhood of Working Farriers Association (BWFA):</strong> Six-level certification from Apprentice through Master Farrier and Master Educator.</li>
+      <li><strong>International Horseshoeing Hall of Fame:</strong> Lifetime achievement recognition; indicates a farrier who has shaped the profession.</li>
+      <li><strong>Worshipful Company of Farriers (WCF):</strong> UK body with rigorous practical exams; some US farriers hold WCF credentials.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="first-call">
+    <h2>What to Ask Before You Hire</h2>
+    <p>The first conversation tells you a great deal. A good farrier will answer your questions directly, ask you questions about your horse, and not be defensive about their qualifications. A farrier who is evasive, dismissive, or who promises more than any person could deliver is showing you something important before they ever pick up a hoof.</p>
+
+    <div class="q-list">
+      <div class="q-item">
+        <strong>Are you AFA certified, and at what level?</strong>
+        A direct yes or no. If yes, which credential — CF, CJF, or TE? If not certified, ask where they trained and how long they've been practicing.
+      </div>
+      <div class="q-item">
+        <strong>Do you work with a veterinarian when needed?</strong>
+        The answer should be an unequivocal yes. A farrier who sees themselves as operating independently from veterinary care is a liability with a complicated horse.
+      </div>
+      <div class="q-item">
+        <strong>What breeds and disciplines do you have most experience with?</strong>
+        Farriery is specialized. A farrier whose practice is primarily Western performance horses may not have deep experience with Warmbloods or Thoroughbreds, and vice versa. Match their experience to your horse.
+      </div>
+      <div class="q-item">
+        <strong>Can you provide references from current clients?</strong>
+        Any professional with a solid practice should be able to provide two or three client references. Call them.
+      </div>
+      <div class="q-item">
+        <strong>How do you handle a horse that is difficult to trim?</strong>
+        Listen for patience, methodology, and communication — not frustration or blame. A good answer involves observation, desensitization, and when necessary, referral to a trainer or vet.
+      </div>
+      <div class="q-item">
+        <strong>What is your policy on emergency calls?</strong>
+        Lost shoes happen. Know before you need to know whether this farrier will respond, and under what conditions.
+      </div>
+      <div class="q-item">
+        <strong>What do you charge, and what does that include?</strong>
+        Get clarity on the pricing structure — base trim, shoeing all four, front only, reset vs. new shoes, farm call fees, and what constitutes an extra charge.
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flags">
+    <h2>Green Flags &amp; Red Flags</h2>
+    <p>Watch carefully during the first appointment. How a farrier works, communicates, and handles your horse tells you more than any conversation beforehand.</p>
+
+    <div class="flags-grid">
+      <div class="flag-card green">
+        <div class="flag-title">Green Flags — Signs You've Found a Good One</div>
+        <ul>
+          <li>Watches your horse move before picking up a hoof</li>
+          <li>Explains what they're doing and why, unprompted</li>
+          <li>Tells you what they see — good and bad — without you having to ask</li>
+          <li>Handles difficult moments with horses calmly and methodically</li>
+          <li>Keeps their tools clean and sharp</li>
+          <li>Shows up on time consistently</li>
+          <li>Proactively suggests involving your vet when something warrants it</li>
+          <li>Remembers your horse's history from visit to visit</li>
+          <li>Adjusts their approach based on your horse's individual needs</li>
+          <li>Takes their time — doesn't rush through a horse to get to the next one</li>
+        </ul>
+      </div>
+      <div class="flag-card red">
+        <div class="flag-title">Red Flags — Signs to Walk Away</div>
+        <ul>
+          <li>Dismisses your questions or treats them as interruptions</li>
+          <li>Never suggests involving a vet, even when something looks wrong</li>
+          <li>Blames the horse for everything — bad behavior, poor hoof quality, any problem</li>
+          <li>Can't explain why they're making specific choices</li>
+          <li>Works so fast that each horse gets fewer than 10 minutes</li>
+          <li>Uses excessive force with difficult horses rather than patience</li>
+          <li>Consistently late or unreliable with scheduling</li>
+          <li>Defensive or evasive when asked about credentials</li>
+          <li>Dull, dirty, or poorly maintained tools</li>
+          <li>Pressure-sells products, supplements, or additional services on every visit</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Trust Your Horse</div>
+      <p>A horse that was manageable for previous farriers and becomes consistently difficult with a new one is telling you something. Horses aren't wrong about pain. If your horse is expressing discomfort during farrier work that didn't previously occur, investigate — don't dismiss.</p>
+    </div>
+  </section>
+
+  <section class="section" id="reading-work">
+    <h2>How to Read the Work</h2>
+    <p>You don't need to be a farrier to evaluate whether a job was done well. These are the basic things an owner can observe after every appointment.</p>
+
+    <h3>Hoof Balance</h3>
+    <p>Stand behind the horse and look at all four hooves from ground level. The hoof wall angle should be consistent from side to side on each pair. From the front, the hoof walls should contact the ground evenly — not one side higher than the other. From the side, the angle of the hoof should flow in a straight line with the pastern (the hoof-pastern axis). A broken-forward or broken-back axis is a sign of imbalance.</p>
+
+    <h3>Clinches</h3>
+    <p>On a shod horse, the nail clinches — the bent-over nail tips on the side of the hoof wall — should be in a straight horizontal line, all at the same height, smooth and flat to the wall. Uneven, raised, or rough clinches indicate sloppy nailing. A clinch that stands proud of the hoof wall is a hazard.</p>
+
+    <h3>Shoe Fit</h3>
+    <p>The shoe should cover the entire bearing surface of the hoof wall, with the heel of the shoe extending to support the heel of the hoof. A shoe that ends before the heel — called a "short shoe" — removes support from a critical structure. The shoe should not extend so far behind the heel that it risks being pulled off by the opposite foot, but it should cover the heel fully.</p>
+
+    <h3>Movement After Shoeing</h3>
+    <p>Watch your horse move immediately after the farrier leaves, and again the next day. A horse that is subtly off after shoeing — not lame, but slightly unlevel or shortened in stride — may have a nail placed too close to the sensitive structures (a "close nail") or a shoe that is altering their balance in a way that takes adjustment. If the horse is overtly lame after shoeing, call both your farrier and your vet immediately.</p>
+
+    <h3>Hoof Wall Quality Over Time</h3>
+    <p>The best evidence of good farrier work is what you see four to six weeks after the appointment. Hooves that are growing correctly — no new flares, no cracking at the nail holes, consistent wall texture — indicate balanced shoeing. Flaring, chipping, or cracking at the nail holes between appointments is a sign that something in the angle, nail placement, or shoe fit is off.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">Take Photos</div>
+      <p>Photograph your horse's feet from the front, back, and both sides immediately after each appointment. Over several cycles you'll build a record that shows whether things are improving, holding steady, or deteriorating. It's also useful documentation if you ever need to involve a vet.</p>
+    </div>
+  </section>
+
+  <section class="section" id="relationship">
+    <h2>Building a Good Working Relationship</h2>
+    <p>A farrier who stays with a horse for years — who knows its history, its tendencies, its quirks — is genuinely more valuable than a technically superior farrier who rotates through. Continuity of care matters. Here's how to build and maintain a relationship worth keeping.</p>
+
+    <h3>Your Responsibilities as a Client</h3>
+    <ul>
+      <li><strong>Have your horse caught, clean, and ready.</strong> Your farrier's time is their income. Arriving to find the horse still in the pasture or caked in mud is disrespectful and costs them money.</li>
+      <li><strong>Provide a safe, appropriate work area.</strong> Level, dry footing. Good light. Away from loose horses, dogs, and distractions. Ideally a tie rail or cross-ties at a height that allows good body mechanics.</li>
+      <li><strong>Keep children and loose animals away.</strong> A distraction at the wrong moment can injure the farrier or the horse.</li>
+      <li><strong>Pay promptly and fairly.</strong> Don't negotiate rates that were agreed upon. If pricing changes, discuss it before the work, not after.</li>
+      <li><strong>Keep your appointments or give adequate notice.</strong> A same-day cancellation costs a farrier real money. Repeated cancellations will cost you the relationship.</li>
+      <li><strong>Tell your farrier relevant information.</strong> Changes in workload, any soundness issues you've noticed, new supplements or medications, changes in footing. The farrier can't factor in what they don't know.</li>
+      <li><strong>Don't hover, but do stay present.</strong> Be available and attentive without crowding the work space. Your farrier may need to ask you something or show you something.</li>
+    </ul>
+
+    <h3>Communication That Protects the Relationship</h3>
+    <p>If you have a concern about the work — something that looks off, a horse that's moving differently, a question about a choice that was made — raise it directly and respectfully. A good farrier will explain their reasoning without defensiveness. If you're not satisfied with the explanation, get a second opinion from another farrier or from your vet, and then have an honest conversation. Most problems in farrier-client relationships stem from things left unsaid for too long.</p>
+
+    <div class="callout gold">
+      <div class="callout-title">The Farrier-Vet Triangle</div>
+      <p>The most effective hoof care operates as a three-way collaboration: owner, farrier, and veterinarian. When all three communicate openly — sharing radiographs, observations, and treatment goals — outcomes for the horse are consistently better than when any leg of the triangle is cut off. Facilitate this by making introductions and encouraging communication between your vet and farrier directly.</p>
+    </div>
+  </section>
+
+  <section class="section" id="rural">
+    <h2>If You Can't Find Anyone</h2>
+    <p>Rural horse owners in underserved areas face a real and growing problem — the farrier shortage is a documented issue in many parts of the country, driven by the physical demands of the work and an aging workforce. If you genuinely cannot find a qualified farrier within a reasonable distance, here are your options:</p>
+    <ul>
+      <li><strong>Expand your radius.</strong> A good farrier willing to travel is worth the farm call fee. Ask your vet for names in the broader region.</li>
+      <li><strong>Ask about routing.</strong> Farriers often plan efficient routes — if you can connect with other horse owners in your area who share your difficulty, a farrier may be willing to establish a route that makes the travel worthwhile for everyone.</li>
+      <li><strong>Contact the AFA directly.</strong> They maintain regional directories and may know of certified farriers in your area not easily found online.</li>
+      <li><strong>Reach out to farrier schools.</strong> Programs like Oklahoma Farrier College, Oklahoma State University, and others place graduates actively looking to build client bases. A new graduate working under a mentor may be available in your area.</li>
+      <li><strong>Learn basic maintenance trimming.</strong> For horses with healthy, well-established hooves and no pathological conditions, an owner who has received proper instruction — not YouTube videos — can maintain between longer-interval farrier visits. This requires learning from a qualified person, not self-teaching.</li>
+      <li><strong>Use hoof boots as a bridge.</strong> If a horse goes overdue between farrier visits, protective hoof boots can prevent excessive wear and chipping while you wait for an appointment.</li>
+    </ul>
+    <div class="callout">
+      <div class="callout-title">Do Not Let Hooves Go</div>
+      <p>An overdue hoof that hasn't been trimmed is not just a cosmetic issue. Long toes create tendon stress, leverage problems, and joint strain that can cause injuries not immediately visible. If you genuinely cannot get a farrier, a basic emergency trim by a vet or a trained owner is better than nothing. Don't wait.</p>
+    </div>
+  </section>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="/hoof-care/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Hoof Care Basics</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/farrier-tools/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Farrier Tools Guide</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/faq/" class="nav-card">
+      <div class="label">Reference</div>
+      <div class="title">Farrier FAQ</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/glossary/" class="nav-card">
+      <div class="label">Reference</div>
+      <div class="title">Hoof Care Glossary</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+<script>
+(function(){
+  var btn = document.querySelector('.sn-drop-btn');
+  var drop = btn && btn.closest('.sn-drop');
+  if(btn && drop){
+    btn.addEventListener('click', function(){
+      var isOpen = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.textContent = isOpen ? 'Disciplines ▴' : 'Disciplines ▾';
+    });
+    drop.addEventListener('focusout', function(e){
+      if(!drop.contains(e.relatedTarget)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!drop.contains(e.target)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

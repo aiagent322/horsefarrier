@@ -372,5 +372,19 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> — Arizona's premier equestrian publication since 1978.</div>
   <div style="margin-top:8px;color:rgba(255,255,255,0.35);font-size:0.75rem;">&copy; 2026 HorseFarrier.net. All rights reserved.</div>
 </footer>
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var drawer=document.getElementById('nav-drawer');
+  if(!btn||!drawer)return;
+  btn.addEventListener('click',function(){
+    var open=drawer.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+    btn.querySelector('svg').innerHTML=open
+      ?'<line x1="3" y1="6" x2="21" y2="18"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="21" y1="6" x2="3" y2="18"/>'
+      :'<line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>';
+  });
+})();
+</script>
 </body>
 </html>

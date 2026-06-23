@@ -121,6 +121,18 @@ footer a{color:var(--rope-light);text-decoration:none}
 .nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
 .nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
 @media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+.video-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:6px}
+.video-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+.video-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:14px 16px 16px}
+.video-tag{display:inline-flex;align-items:center;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px}
+.video-tag.t-basics{background:var(--rope-pale);color:var(--leather-dark)}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px;overflow-wrap:break-word}
+.video-channel{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+@media(hover:hover){.video-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--border-strong)}}
+@media(min-width:768px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.video-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Hoof Care Basics","description":"Complete guide to horse hoof care basics including anatomy, trimming schedules, daily cleaning routines, warning signs, and working with your farrier.","url":"https://horsefarrier.net/hoof-care/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
@@ -180,6 +192,7 @@ footer a{color:var(--rope-light);text-decoration:none}
       <li><a href="#daily">Daily Hoof Care Routine</a></li>
       <li><a href="#warning">Warning Signs to Watch For</a></li>
       <li><a href="#farrier">Working With Your Farrier</a></li>
+      <li><a href="#videos">Watch &amp; Learn</a></li>
     </ol>
   </nav>
 
@@ -300,6 +313,58 @@ footer a{color:var(--rope-light);text-decoration:none}
     <div class="callout sage">
       <div class="callout-title">Finding a Good Farrier</div>
       <p>Look for certification through the American Farrier's Association (AFA) or the Guild of Professional Farriers. Ask your veterinarian for referrals — vets work with many farriers and know whose work holds up. A farrier who communicates clearly, shows up on schedule, and coordinates with your vet is worth keeping.</p>
+    </div>
+  </section>
+
+  <section class="section" id="videos">
+    <h2>Watch &amp; Learn</h2>
+    <p>Four hand-picked videos covering the fundamentals — from daily cleaning to understanding a basic trim and what professional hoof care looks like.</p>
+    <div class="video-grid">
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/0kP5O8BWk9I" title="How To Clean a Horse's Hoof" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-basics">🐎 Basics</div>
+          <div class="video-title">How To Clean a Horse's Hoof</div>
+          <div class="video-channel">DiscoverTheHorse</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/5B_buSlpI2Y" title="Hoof Trimming Basics" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-basics">🐎 Basics</div>
+          <div class="video-title">Hoof Trimming Basics</div>
+          <div class="video-channel">Farrier Products</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/m_-lavcMMBI" title="Natural Hoof Trimming: Simple Steps Every Horse Owner Should Know" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-basics">🐎 Basics</div>
+          <div class="video-title">Natural Hoof Trimming: Simple Steps Every Horse Owner Should Know</div>
+          <div class="video-channel">Ronan Horsemanship</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/fRAgl1GUHHY" title="How Horse Hooves Are Deep Cleaned" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-basics">🐎 Basics</div>
+          <div class="video-title">How Horse Hooves Are Deep Cleaned</div>
+          <div class="video-channel">Insider</div>
+        </div>
+      </div>
+
     </div>
   </section>
 

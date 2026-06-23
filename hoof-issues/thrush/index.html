@@ -178,6 +178,24 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .faq-a{display:none;padding:0 18px 16px;font-size:0.86rem;color:var(--ink-soft);line-height:1.65}
 .faq-item.open .faq-a{display:block}
 
+/* VIDEO SECTION */
+.video-section{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:8px}
+.video-grid{display:flex;flex-direction:column;gap:0}
+.video-card{border-bottom:1px solid var(--border)}
+.video-card:last-child{border-bottom:none}
+.video-frame{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-meta{padding:14px 16px}
+.video-cat{display:inline-flex;align-items:center;font-size:0.67rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:8px;background:var(--rope-pale);color:var(--leather-dark);margin-bottom:7px}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px}
+.video-by{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+@media(min-width:768px){
+  .video-grid{display:grid;grid-template-columns:1fr 1fr}
+  .video-card{border-bottom:none;border-right:1px solid var(--border)}
+  .video-card:nth-child(even){border-right:none}
+  .video-card:nth-child(1),.video-card:nth-child(2){border-bottom:1px solid var(--border)}
+}
+
 /* SERIES NAV */
 .series-nav{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;margin:28px 0}
 .series-nav h3{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--ink);margin-bottom:12px}
@@ -784,6 +802,63 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <div class="faq-item">
       <button class="faq-q" aria-expanded="false">Can thrush cause permanent damage? <span class="faq-arrow">▼</span></button>
       <div class="faq-a">Mild to moderate thrush, caught and treated promptly, causes no permanent damage. The frog regrows fully. Severe, chronic, or untreated thrush that penetrates into sensitive laminae can cause scarring of sensitive tissue, permanent alteration of frog morphology, damage to the digital cushion, and in extreme cases can predispose a horse to long-term soundness issues. This is why early treatment matters — the bacteria themselves aren't unusual, but the damage they can do with time is serious.</div>
+    </div>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Thrush Videos — Watch &amp; Learn</h2>
+    <p>Real horses, real cases — see thrush identified and treated by horse owners, farriers, and a veterinary clinic.</p>
+  </div>
+
+  <div class="video-section">
+    <div class="video-grid">
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/5JU-0J3igP0" title="How to Recognize and Treat Thrush in Horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🎬 Recognition &amp; Treatment</div>
+          <div class="video-title">How to Recognize and Treat Thrush in Horses</div>
+          <div class="video-by">My Senior Horse</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/tZyxAs6IDzQ" title="Recognizing and treatment for thrush in horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🎬 Recognition &amp; Treatment</div>
+          <div class="video-title">Recognizing and Treatment for Thrush in Horses</div>
+          <div class="video-by">Francesca Manley</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/x7lQTPEN9kQ" title="How to Treat Thrush with Copper Sulfate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🩺 Veterinary Clinic</div>
+          <div class="video-title">How to Treat Thrush with Copper Sulfate</div>
+          <div class="video-by">Springhill Equine Veterinary Clinic</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/6lDhdNQ1pfU" title="How to Treat Thrush in a Horse (Quick &amp; Easy Method)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🎬 Quick Method</div>
+          <div class="video-title">How to Treat Thrush in a Horse (Quick &amp; Easy Method)</div>
+          <div class="video-by">Carmella Abel — Equine Helper</div>
+        </div>
+      </div>
+
     </div>
   </div>
 

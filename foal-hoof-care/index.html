@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Foal & Young Horse Hoof Development — HorseFarrier.net</title>
+<meta name="description" content="Complete guide to foal hoof care — when the first farrier visit should happen, angular limb deformities, growth plates, corrective trimming, desensitization, and the young horse shoeing timeline.">
+<link rel="canonical" href="https://horsefarrier.net/foal-hoof-care/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:flex;align-items:center;line-height:0;flex-shrink:0}
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+.toc{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:32px}
+.toc-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:10px}
+.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.toc a{color:var(--leather);text-decoration:none;font-size:0.88rem;font-weight:600;display:inline-flex;align-items:center;min-height:36px}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:36px}
+.section h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.section h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--leather-dark);margin:18px 0 8px}
+.section p{font-size:0.93rem;color:var(--ink-soft);margin-bottom:12px;line-height:1.7}
+.section ul,.section ol{padding-left:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
+.section li{font-size:0.93rem;color:var(--ink-soft);line-height:1.6}
+.section strong{color:var(--ink);font-weight:700}
+.callout{background:var(--rust-light);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:16px 0}
+.callout.sage{background:var(--sage-light);border-color:var(--sage)}
+.callout.gold{background:#FFF8E6;border-color:var(--gold)}
+.callout-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--rust);margin-bottom:4px}
+.callout.sage .callout-title{color:var(--sage-dark)}
+.callout.gold .callout-title{color:#8B6914}
+.callout p{font-size:0.88rem;color:var(--ink-soft);margin:0;line-height:1.6}
+/* timeline */
+.timeline{display:flex;flex-direction:column;gap:0;margin:16px 0;position:relative}
+.timeline::before{content:'';position:absolute;left:18px;top:0;bottom:0;width:2px;background:var(--rope-pale)}
+.tl-item{display:flex;gap:16px;padding-bottom:24px;position:relative}
+.tl-dot{width:36px;height:36px;background:var(--leather-deeper);border:3px solid var(--rope);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;z-index:1;font-family:'Playfair Display',serif;font-size:0.75rem;font-weight:900;color:var(--rope-light);margin-top:2px}
+.tl-content{flex:1}
+.tl-age{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--leather-dark);margin-bottom:4px}
+.tl-text{font-size:0.88rem;color:var(--ink-soft);line-height:1.6}
+/* ALD grid */
+.ald-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
+.ald-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.ald-type{font-family:'Playfair Display',serif;font-weight:900;font-size:0.95rem;color:var(--leather-dark);margin-bottom:4px}
+.ald-card p{font-size:0.87rem;color:var(--ink-soft);line-height:1.6;margin:0}
+/* desensitization steps */
+.steps{display:flex;flex-direction:column;gap:10px;margin:16px 0;counter-reset:step}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step-num{width:32px;height:32px;background:var(--leather-deeper);color:var(--rope-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:900;font-size:0.85rem;flex-shrink:0;margin-top:2px}
+.step-body{flex:1;font-size:0.9rem;color:var(--ink-soft);line-height:1.6}
+.step-body strong{color:var(--ink);display:block;margin-bottom:2px}
+/* schedule table */
+.schedule-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem}
+.schedule-table th{background:var(--leather-deeper);color:var(--cream);padding:10px 12px;text-align:left;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em}
+.schedule-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.schedule-table tr:nth-child(even) td{background:var(--sand)}
+.schedule-table strong{color:var(--ink)}
+/* nav cards */
+.nav-cards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+@media(min-width:768px){
+  .bb-logo-link{display:flex}
+  .topbar{padding:13px 20px}
+  .topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}
+  .page-hero h1{font-size:2.1rem}
+  .page-hero p{font-size:0.94rem}
+  .content-wrap{padding:32px 24px 56px}
+  .ald-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1024px){.page-hero h1{font-size:2.4rem}}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+
+/* ═══ SITE NAV ═══ */
+.site-nav{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.1);border-bottom:2px solid var(--rope);position:sticky;top:var(--topbar-h,54px);z-index:150;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.site-nav-inner{display:flex;align-items:stretch;overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 4px;max-width:1200px;margin:0 auto}
+.site-nav-inner::-webkit-scrollbar{display:none}
+.sn-link{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;border-top:3px solid transparent;transition:color 0.18s,border-color 0.18s,background 0.18s;letter-spacing:0.01em}
+.sn-link:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-link.active{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.06)}
+.sn-drop{position:relative;display:flex;align-items:stretch;flex-shrink:0}
+.sn-drop-btn{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);background:none;border:none;border-bottom:3px solid transparent;border-top:3px solid transparent;white-space:nowrap;cursor:pointer;font-family:inherit;letter-spacing:0.01em;transition:color 0.18s,border-color 0.18s,background 0.18s}
+.sn-drop-btn:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-drop-panel{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.12);border-top:2px solid var(--rope);border-radius:0 0 var(--radius) var(--radius);box-shadow:0 8px 24px rgba(0,0,0,0.35);z-index:200;padding:4px 0}
+.sn-drop:hover .sn-drop-panel,.sn-drop:focus-within .sn-drop-panel,.sn-drop.open .sn-drop-panel{display:block}
+.sn-drop-link{display:flex;align-items:center;padding:11px 18px;font-size:0.83rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;border-left:3px solid transparent;transition:color 0.15s,background 0.15s,border-color 0.15s;white-space:nowrap;gap:8px}
+.sn-drop-link:hover,.sn-drop-link.active{color:var(--rope-light);background:rgba(255,255,255,0.06);border-left-color:var(--rope)}
+.sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+@media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
+@media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Foal & Young Horse Hoof Development","description":"Complete guide to foal hoof care — first farrier visit timing, angular limb deformities, growth plates, corrective trimming, desensitization, and the young horse shoeing timeline.","url":"https://horsefarrier.net/foal-hoof-care/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+<div class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/hoof-care/" class="sn-link">Hoof Care</a>
+    <a href="/farrier-tools/" class="sn-link">Farrier Tools</a>
+    <a href="/horseshoes/" class="sn-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="sn-link">Hoof Issues</a>
+    <div class="sn-div" aria-hidden="true"></div>
+    <div class="sn-drop">
+      <button class="sn-drop-btn" aria-haspopup="true" aria-expanded="false" aria-controls="disc-panel">Disciplines ▾</button>
+      <div class="sn-drop-panel" id="disc-panel" role="menu">
+        <a href="/disciplines/reining/" class="sn-drop-link" role="menuitem">🤠 Reining</a>
+        <a href="/disciplines/cutting/" class="sn-drop-link" role="menuitem">🐄 Cutting &amp; Cow Horse</a>
+        <a href="/disciplines/barrel-racing/" class="sn-drop-link" role="menuitem">🏁 Barrel Racing</a>
+        <a href="/disciplines/dressage/" class="sn-drop-link" role="menuitem">🎩 Dressage</a>
+        <a href="/disciplines/show-jumping/" class="sn-drop-link" role="menuitem">🏇 Show Jumping</a>
+        <a href="/disciplines/eventing/" class="sn-drop-link" role="menuitem">⛰️ Eventing</a>
+        <a href="/disciplines/thoroughbred-racing/" class="sn-drop-link" role="menuitem">🏆 Thoroughbred Racing</a>
+        <a href="/disciplines/trail-endurance/" class="sn-drop-link" role="menuitem">🌲 Trail &amp; Endurance</a>
+        <a href="/disciplines/draft-horses/" class="sn-drop-link" role="menuitem">🐎 Draft Horses</a>
+      </div>
+    </div>
+    <div class="sn-div" aria-hidden="true"></div>
+    <a href="/breed-hooves/" class="sn-link">Breed Hooves</a>
+    <a href="/nutrition/" class="sn-link">Nutrition</a>
+    <a href="/find-a-farrier/" class="sn-link">Find a Farrier</a>
+    <a href="/faq/" class="sn-link">FAQ</a>
+    <a href="/glossary/" class="sn-link">Glossary</a>
+    <a href="/videos/" class="sn-link">Videos</a>
+  </div>
+</nav>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Foal &amp; Young Horse Hoof Care</div>
+  <h1>Foal &amp; <em>Young Horse</em> Hoof Development</h1>
+  <p>From the first days of life through the first years of work — what develops when, when the farrier needs to be involved, and what you cannot afford to miss.</p>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+
+  <nav class="toc" aria-label="Page contents">
+    <div class="toc-title">On This Page</div>
+    <ol>
+      <li><a href="#why-early">Why Early Hoof Care Matters</a></li>
+      <li><a href="#anatomy">The Foal Hoof — How It Differs</a></li>
+      <li><a href="#growth-plates">Growth Plates &amp; the Window for Correction</a></li>
+      <li><a href="#timeline">Development Timeline: Birth to Age 4</a></li>
+      <li><a href="#ald">Angular Limb Deformities</a></li>
+      <li><a href="#flexural">Flexural Deformities</a></li>
+      <li><a href="#desensitization">Teaching a Foal to Stand for the Farrier</a></li>
+      <li><a href="#shoeing">When to Start Shoeing</a></li>
+      <li><a href="#owner-checklist">Owner Checklist: The First Year</a></li>
+    </ol>
+  </nav>
+
+  <section class="section" id="why-early">
+    <h2>Why Early Hoof Care Matters</h2>
+    <p>A foal's skeletal system is not fixed at birth. The bones, joints, and connective tissues of the lower limb are actively developing during the first months of life — responsive to mechanical forces in a way they will never be again. This creates both an opportunity and an obligation.</p>
+    <p>The opportunity: conformational deviations that would be permanent in an adult horse can often be corrected or significantly improved in a foal through farrier intervention while growth plates are still open. The correction window is narrow — weeks, not months.</p>
+    <p>The obligation: neglect during this period doesn't just produce cosmetic problems. Unaddressed angular or flexural deformities create abnormal loading patterns that lead to joint damage, tendon stress, and soundness issues that follow the horse for its entire working life.</p>
+    <p>The farrier is not just a maintenance provider for young horses — they are part of a developmental care team alongside the veterinarian. Breeders, owners, and managers who understand this invest in early and frequent farrier assessment. Those who don't often pay the price in the veterinary bills and soundness limitations that follow.</p>
+    <div class="callout">
+      <div class="callout-title">The Window Closes Fast</div>
+      <p>A fetlock or knee deviation that is correctable at 6 weeks through trimming alone may require surgery at 3 months, and may be permanent by 6 months. Time is the most critical variable in foal limb development. When in doubt, have the vet and farrier assess early — not later.</p>
+    </div>
+  </section>
+
+  <section class="section" id="anatomy">
+    <h2>The Foal Hoof — How It Differs from an Adult</h2>
+    <p>A newborn foal's hoof is structurally complete but functionally immature. Understanding what is different helps explain why foal hoof care requires different judgment than adult care.</p>
+
+    <h3>The Periople and Soft Capsule</h3>
+    <p>Foals are born with a soft, rubbery hoof capsule covered by the periople — a thick, waxy layer that protects the hoof during delivery and in the days immediately after birth. This soft tissue hardens within the first 24–48 hours as the foal begins to bear weight and the hoof dries. In the first few days, the hoof is more pliable and easier to damage than an adult's — handle gently.</p>
+
+    <h3>The Digital Cushion</h3>
+    <p>In adult horses, the digital cushion — the fibrocartilaginous structure that absorbs concussion in the back of the hoof — is fully developed and fibrous. In foals, this structure is largely adipose (fatty) tissue. It becomes fibrocartilaginous progressively over the first years of life, driven by the mechanical stimulation of hoof loading during movement on varied terrain. This is one of the strongest arguments for regular turnout and movement in young horses: exercise builds the internal structures that protect the hoof for life.</p>
+
+    <h3>Bone Development</h3>
+    <p>The coffin bone (distal phalanx) in a newborn foal is smaller relative to the hoof capsule than it will be in adulthood. The hoof capsule grows to accommodate bone growth over the first months of life. The coffin bone is also more cartilaginous at birth and progressively ossifies — calcifies — over time. This means radiographic interpretation of foal feet requires experience and age-appropriate expectations.</p>
+
+    <h3>Hoof Growth Rate</h3>
+    <p>Foals grow hoof faster than adult horses — the high metabolic rate of growth drives rapid hoof production. An unattended foal hoof can flare, distort, and develop leverage problems quickly. This is why the farrier interval for foals is shorter than for adults, even when no corrective work is needed.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">Turnout Is Hoof Development</div>
+      <p>Movement on varied terrain is not just exercise — it is active structural development of the digital cushion, lateral cartilages, and frog. Foals kept in stalls without adequate turnout develop weaker internal hoof structures that are more vulnerable to concussion-related problems throughout their lives. Prioritize daily turnout from the earliest weeks.</p>
+    </div>
+  </section>
+
+  <section class="section" id="growth-plates">
+    <h2>Growth Plates &amp; the Window for Correction</h2>
+    <p>Growth plates — the physis — are areas of cartilage near the ends of long bones where new bone is produced. They are the mechanism by which bones lengthen during development. They are also the sites where angular limb deformities originate and where corrective intervention has its greatest effect.</p>
+    <p>The key principle: while a growth plate is open and actively producing bone, asymmetric loading of that growth plate can influence the direction of bone growth. Apply more load to one side, and growth on that side slows. Apply less, and growth accelerates. A farrier who trims more from one side of a foal's hoof — deliberately shifting load — is directly manipulating bone growth. This is why foal farriery requires both technical skill and genuine understanding of developmental anatomy.</p>
+
+    <h3>Growth Plate Closure Timeline — Lower Limb</h3>
+    <table class="schedule-table">
+      <thead><tr><th>Growth Plate</th><th>Approximate Closure</th><th>Significance</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Distal phalanx (coffin bone)</strong></td><td>6–9 months</td><td>Earliest closure — coffin bone deformities must be addressed in the first months</td></tr>
+        <tr><td><strong>Distal pastern (proximal interphalangeal)</strong></td><td>6–12 months</td><td>Pastern deviations need early assessment</td></tr>
+        <tr><td><strong>Distal fetlock (metacarpal/metatarsal III distal)</strong></td><td>9–12 months</td><td>Most common site for angular limb deformity corrective work — active window roughly 4–9 months</td></tr>
+        <tr><td><strong>Distal radius (carpus / knee)</strong></td><td>24–30 months</td><td>Carpal valgus corrections have a longer window — up to 12–18 months for farriery, surgery typically before 12 months</td></tr>
+        <tr><td><strong>Distal tibia (hock)</strong></td><td>18–24 months</td><td>Tarsal valgus is common in young horses; window for correction is longer than fetlock</td></tr>
+      </tbody>
+    </table>
+
+    <p>The practical implication: the earlier a deviation is identified, the more options exist for correction. Fetlock deviations detected at 4 weeks may be correctable with trimming alone. The same deviation at 8 months may require surgery. Don't watch and wait — have the vet assess early.</p>
+
+    <div class="callout gold">
+      <div class="callout-title">Farrier + Vet — Not Either/Or</div>
+      <p>Corrective trimming and corrective surgery are not competing approaches — they are complementary. The farrier manages mechanical loading between surgical interventions and after them. The vet determines whether the deviation is severe enough to require surgery, and when. The most effective outcomes come from both professionals working together on a coordinated plan, with radiographs guiding decisions.</p>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <h2>Development Timeline: Birth to Age 4</h2>
+    <p>Here is what should happen, and when, across the first years of a young horse's life.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">1–2<br>wk</div>
+        <div class="tl-content">
+          <div class="tl-age">First Week — Assessment, Not Trimming</div>
+          <div class="tl-text">The farrier or vet should observe the foal standing and moving within the first week. The goal is not to trim — the hooves are too soft and the foal is too young — but to identify any obvious deviations, assess whether the hoof capsule is developing normally, and flag anything that needs early intervention. Begin gentle hoof handling by the owner to begin desensitization.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">2–4<br>wk</div>
+        <div class="tl-content">
+          <div class="tl-age">2–4 Weeks — First Trim If Needed</div>
+          <div class="tl-text">By this point the hoof has hardened and basic trimming is appropriate if the hoof is flaring or developing asymmetry. A farrier experienced with foals can make small corrective adjustments at this stage that take advantage of the responsiveness of early growth. Angular limb deformities that haven't self-corrected by this point need a veterinary assessment to determine whether corrective trimming alone is sufficient or whether additional intervention will be needed.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">4–8<br>wk</div>
+        <div class="tl-content">
+          <div class="tl-age">4–8 Weeks — Critical Correction Window for Fetlock Deformities</div>
+          <div class="tl-text">This is the most important intervention window for fetlock-level angular limb deformities. The distal fetlock growth plate is actively open and maximally responsive to mechanical loading changes. Corrective trimming — removing hoof wall on the concave side of a valgus deviation to increase load on the shorter side — is most effective here. A fetlock deviation that is not improving by 8 weeks warrants veterinary evaluation for possible periosteal stripping or transphyseal bridging.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">6–12<br>wk</div>
+        <div class="tl-content">
+          <div class="tl-age">6–12 Weeks — Ongoing Maintenance Every 4–6 Weeks</div>
+          <div class="tl-text">Regular trimming every 4 to 6 weeks becomes the standard cadence. Each visit the farrier assesses whether the limbs are tracking straight, whether the hoof capsule is balanced, and whether any new asymmetries have developed. This is also the window to assess hoof-pastern axis alignment and begin addressing any club foot tendency early before it becomes established.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">3–6<br>mo</div>
+        <div class="tl-content">
+          <div class="tl-age">3–6 Months — Hoof Shape Establishing</div>
+          <div class="tl-text">By this stage, the hoof capsule shape is becoming more characteristic and less easily influenced by trimming alone. Carpal (knee) deformities still have a meaningful correction window — the distal radial growth plate doesn't close until 24–30 months. Club foot cases that haven't responded to trimming may need toe extensions or splinting under veterinary direction. Nutritional assessment becomes more relevant as the foal transitions off the mare's milk.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">6–18<br>mo</div>
+        <div class="tl-content">
+          <div class="tl-age">Weanling to Yearling — Maintenance and Monitoring</div>
+          <div class="tl-text">After weaning, nutritional management becomes critical for hoof quality. Overfeeding at this stage — particularly high-sugar, high-starch diets — can produce rapid, uneven growth that leads to developmental orthopedic disease (DOD). Maintain 4 to 8 week farrier intervals depending on growth rate. The farrier should be evaluating hoof balance at every visit relative to the changing proportions of the growing horse. Hind limb tarsal valgus (hock deviation), which is common in young horses, typically self-corrects through this period but should be monitored.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">2–3<br>yr</div>
+        <div class="tl-content">
+          <div class="tl-age">2–3 Years — Transition to Work</div>
+          <div class="tl-text">As the horse begins light training, the farrier relationship becomes more like an adult horse program. Most horses in light work at this age can remain barefoot on appropriate footing. The decision to shoe should be based on the individual horse's hoof quality, the work being asked, and the footing — not assumption or habit. Front shoes only is a common starting point for horses going into initial training. Continue 6 to 8 week intervals.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">3–4<br>yr</div>
+        <div class="tl-content">
+          <div class="tl-age">3–4 Years — Full Shoeing If Warranted</div>
+          <div class="tl-text">By age 3 to 4, all lower limb growth plates have closed and the hoof program shifts to the same considerations as an adult horse. Shoeing decisions are now driven by workload, footing, and individual hoof quality rather than developmental concerns. Horses that were well-managed through the developmental years arrive here with better hoof capsule quality and limb alignment than those who weren't — the investment in early care pays forward.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ald">
+    <h2>Angular Limb Deformities (ALD)</h2>
+    <p>Angular limb deformity is the clinical term for a leg that, when viewed from in front or behind, deviates from a straight vertical line. They are among the most common developmental problems seen in foals, and they are among the most treatable — when caught early.</p>
+
+    <h3>Valgus vs. Varus</h3>
+    <div class="ald-grid">
+      <div class="ald-card">
+        <div class="ald-type">Valgus — "Knock-Kneed"</div>
+        <p>The limb deviates outward below the affected joint. Carpal valgus (knock knees) is the most common deviation in foals and is often mild and self-correcting within the first weeks. Fetlock valgus (toed-out from the fetlock) is also common. Valgus deformities generally have a better prognosis than varus because they tend to be milder and respond well to conservative management.</p>
+      </div>
+      <div class="ald-card">
+        <div class="ald-type">Varus — "Bow-Legged"</div>
+        <p>The limb deviates inward below the affected joint. Fetlock varus (toed-in from the fetlock) and carpal varus are less common than valgus but often more serious. Varus deformities carry a worse prognosis, particularly when moderate to severe, and are more likely to require surgical intervention. They also tend not to self-correct.</p>
+      </div>
+    </div>
+
+    <h3>Common Locations</h3>
+    <ul>
+      <li><strong>Carpus (knee):</strong> The most common location. Mild carpal valgus is nearly universal in newborn foals and self-corrects in the majority by 4–8 weeks. Moderate to severe deviations or those that aren't improving need farrier and vet assessment.</li>
+      <li><strong>Fetlock (metacarpophalangeal joint):</strong> The second most common location and the most time-sensitive. The distal fetlock growth plate closes by 9–12 months, making early intervention critical. Fetlock valgus is more common than varus.</li>
+      <li><strong>Tarsus (hock):</strong> Tarsal valgus is common in young Warmbloods and draft breeds. The longer closure timeline of the distal tibia (18–24 months) provides more correction time, but moderate deviations still benefit from early management.</li>
+      <li><strong>Pastern:</strong> Less common but important to identify. Pastern deformities are often associated with concurrent fetlock deformities and can affect the hoof-pastern axis significantly.</li>
+    </ul>
+
+    <h3>Corrective Trimming for ALD</h3>
+    <p>The farrier's tool for correcting ALDs is asymmetric trimming — deliberately removing more hoof wall from one side to shift the load distribution across the growth plate. For a valgus deviation (leg deviating outward below the joint), removing material from the lateral (outside) wall and leaving the medial (inside) wall slightly longer increases load on the lateral side of the growth plate, slowing growth on that side and allowing the medial side to catch up — straightening the limb over time.</p>
+    <p>This sounds simple but requires precise judgment. Over-correction is a real risk — an overcorrected valgus becomes a varus, which has a worse prognosis. An experienced foal farrier trims conservatively and reassesses frequently rather than making aggressive single corrections.</p>
+    <p>Glue-on extensions — small wedges or extensions bonded to the hoof — can add mechanical advantage beyond what trimming alone can achieve. They are particularly useful when the deviation is moderate and the foal won't tolerate nailing.</p>
+
+    <div class="callout">
+      <div class="callout-title">Self-Correction Is Real — But Don't Rely on It</div>
+      <p>Many mild ALDs do self-correct in the first weeks of life as the foal gains strength and begins loading its limbs normally. This is real and documented. However, "watch and wait" as a default strategy is dangerous because the correction window is so narrow. Have a vet assess by 2–4 weeks and monitor every 2 weeks thereafter. Self-correction that is going to happen usually does so by 4–6 weeks. If it hasn't started by then, it's unlikely to complete without intervention.</p>
+    </div>
+  </section>
+
+  <section class="section" id="flexural">
+    <h2>Flexural Deformities</h2>
+    <p>Flexural deformities differ from angular deformities in that the deviation occurs in the sagittal plane — front to back — rather than the frontal plane. The leg is either too straight (contracted) or buckles forward (lax). Both are common in foals and both require different management approaches.</p>
+
+    <h3>Flexural Laxity — The "Weak-Pastured" Foal</h3>
+    <p>Flexural laxity is extremely common in newborn foals and refers to excessive looseness in the flexor tendons — the foal's fetlocks may drop to the ground, or the pastern may be nearly flat. This is almost always self-correcting within the first days to weeks as the foal bears weight and the tendons tighten naturally. The treatment is exercise — controlled movement, not stall rest. Bandaging should be avoided unless specifically directed by a vet, as it can interfere with normal proprioceptive development.</p>
+
+    <h3>Flexural Contracture — The "Club Foot" Foal</h3>
+    <p>Flexural contracture occurs when the flexor tendons are too tight relative to the skeleton — the foal stands on its toe, or in severe cases, on the front of the hoof wall. This ranges from mild (slightly upright pastern) to severe (the foal walks on the dorsal hoof wall).</p>
+    <p>Mild cases respond to controlled exercise, dietary management (avoid overfeeding — rapid growth exacerbates contracture), and toe extension shoes that lengthen the lever arm and stretch the deep digital flexor tendon over time. Moderate cases may respond to oxytetracycline injections administered by the vet — this is a well-documented treatment that temporarily relaxes the tendons and allows the farrier to apply an extension. Severe cases require surgical tenotomy (cutting the tendon) by a veterinary surgeon.</p>
+
+    <h3>Congenital vs. Acquired Flexural Deformities</h3>
+    <p>Congenital deformities are present at birth. Acquired deformities develop during the first year or two, often in response to rapid growth, pain in another part of the limb (causing the horse to load differently), or nutritional imbalance. Acquired club foot in growing horses often responds well to corrective trimming when caught early — the key is identifying that it is developing before it becomes structural.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">Pain as a Driver of Flexural Problems</div>
+      <p>A young horse that develops a contracture in one limb while the opposite limb appears normal is often responding to pain — an abscess, a growth plate problem, or joint inflammation — that causes the horse to shift weight off the painful leg. Always rule out pain as a driver before attributing a unilateral flexural problem to a primary tendon issue.</p>
+    </div>
+  </section>
+
+  <section class="section" id="desensitization">
+    <h2>Teaching a Foal to Stand for the Farrier</h2>
+    <p>A horse that is genuinely difficult for the farrier to work on is a safety problem, a welfare problem, and a financial problem — it costs more, takes longer, and risks injury to the horse, the farrier, and anyone nearby. The good news: this problem is almost entirely preventable with consistent handling from the first days of life.</p>
+    <p>Begin hoof handling on day one. Not trimming — handling. The goal in the first weeks is simply to make the foal comfortable with its feet being touched, picked up, and held. A foal that accepts this easily by 4 weeks will be straightforward to trim for its entire life.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Touch before lifting</strong>
+          Run your hand down the leg from the knee or hock to the hoof before asking for the foot. This is how a farrier approaches — give the horse the same signal every time so it becomes a reliable cue.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Ask, hold briefly, release</strong>
+          Pick the foot up, hold it for 3–5 seconds, set it down. Reward with release of pressure and quiet praise. Build duration gradually — from 5 seconds to 30 seconds to a full minute over multiple sessions across several days.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Simulate the farrier's position</strong>
+          Hold the foot in the position a farrier would — between your knees for the fronts, over your thigh for the hinds. Most owners hold feet differently than a farrier does, which means the horse has never felt that position before the first appointment. Close that gap.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Tap and simulate tools</strong>
+          Tap the sole and hoof wall with your knuckles, a hoof pick handle, or a rasp handle. The sounds and vibrations of farrier tools are unfamiliar — introduce them before they appear in a work context. Run a hoof pick around the frog and sole gently.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Never release under resistance</strong>
+          The single most important rule. If the foal is pulling to get its foot back and you release the foot, you have just taught it that pulling works. Wait for one moment of softness — even a fraction of a second — and release on that. This is how the foal learns that relaxation, not resistance, ends the exercise.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Do all four feet, every session</strong>
+          Don't stop at front feet because they're easier. Hind feet handled poorly account for most farrier-related injuries. A foal that accepts all four feet calmly is the goal, and it's achievable if you start early and are consistent.
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">A Horse That Was Never Handled Is Unfair to Everyone</div>
+      <p>Arriving at the first farrier appointment with a foal that has never had its feet touched is unfair to the foal, to the farrier, and to you. The farrier must do the desensitization work that you didn't do — while also trying to trim, under time pressure, with a frightened animal. Start handling on day one. Ten minutes per day for the first month produces a horse that stands calmly for farrier work for life.</p>
+    </div>
+  </section>
+
+  <section class="section" id="shoeing">
+    <h2>When to Start Shoeing</h2>
+    <p>The question of when to shoe a young horse is straightforward in most cases: when the work being asked of the horse exceeds what its unshod hooves can sustain on the footing they work on. That answer usually means later rather than earlier.</p>
+
+    <h3>Why Not to Shoe Too Early</h3>
+    <p>A horseshoe restricts the natural expansion of the hoof capsule that occurs with every footfall. In an adult horse, this restriction is managed by careful shoe fit and regular resets. In a young horse whose hoof is actively growing and whose internal structures are still developing, this restriction can interfere with the normal mechanical stimulation that builds the digital cushion and lateral cartilages. Routine shoeing before age 2 is rarely necessary and carries real developmental costs.</p>
+
+    <h3>When Therapeutic Shoeing Is Appropriate Earlier</h3>
+    <p>The above applies to routine shoeing. Therapeutic or corrective applications — toe extensions for flexural contracture, glue-on shoes for ALD management, protective shoes after trauma — have specific clinical indications that override the general preference for barefoot development. These are decisions made by the vet and farrier together based on the individual horse's needs, not age guidelines.</p>
+
+    <h3>The General Timeline</h3>
+    <table class="schedule-table">
+      <thead><tr><th>Age</th><th>Typical Approach</th><th>When to Deviate</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Birth–12 months</strong></td><td>Barefoot. Corrective trimming as needed. No routine shoes.</td><td>Therapeutic/corrective applications for ALD or flexural deformity management only, under vet direction.</td></tr>
+        <tr><td><strong>12–24 months</strong></td><td>Barefoot. Routine trimming every 6–8 weeks.</td><td>If hoof quality is genuinely poor and the yearling is on damaging surfaces — rare at this age since training is minimal.</td></tr>
+        <tr><td><strong>2–3 years</strong></td><td>Begin light training barefoot if hoof quality allows. Front shoes if needed for the work surface.</td><td>Horses in early race training, on hard arena surfaces daily, or with genuinely poor hoof quality may benefit from fronts earlier.</td></tr>
+        <tr><td><strong>3+ years</strong></td><td>Shoeing decisions as for adult horse — driven by workload, footing, and individual hoof quality.</td><td>All lower limb growth plates now closed; developmental considerations no longer apply.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" id="owner-checklist">
+    <h2>Owner Checklist: The First Year</h2>
+    <p>A practical list of what to do and when across the first twelve months of a foal's life.</p>
+
+    <ul>
+      <li><strong>Days 1–3:</strong> Begin gentle leg and hoof handling every day. Observe the foal standing and moving — note whether any limbs are deviating from straight.</li>
+      <li><strong>Week 1–2:</strong> Have a vet or experienced farrier observe the foal in motion. Flag any obvious deviations for monitoring or early intervention.</li>
+      <li><strong>Week 2–4:</strong> First farrier visit for assessment. Trimming if the hoof is developing asymmetrically. Corrective work if any ALD warrants it.</li>
+      <li><strong>Month 1–3:</strong> Every 4–6 week farrier visits. Continue daily hoof handling to build tolerance. If any ALD is not self-correcting by week 6–8, escalate to a vet assessment — don't wait.</li>
+      <li><strong>Month 3–6:</strong> Nutritional review — avoid overfeeding, particularly high-sugar/starch feeds. Rapid growth increases ALD and DOD risk. Maintain turnout for digital cushion development.</li>
+      <li><strong>Month 6–12:</strong> Continue regular trims every 6–8 weeks. Monitor for acquired flexural problems — a foal developing a progressively more upright pastern in one limb needs farrier and vet assessment. Assess hoof quality and begin planning the program for starting work at 2.</li>
+    </ul>
+
+    <div class="callout sage">
+      <div class="callout-title">The Investment Pays Forward</div>
+      <p>A foal that receives attentive farrier care, daily hoof handling, appropriate nutrition, and regular turnout in the first year arrives at training age with better hoof quality, better limb alignment, and better behavioral compliance for farrier work than one that didn't. The cost of doing it right is modest. The cost of not doing it — in veterinary intervention, soundness limitations, and behavioral problems with the farrier — is substantially higher.</p>
+    </div>
+  </section>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="/hoof-care/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">Hoof Care Basics</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/find-a-farrier/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">How to Find a Good Farrier</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/hoof-issues/laminitis/" class="nav-card">
+      <div class="label">Hoof Issue</div>
+      <div class="title">Laminitis &amp; Founder</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/faq/" class="nav-card">
+      <div class="label">Reference</div>
+      <div class="title">Farrier FAQ</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+<script>
+(function(){
+  var btn = document.querySelector('.sn-drop-btn');
+  var drop = btn && btn.closest('.sn-drop');
+  if(btn && drop){
+    btn.addEventListener('click', function(){
+      var isOpen = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.textContent = isOpen ? 'Disciplines ▴' : 'Disciplines ▾';
+    });
+    drop.addEventListener('focusout', function(e){
+      if(!drop.contains(e.relatedTarget)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!drop.contains(e.target)){
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+        btn.textContent = 'Disciplines ▾';
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

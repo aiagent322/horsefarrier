@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<title>Corrective & Therapeutic Shoeing — HorseFarrier.net</title>
+<meta name="description" content="What corrective and therapeutic shoeing is, how it works, when it's needed, and what owners must understand — the bridge between diagnosis, the farrier, and recovery.">
+<link rel="canonical" href="https://horsefarrier.net/corrective-shoeing/">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--sand:#F5F0E8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);text-decoration:none;white-space:nowrap}
+.topbar-logo span{color:var(--rope-light)}
+.bb-logo-link{display:flex;align-items:center;line-height:0;flex-shrink:0}
+.page-hero{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px;text-align:center}
+.page-hero .breadcrumb{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.page-hero .breadcrumb a{color:var(--rope-light);text-decoration:none}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--rope-light);font-style:italic}
+.page-hero p{color:rgba(255,255,255,0.7);font-size:0.88rem;max-width:520px;margin:0 auto}
+.content-wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px}
+.toc{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:32px}
+.toc-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:10px}
+.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.toc a{color:var(--leather);text-decoration:none;font-size:0.88rem;font-weight:600;display:inline-flex;align-items:center;min-height:36px}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:36px}
+.section h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.section h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--leather-dark);margin:18px 0 8px}
+.section p{font-size:0.93rem;color:var(--ink-soft);margin-bottom:12px;line-height:1.7}
+.section ul,.section ol{padding-left:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
+.section li{font-size:0.93rem;color:var(--ink-soft);line-height:1.6}
+.section strong{color:var(--ink);font-weight:700}
+.callout{background:var(--rust-light);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:16px 0}
+.callout.sage{background:var(--sage-light);border-color:var(--sage)}
+.callout.gold{background:#FFF8E6;border-color:var(--gold)}
+.callout-title{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--rust);margin-bottom:4px}
+.callout.sage .callout-title{color:var(--sage-dark)}
+.callout.gold .callout-title{color:#8B6914}
+.callout p{font-size:0.88rem;color:var(--ink-soft);margin:0;line-height:1.6}
+/* five variables */
+.var-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0}
+.var-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;border-left:4px solid var(--rope)}
+.var-name{font-family:'Playfair Display',serif;font-weight:900;font-size:0.95rem;color:var(--leather-dark);margin-bottom:4px}
+.var-card p{font-size:0.87rem;color:var(--ink-soft);line-height:1.6;margin:0}
+/* condition index cards */
+.condition-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
+.condition-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;text-decoration:none;color:inherit;display:block;transition:var(--transition)}
+.condition-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--border-strong)}
+.condition-name{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark);margin-bottom:4px}
+.condition-tag{display:inline-flex;align-items:center;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:8px;margin-bottom:8px}
+.tag-therapeutic{background:var(--sage-light);color:var(--sage-dark)}
+.tag-corrective{background:var(--rope-pale);color:var(--leather-dark)}
+.condition-desc{font-size:0.86rem;color:var(--ink-muted);line-height:1.55;margin-bottom:8px}
+.condition-approach{font-size:0.84rem;color:var(--ink-soft);font-style:italic}
+.condition-arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:8px}
+/* decision table */
+.decision-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem}
+.decision-table th{background:var(--leather-deeper);color:var(--cream);padding:10px 12px;text-align:left;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em}
+.decision-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.decision-table tr:nth-child(even) td{background:var(--sand)}
+.decision-table strong{color:var(--ink)}
+/* nav cards */
+.nav-cards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:36px}
+.nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;text-decoration:none;color:inherit;transition:var(--transition)}
+.nav-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.nav-card .label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:4px}
+.nav-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;color:var(--leather-dark)}
+.nav-card .arrow{font-size:0.82rem;font-weight:700;color:var(--leather);margin-top:6px}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--cream);margin-bottom:6px}
+.footer-logo span{color:var(--rope-light)}
+@media(min-width:768px){
+  .bb-logo-link{display:flex}
+  .topbar{padding:13px 20px}
+  .topbar-logo{font-size:1.3rem}
+  .page-hero{padding:40px 24px 36px}
+  .page-hero h1{font-size:2.1rem}
+  .page-hero p{font-size:0.94rem}
+  .content-wrap{padding:32px 24px 56px}
+  .var-grid{grid-template-columns:repeat(2,1fr)}
+  .condition-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1024px){.page-hero h1{font-size:2.4rem}}
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+/* ═══ SITE NAV ═══ */
+.site-nav{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.1);border-bottom:2px solid var(--rope);position:sticky;top:var(--topbar-h,54px);z-index:150;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.site-nav-inner{display:flex;align-items:stretch;overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 4px;max-width:1200px;margin:0 auto}
+.site-nav-inner::-webkit-scrollbar{display:none}
+.sn-link{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;border-top:3px solid transparent;transition:color 0.18s,border-color 0.18s,background 0.18s;letter-spacing:0.01em}
+.sn-link:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-link.active{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.06)}
+.sn-drop{position:relative;display:flex;align-items:stretch;flex-shrink:0}
+.sn-drop-btn{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);background:none;border:none;border-bottom:3px solid transparent;border-top:3px solid transparent;white-space:nowrap;cursor:pointer;font-family:inherit;letter-spacing:0.01em;transition:color 0.18s,border-color 0.18s,background 0.18s}
+.sn-drop-btn:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-drop-panel{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.12);border-top:2px solid var(--rope);border-radius:0 0 var(--radius) var(--radius);box-shadow:0 8px 24px rgba(0,0,0,0.35);z-index:200;padding:4px 0}
+.sn-drop:hover .sn-drop-panel,.sn-drop:focus-within .sn-drop-panel,.sn-drop.open .sn-drop-panel{display:block}
+.sn-drop-link{display:flex;align-items:center;padding:11px 18px;font-size:0.83rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;border-left:3px solid transparent;transition:color 0.15s,background 0.15s,border-color 0.15s;white-space:nowrap;gap:8px}
+.sn-drop-link:hover,.sn-drop-link.active{color:var(--rope-light);background:rgba(255,255,255,0.06);border-left-color:var(--rope)}
+.sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+@media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
+@media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Corrective & Therapeutic Shoeing Overview","description":"What corrective and therapeutic shoeing is, how it works, when it's needed, the five mechanical variables farriers control, and what owners must understand about the process.","url":"https://horsefarrier.net/corrective-shoeing/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="topbar">
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/hoof-care/" class="sn-link">Hoof Care</a>
+    <a href="/farrier-tools/" class="sn-link">Farrier Tools</a>
+    <a href="/horseshoes/" class="sn-link active">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="sn-link">Hoof Issues</a>
+    <div class="sn-div" aria-hidden="true"></div>
+    <div class="sn-drop">
+      <button class="sn-drop-btn" aria-haspopup="true" aria-expanded="false" aria-controls="disc-panel">Disciplines ▾</button>
+      <div class="sn-drop-panel" id="disc-panel" role="menu">
+        <a href="/disciplines/reining/" class="sn-drop-link" role="menuitem">🤠 Reining</a>
+        <a href="/disciplines/cutting/" class="sn-drop-link" role="menuitem">🐄 Cutting &amp; Cow Horse</a>
+        <a href="/disciplines/barrel-racing/" class="sn-drop-link" role="menuitem">🏁 Barrel Racing</a>
+        <a href="/disciplines/dressage/" class="sn-drop-link" role="menuitem">🎩 Dressage</a>
+        <a href="/disciplines/show-jumping/" class="sn-drop-link" role="menuitem">🏇 Show Jumping</a>
+        <a href="/disciplines/eventing/" class="sn-drop-link" role="menuitem">⛰️ Eventing</a>
+        <a href="/disciplines/thoroughbred-racing/" class="sn-drop-link" role="menuitem">🏆 Thoroughbred Racing</a>
+        <a href="/disciplines/trail-endurance/" class="sn-drop-link" role="menuitem">🌲 Trail &amp; Endurance</a>
+        <a href="/disciplines/draft-horses/" class="sn-drop-link" role="menuitem">🐎 Draft Horses</a>
+      </div>
+    </div>
+    <div class="sn-div" aria-hidden="true"></div>
+    <a href="/breed-hooves/" class="sn-link">Breed Hooves</a>
+    <a href="/nutrition/" class="sn-link">Nutrition</a>
+    <a href="/foal-hoof-care/" class="sn-link">Foal Hoof Care</a>
+    <a href="/find-a-farrier/" class="sn-link">Find a Farrier</a>
+    <a href="/faq/" class="sn-link">FAQ</a>
+    <a href="/glossary/" class="sn-link">Glossary</a>
+    <a href="/videos/" class="sn-link">Videos</a>
+  </div>
+</nav>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="/">HorseFarrier.net</a> / Corrective &amp; Therapeutic Shoeing</div>
+  <h1>Corrective &amp; <em>Therapeutic Shoeing</em></h1>
+  <p>When the shoe becomes a medical tool — what it can do, how it works, when it's needed, and what every owner must understand before treatment begins.</p>
+</div>
+
+<div class="content-wrap" id="main-content" role="main">
+
+  <nav class="toc" aria-label="Page contents">
+    <div class="toc-title">On This Page</div>
+    <ol>
+      <li><a href="#what-it-is">What Corrective &amp; Therapeutic Shoeing Is</a></li>
+      <li><a href="#vs-routine">How It Differs from Routine Shoeing</a></li>
+      <li><a href="#five-variables">The Five Mechanical Variables</a></li>
+      <li><a href="#when-needed">When It's Needed — The Decision Framework</a></li>
+      <li><a href="#triangle">The Farrier-Vet-Owner Triangle</a></li>
+      <li><a href="#imaging">Why Imaging Matters</a></li>
+      <li><a href="#conditions">Conditions Index</a></li>
+      <li><a href="#owner-role">What Owners Must Understand</a></li>
+      <li><a href="#not-working">When It's Not Working</a></li>
+    </ol>
+  </nav>
+
+  <section class="section" id="what-it-is">
+    <h2>What Corrective &amp; Therapeutic Shoeing Is</h2>
+    <p>Routine shoeing protects the hoof and compensates for the wear of work. Corrective and therapeutic shoeing goes further — it uses the shoe, pad, wedge, glue, or modification as a mechanical intervention to alter how the hoof loads, moves, and bears weight. The goal is to reduce pain, support healing, prevent further damage, or correct a developing structural problem.</p>
+    <p>The two terms are related but distinct:</p>
+    <ul>
+      <li><strong>Corrective shoeing</strong> addresses a mechanical imbalance or conformational fault — a horse that toes in, a long-toe low-heel syndrome, a club foot, medial-lateral imbalance. The target is alignment and loading, often in horses that are not lame but are developing problems or performing below potential.</li>
+      <li><strong>Therapeutic shoeing</strong> addresses an active lameness condition — laminitis, navicular syndrome, a tendon injury, a quarter crack. The shoe is part of a treatment protocol alongside veterinary care. The horse is hurting, and the shoeing has a clinical objective.</li>
+    </ul>
+    <p>In practice the two overlap significantly. A horse with navicular syndrome needs both corrective work (addressing the long toe that loads the navicular apparatus) and therapeutic work (egg bars, heel elevation to reduce pain). Most experienced farriers and vets use the terms interchangeably in the field.</p>
+    <div class="callout gold">
+      <div class="callout-title">The Shoe as Precision Tool</div>
+      <p>A horseshoe in therapeutic work is not just foot protection — it is a lever, a wedge, a support platform, a load redistribution device, and a shock absorber, all in one. The farrier who understands biomechanics can use those properties to achieve outcomes that no medication alone can produce. But only if the diagnosis is right, the imaging is current, and the vet is in the room.</p>
+    </div>
+  </section>
+
+  <section class="section" id="vs-routine">
+    <h2>How It Differs from Routine Shoeing</h2>
+    <p>Routine shoeing is largely standardized — a competent farrier applies a well-fitted shoe of appropriate size and type to a sound horse on a regular schedule. The variables are modest: shoe weight, material, nail placement, whether studs are needed.</p>
+    <p>Corrective and therapeutic shoeing is individualized to a degree that routine work never is. The differences:</p>
+    <table class="decision-table">
+      <thead><tr><th>Dimension</th><th>Routine Shoeing</th><th>Corrective / Therapeutic Shoeing</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Diagnosis required</strong></td><td>No — the farrier assesses the hoof directly</td><td>Yes — a veterinary diagnosis is the foundation of any therapeutic plan</td></tr>
+        <tr><td><strong>Imaging needed</strong></td><td>Rarely</td><td>Almost always — radiographs guide the key decisions</td></tr>
+        <tr><td><strong>Vet involvement</strong></td><td>Occasional, for complex horses</td><td>Mandatory — the farrier and vet must be in direct communication</td></tr>
+        <tr><td><strong>Interval</strong></td><td>6–8 weeks for most horses</td><td>3–5 weeks commonly; more frequent during acute phases</td></tr>
+        <tr><td><strong>Farrier skill required</strong></td><td>Journeyman competency for most situations</td><td>Advanced knowledge of biomechanics, pathology, and often custom forging</td></tr>
+        <tr><td><strong>Timeline</strong></td><td>Ongoing maintenance</td><td>Measured in months to years; some conditions require permanent management</td></tr>
+        <tr><td><strong>Cost</strong></td><td>Standard shoeing rates</td><td>Higher — more time, custom work, more frequent visits, coordination costs</td></tr>
+        <tr><td><strong>Outcome measure</strong></td><td>Sound horse, shoes stay on</td><td>Specific clinical objectives — pain reduction, rotation halt, crack closure</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      <div class="callout-title">Not Every Lameness Needs Therapeutic Shoeing</div>
+      <p>A horse that is acutely lame from an abscess doesn't need a new shoe type — it needs the abscess drained. A horse with a superficial hoof crack that doesn't reach the sensitive tissue doesn't need a bar shoe — it needs the crack stabilized and the underlying balance corrected. The shoe is a tool, not a universal answer. Correct diagnosis first, then select the appropriate intervention.</p>
+    </div>
+  </section>
+
+  <section class="section" id="five-variables">
+    <h2>The Five Mechanical Variables</h2>
+    <p>Everything a farrier does in corrective or therapeutic work ultimately manipulates one or more of five biomechanical variables. Understanding these helps owners understand why specific choices are being made for their horse.</p>
+    <div class="var-grid">
+      <div class="var-card">
+        <div class="var-name">1. Breakover Point</div>
+        <p>Where and how the hoof pivots at the end of each stride. Moving it toward the heel — with a rolled toe, squared toe, or set-back shoe — reduces the moment arm acting through the coffin joint and the DDFT. One of the most powerful and versatile tools in the therapeutic kit. Relevant for navicular, laminitis, ringbone, and any condition where toe leverage contributes to pain.</p>
+      </div>
+      <div class="var-card">
+        <div class="var-name">2. Heel Height &amp; Angle</div>
+        <p>The angle of the coffin bone relative to the ground, controlled by heel height. Raising the heel reduces tension in the deep digital flexor tendon — the structure that, when overloaded, contributes to navicular syndrome, DDFT tears, and laminitic rotation. Lowering the heel addresses underrun heel syndrome and long-toe-low-heel. Every degree of change has a measurable mechanical effect.</p>
+      </div>
+      <div class="var-card">
+        <div class="var-name">3. Base of Support</div>
+        <p>The area of ground contact under the hoof. Extending it palmarly (behind the limb) with egg bars or straight bars provides support where the foot needs it most in navicular and palmar foot pain cases. Reducing the toe contact reduces laminar leverage in laminitis. The shape and position of the shoe determines what gets supported and what gets unloaded.</p>
+      </div>
+      <div class="var-card">
+        <div class="var-name">4. Load Distribution</div>
+        <p>Where weight is borne — the hoof wall, the sole, the frog, or some combination. Heart bar shoes deliberately load the frog to share weight with the compromised wall laminae. Pour-in pads distribute load uniformly across the entire sole. Full pads protect a thin sole from ground contact. Glue-on systems can unload the wall entirely when nailing is no longer viable.</p>
+      </div>
+      <div class="var-card">
+        <div class="var-name">5. Concussion &amp; Vibration</div>
+        <p>What the shoe transmits to the hoof at impact. Steel transmits concussion efficiently — good for traction and durability, less ideal for pain-sensitive conditions. Aluminum transmits less. Polyurethane and composite materials absorb significantly more shock, reducing the impact force that reaches sensitive internal structures at every footfall. For conditions where impact force contributes to pain, material matters as much as shape.</p>
+      </div>
+    </div>
+    <p>Most therapeutic plans manipulate several of these variables simultaneously. A navicular protocol might combine a rolled toe (breakover), wedge pad (heel angle), and egg bar (base of support) in a single application. Each choice is intentional and should be explainable by the farrier in plain language.</p>
+  </section>
+
+  <section class="section" id="when-needed">
+    <h2>When It's Needed — The Decision Framework</h2>
+    <p>The transition from routine to corrective shoeing is not always obvious. Here is a framework for thinking about when to escalate.</p>
+
+    <h3>Corrective Shoeing — Non-Lame Horses</h3>
+    <p>Consider corrective work when a sound horse shows any of these:</p>
+    <ul>
+      <li><strong>Medial-lateral imbalance</strong> — one heel consistently higher than the other, uneven wear patterns, asymmetric muscle development.</li>
+      <li><strong>Long toe, low heel (LTLH) syndrome</strong> — a broken-back hoof-pastern axis with the toe growing out ahead of the heels. One of the most common and damaging conformational problems in domestic horses, often caused by infrequent farrier visits and inadequate toe management.</li>
+      <li><strong>Flaring or distortion of the hoof capsule</strong> — a hoof wall that is no longer following the angle of the coronary band indicates abnormal loading that will cause problems if left unaddressed.</li>
+      <li><strong>Subtle gait asymmetry</strong> — a horse that is not lame but shows a shortened stride, mild unlevelness, or inconsistent performance that can't be attributed to training or fitness.</li>
+      <li><strong>History of recurring problems</strong> — a horse that repeatedly throws front shoes, develops quarter cracks in the same location, or has recurring thrush despite management, usually has an underlying balance issue driving the pattern.</li>
+    </ul>
+
+    <h3>Therapeutic Shoeing — Lame Horses</h3>
+    <p>Therapeutic shoeing should be considered when:</p>
+    <ul>
+      <li>A veterinary diagnosis has been made that identifies a condition known to respond to mechanical management.</li>
+      <li>Pain management alone (bute, injections) is not producing adequate comfort or is not sustainable long-term.</li>
+      <li>Imaging shows a structural problem — rotation, navicular changes, tendon lesion — that will progress without mechanical support.</li>
+      <li>The horse is being asked to return to work after an injury and needs support through the transition.</li>
+    </ul>
+
+    <div class="callout sage">
+      <div class="callout-title">The Farrier Is Not the Diagnosing Party</div>
+      <p>A skilled farrier may well be the first person to notice that something is wrong — they see the hoof up close at every visit. But the farrier's role is to flag what they see and refer to the vet for diagnosis, not to diagnose the condition themselves. Therapeutic shoeing without a veterinary diagnosis is applying solutions to an unknown problem. It may help, but it may also mask symptoms that need proper investigation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="triangle">
+    <h2>The Farrier-Vet-Owner Triangle</h2>
+    <p>Therapeutic shoeing works best when three parties communicate openly and operate as a coordinated team. When any leg of the triangle is cut off, outcomes deteriorate.</p>
+
+    <h3>The Veterinarian's Role</h3>
+    <p>The vet provides the diagnosis — the foundation that makes every shoeing decision meaningful. Specific responsibilities in therapeutic cases include: performing and interpreting diagnostic imaging (radiographs, MRI, ultrasound), administering nerve blocks to localize pain, prescribing systemic treatment where appropriate, communicating the findings directly to the farrier, and monitoring clinical progress over time. A vet who hands the horse back to the owner with a diagnosis but never speaks to the farrier directly is not providing full service.</p>
+
+    <h3>The Farrier's Role</h3>
+    <p>The farrier translates the veterinary diagnosis into mechanical reality. A good therapeutic farrier reads radiographs, understands the anatomy being discussed, has the skills to execute the required modifications — including custom forge work when factory shoes won't achieve the needed geometry — and returns honest feedback to the vet about what they're seeing at each visit. They also manage the schedule: therapeutic horses typically need 4–6 week intervals, not the standard 6–8, to prevent the therapeutic effect from being lost as the hoof grows.</p>
+
+    <h3>The Owner's Role</h3>
+    <p>Owners are the daily observers — they see the horse every day when the vet and farrier do not. Their responsibilities: accurate and timely reporting of changes in comfort, appetite, behavior, and movement; strict adherence to management instructions (often including exercise restrictions, footing requirements, and medication schedules); facilitating communication between the vet and farrier rather than acting as the telephone between them; and maintaining realistic expectations about timelines. Therapeutic outcomes are rarely fast.</p>
+
+    <div class="callout gold">
+      <div class="callout-title">Make the Introduction</div>
+      <p>If your vet and farrier have never spoken directly, make the introduction. Give each other's contact information. Ask your vet to call your farrier when a diagnosis is made rather than relaying it through you. The difference in outcome between a vet-farrier team that communicates directly and one that communicates through a non-specialist owner is significant — and the owner is almost always the bottleneck.</p>
+    </div>
+  </section>
+
+  <section class="section" id="imaging">
+    <h2>Why Imaging Matters</h2>
+    <p>Modern therapeutic shoeing is no longer guesswork. Radiographs of a laminitic horse, for example, allow the farrier to measure:</p>
+    <ul>
+      <li><strong>Rotation angle</strong> — how many degrees the coffin bone has rotated from its normal position inside the hoof capsule</li>
+      <li><strong>Sole depth</strong> — the distance between the tip of the coffin bone and the ground surface of the sole, which determines how much toe can safely be removed</li>
+      <li><strong>Coffin bone position</strong> — whether the bone has sunk (sinker laminitis) as well as rotated, which dramatically changes the prognosis and plan</li>
+      <li><strong>Hoof capsule geometry</strong> — the relationship between the toe wall, the dorsal surface of the coffin bone, and the ground line</li>
+    </ul>
+    <p>With this data, the farrier calculates precisely how much toe to remove, what heel elevation is needed, and where to position the shoe for optimal support. Without it, decisions are based on visual estimation of an external structure whose interior geometry is not visible. For complex cases, the difference between imaging-guided and non-imaging-guided therapeutic shoeing can be the difference between recovery and permanent lameness.</p>
+    <p>Ultrasound guides tendon injury management — the location, extent, and nature of a lesion determines exactly how much heel elevation is appropriate and what the exercise protocol should be. MRI provides the most detailed view of the palmar foot structures and is increasingly used for complex navicular cases that don't respond as expected to standard management.</p>
+    <div class="callout">
+      <div class="callout-title">If Your Farrier Has Never Asked for Radiographs</div>
+      <p>For a horse with an active lameness condition being managed therapeutically, a farrier who has never asked to see the radiographs — or who says they don't need them — is making decisions without the most important data available. This does not mean every appointment requires new images. But the initial therapeutic plan should be built on imaging, and periodic radiographs should track whether the plan is achieving its mechanical goals.</p>
+    </div>
+  </section>
+
+  <section class="section" id="conditions">
+    <h2>Conditions Index</h2>
+    <p>The conditions below are the most common reasons a horse enters a corrective or therapeutic shoeing program. Each links to the detailed clinical guide covering the condition in full, including the specific shoeing approaches used for each.</p>
+
+    <div class="condition-grid">
+
+      <a href="/hoof-issues/laminitis/" class="condition-card">
+        <span class="condition-tag tag-therapeutic">Therapeutic</span>
+        <div class="condition-name">Laminitis &amp; Founder</div>
+        <div class="condition-desc">Inflammatory failure of the lamellar bond — the most complex area of therapeutic shoeing. Coffin bone rotation and sinking require imaging-guided intervention.</div>
+        <div class="condition-approach">Heart bars, reverse shoes, deep toe removal, wedge pads, pour-in pads, glue-on systems</div>
+        <div class="condition-arrow">Full guide →</div>
+      </a>
+
+      <a href="/hoof-issues/navicular/" class="condition-card">
+        <span class="condition-tag tag-therapeutic">Therapeutic</span>
+        <div class="condition-name">Navicular Syndrome</div>
+        <div class="condition-desc">Palmar foot pain — the leading cause of chronic front-end lameness. Managed, rarely cured. Shoeing addresses the mechanical contributors even when the pathology persists.</div>
+        <div class="condition-approach">Egg bars, wedge pads, rolled toes, wide web shoes, pour-in pads</div>
+        <div class="condition-arrow">Full guide →</div>
+      </a>
+
+      <a href="/hoof-issues/cracked-hooves/" class="condition-card">
+        <span class="condition-tag tag-corrective">Corrective</span>
+        <div class="condition-name">Quarter Cracks</div>
+        <div class="condition-desc">Vertical hoof wall splits at the quarter — caused by medial-lateral imbalance loading one quarter excessively. Both repair and underlying balance correction required.</div>
+        <div class="condition-approach">Bar shoes, wire or fiberglass lacing, quarter clips, corrective trimming</div>
+        <div class="condition-arrow">Full guide →</div>
+      </a>
+
+      <a href="/hoof-issues/contracted-heels/" class="condition-card">
+        <span class="condition-tag tag-corrective">Corrective</span>
+        <div class="condition-name">Contracted Heels</div>
+        <div class="condition-desc">Heels that have narrowed inward, reducing frog contact and hoof mechanism function. Usually caused by poor trimming, lack of movement, or chronic pain shifting load away.</div>
+        <div class="condition-approach">Corrective trimming, open-heeled shoes, bar removal, frog stimulation protocols</div>
+        <div class="condition-arrow">Full guide →</div>
+      </a>
+
+      <a href="/hoof-issues/white-line-disease/" class="condition-card">
+        <span class="condition-tag tag-therapeutic">Therapeutic</span>
+        <div class="condition-name">White Line Disease</div>
+        <div class="condition-desc">Fungal/bacterial infection of the inner hoof wall. Significant resections leave the nail zone compromised — shoeing must work around or without conventional nail placement.</div>
+        <div class="condition-approach">Glue-on shoes, hospital plate shoes, fiberglass/acrylic patching</div>
+        <div class="condition-arrow">Full guide →</div>
+      </a>
+
+      <a href="/hoof-issues/thin-soles/" class="condition-card">
+        <span class="condition-tag tag-therapeutic">Therapeutic</span>
+        <div class="condition-name">Thin Soles</div>
+        <div class="condition-desc">Insufficient distance between the coffin bone and the ground — the horse is vulnerable to sole bruising, stone bruises, and abscesses on any hard or rocky surface.</div>
+        <div class="condition-approach">Full pads, pour-in pads, wide web shoes, protective boots for barefoot horses</div>
+        <div class="condition-arrow">Full guide →</div>
+      </a>
+
+      <a href="/horseshoes/#condition-specific" class="condition-card">
+        <span class="condition-tag tag-therapeutic">Therapeutic</span>
+        <div class="condition-name">Tendon &amp; Ligament Injuries</div>
+        <div class="condition-desc">DDFT tears, SDFT injuries, suspensory damage — each requires shoeing that reduces load through the specific injured structure during the healing period.</div>
+        <div class="condition-approach">Heel elevation, egg bars, rolled toes — modified per specific structure injured</div>
+        <div class="condition-arrow">Detailed shoeing guide →</div>
+      </a>
+
+      <a href="/horseshoes/#condition-specific" class="condition-card">
+        <span class="condition-tag tag-therapeutic">Therapeutic</span>
+        <div class="condition-name">Ringbone &amp; Joint Arthritis</div>
+        <div class="condition-desc">Bone proliferation around the pastern or coffin joint. Shoeing reduces range of motion stress and concussion through the affected joint.</div>
+        <div class="condition-approach">Rolled or rockered toes, rocker shoes, wide web with full pads</div>
+        <div class="condition-arrow">Detailed shoeing guide →</div>
+      </a>
+
+      <a href="/foal-hoof-care/#ald" class="condition-card">
+        <span class="condition-tag tag-corrective">Corrective</span>
+        <div class="condition-name">Angular Limb Deformities (Foals)</div>
+        <div class="condition-desc">Limb deviations in developing foals — correctable with asymmetric trimming or glue-on extensions while growth plates are open. The window is narrow: weeks, not months.</div>
+        <div class="condition-approach">Asymmetric trimming, glue-on extensions, periosteal stripping (surgical)</div>
+        <div class="condition-arrow">Foal hoof care guide →</div>
+      </a>
+
+      <a href="/horseshoes/#condition-specific" class="condition-card">
+        <span class="condition-tag tag-corrective">Corrective</span>
+        <div class="condition-name">Sheared Heels</div>
+        <div class="condition-desc">One heel significantly higher than the other, causing shearing under loading — associated with quarter cracks, coronary band trauma, and heel pain.</div>
+        <div class="condition-approach">Corrective trimming to equalize heel heights, straight bar shoe</div>
+        <div class="condition-arrow">Detailed shoeing guide →</div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section" id="owner-role">
+    <h2>What Owners Must Understand</h2>
+    <p>Therapeutic shoeing places real demands on the owner — not just on the farrier and vet. Owners who understand these expectations get better outcomes for their horses.</p>
+
+    <h3>Time Is Not Optional</h3>
+    <p>Therapeutic shoeing works incrementally. Laminitis management is measured in months. A horse growing out a quarter crack takes 9–12 months. Navicular management is lifelong. Owners who expect rapid resolution are setting themselves up for poor decisions — abandoning a working protocol too early, switching to a different approach before giving the current one a fair trial, or misinterpreting gradual improvement as failure.</p>
+
+    <h3>Shorter Intervals Are Non-Negotiable</h3>
+    <p>A therapeutic shoe that is working at week 4 may be counterproductive by week 8 as the hoof grows and the geometry changes. Many therapeutic horses need 4–5 week intervals, sometimes shorter during acute phases. The cost of more frequent visits is real. The cost of allowing the hoof to grow past the intended parameters is typically much higher.</p>
+
+    <h3>Management Changes Often Matter as Much as the Shoe</h3>
+    <p>A horse on a laminitis therapeutic shoeing program that continues to receive high-sugar hay and uncontrolled pasture access will not respond as well as one whose diet is tightly managed. A navicular horse being ridden on hard footing six days a week despite instructions to reduce work on hard surfaces is fighting the therapeutic shoeing at every step. The shoe can only do what the management allows it to do.</p>
+
+    <h3>Multiple Shoeing Cycles Are Needed to Evaluate</h3>
+    <p>The first application of a new therapeutic approach is often not the final one. The farrier and vet observe the response and adjust. A horse may need two or three shoeing cycles to reach the optimal configuration. Judging the entire plan on the first appointment is premature.</p>
+
+    <h3>Communicate Everything You Observe</h3>
+    <p>You are with the horse daily. Note changes in how the horse stands, where it shifts weight, whether it is more or less willing to move, whether it is eating and drinking normally (pain suppresses both). Changes in hoof temperature — warm vs. cool — can indicate changes in blood flow. The more precise your observations and the more promptly you communicate them, the better the team can adjust.</p>
+
+    <div class="callout sage">
+      <div class="callout-title">Realistic Expectations Protect the Horse</div>
+      <p>The hardest conversations in therapeutic farriery involve owners who expected a cure and received a management program instead. Navicular syndrome is not cured by egg bars — it is managed. Significant laminitic rotation may leave permanent changes to the hoof capsule. A large quarter crack will be there, growing out, for most of a year. Understanding what therapeutic shoeing can and cannot achieve before it begins protects the horse from being subjected to aggressive or inappropriate interventions in pursuit of results that the condition doesn't allow.</p>
+    </div>
+  </section>
+
+  <section class="section" id="not-working">
+    <h2>When It's Not Working</h2>
+    <p>Therapeutic shoeing should produce measurable progress over time. It is not always linear — some horses have difficult weeks, and acute flares can occur even on a good protocol. But the overall trajectory should be improvement in comfort and function, or at minimum stable management of a chronic condition.</p>
+    <p>These are signals that something needs reassessing:</p>
+    <ul>
+      <li><strong>No detectable improvement after two full shoeing cycles</strong> on the same program. Not necessarily failure — but a reason to revisit the diagnosis, the execution, and the management.</li>
+      <li><strong>Progressive worsening</strong> despite the shoeing program. This is a red flag that demands immediate veterinary reassessment. The diagnosis may be wrong, the condition may have progressed, or the shoeing may be contributing to the problem.</li>
+      <li><strong>The farrier and vet have stopped communicating directly.</strong> When the therapeutic team fragments, execution drifts from intention and the program loses coherence.</li>
+      <li><strong>Repeat imaging shows no improvement or worsening</strong> of the structural problem (rotation angle, navicular bone changes, tendon lesion). The clinical picture may look stable while the underlying pathology progresses — imaging catches what visual observation misses.</li>
+      <li><strong>The horse is being asked to do more than the condition allows.</strong> A navicular horse returned to heavy competition work before the condition is genuinely stable is not failing therapeutic shoeing — the management is failing the horse.</li>
+    </ul>
+    <p>Asking for a second opinion when results plateau is not disloyal. It is good horsemanship. A case that has been managed by one vet-farrier team for 6 months without adequate progress genuinely benefits from fresh eyes — both on the diagnosis and on the mechanical approach.</p>
+
+    <div class="callout">
+      <div class="callout-title">Reassess, Don't Just Continue</div>
+      <p>The most common failure mode in therapeutic shoeing programs is continuation without reassessment. A protocol that made sense at the beginning of a laminitis episode may not be appropriate 6 months later as the coffin bone position changes and the hoof wall grows down. Radiographs at each significant phase transition — not just at the start — ensure the plan stays current with the horse's actual condition.</p>
+    </div>
+  </section>
+
+  <nav class="nav-cards" aria-label="Explore more resources">
+    <a href="/horseshoes/" class="nav-card">
+      <div class="label">Deep Dive</div>
+      <div class="title">Horseshoe Types &amp; Therapeutic Shoeing</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/hoof-issues/" class="nav-card">
+      <div class="label">Conditions</div>
+      <div class="title">Top 10 Hoof Issues</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/find-a-farrier/" class="nav-card">
+      <div class="label">Related</div>
+      <div class="title">How to Find a Good Farrier</div>
+      <div class="arrow">Explore →</div>
+    </a>
+    <a href="/faq/" class="nav-card">
+      <div class="label">Reference</div>
+      <div class="title">Farrier FAQ</div>
+      <div class="arrow">Explore →</div>
+    </a>
+  </nav>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+  <div style="margin-top:6px;"><a href="/">← Back to Home</a></div>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.sn-drop-btn');
+  var drop=btn&&btn.closest('.sn-drop');
+  if(btn&&drop){
+    btn.addEventListener('click',function(){var o=drop.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.textContent=o?'Disciplines ▴':'Disciplines ▾';});
+    drop.addEventListener('focusout',function(e){if(!drop.contains(e.relatedTarget)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
+    document.addEventListener('click',function(e){if(!drop.contains(e.target)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
+  }
+})();
+</script>
+</body>
+</html>

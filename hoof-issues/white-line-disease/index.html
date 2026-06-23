@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<meta name="format-detection" content="telephone=no, address=no, date=no, email=no">
+<title>White Line Disease in Horses — Causes, Treatment & Prevention | HorseFarrier.net</title>
+<meta name="description" content="Complete guide to equine white line disease (WLD) — what it is, how to identify hoof wall separation, farrier resection, veterinary care, and owner prevention steps.">
+<link rel="canonical" href="https://horsefarrier.net/hoof-issues/white-line-disease/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="White Line Disease in Horses — Causes, Treatment & Prevention">
+<meta property="og:description" content="Everything horse owners need to know about white line disease — identification, farrier resection, vet involvement, and daily prevention.">
+<meta property="og:url" content="https://horsefarrier.net/hoof-issues/white-line-disease/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* MOBILE-FIRST — 320px base */
+:root{
+  --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --alert:#8B1A1A;--alert-light:#FDF0F0;
+  --wld:#5C3D8F;--wld-light:#F0EBF8;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{display:none}
+.topbar-tagline{display:none}
+.bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
+.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px;flex-wrap:wrap}
+.nav-link{display:flex;align-items:center;padding:0 12px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
+.nav-link:hover,.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
+.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
+.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
+.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
+.nav-drawer.open{display:flex}
+.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
+.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
+@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+
+/* BREADCRUMB */
+.breadcrumb{background:var(--sand);border-bottom:1px solid var(--border);padding:10px max(16px,env(safe-area-inset-right))}
+.breadcrumb-inner{max-width:860px;margin:0 auto;font-size:0.78rem;color:var(--ink-muted);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.breadcrumb-inner a{color:var(--leather);text-decoration:none;font-weight:600}
+.breadcrumb-inner a:hover{text-decoration:underline}
+.breadcrumb-sep{opacity:0.5}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--wld) 0%,#3D2060 50%,#2A1445 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.hero-inner{max-width:860px;margin:0 auto;position:relative}
+.series-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:12px}
+.hero h1{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:10px}
+.hero h1 em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.72);font-size:0.9rem;line-height:1.6;max-width:640px;margin-bottom:16px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.8);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:14px}
+
+/* SEVERITY BANNER */
+.severity-banner{background:var(--wld-light);border-left:4px solid var(--wld);padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0}
+.severity-banner strong{color:var(--wld);display:block;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.severity-banner p{font-size:0.88rem;color:var(--ink);line-height:1.5}
+
+/* MAIN LAYOUT */
+.page-wrap{max-width:860px;margin:0 auto;padding:0 16px 40px}
+
+/* SECTION HEADERS */
+.section-head{margin:32px 0 16px}
+.section-head h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px}
+.section-head p{font-size:0.9rem;color:var(--ink-muted);line-height:1.6}
+.section-divider{height:3px;background:linear-gradient(90deg,var(--wld) 0%,transparent 100%);border-radius:2px;margin-bottom:18px}
+
+/* WHAT IS IT */
+.what-grid{display:flex;flex-direction:column;gap:14px}
+.what-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 16px}
+.what-card h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.what-card p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65}
+.what-card ul{font-size:0.88rem;color:var(--ink-soft);line-height:1.65;padding-left:18px;margin-top:8px}
+.what-card ul li{margin-bottom:5px}
+
+/* ANATOMY CALLOUT */
+.anatomy-box{background:var(--wld-light);border:1px solid rgba(92,61,143,0.2);border-radius:var(--radius-lg);padding:18px;margin-bottom:24px}
+.anatomy-box h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--wld);margin-bottom:10px}
+.anatomy-box p{font-size:0.87rem;color:var(--ink);line-height:1.65}
+.anatomy-box strong{color:var(--wld)}
+
+/* SEVERITY SCALE */
+.severity-scale{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:24px}
+.severity-scale-head{background:var(--sand);padding:14px 18px;border-bottom:1px solid var(--border)}
+.severity-scale-head h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink)}
+.severity-row{display:flex;gap:0;border-bottom:1px solid var(--border)}
+.severity-row:last-child{border-bottom:none}
+.severity-stage{flex:0 0 90px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 10px;text-align:center;font-weight:700;font-size:0.78rem;border-right:1px solid var(--border)}
+.severity-stage.mild{background:#E8F5E9;color:#2E7D32}
+.severity-stage.moderate{background:#FFF8E1;color:#F57F17}
+.severity-stage.severe{background:#FFEBEE;color:#C62828}
+.severity-detail{padding:14px 16px;flex:1}
+.severity-detail strong{display:block;font-size:0.85rem;color:var(--ink);margin-bottom:5px}
+.severity-detail p{font-size:0.83rem;color:var(--ink-muted);line-height:1.55}
+
+/* QUICK REFERENCE */
+.quick-ref{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:22px 18px;margin:24px 0}
+.quick-ref h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--cream);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12)}
+.quick-ref-grid{display:flex;flex-direction:column;gap:10px}
+.qr-item{display:flex;gap:12px;align-items:flex-start}
+.qr-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--rope-light);flex:0 0 90px}
+.qr-val{font-size:0.85rem;color:rgba(255,255,255,0.8);line-height:1.5}
+
+/* ROLE TABS */
+.role-tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin:24px 0 0;overflow-x:auto;scrollbar-width:none}
+.role-tabs::-webkit-scrollbar{display:none}
+.role-tab{padding:10px 16px;font-size:0.82rem;font-weight:700;color:var(--ink-muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;transition:0.2s;margin-bottom:-2px;min-height:44px}
+.role-tab.active{color:var(--wld);border-bottom-color:var(--wld)}
+.role-panel{display:none;padding:20px 0}
+.role-panel.active{display:block}
+
+.role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
+.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
+.role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
+.role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
+
+.treatment-steps{display:flex;flex-direction:column;gap:12px}
+.step{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.step-num{background:var(--wld);color:var(--cream);font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:900;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-body strong{display:block;font-size:0.9rem;color:var(--ink);font-weight:700;margin-bottom:4px}
+.step-body p{font-size:0.85rem;color:var(--ink-soft);line-height:1.6}
+.step-body ul{font-size:0.85rem;color:var(--ink-soft);line-height:1.6;padding-left:16px;margin-top:6px}
+.step-body ul li{margin-bottom:4px}
+
+.product-grid{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.product-card{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.product-card h4{font-size:0.88rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.product-card p{font-size:0.82rem;color:var(--ink-muted);line-height:1.55}
+.product-tag{display:inline-flex;font-size:0.68rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:3px 9px;border-radius:8px;margin-bottom:6px}
+.product-tag.rx{background:#E8F4FD;color:var(--steel)}
+.product-tag.otc{background:var(--sage-light);color:var(--sage-dark)}
+.product-tag.home{background:var(--rope-pale);color:var(--leather-dark)}
+.product-tag.farrier{background:var(--wld-light);color:var(--wld)}
+
+/* CAUTION / TIP BOXES */
+.caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
+.caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+.tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
+.tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+
+/* PREVENTION */
+.prevention-grid{display:flex;flex-direction:column;gap:12px}
+.prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
+.prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+
+/* VIDEO SECTION */
+.video-section{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:8px}
+.video-grid{display:flex;flex-direction:column;gap:0}
+.video-card{border-bottom:1px solid var(--border)}
+.video-card:last-child{border-bottom:none}
+.video-frame{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-meta{padding:14px 16px}
+.video-cat{display:inline-flex;align-items:center;font-size:0.67rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:8px;background:var(--rope-pale);color:var(--leather-dark);margin-bottom:7px}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px}
+.video-by{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:16px 18px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:52px}
+.faq-q .faq-arrow{font-size:0.9rem;color:var(--leather);transition:transform 0.2s;flex-shrink:0}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 18px 16px;font-size:0.86rem;color:var(--ink-soft);line-height:1.65}
+.faq-item.open .faq-a{display:block}
+
+/* SERIES NAV */
+.series-nav{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;margin:28px 0}
+.series-nav h3{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--ink);margin-bottom:12px}
+.series-list{display:flex;flex-direction:column;gap:6px}
+.series-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--radius);background:var(--white);border:1px solid var(--border);text-decoration:none;color:var(--ink);font-size:0.85rem;font-weight:600;transition:var(--transition)}
+.series-item.current{background:var(--wld);color:var(--cream);border-color:var(--wld)}
+.series-item.current .series-num{background:rgba(255,255,255,0.2);color:var(--cream)}
+.series-item.done{border-color:var(--border-strong)}
+.series-item.coming{opacity:0.5;pointer-events:none;cursor:default}
+.series-num{background:var(--sand-dark);color:var(--ink-muted);font-size:0.72rem;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.series-item.done .series-num{background:var(--sage-light);color:var(--sage-dark)}
+
+/* CTA / FOOTER */
+.cta-strip{background:var(--sand);border-top:1px solid var(--border);padding:28px max(16px,env(safe-area-inset-right))}
+.cta-box{max-width:860px;margin:0 auto;text-align:center}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.cta-box p{font-size:0.86rem;color:var(--ink-muted);line-height:1.6;max-width:560px;margin:0 auto 16px}
+.cta-btns{display:flex;flex-direction:column;gap:10px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:22px;font-weight:700;font-size:0.88rem;text-decoration:none;transition:var(--transition);min-height:48px}
+.cta-btn.primary{background:var(--leather-deeper);color:var(--cream)}
+.cta-btn.secondary{background:var(--white);color:var(--leather-dark);border:1px solid var(--border-strong)}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-items:center;padding:6px 4px;min-height:44px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:12px 0}
+
+/* HOVER */
+@media(hover:hover){
+  footer a:hover{text-decoration:underline}
+  .cta-btn.primary:hover{background:var(--leather-dark);transform:translateY(-2px)}
+  .cta-btn.secondary:hover{background:var(--sand);transform:translateY(-2px)}
+  .series-item:not(.current):not(.coming):hover{background:var(--sand);border-color:var(--border-strong)}
+}
+
+/* TABLET 768px+ */
+@media(min-width:768px){
+  .topbar-divider{display:block;width:1px;height:20px;background:rgba(255,255,255,0.2);flex-shrink:0}
+  .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.55)}
+  .bb-logo-link{display:flex}
+  .hero h1{font-size:2.4rem}
+  .what-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .prevention-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .quick-ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cta-btns{flex-direction:row;justify-content:center}
+  footer{font-size:0.82rem}
+  .series-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .video-grid{display:grid;grid-template-columns:1fr 1fr}
+  .video-card{border-bottom:none;border-right:1px solid var(--border)}
+  .video-card:nth-child(even){border-right:none}
+  .video-card:nth-child(1),.video-card:nth-child(2){border-bottom:1px solid var(--border)}
+}
+
+/* DESKTOP 1024px+ */
+@media(min-width:1024px){
+  .what-grid{grid-template-columns:1fr 1fr 1fr}
+  .prevention-grid{grid-template-columns:1fr 1fr 1fr}
+  .hero h1{font-size:2.6rem}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"White Line Disease in Horses — Causes, Treatment & Prevention",
+  "url":"https://horsefarrier.net/hoof-issues/white-line-disease/",
+  "description":"Complete guide to equine white line disease — identification, farrier resection, vet involvement, and owner prevention steps.",
+  "about":{"@type":"MedicalCondition","name":"Equine White Line Disease","alternateName":"Onychomycosis ungulae; seedy toe; hollow wall"},
+  "publisher":{"@type":"Organization","name":"Bridle & Bit Magazine","url":"https://www.bridleandbit.com"},
+  "isPartOf":{"@type":"WebSite","name":"HorseFarrier.net","url":"https://horsefarrier.net"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+    <div class="topbar-brand">
+      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-tagline">The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a></div>
+    </div>
+  </div>
+  <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="nav-bar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
+    <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
+    <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
+    <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="nav-link active">Top 10 Hoof Issues</a>
+    <a href="/faq/" class="nav-link">FAQ</a>
+    <a href="/glossary/" class="nav-link">Glossary</a>
+    <a href="/videos/" class="nav-link">Videos</a>
+  </div>
+</nav>
+<nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+  <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
+  <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
+  <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
+  <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
+  <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
+  <a href="/hoof-issues/" class="nav-link active">🏥 Top 10 Hoof Issues</a>
+  <a href="/faq/" class="nav-link">❓ FAQ</a>
+  <a href="/glossary/" class="nav-link">📖 Glossary</a>
+  <a href="/videos/" class="nav-link">🎬 Videos</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">HorseFarrier.net</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>White Line Disease</span>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="series-badge">🏥 Issue #2 of Top 10 Hoof Problems</div>
+    <h1>White Line <em>Disease</em></h1>
+    <p class="hero-sub">The silent destroyer — a fungal and bacterial invasion of the hoof wall that can undermine large sections of horn before a horse shows a single sign of lameness. Early detection and skilled farrier resection are everything.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">🍄 Fungal &amp; Bacterial</span>
+      <span class="hero-tag">⚠️ Often Silent</span>
+      <span class="hero-tag">🔨 Farrier-Led Treatment</span>
+      <span class="hero-tag">✅ Treatable</span>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" class="page-wrap">
+
+  <div style="margin:20px 0;">
+    <div class="severity-banner">
+      <strong>⚠️ Severity Range: Mild to Severe</strong>
+      <p>Small isolated pockets of WLD are easily resolved with a simple farrier visit. Large or long-neglected cases can undermine the entire hoof wall, requiring months of resection, packing, and careful rehabilitation before the horse returns to full work.</p>
+    </div>
+  </div>
+
+  <!-- WHAT IS IT -->
+  <div class="section-head">
+    <div class="section-divider"></div>
+    <h2>What Is White Line Disease?</h2>
+    <p>The biology, the anatomy, and why this condition is so easy to miss until it's already serious.</p>
+  </div>
+
+  <div class="anatomy-box">
+    <h3>🔬 Understanding the White Line</h3>
+    <p>The <strong>white line</strong> — also called the zona lamellata — is a narrow band of horn visible on the bottom of the hoof when viewed from the sole. It marks the junction between the outer hoof wall and the inner sole, and it acts as the mechanical bond that holds these two structures together. In a healthy hoof, the white line is tight, pale yellow-white, and continuous around the toe and quarters. It is the most structurally vulnerable part of the hoof capsule — softer than the wall, more porous, and the first target of opportunistic organisms when conditions allow.</p>
+  </div>
+
+  <div class="what-grid">
+    <div class="what-card">
+      <h3>🦠 The Organisms</h3>
+      <p>White line disease involves a combination of organisms — primarily fungi (<em>Scopulariopsis brevicaulis</em> and related species) along with anaerobic bacteria. These organisms colonize the white line zone, digesting the keratin (horn protein) that holds the hoof wall together. The result is a progressive, hollow separation that works its way upward through the hoof wall from the ground surface toward the coronary band. The organisms are environmental — present in virtually every soil and footing type — and only become a problem when the white line's integrity is compromised.</p>
+    </div>
+    <div class="what-card">
+      <h3>📍 Where It Develops</h3>
+      <p>WLD almost always begins at the ground surface of the hoof — at the toe, quarter, or heel — and tracks upward. The toe is the most common starting point. Common entry points include:</p>
+      <ul>
+        <li>Cracks or separations in the white line</li>
+        <li>Nail holes from pulled shoes that were not properly maintained</li>
+        <li>Mechanical separation caused by laminitic rotation</li>
+        <li>Areas of chronic bruising or trauma to the white line</li>
+        <li>Hoof wall chips or breaks that expose the white line zone</li>
+      </ul>
+    </div>
+    <div class="what-card">
+      <h3>⚡ Why It Happens</h3>
+      <p>WLD is an opportunistic infection — the organisms are always present, but they only establish when the white line's defenses are down. Key risk factors:</p>
+      <ul>
+        <li>Chronic wet-dry cycling that stresses and cracks the hoof horn</li>
+        <li>Previous or ongoing laminitis creating mechanical separation</li>
+        <li>Long toes creating excessive leverage stress at the white line</li>
+        <li>Poor hoof horn quality from nutritional deficiencies</li>
+        <li>Infrequent trimming allowing hoof wall distortion</li>
+        <li>Gravel or grit worked into existing separations</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- IDENTIFICATION -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>How to Identify White Line Disease</h2>
+    <p>WLD is notoriously silent — most horses show no lameness until the separation is large. Here's what to look for.</p>
+  </div>
+
+  <div class="severity-scale">
+    <div class="severity-scale-head">
+      <h3>🔍 WLD Severity Stages — Signs, Sounds, and What You Will Find</h3>
+    </div>
+    <div class="severity-row">
+      <div class="severity-stage mild">MILD<br>Stage 1</div>
+      <div class="severity-detail">
+        <strong>Small Pocket — No Lameness, No External Signs</strong>
+        <p>A small chalky, gray-white, or crumbly area visible on the sole at the white line zone — often at the toe or quarter. Tapping the hoof wall with a hammer produces a hollow "thud" rather than a solid ring directly over the affected area. The horse is sound. Easily missed between farrier visits. Caught here, treatment is simple — minimal resection, clean-out, topical treatment, and done.</p>
+      </div>
+    </div>
+    <div class="severity-row">
+      <div class="severity-stage moderate">MODERATE<br>Stage 2</div>
+      <div class="severity-detail">
+        <strong>Established Separation — Possible Slight Sensitivity</strong>
+        <p>Visible flaring or distortion of the hoof wall at the affected quarter or toe. A wider crumbly white-gray zone visible at the sole. The hollow sound on wall tapping covers a larger area. Debris (dirt, gravel, powdery horn material) falls from the separation when the hoof is cleaned. The horse may show very mild sensitivity on hard or rocky ground but is not overtly lame. Farrier resection required — the overlying wall must be removed to expose and treat the cavity.</p>
+      </div>
+    </div>
+    <div class="severity-row">
+      <div class="severity-stage severe">SEVERE<br>Stage 3</div>
+      <div class="severity-detail">
+        <strong>Extensive Wall Undermining — Lameness, Structural Compromise</strong>
+        <p>Large sections of the hoof wall are hollow and separated. The hoof may look visibly distorted — flared, dished, or with an obvious separation gap visible at the white line on the sole. The horse may be noticeably lame, especially on firm ground. In extreme cases, the entire toe wall or one or more quarters may need to be resected. Veterinary involvement is appropriate at this stage for lameness assessment and pain management. Rehabilitation can take 6–12 months as new hoof wall grows down from the coronary band.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box" style="margin-bottom:24px;">
+    <div class="tip-icon">💡</div>
+    <div class="tip-body">
+      <strong>The Tap Test — Your Best At-Home Detection Tool</strong>
+      <p>Use the handle of your hoof pick or a small hammer and tap methodically around the hoof wall, moving in a grid pattern. A healthy hoof wall gives a solid, resonant sound. A hollow section sounds noticeably duller — almost like tapping on a drum. Mark the boundary of the hollow area and call your farrier. Do this at every hoof picking session if your horse has had WLD before.</p>
+    </div>
+  </div>
+
+  <!-- QUICK REFERENCE -->
+  <div class="quick-ref">
+    <h3>⚡ Quick Reference — White Line Disease at a Glance</h3>
+    <div class="quick-ref-grid">
+      <div class="qr-item"><div class="qr-label">Also Called</div><div class="qr-val">WLD, seedy toe (at the toe), hollow wall, onychomycosis ungulae</div></div>
+      <div class="qr-item"><div class="qr-label">Cause</div><div class="qr-val">Fungi + anaerobic bacteria colonizing the white line zone; opportunistic infection</div></div>
+      <div class="qr-item"><div class="qr-label">Location</div><div class="qr-val">White line (zona lamellata) at toe, quarter, or heel — tracks upward into wall</div></div>
+      <div class="qr-item"><div class="qr-label">Key Sign</div><div class="qr-val">Hollow sound on wall tapping; crumbly gray-white debris at white line; wall flaring</div></div>
+      <div class="qr-item"><div class="qr-label">Lameness?</div><div class="qr-val">Usually none until advanced — the danger of WLD is how long it goes undetected</div></div>
+      <div class="qr-item"><div class="qr-label">Treatment</div><div class="qr-val">Farrier resection of overlying wall + antifungal topical + dry environment</div></div>
+      <div class="qr-item"><div class="qr-label">Recovery</div><div class="qr-val">Small cases: weeks. Large resections: 6–12 months for full wall regrowth</div></div>
+      <div class="qr-item"><div class="qr-label">Contagious?</div><div class="qr-val">No — organisms are environmental; not spread horse to horse</div></div>
+    </div>
+  </div>
+
+  <!-- TREATMENT — THREE ROLES -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>Treatment — Three Roles, Three Approaches</h2>
+    <p>WLD treatment is primarily farrier-led — resection is a skilled task requiring hoof knife, nippers, and judgment. The vet and owner each play supporting but essential roles.</p>
+  </div>
+
+  <div class="role-tabs" role="tablist" aria-label="Treatment by role">
+    <button class="role-tab active" role="tab" aria-selected="true" aria-controls="panel-farrier" id="tab-farrier">🔨 The Farrier</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-vet" id="tab-vet">🩺 The Veterinarian</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-owner" id="tab-owner">🧤 The Horse Owner</button>
+  </div>
+
+  <!-- FARRIER PANEL -->
+  <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
+    <div class="role-header">
+      <div class="role-icon">🔨</div>
+      <div class="role-header-text">
+        <h3>The Farrier's Role — Resection, Treatment, Reconstruction</h3>
+        <p>Resection — the surgical removal of the undermined hoof wall — is the cornerstone of WLD treatment. Without it, no topical product can reach the infection. This is skilled farrier work. The goal is to expose the entire affected cavity, eliminate the infection, and then protect and support the hoof while new wall grows down.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Assessment — Map the Full Extent Before Cutting</strong>
+          <p>The farrier begins with a thorough sole examination and tap test, mapping the exact boundaries of the hollow separation with a marker or chalk. Underestimating the extent of WLD is the most common treatment error — removing only part of the undermined wall leaves active infection behind. The farrier uses hoof testers and careful probing to confirm where healthy bonded wall ends and hollow separation begins.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Resection — Removing the Undermined Wall</strong>
+          <p>Using a hoof knife, nippers, and a rotary grinder or Dremel if available, the farrier cuts away all of the hoof wall overlying the hollow cavity. This is often dramatic-looking but necessary — the removed wall was already structurally compromised and providing no support. The farrier cuts until solid, healthy horn is encountered on all margins. The cavity must be completely exposed to air, sunlight, and topical treatment. Partial resection that leaves a roof over part of the cavity will fail — the infection simply continues in the covered area.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Debridement and Cleaning</strong>
+          <p>Once the wall is removed, the cavity is thoroughly cleaned of all debris, powdery horn material, and necrotic tissue using a wire brush, stiff brush, or rotary tool. The cavity is then flushed with an antiseptic solution — dilute iodine (10%), dilute bleach (1:10), or chlorhexidine. The farrier continues cleaning until the exposed sensitive laminae or inner hoof wall appears uniformly clean with no gray or black discoloration remaining.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Topical Antifungal/Antibacterial Treatment</strong>
+          <p>With the cavity open and clean, the farrier applies a topical treatment directly to all surfaces. Common effective choices include:</p>
+          <ul>
+            <li><strong>White Lightning or Clean Trax</strong> — chlorine dioxide, applied as a pack or soak; highly effective against WLD organisms</li>
+            <li><strong>Copper sulfate paste</strong> — antifungal, applied directly into the resected cavity</li>
+            <li><strong>Venice turpentine</strong> — traditional farrier treatment; antifungal and hardening agent</li>
+            <li><strong>Kopertox</strong> — copper naphthenate; widely used, effective, penetrating</li>
+            <li><strong>Iodine (7% tincture)</strong> — applied to all exposed surfaces; dries and disinfects</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Shoeing and Protective Support</strong>
+          <p>After resection, the hoof needs protection while the wall regrows. The farrier selects a shoeing strategy based on the size and location of the resection:</p>
+          <ul>
+            <li><strong>Wide-web shoe</strong> — distributes weight across a broader surface, protecting the resected area from ground contact</li>
+            <li><strong>Bar shoe (straight or egg bar)</strong> — connects the heels and provides additional support, essential when quarter resections compromise lateral wall stability</li>
+            <li><strong>Hoof repair composite or acrylic patch</strong> — for large resections, the farrier may fill or cap the resected area with a two-part epoxy or acrylic hoof repair material, restoring structural integrity while the wall grows</li>
+            <li><strong>Hoof cast or fiberglass wrap</strong> — used for the most extensive resections to stabilize the entire hoof capsule during initial regrowth</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Shortened Trimming Schedule During Recovery</strong>
+          <p>New hoof wall grows down from the coronary band at approximately 3/8 inch per month at the toe — a full toe-to-ground regrowth takes 9–12 months. During this period the farrier typically moves to a 4–5 week trimming and treatment schedule rather than the standard 6–8 weeks. Each visit allows the farrier to assess growth, redress the healing cavity, and adjust the shoeing as the new wall develops.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Venice Turpentine</h4>
+        <p>Traditional antifungal and hoof hardener. Applied warm into the resected cavity. Penetrates well, stimulates horn growth, and creates an inhospitable environment for fungal regrowth.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Hoof Repair Composite (Equilox, Vettec)</h4>
+        <p>Two-part epoxy or polyurethane acrylic used to cap or fill large resection voids. Restores structural integrity while protecting the healing sensitive laminae underneath.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>White Lightning / Clean Trax</h4>
+        <p>Chlorine dioxide-based treatment. Highly effective against WLD fungi and bacteria. Used as a soak or pack in a sealed hoof boot — reaches deep into wall separations.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Copper Sulfate Paste</h4>
+        <p>Antifungal paste applied directly into resected cavities. Strong fungicidal action. Use with gloves — copper sulfate stains skin and is irritating to mucous membranes.</p>
+      </div>
+    </div>
+
+    <div class="caution-box">
+      <div class="caution-icon">⛔</div>
+      <div class="caution-body">
+        <strong>Never Leave the Cavity Covered</strong>
+        <p>The most critical principle of WLD treatment is that the infected cavity must be fully exposed to air and light. Applying topical products to a cavity that is still covered by the overlying wall, or capping a cavity prematurely with repair composite before the infection is fully resolved, will trap organisms underneath and guarantee recurrence. Open, treat, verify resolution — then protect.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VET PANEL -->
+  <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
+    <div class="role-header">
+      <div class="role-icon">🩺</div>
+      <div class="role-header-text">
+        <h3>The Veterinarian's Role in WLD</h3>
+        <p>Most white line disease cases are managed entirely by the farrier. The vet becomes involved when WLD is accompanied by lameness, when laminitis is the suspected underlying cause, when sensitive laminae are exposed during resection, or when the horse needs pain management to allow thorough treatment.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Lameness Evaluation and Radiographs</strong>
+          <p>When a horse with WLD is lame, the vet performs a lameness evaluation and is likely to recommend radiographs (X-rays) of the affected foot. Radiographs serve two critical purposes: they reveal the internal extent of the separation (which cannot always be assessed from the sole surface), and they detect any rotation or sinking of the coffin bone — a hallmark of laminitis. If laminitis is present and driving the white line separation, treating only the WLD without addressing the laminitis will result in immediate recurrence.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Pain Management for Resection</strong>
+          <p>Extensive WLD resections can be uncomfortable even in a non-lame horse, and are painful in horses with underlying laminitis or sensitive laminae exposure. The vet can administer a palmar digital nerve block to desensitize the foot, allowing the farrier to perform thorough resection and debridement without the horse pulling away. This collaboration — vet blocks the foot, farrier does the work — produces far better outcomes than trying to do a painful resection on an anxious, resistant horse.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Managing the Underlying Cause</strong>
+          <p>If radiographs reveal laminitic changes, the vet coordinates with the farrier on a therapeutic shoeing plan — often deep-bedded stall rest, anti-inflammatory medication (phenylbutazone or flunixin), dietary restriction if metabolic disease is involved, and corrective shoeing to realign the coffin bone. Conditions that predispose to WLD include:</p>
+          <ul>
+            <li><strong>Laminitis</strong> — the most common underlying driver of recurrent WLD at the toe</li>
+            <li><strong>PPID (Cushing's Disease)</strong> — reduces immune function and hoof horn quality; test with ACTH levels</li>
+            <li><strong>Equine Metabolic Syndrome (EMS)</strong> — drives laminitis through insulin dysregulation</li>
+            <li><strong>Biotin / zinc / methionine deficiency</strong> — nutritional causes of poor hoof horn quality</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Systemic Antifungals (Rare, Severe Cases Only)</strong>
+          <p>Systemic antifungal medications are very rarely used for WLD because the infection is localized to the hoof horn — a non-vascular tissue that systemic medications cannot reach effectively. Treatment is almost entirely topical. However, in cases where the infection has breached into the sensitive laminae or coronary band, the vet may prescribe topical prescription antifungals and monitor for signs of deeper tissue involvement.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-icon">💡</div>
+      <div class="tip-body">
+        <strong>When to Call the Vet for WLD</strong>
+        <p>Call your vet if the horse is lame, if the resection reveals bleeding or pink sensitive tissue, if the horse has a history of laminitis, if WLD keeps recurring despite good management, or if you suspect an underlying metabolic condition. A single radiograph series is often all that's needed to rule out laminitic rotation and set the recovery plan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OWNER PANEL -->
+  <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
+    <div class="role-header">
+      <div class="role-icon">🧤</div>
+      <div class="role-header-text">
+        <h3>The Horse Owner's Role — Detection, Daily Care, Environment</h3>
+        <p>Because WLD is typically painless and invisible until the farrier looks, the owner's most important role is detection and environment management. You pick the hooves — you are the early warning system. After resection, consistent daily aftercare is what separates a case that resolves in weeks from one that drags on for months.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Learn and Use the Tap Test Daily</strong>
+          <p>After every hoof picking, tap methodically around the hoof wall with the handle of your hoof pick. Work in a grid — toe, each quarter, heels. Solid horn rings clearly; hollow separation gives a dull thud. Once you've heard the difference on a horse with known WLD, you'll never miss it again. Catching WLD at a small pocket stage — before it spreads — makes the farrier's resection minor and recovery quick.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Daily Treatment of the Resected Cavity</strong>
+          <p>After your farrier has completed the resection, daily topical treatment of the open cavity is your job. The specific product your farrier recommends takes priority, but the general protocol is:</p>
+          <ul>
+            <li>Pick and clean the hoof thoroughly — remove all debris from the cavity</li>
+            <li>Dry the cavity with a clean cloth or allow it to air for a few minutes</li>
+            <li>Apply the recommended antifungal product — Kopertox, White Lightning soak, iodine, or copper sulfate paste — into the cavity</li>
+            <li>Do not pack or seal the cavity unless specifically instructed — air exposure is part of the treatment</li>
+            <li>Keep a treatment log — note the date, appearance, and any changes; this is valuable information for your farrier at the next visit</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Keep the Horse on Dry Footing</strong>
+          <p>Wet environments dramatically slow WLD recovery. The fungal and bacterial organisms thrive in moisture. During treatment, prioritize keeping the horse on dry footing as much as possible — clean, dry stall bedding, gravel or sand in high-traffic outdoor areas, and limited exposure to mud and standing water. This is especially important for the first 4–6 weeks after resection when the cavity is open and most vulnerable to reinfection.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Protect the Resection Area</strong>
+          <p>A large resection area is vulnerable to trauma, packing with debris, and drying out too aggressively. If your farrier has applied a patch or composite, keep it clean and watch for any lifting or cracking of the repair. If the cavity is left open, check it after every turnout to clear any pebbles or debris that have packed in. A hoof boot worn during turnout in rough terrain can protect a sensitive resected foot — ask your farrier whether this is appropriate for your horse's specific resection.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Nutrition Support for Hoof Regrowth</strong>
+          <p>New hoof wall grows at roughly 3/8 inch per month from the coronary band. In a 12-month full regrowth case, you want that new wall to be the best quality horn possible. Support hoof regrowth with:</p>
+          <ul>
+            <li><strong>Biotin</strong> — 20mg/day minimum for therapeutic effect on horn quality</li>
+            <li><strong>Zinc and copper</strong> — often deficient in hay-based diets; critical for keratin cross-linking</li>
+            <li><strong>Methionine</strong> — sulfur-containing amino acid required for strong horn</li>
+            <li>Consider a complete hoof supplement (e.g., Farrier's Formula, Equine Hoof Care) rather than individual products</li>
+          </ul>
+          See our full <a href="/nutrition/" style="color:var(--leather);font-weight:600;">Nutrition &amp; Hooves guide</a> for detailed supplement guidance.
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Kopertox</h4>
+        <p>Copper naphthenate solution. Strong antifungal penetration. Apply daily into the open cavity with a small brush. Effective against both the fungal and bacterial components of WLD.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>White Lightning Soak</h4>
+        <p>Chlorine dioxide. Used in a sealed hoof boot for 30–45 minutes. Excellent penetration into wall separations inaccessible to brush-on products. Use 2–3x per week during active treatment.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag home">Home Treatment</div>
+        <h4>7% Tincture of Iodine</h4>
+        <p>Applied daily with a small syringe into the cavity. Dries the cavity, kills organisms, and creates an unfavorable environment for fungal growth. Inexpensive and widely available.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Hoof Supplement (Biotin-Based)</h4>
+        <p>Farrier's Formula, Equine Hoof Care, or similar. Begin immediately after resection and continue through full regrowth — typically 9–12 months. Good horn quality is the best long-term prevention.</p>
+      </div>
+    </div>
+
+    <div class="caution-box">
+      <div class="caution-icon">⛔</div>
+      <div class="caution-body">
+        <strong>Do Not Attempt Resection Yourself</strong>
+        <p>Resecting a WLD cavity requires knowing exactly where healthy horn ends and compromised horn begins. Cutting too little leaves infection behind. Cutting too aggressively risks exposing or damaging the sensitive laminae. This is skilled farrier work — your job is daily topical treatment and environment management, not surgery. Call your farrier.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREVENTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Prevention — Keeping White Line Disease From Returning</h2>
+    <p>WLD has a high recurrence rate in susceptible horses. Prevention requires addressing both the environmental exposure and any underlying condition that compromised the white line in the first place.</p>
+  </div>
+
+  <div class="prevention-grid">
+    <div class="prev-card">
+      <div class="prev-icon">🪣</div>
+      <div class="prev-body">
+        <h4>Daily Hoof Picking + Tap Test</h4>
+        <p>Pick hooves every day and run the tap test at every session. WLD caught as a small pocket requires a minor farrier visit. Caught late, it requires months of recovery. Daily observation is the difference.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">📅</div>
+      <div class="prev-body">
+        <h4>Regular Farrier Schedule</h4>
+        <p>Long toes create extreme leverage stress at the white line, mechanically forcing separation — the perfect entry point for WLD organisms. Regular trimming (every 5–6 weeks for WLD-prone horses) prevents the long toe that drives the condition.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🏡</div>
+      <div class="prev-body">
+        <h4>Manage Wet-Dry Cycles</h4>
+        <p>Repeated soaking and drying causes the hoof wall to expand and contract, stressing and cracking the white line zone. Provide consistent footing — avoid horses standing in wet mud for hours then dry concrete. Hoof hardeners (venice turpentine, Keratex) help maintain horn integrity during wet seasons.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🧪</div>
+      <div class="prev-body">
+        <h4>Rule Out Metabolic Causes</h4>
+        <p>Horses with recurrent WLD at the toe — especially older horses or easy keepers — should be tested for PPID (Cushing's) and EMS/insulin dysregulation. These conditions drive chronic laminitic separation that perpetually opens the white line to infection.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🌾</div>
+      <div class="prev-body">
+        <h4>Hoof-Quality Nutrition</h4>
+        <p>Dense, well-keratinized horn is mechanically resistant to WLD invasion. Biotin (20mg/day), zinc, copper, and methionine all support strong horn quality. Begin supplementation before problems appear — hoof horn changes take months to manifest.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🔨</div>
+      <div class="prev-body">
+        <h4>Prompt Repair of Wall Cracks</h4>
+        <p>Any hoof wall crack, chip, or separation is a potential WLD entry point. Have your farrier address cracks promptly — a simple crack repair during a routine visit costs far less than treating the WLD that enters through an ignored crack three months later.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>White Line Disease Videos — Watch &amp; Learn</h2>
+    <p>See real resections, treatments, and case walkthroughs performed by farriers and equine professionals.</p>
+  </div>
+
+  <div class="video-section">
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/L2HlnmJdntg" title="White line disease resection" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Farrier Resection</div>
+          <div class="video-title">White Line Disease Resection</div>
+          <div class="video-by">A5 Ranch</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/Y3DOriLw6TQ" title="Removing White Line Disease from a horse's hoof." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Removal Walkthrough</div>
+          <div class="video-title">Removing White Line Disease from a Horse's Hoof</div>
+          <div class="video-by">David Gray</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jXkuWgqhSNA" title="White line disease treatment and hoof cast." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Treatment &amp; Hoof Cast</div>
+          <div class="video-title">White Line Disease Treatment and Hoof Cast</div>
+          <div class="video-by">Tom Clothier (Wirral Farrier)</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/tXMMRun2SaE" title="White Line Disease in Horses? Here's How to Treat It Fast!" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🩺 Vet Guidance</div>
+          <div class="video-title">White Line Disease in Horses? Here's How to Treat It Fast!</div>
+          <div class="video-by">Vet Care 319 2.0 M</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>White Line Disease — Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Is white line disease the same as seedy toe? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Seedy toe and white line disease are related terms often used interchangeably, but technically seedy toe refers specifically to a separation at the toe region of the white line, while white line disease (WLD) describes the same fungal/bacterial infection wherever it occurs — toe, quarter, or heel. In practice, most farriers use both terms to mean the same condition. If your farrier says seedy toe, they mean WLD at the toe.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My horse has WLD but isn't lame. Do I still need a farrier visit right away? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Yes — immediately. The absence of lameness is precisely why WLD is dangerous. Horses feel no pain as the infection works through the avascular (non-living) hoof horn, which means the separation can advance dramatically before any behavioral sign appears. By the time lameness develops, the cavity is often extensive. A farrier visit for a small WLD pocket found early takes 15 minutes. Waiting until the horse limps can mean months of recovery. Call your farrier today.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Can I ride my horse during WLD treatment? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">It depends entirely on the size of the resection and the horse's comfort level. After a small resection with a protective shoe or patch: light work on good footing is usually fine within a few days. After a large resection or when the horse shows any sensitivity: rest on soft, clean footing until your farrier confirms the hoof is stable. Never ride a lame horse. When in doubt, ask your farrier — they can see the resection and judge how structurally sound the foot is.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How long does it take for the resected hoof wall to grow back? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Hoof wall grows at approximately 3/8 inch per month at the toe and slightly faster at the heel. A resection that reaches halfway up the hoof wall at the toe requires roughly 5–6 months for new wall to grow down to that point, and the full ground-to-coronary-band regrowth takes 9–12 months. Younger horses grow hoof faster than older horses. Good nutrition (biotin, zinc, copper) supports faster, denser regrowth. Your farrier will monitor growth at every trimming visit.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Why does my horse keep getting white line disease every year? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Recurrent WLD almost always has an underlying cause that hasn't been addressed. The most common culprits are: (1) undiagnosed or poorly managed laminitis continually re-opening the white line from the inside; (2) metabolic disease (PPID or EMS) reducing hoof horn quality and immune response; (3) a chronically wet environment giving organisms repeated opportunity; (4) long trimming intervals allowing the toe leverage that mechanically separates the white line. Talk to both your farrier and your vet — a blood panel for ACTH (PPID) and insulin/glucose (EMS) is worth doing in any horse with recurrent WLD.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Will the new hoof wall look normal when it grows back? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">In most cases, yes — new hoof wall growing down from the coronary band is fresh, unaffected horn and grows in normally. You may see a visible growth ring at the coronary band marking where the new wall began, and the transition zone between old and new wall may be visible for some time. In cases where WLD was associated with laminitis, the new wall may show laminitic growth rings (rings that are wider at the heels than the toe). The cosmetic appearance of the hoof typically normalizes fully within 12–18 months of complete regrowth.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Is white line disease contagious between horses? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">No. The fungi and bacteria responsible for WLD are environmental organisms present in virtually all horse environments — soil, bedding, footing, manure. They do not spread from horse to horse as a pathogen would. Multiple horses in the same wet or poorly drained paddock may all develop WLD simultaneously, but this is because they share the same risk environment, not because they infected each other. No isolation or quarantine is needed for horses with WLD.</div>
+    </div>
+  </div>
+
+  <!-- SERIES NAV -->
+  <div class="series-nav" style="margin-top:36px;">
+    <h3>🏥 Top 10 Hoof Issues for Horse Owners</h3>
+    <div class="series-list">
+      <a href="/hoof-issues/thrush/" class="series-item done">
+        <div class="series-num">1</div>
+        Thrush ✓
+      </a>
+      <a href="/hoof-issues/white-line-disease/" class="series-item current">
+        <div class="series-num">2</div>
+        White Line Disease — You Are Here
+      </a>
+      <span class="series-item coming"><div class="series-num">3</div>Laminitis &amp; Founder</span>
+      <span class="series-item coming"><div class="series-num">4</div>Navicular Syndrome</span>
+      <span class="series-item coming"><div class="series-num">5</div>Cracked Hooves</span>
+      <span class="series-item coming"><div class="series-num">6</div>Abscesses</span>
+      <span class="series-item coming"><div class="series-num">7</div>Contracted Heels</span>
+      <span class="series-item coming"><div class="series-num">8</div>Seedy Toe</span>
+      <span class="series-item coming"><div class="series-num">9</div>Sheared Heels</span>
+      <span class="series-item coming"><div class="series-num">10</div>Canker</span>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<div class="cta-strip">
+  <div class="cta-box">
+    <h3>Part of the Bridle &amp; Bit Network</h3>
+    <p>HorseFarrier.net is a free public resource from Bridle &amp; Bit Magazine — Arizona's premier equestrian publication since 1978.</p>
+    <div class="cta-btns">
+      <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" class="cta-btn primary">Visit Bridle &amp; Bit Magazine</a>
+      <a href="/hoof-issues/" class="cta-btn secondary">All Top 10 Hoof Issues →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div style="margin-bottom:10px;">The Complete Hoof Care Resource</div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="/hoof-care/">Hoof Care Basics</a>
+    <a href="/farrier-tools/">Farrier Tools</a>
+    <a href="/breed-hooves/">Breed Hoof Needs</a>
+    <a href="/nutrition/">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/">Horseshoe Types</a>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/glossary/">Glossary</a>
+    <a href="/videos/">Videos</a>
+  </nav>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> — Arizona's premier equestrian publication since 1978.</div>
+  <div style="margin-top:8px;color:rgba(255,255,255,0.35);font-size:0.75rem;">&copy; 2026 HorseFarrier.net. All rights reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var drawer=document.getElementById('nav-drawer');
+  if(btn&&drawer){
+    btn.addEventListener('click',function(){
+      var open=drawer.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+    });
+  }
+  var tabs=document.querySelectorAll('.role-tab');
+  var panels=document.querySelectorAll('.role-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+      panels.forEach(function(p){p.classList.remove('active');});
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      var panel=document.getElementById(tab.getAttribute('aria-controls'));
+      if(panel){panel.classList.add('active');}
+    });
+  });
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var b=item.querySelector('.faq-q');
+    if(b){b.addEventListener('click',function(){
+      var open=item.classList.toggle('open');
+      b.setAttribute('aria-expanded',open);
+    });}
+  });
+})();
+</script>
+</body>
+</html>

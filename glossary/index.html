@@ -52,7 +52,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .search-box input{width:100%;padding:13px 16px 13px 44px;border:2px solid var(--border-strong);border-radius:var(--radius-lg);font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--ink);background:var(--white);outline:none;transition:var(--transition)}
 .search-box input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
 .search-box input::placeholder{color:var(--ink-muted)}
-.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink-muted);font-size:1.1rem;pointer-events:none}
 .search-count{font-size:0.8rem;color:var(--ink-muted);margin-top:8px;padding-left:2px;min-height:20px}
 
 /* ALPHA NAV */
@@ -308,8 +307,7 @@ footer a{color:var(--rope-light);text-decoration:none}
 <!-- SEARCH -->
 <div class="search-wrap">
   <div class="search-box">
-    <span class="search-icon">🔍</span>
-    <input type="search" id="glossary-search" placeholder="Search terms… e.g. laminitis, rasp, coffin bone" aria-label="Search glossary terms" autocomplete="off">
+        <input type="search" id="glossary-search" placeholder="Search terms… e.g. laminitis, rasp, coffin bone" aria-label="Search glossary terms" autocomplete="off">
   </div>
   <div class="search-count" id="search-count" aria-live="polite"></div>
 </div>

@@ -67,7 +67,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 
 /* EMERGENCY BANNER */
 .emergency-banner{background:#7A0000;border:2px solid #FF4444;border-radius:var(--radius-lg);padding:16px 18px;margin:20px 0;display:flex;gap:14px;align-items:flex-start}
-.emergency-icon{font-size:1.8rem;flex-shrink:0;line-height:1}
 .emergency-body strong{display:block;font-size:0.95rem;font-weight:700;color:#FF9999;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em}
 .emergency-body p{font-size:0.88rem;color:rgba(255,255,255,0.88);line-height:1.6}
 
@@ -102,7 +101,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 /* CAUSES GRID */
 .causes-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
 .cause-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;display:flex;gap:14px;align-items:flex-start}
-.cause-icon{font-size:1.5rem;flex-shrink:0;line-height:1;margin-top:2px}
 .cause-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:3px}
 .cause-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
 .cause-tag{display:inline-flex;font-size:0.67rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-bottom:5px}
@@ -141,7 +139,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .role-panel{display:none;padding:20px 0}
 .role-panel.active{display:block}
 .role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
-.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
 .role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
 .role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
 
@@ -167,18 +164,15 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 
 /* CALLOUT BOXES */
 .caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
-.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
 .caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
 .caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
 .tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
-.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
 .tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
 .tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
 
 /* PREVENTION */
 .prevention-grid{display:flex;flex-direction:column;gap:12px}
 .prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
-.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
 .prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
 .prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
 
@@ -488,8 +482,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
   <!-- EMERGENCY BANNER -->
   <div class="emergency-banner">
-    <div class="emergency-icon">🚨</div>
-    <div class="emergency-body">
+        <div class="emergency-body">
       <strong>This Is a Veterinary Emergency</strong>
       <p>If you suspect your horse has acute laminitis — reluctance to move, shifting weight, standing back on the heels, hot hooves, a bounding digital pulse — call your veterinarian immediately. Do not wait to see if it improves. Do not force the horse to walk. Confine them to a deeply bedded stall and call your vet now. Minutes matter.</p>
     </div>
@@ -518,48 +511,42 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
   <div class="causes-grid">
     <div class="cause-card">
-      <div class="cause-icon">🌿</div>
-      <div class="cause-body">
+            <div class="cause-body">
         <div class="cause-tag very-common">Most Common</div>
         <h4>Pasture Laminitis (EMS / Insulin Dysregulation)</h4>
         <p>The leading cause. Horses with Equine Metabolic Syndrome (EMS) have chronically elevated insulin, which directly damages lamellar cells. Rich spring and fall grass (high in non-structural carbohydrates) triggers an insulin spike that can cause laminitis within hours in susceptible horses. Ponies, Morgans, Warmbloods, and easy keepers are highest risk.</p>
       </div>
     </div>
     <div class="cause-card">
-      <div class="cause-icon">🫙</div>
-      <div class="cause-body">
+            <div class="cause-body">
         <div class="cause-tag very-common">Very Common</div>
         <h4>Grain Overload (Carbohydrate Overload)</h4>
         <p>A horse that breaks into the feed room and consumes a large quantity of grain, or is fed a dramatically increased ration, can develop acute laminitis within 24–48 hours. The carbohydrate load overwhelms the small intestine, passes to the hindgut, causes rapid fermentation, dysbiosis, and a cascade of inflammatory signals that reach the lamellar tissue.</p>
       </div>
     </div>
     <div class="cause-card">
-      <div class="cause-icon">🏥</div>
-      <div class="cause-body">
+            <div class="cause-body">
         <div class="cause-tag very-common">Very Common</div>
         <h4>PPID (Cushing's Disease)</h4>
         <p>Pituitary Pars Intermedia Dysfunction — the most common endocrine disease in horses over 15 years old — causes chronically elevated ACTH and cortisol, which drive insulin resistance. PPID horses develop recurrent laminitis year-round, not just seasonally. Any older horse with a long, wavy, or patchy coat that develops laminitis should be tested for PPID immediately.</p>
       </div>
     </div>
     <div class="cause-card">
-      <div class="cause-icon">🦷</div>
-      <div class="cause-body">
+            <div class="cause-body">
         <div class="cause-tag common">Common</div>
         <h4>Supporting-Limb Laminitis</h4>
         <p>When a horse bears excessive weight on one limb for an extended period — typically because the opposite limb is injured and non-weight-bearing — the overloaded hoof can develop laminitis from vascular compromise. This is a serious complication of major limb injuries and is monitored carefully during recovery from fractures, tendon injuries, and joint infections.</p>
       </div>
     </div>
     <div class="cause-card">
-      <div class="cause-icon">🤒</div>
-      <div class="cause-body">
+            <div class="cause-body">
         <div class="cause-tag common">Common</div>
         <h4>Sepsis / Systemic Illness</h4>
         <p>Severe systemic illness — retained placenta, colitis, pleuropneumonia, severe colic — can trigger laminitis through endotoxemia and inflammatory cascade. Any hospitalized horse with a serious systemic illness is considered at laminitis risk and monitored accordingly, often with ice therapy applied prophylactically to the feet.</p>
       </div>
     </div>
     <div class="cause-card">
-      <div class="cause-icon">💊</div>
-      <div class="cause-body">
+            <div class="cause-body">
         <div class="cause-tag less-common">Less Common</div>
         <h4>Steroid-Induced Laminitis</h4>
         <p>Corticosteroids — particularly injectable dexamethasone or triamcinolone — can trigger laminitis in susceptible horses, especially those with underlying EMS or PPID. The risk is real but often overstated; appropriate use of steroids in healthy horses rarely causes laminitis. However, horses with known metabolic disease require extra caution and alternatives where possible.</p>
@@ -609,8 +596,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   </div>
 
   <div class="tip-box" style="margin-bottom:24px;">
-    <div class="tip-icon">💡</div>
-    <div class="tip-body">
+        <div class="tip-body">
       <strong>Check the Digital Pulse — Learn This Skill Now</strong>
       <p>The digital pulse is felt at the back of the fetlock, where the digital arteries run on either side. In a healthy horse the pulse is barely detectable. In laminitis, it becomes strong and bounding — like pressing your fingertip against a garden hose under pressure. Practice feeling for it now on a healthy horse so you know the difference when it matters. A bounding digital pulse with any reluctance to move = call your vet.</p>
     </div>
@@ -647,8 +633,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- FARRIER PANEL -->
   <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
     <div class="role-header">
-      <div class="role-icon">🔨</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Farrier's Role — Mechanical Support, Therapeutic Shoeing, Long-Term Rehabilitation</h3>
         <p>The farrier cannot stop laminitis — that is the vet's domain. But the farrier controls the mechanical environment of the hoof, and in laminitis that environment is everything. The right support applied at the right time dramatically changes outcomes. The wrong trim or shoe can accelerate rotation and destroy a horse that might otherwise have recovered.</p>
       </div>
@@ -732,8 +717,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="caution-box">
-      <div class="caution-icon">⛔</div>
-      <div class="caution-body">
+            <div class="caution-body">
         <strong>Never Trim Aggressively Without Radiographs</strong>
         <p>Trimming a laminitic horse without current radiographs is guessing. The coffin bone's position relative to the hoof wall and ground surface cannot be accurately assessed by external appearance alone. A trim that looks correct from the outside can be catastrophically wrong internally. Every laminitis case requires radiographs before significant trimming. This is non-negotiable in any serious laminitis case.</p>
       </div>
@@ -743,8 +727,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- VET PANEL -->
   <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
     <div class="role-header">
-      <div class="role-icon">🩺</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Veterinarian's Role — Emergency Response, Diagnosis, Medical Management</h3>
         <p>The vet leads the laminitis response. Pain management, identifying and removing the trigger, radiographic monitoring of the coffin bone, and treating any underlying metabolic disease are all veterinary territory. The farrier cannot do this work; the vet directs the overall treatment plan.</p>
       </div>
@@ -832,8 +815,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- OWNER PANEL -->
   <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
     <div class="role-header">
-      <div class="role-icon">🧤</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Horse Owner's Role — Recognition, First Aid, Daily Management</h3>
         <p>In laminitis, the owner's role shifts with the phase. In the acute phase, your job is fast recognition and immediate action — call the vet, confine the horse, provide deep bedding, and begin ice if available. In the recovery and chronic phases, your job becomes the daily discipline of diet management, environment management, and monitoring that determines whether the horse stays sound long-term.</p>
       </div>
@@ -899,8 +881,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="tip-box">
-      <div class="tip-icon">💡</div>
-      <div class="tip-body">
+            <div class="tip-body">
         <strong>The Grazing Muzzle — Non-Negotiable for EMS Horses</strong>
         <p>A properly fitted grazing muzzle reduces grass intake by 70–80% while allowing turnout and movement — both essential for metabolic horses. Resistance from horses (and owners) to using muzzles is common. The alternative — keeping a laminitis-prone horse off pasture entirely — reduces exercise and increases the isolation and stress that also worsen metabolic disease. A muzzle is the better tool. Introduce it gradually and check the fit daily.</p>
       </div>
@@ -916,43 +897,37 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
   <div class="prevention-grid">
     <div class="prev-card">
-      <div class="prev-icon">🏋️</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Maintain Healthy Body Weight</h4>
         <p>Obesity is the single most important modifiable laminitis risk factor. An overweight horse has chronically elevated insulin regardless of diet. Target body condition score 4–5 of 9. Reduce feed before reducing exercise — a fat horse should not be worked into shape while overweight.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🌿</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Manage Pasture Turnout Carefully</h4>
         <p>Restrict or eliminate pasture access for high-risk horses. Grass NSC peaks in the afternoon and after frost. Use a grazing muzzle, limit turnout to morning hours, or use a dirt paddock during high-risk seasons (spring and autumn flush growth).</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🧪</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Test for PPID and EMS</h4>
         <p>Any horse over 15 with a history of laminitis, regional fat deposits, or a shaggy coat should be tested annually for PPID. Any easy keeper or overweight horse should have an insulin/glucose panel. Early diagnosis and treatment with pergolide dramatically reduces recurrence.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🔒</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Secure the Feed Room</h4>
         <p>Grain overload laminitis is entirely preventable. Use horse-proof latches on all grain storage. Never leave bags of feed accessible. One unsupervised hour with a grain bin has ended horses' careers and lives. This is a zero-tolerance management standard.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">📅</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Regular Farrier Visits</h4>
         <p>Long toes create the mechanical conditions that worsen and accelerate rotation in a laminitic episode. Regular trimming on a 5–6 week schedule for high-risk horses keeps toe length in check and provides your farrier the opportunity to catch early white line changes that signal developing problems.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🏥</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Prophylactic Icing During Systemic Illness</h4>
         <p>If your horse develops colitis, a serious infection, or any condition your vet identifies as laminitis-risk, begin digital cryotherapy immediately — before any laminitis signs appear. Icing is safe, inexpensive, and genuinely effective as prophylaxis. Do not wait for the bounding pulse to start the ice.</p>
       </div>

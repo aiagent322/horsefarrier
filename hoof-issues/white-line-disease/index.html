@@ -124,7 +124,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .role-panel.active{display:block}
 
 .role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
-.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
 .role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
 .role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
 
@@ -148,18 +147,15 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 
 /* CAUTION / TIP BOXES */
 .caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
-.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
 .caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
 .caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
 .tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
-.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
 .tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
 .tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
 
 /* PREVENTION */
 .prevention-grid{display:flex;flex-direction:column;gap:12px}
 .prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
-.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
 .prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
 .prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
 
@@ -549,8 +545,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   </div>
 
   <div class="tip-box" style="margin-bottom:24px;">
-    <div class="tip-icon">💡</div>
-    <div class="tip-body">
+        <div class="tip-body">
       <strong>The Tap Test — Your Best At-Home Detection Tool</strong>
       <p>Use the handle of your hoof pick or a small hammer and tap methodically around the hoof wall, moving in a grid pattern. A healthy hoof wall gives a solid, resonant sound. A hollow section sounds noticeably duller — almost like tapping on a drum. Mark the boundary of the hollow area and call your farrier. Do this at every hoof picking session if your horse has had WLD before.</p>
     </div>
@@ -587,8 +582,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- FARRIER PANEL -->
   <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
     <div class="role-header">
-      <div class="role-icon">🔨</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Farrier's Role — Resection, Treatment, Reconstruction</h3>
         <p>Resection — the surgical removal of the undermined hoof wall — is the cornerstone of WLD treatment. Without it, no topical product can reach the infection. This is skilled farrier work. The goal is to expose the entire affected cavity, eliminate the infection, and then protect and support the hoof while new wall grows down.</p>
       </div>
@@ -675,8 +669,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="caution-box">
-      <div class="caution-icon">⛔</div>
-      <div class="caution-body">
+            <div class="caution-body">
         <strong>Never Leave the Cavity Covered</strong>
         <p>The most critical principle of WLD treatment is that the infected cavity must be fully exposed to air and light. Applying topical products to a cavity that is still covered by the overlying wall, or capping a cavity prematurely with repair composite before the infection is fully resolved, will trap organisms underneath and guarantee recurrence. Open, treat, verify resolution — then protect.</p>
       </div>
@@ -686,8 +679,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- VET PANEL -->
   <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
     <div class="role-header">
-      <div class="role-icon">🩺</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Veterinarian's Role in WLD</h3>
         <p>Most white line disease cases are managed entirely by the farrier. The vet becomes involved when WLD is accompanied by lameness, when laminitis is the suspected underlying cause, when sensitive laminae are exposed during resection, or when the horse needs pain management to allow thorough treatment.</p>
       </div>
@@ -730,8 +722,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="tip-box">
-      <div class="tip-icon">💡</div>
-      <div class="tip-body">
+            <div class="tip-body">
         <strong>When to Call the Vet for WLD</strong>
         <p>Call your vet if the horse is lame, if the resection reveals bleeding or pink sensitive tissue, if the horse has a history of laminitis, if WLD keeps recurring despite good management, or if you suspect an underlying metabolic condition. A single radiograph series is often all that's needed to rule out laminitic rotation and set the recovery plan.</p>
       </div>
@@ -741,8 +732,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- OWNER PANEL -->
   <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
     <div class="role-header">
-      <div class="role-icon">🧤</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Horse Owner's Role — Detection, Daily Care, Environment</h3>
         <p>Because WLD is typically painless and invisible until the farrier looks, the owner's most important role is detection and environment management. You pick the hooves — you are the early warning system. After resection, consistent daily aftercare is what separates a case that resolves in weeks from one that drags on for months.</p>
       </div>
@@ -823,8 +813,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="caution-box">
-      <div class="caution-icon">⛔</div>
-      <div class="caution-body">
+            <div class="caution-body">
         <strong>Do Not Attempt Resection Yourself</strong>
         <p>Resecting a WLD cavity requires knowing exactly where healthy horn ends and compromised horn begins. Cutting too little leaves infection behind. Cutting too aggressively risks exposing or damaging the sensitive laminae. This is skilled farrier work — your job is daily topical treatment and environment management, not surgery. Call your farrier.</p>
       </div>
@@ -840,43 +829,37 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
   <div class="prevention-grid">
     <div class="prev-card">
-      <div class="prev-icon">🪣</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Daily Hoof Picking + Tap Test</h4>
         <p>Pick hooves every day and run the tap test at every session. WLD caught as a small pocket requires a minor farrier visit. Caught late, it requires months of recovery. Daily observation is the difference.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">📅</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Regular Farrier Schedule</h4>
         <p>Long toes create extreme leverage stress at the white line, mechanically forcing separation — the perfect entry point for WLD organisms. Regular trimming (every 5–6 weeks for WLD-prone horses) prevents the long toe that drives the condition.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🏡</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Manage Wet-Dry Cycles</h4>
         <p>Repeated soaking and drying causes the hoof wall to expand and contract, stressing and cracking the white line zone. Provide consistent footing — avoid horses standing in wet mud for hours then dry concrete. Hoof hardeners (venice turpentine, Keratex) help maintain horn integrity during wet seasons.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🧪</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Rule Out Metabolic Causes</h4>
         <p>Horses with recurrent WLD at the toe — especially older horses or easy keepers — should be tested for PPID (Cushing's) and EMS/insulin dysregulation. These conditions drive chronic laminitic separation that perpetually opens the white line to infection.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🌾</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Hoof-Quality Nutrition</h4>
         <p>Dense, well-keratinized horn is mechanically resistant to WLD invasion. Biotin (20mg/day), zinc, copper, and methionine all support strong horn quality. Begin supplementation before problems appear — hoof horn changes take months to manifest.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🔨</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Prompt Repair of Wall Cracks</h4>
         <p>Any hoof wall crack, chip, or separation is a potential WLD entry point. Have your farrier address cracks promptly — a simple crack repair during a routine visit costs far less than treating the WLD that enters through an ignored crack three months later.</p>
       </div>

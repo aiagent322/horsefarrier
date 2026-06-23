@@ -97,7 +97,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 /* RISK FACTORS */
 .risk-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
 .risk-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;display:flex;gap:14px;align-items:flex-start}
-.risk-icon{font-size:1.5rem;flex-shrink:0;line-height:1;margin-top:2px}
 .risk-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:3px}
 .risk-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
 .risk-tag{display:inline-flex;font-size:0.67rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-bottom:5px}
@@ -127,7 +126,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .role-panel{display:none;padding:20px 0}
 .role-panel.active{display:block}
 .role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
-.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
 .role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
 .role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
 
@@ -153,18 +151,15 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 
 /* CALLOUT BOXES */
 .caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
-.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
 .caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
 .caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
 .tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
-.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
 .tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
 .tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
 
 /* PREVENTION */
 .prevention-grid{display:flex;flex-direction:column;gap:12px}
 .prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
-.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
 .prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
 .prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
 
@@ -536,48 +531,42 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
   <div class="risk-grid">
     <div class="risk-card">
-      <div class="risk-icon">🐎</div>
-      <div class="risk-body">
+            <div class="risk-body">
         <div class="risk-tag high">High Risk</div>
         <h4>Breed Predisposition</h4>
         <p>Quarter Horses, Warmbloods, and Thoroughbreds are over-represented in navicular cases. These breeds combine athletic use with hoof conformation traits — relatively small feet for body size — that increase navicular loading.</p>
       </div>
     </div>
     <div class="risk-card">
-      <div class="risk-icon">📐</div>
-      <div class="risk-body">
+            <div class="risk-body">
         <div class="risk-tag high">High Risk</div>
         <h4>Long Toe / Low Heel Conformation</h4>
         <p>The most correctable risk factor. A long toe increases the moment arm of the DDFT over the navicular bone with every step. Low heels drop the pastern angle and increase tendon tension. This combination concentrates enormous force on the navicular apparatus.</p>
       </div>
     </div>
     <div class="risk-card">
-      <div class="risk-icon">🏟️</div>
-      <div class="risk-body">
+            <div class="risk-body">
         <div class="risk-tag high">High Risk</div>
         <h4>Hard Footing &amp; Heavy Workload</h4>
         <p>Horses worked regularly on hard, unyielding surfaces — packed arena sand, roads, asphalt — suffer greater concussive loading of the heel region. High-intensity disciplines intensify this stress further.</p>
       </div>
     </div>
     <div class="risk-card">
-      <div class="risk-icon">📏</div>
-      <div class="risk-body">
+            <div class="risk-body">
         <div class="risk-tag moderate">Moderate Risk</div>
         <h4>Upright Pasterns &amp; Small Feet</h4>
         <p>Horses with steep, upright pasterns transmit concussion less effectively and load the heel structures more directly. Small hooves relative to body weight increase pressure per square centimeter on the navicular region.</p>
       </div>
     </div>
     <div class="risk-card">
-      <div class="risk-icon">📅</div>
-      <div class="risk-body">
+            <div class="risk-body">
         <div class="risk-tag moderate">Moderate Risk</div>
         <h4>Irregular Farrier Intervals</h4>
         <p>Long trimming intervals allow the toe to grow out and heels to crush forward, recreating the long toe / low heel pattern. Horses with navicular predisposition require strict 5–6 week farrier schedules to maintain the trim that reduces navicular loading.</p>
       </div>
     </div>
     <div class="risk-card">
-      <div class="risk-icon">🧬</div>
-      <div class="risk-body">
+            <div class="risk-body">
         <div class="risk-tag contributing">Contributing</div>
         <h4>Genetics</h4>
         <p>Navicular syndrome has a heritable component — certain bloodlines have higher prevalence. This is not a reason to avoid breeding affected horses entirely, but conformation traits that predispose to navicular (small feet, upright pasterns) should be considered in breeding decisions.</p>
@@ -650,8 +639,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- FARRIER PANEL -->
   <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
     <div class="role-header">
-      <div class="role-icon">🔨</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Farrier's Role — The Most Important Long-Term Variable</h3>
         <p>In navicular syndrome, the farrier's contribution is arguably more important than any medication or injection. The biomechanical environment of the foot — toe length, heel height, breakover position, shoeing material and style — determines how much force the navicular apparatus receives with every stride. Get the shoeing right and the horse stays comfortable. Get it wrong and no amount of medication will compensate.</p>
       </div>
@@ -751,8 +739,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="tip-box">
-      <div class="tip-icon">💡</div>
-      <div class="tip-body">
+            <div class="tip-body">
         <strong>Farrier–Vet Collaboration Is Non-Negotiable</strong>
         <p>The best navicular outcomes come from a farrier and vet who communicate directly — sharing radiographs, discussing the trim strategy, and adjusting the plan together. If your farrier has never seen your horse's X-rays, or your vet has never discussed shoeing goals with your farrier, fix that at the next visit. These two professionals working independently, rather than as a team, is the most common reason navicular management fails.</p>
       </div>
@@ -762,8 +749,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- VET PANEL -->
   <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
     <div class="role-header">
-      <div class="role-icon">🩺</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Veterinarian's Role — Diagnosis, Pain Management, Disease Modification</h3>
         <p>The vet leads diagnosis and medical management. For navicular syndrome, the goal of veterinary treatment is reducing inflammation, slowing degeneration, and managing pain — enabling the horse to use its feet correctly so that the farrier's biomechanical corrections can take effect.</p>
       </div>
@@ -861,8 +847,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   <!-- OWNER PANEL -->
   <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
     <div class="role-header">
-      <div class="role-icon">🧤</div>
-      <div class="role-header-text">
+            <div class="role-header-text">
         <h3>The Horse Owner's Role — Footing, Workload, Monitoring, Consistency</h3>
         <p>Navicular syndrome is a chronic condition — there is no cure, only management. The owner's role is maintaining the environment, monitoring daily comfort, enforcing the shoeing schedule, and making intelligent workload decisions that keep the horse sound long-term rather than pushing for performance at the cost of soundness.</p>
       </div>
@@ -932,8 +917,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
 
     <div class="caution-box">
-      <div class="caution-icon">⛔</div>
-      <div class="caution-body">
+            <div class="caution-body">
         <strong>Don't Mask Pain and Work Through It</strong>
         <p>Navicular horses given NSAIDs to control pain can feel deceptively comfortable and be pushed beyond what their damaged structures can safely tolerate. A horse that is comfortable only because of bute or injections should have its workload assessed honestly — riding a medicated horse as if it were sound can accelerate the very structural damage you are trying to manage. Use medication to support healing and correct biomechanics, not to enable performance that the horse cannot sustain without drugs.</p>
       </div>
@@ -949,43 +933,37 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
   <div class="prevention-grid">
     <div class="prev-card">
-      <div class="prev-icon">📅</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Strict Trimming Schedule</h4>
         <p>The most effective prevention is maintaining correct hoof-pastern axis through regular trimming. Never allow the toe to grow long. For high-risk horses (Quarter Horses in performance work, horses with small feet), 5–6 week farrier visits from the start of training.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🏟️</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Good Footing Always</h4>
         <p>Years of work on hard, unforgiving surfaces accumulate damage to the navicular apparatus. Maintain arena footing properly. Avoid unnecessary road work without pads. This is the most controllable environmental factor in navicular prevention.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🔍</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Act on Early Signs</h4>
         <p>A horse that begins toe-landing, stumbling occasionally, or showing morning stiffness in the fronts deserves a lameness evaluation — not "wait and see." Navicular diagnosed at the early soft-tissue phase responds far better to treatment than disease caught after years of bone remodeling.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">⚖️</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Maintain Healthy Weight</h4>
         <p>Every extra kilogram of body weight increases navicular loading on every stride. An overweight performance horse is at substantially higher risk of navicular deterioration. Body condition score 4–5 of 9 is ideal for navicular-prone horses.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🧬</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Pre-Purchase Evaluation</h4>
         <p>Any performance horse purchase should include a full lameness evaluation including flexion tests, nerve blocks if indicated, and radiographs of all four feet. Navicular changes on pre-purchase X-rays must be interpreted in context — some horses with radiographic changes perform for years; others are a liability. Get expert interpretation.</p>
       </div>
     </div>
     <div class="prev-card">
-      <div class="prev-icon">🌾</div>
-      <div class="prev-body">
+            <div class="prev-body">
         <h4>Hoof Quality Nutrition</h4>
         <p>Dense, quality hoof horn holds shoes better, provides better biomechanical cushion, and resists the white line disease that can complicate navicular cases. Start biotin and a balanced mineral supplement before problems appear — preventive supplementation is cheaper than remedial care.</p>
       </div>

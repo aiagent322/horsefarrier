@@ -178,6 +178,18 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 @media(min-width:1024px){.page-hero h1{font-size:2.4rem}}
 /* ── end layout ────────────────────────────────── */
 
+
+/* ── Content overflow fix ──────────────────────── */
+.content-wrap *{overflow-wrap:break-word;word-break:break-word;max-width:100%}
+.disc-facts{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.disc-facts li{font-size:0.93rem;color:var(--ink-soft);line-height:1.6;overflow-wrap:break-word;word-break:break-word}
+.disc-section{margin-bottom:28px}
+.disc-section h2{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:var(--ink);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--rope-pale)}
+.disc-section p{font-size:0.93rem;color:var(--ink-soft);line-height:1.7;margin-bottom:12px}
+.back-link{display:inline-flex;align-items:center;color:var(--leather);font-weight:700;text-decoration:none;font-size:0.88rem;margin-bottom:20px}
+.back-link:hover{text-decoration:underline}
+/* ── end overflow fix ──────────────────────────── */
+
 </style>
 
 <meta property="og:title" content="Eventing — Shoeing Guide — HorseFarrier.net">

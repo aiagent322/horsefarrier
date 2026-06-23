@@ -249,6 +249,17 @@ footer a:hover{text-decoration:underline}
   .site-nav-inner{padding:0 8px}
 }
 
+
+/* ── VIDEO FACADE — lite embed ───────────────────── */
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* ── end video facade ────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CollectionPage","name":"Farrier Videos — Watch & Learn","description":"Educational farrier and hoof care videos from expert horseshoers.","url":"https://horsefarrier.net/videos/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
@@ -317,7 +328,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="restoration">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/cZbnSRVBkTw" title="I Almost Gave Up on This Hoof" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="cZbnSRVBkTw" data-title="I Almost Gave Up on This Hoof" role="button" tabindex="0" aria-label="Play: I Almost Gave Up on This Hoof">
+          <img src="https://img.youtube.com/vi/cZbnSRVBkTw/hqdefault.jpg" alt="I Almost Gave Up on This Hoof" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-restoration">🔨 Restoration</div>
@@ -328,7 +342,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="restoration">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/FBXjzbaH9jU" title="This Hoof Was in Poor Shape… Wait Until You See the Fix!" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="FBXjzbaH9jU" data-title="This Hoof Was in Poor Shape… Wait Until You See the Fix!" role="button" tabindex="0" aria-label="Play: This Hoof Was in Poor Shape… Wait Until You See the Fix!">
+          <img src="https://img.youtube.com/vi/FBXjzbaH9jU/hqdefault.jpg" alt="This Hoof Was in Poor Shape… Wait Until You See the Fix!" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-restoration">🔨 Restoration</div>
@@ -339,7 +356,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="restoration">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/SQA9hvTEB5k" title="Satisfying Hoof Restoration | 4K Farrier ASMR" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="SQA9hvTEB5k" data-title="Satisfying Hoof Restoration | 4K Farrier ASMR" role="button" tabindex="0" aria-label="Play: Satisfying Hoof Restoration | 4K Farrier ASMR">
+          <img src="https://img.youtube.com/vi/SQA9hvTEB5k/hqdefault.jpg" alt="Satisfying Hoof Restoration | 4K Farrier ASMR" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-restoration">🔨 Restoration</div>
@@ -350,7 +370,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="restoration">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/RAwegcH0_9g" title="Satisfying Full Horse Hoof Restoration | 4K Farrier ASMR" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="RAwegcH0_9g" data-title="Satisfying Full Horse Hoof Restoration | 4K Farrier ASMR" role="button" tabindex="0" aria-label="Play: Satisfying Full Horse Hoof Restoration | 4K Farrier ASMR">
+          <img src="https://img.youtube.com/vi/RAwegcH0_9g/hqdefault.jpg" alt="Satisfying Full Horse Hoof Restoration | 4K Farrier ASMR" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-restoration">🔨 Restoration</div>
@@ -361,7 +384,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/gmapH-FKXMw" title="Horseshoeing Basics with World Renowned John McKenzie" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="gmapH-FKXMw" data-title="Horseshoeing Basics with World Renowned John McKenzie" role="button" tabindex="0" aria-label="Play: Horseshoeing Basics with World Renowned John McKenzie">
+          <img src="https://img.youtube.com/vi/gmapH-FKXMw/hqdefault.jpg" alt="Horseshoeing Basics with World Renowned John McKenzie" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -372,7 +398,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/EVcXHoqly68" title="A Day in the Life of a Farrier | ABC Australia" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="EVcXHoqly68" data-title="A Day in the Life of a Farrier | ABC Australia" role="button" tabindex="0" aria-label="Play: A Day in the Life of a Farrier | ABC Australia">
+          <img src="https://img.youtube.com/vi/EVcXHoqly68/hqdefault.jpg" alt="A Day in the Life of a Farrier | ABC Australia" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -383,7 +412,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="therapeutic">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/kshpWz-o9CI" title="Painful Horse Hoof | Satisfying Therapeutic Horseshoeing" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="kshpWz-o9CI" data-title="Painful Horse Hoof | Satisfying Therapeutic Horseshoeing" role="button" tabindex="0" aria-label="Play: Painful Horse Hoof | Satisfying Therapeutic Horseshoeing">
+          <img src="https://img.youtube.com/vi/kshpWz-o9CI/hqdefault.jpg" alt="Painful Horse Hoof | Satisfying Therapeutic Horseshoeing" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-therapeutic">⚕️ Therapeutic</div>
@@ -394,7 +426,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="therapeutic">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/U6P-HalEyeM" title="Therapeutic Horseshoeing | S&S Horseshoeing" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="RXEyII2csj8" data-title="Therapeutic Horseshoeing | S&S Horseshoeing" role="button" tabindex="0" aria-label="Play: Therapeutic Horseshoeing | S&S Horseshoeing">
+          <img src="https://img.youtube.com/vi/RXEyII2csj8/hqdefault.jpg" alt="Therapeutic Horseshoeing | S&S Horseshoeing" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-therapeutic">⚕️ Therapeutic</div>
@@ -405,7 +440,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="therapeutic">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/OJMdsibCzDs" title="Recovering Hoof from Broken Bone | Satisfying Therapeutic Horseshoeing" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="OJMdsibCzDs" data-title="Recovering Hoof from Broken Bone | Satisfying Therapeutic Horseshoeing" role="button" tabindex="0" aria-label="Play: Recovering Hoof from Broken Bone | Satisfying Therapeutic Horseshoeing">
+          <img src="https://img.youtube.com/vi/OJMdsibCzDs/hqdefault.jpg" alt="Recovering Hoof from Broken Bone | Satisfying Therapeutic Horseshoeing" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-therapeutic">⚕️ Therapeutic</div>
@@ -416,7 +454,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="restoration">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/AO5qyM_mCEw" title="Horse Hoof Repaired | Horse Rips Off His Shoe | Hoof Restoration" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="AO5qyM_mCEw" data-title="Horse Hoof Repaired | Horse Rips Off His Shoe | Hoof Restoration" role="button" tabindex="0" aria-label="Play: Horse Hoof Repaired | Horse Rips Off His Shoe | Hoof Restoration">
+          <img src="https://img.youtube.com/vi/AO5qyM_mCEw/hqdefault.jpg" alt="Horse Hoof Repaired | Horse Rips Off His Shoe | Hoof Restoration" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-restoration">🔨 Restoration</div>
@@ -427,7 +468,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/7hmRx7eDUQg" title="Horseshoeing with Sidebone Shoe // Handmade Horseshoes" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="7hmRx7eDUQg" data-title="Horseshoeing with Sidebone Shoe // Handmade Horseshoes" role="button" tabindex="0" aria-label="Play: Horseshoeing with Sidebone Shoe // Handmade Horseshoes">
+          <img src="https://img.youtube.com/vi/7hmRx7eDUQg/hqdefault.jpg" alt="Horseshoeing with Sidebone Shoe // Handmade Horseshoes" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -438,7 +482,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="therapeutic">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/kndeobQEg9M" title="Therapeutic Horseshoeing // Making Progress!! // Pinto Bean Update" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="kndeobQEg9M" data-title="Therapeutic Horseshoeing // Making Progress!! // Pinto Bean Update" role="button" tabindex="0" aria-label="Play: Therapeutic Horseshoeing // Making Progress!! // Pinto Bean Update">
+          <img src="https://img.youtube.com/vi/kndeobQEg9M/hqdefault.jpg" alt="Therapeutic Horseshoeing // Making Progress!! // Pinto Bean Update" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-therapeutic">⚕️ Therapeutic</div>
@@ -449,7 +496,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="navicular">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/2btDYGPHSIc" title="Horseshoeing for Navicular Disease — Extended Version" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="2btDYGPHSIc" data-title="Horseshoeing for Navicular Disease — Extended Version" role="button" tabindex="0" aria-label="Play: Horseshoeing for Navicular Disease — Extended Version">
+          <img src="https://img.youtube.com/vi/2btDYGPHSIc/hqdefault.jpg" alt="Horseshoeing for Navicular Disease — Extended Version" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-navicular">🦴 Navicular</div>
@@ -460,7 +510,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/hnXU9_VTKAY" title="Horseshoeing — Why a Horse Might Only Need Front Shoes" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="hnXU9_VTKAY" data-title="Horseshoeing — Why a Horse Might Only Need Front Shoes" role="button" tabindex="0" aria-label="Play: Horseshoeing — Why a Horse Might Only Need Front Shoes">
+          <img src="https://img.youtube.com/vi/hnXU9_VTKAY/hqdefault.jpg" alt="Horseshoeing — Why a Horse Might Only Need Front Shoes" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -471,7 +524,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/xCmeaxY4e5k" title="How to Become a Farrier — The Next Generation of Horseshoe-Makers" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="xCmeaxY4e5k" data-title="How to Become a Farrier — The Next Generation of Horseshoe-Makers" role="button" tabindex="0" aria-label="Play: How to Become a Farrier — The Next Generation of Horseshoe-Makers">
+          <img src="https://img.youtube.com/vi/xCmeaxY4e5k/hqdefault.jpg" alt="How to Become a Farrier — The Next Generation of Horseshoe-Makers" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -482,7 +538,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/uc6r0HmDVzY" title="Barefoot Basics" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="uc6r0HmDVzY" data-title="Barefoot Basics" role="button" tabindex="0" aria-label="Play: Barefoot Basics">
+          <img src="https://img.youtube.com/vi/uc6r0HmDVzY/hqdefault.jpg" alt="Barefoot Basics" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -493,7 +552,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="performance">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/TY33s4MiLIA" title="Shoeing Performance Horses — Stronger Higher Nails" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="TY33s4MiLIA" data-title="Shoeing Performance Horses — Stronger Higher Nails" role="button" tabindex="0" aria-label="Play: Shoeing Performance Horses — Stronger Higher Nails">
+          <img src="https://img.youtube.com/vi/TY33s4MiLIA/hqdefault.jpg" alt="Shoeing Performance Horses — Stronger Higher Nails" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-performance">🏆 Performance</div>
@@ -504,7 +566,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="basics">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/lwY39LOl0ks" title="Shoeing a Horse Start to Finish — Blane Chapman" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="lwY39LOl0ks" data-title="Shoeing a Horse Start to Finish — Blane Chapman" role="button" tabindex="0" aria-label="Play: Shoeing a Horse Start to Finish — Blane Chapman">
+          <img src="https://img.youtube.com/vi/lwY39LOl0ks/hqdefault.jpg" alt="Shoeing a Horse Start to Finish — Blane Chapman" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-basics">📚 Basics</div>
@@ -515,7 +580,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="navicular">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/nqHPvCi8eOY" title="Navicular Problem? Let's Fix It!" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="nqHPvCi8eOY" data-title="Navicular Problem? Let's Fix It!" role="button" tabindex="0" aria-label="Play: Navicular Problem? Let's Fix It!">
+          <img src="https://img.youtube.com/vi/nqHPvCi8eOY/hqdefault.jpg" alt="Navicular Problem? Let's Fix It!" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-navicular">🦴 Navicular</div>
@@ -526,7 +594,10 @@ footer a:hover{text-decoration:underline}
 
     <div class="video-card" data-cat="navicular">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/iqIWX87xXKI" title="Horseshoeing for Navicular Disease and Thrush // High Heels???" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="vid-facade" data-vid="iqIWX87xXKI" data-title="Horseshoeing for Navicular Disease and Thrush // High Heels???" role="button" tabindex="0" aria-label="Play: Horseshoeing for Navicular Disease and Thrush // High Heels???">
+          <img src="https://img.youtube.com/vi/iqIWX87xXKI/hqdefault.jpg" alt="Horseshoeing for Navicular Disease and Thrush // High Heels???" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
       </div>
       <div class="video-info">
         <div class="video-tag t-navicular">🦴 Navicular</div>
@@ -608,6 +679,19 @@ footer a:hover{text-decoration:underline}
     });
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid; var t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

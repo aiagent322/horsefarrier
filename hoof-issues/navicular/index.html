@@ -380,6 +380,17 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   .site-nav-inner{padding:0 8px}
 }
 
+
+/* ── VIDEO FACADE — lite embed ───────────────────── */
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* ── end video facade ────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {
@@ -992,7 +1003,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <div class="video-grid">
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/L3xEun8GYis" title="Navicular Problems in Horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="L3xEun8GYis" data-title="Navicular Problems in Horses" role="button" tabindex="0" aria-label="Play: Navicular Problems in Horses">
+          <img src="https://img.youtube.com/vi/L3xEun8GYis/hqdefault.jpg" alt="Navicular Problems in Horses" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🩺 Vet Overview</div>
@@ -1002,7 +1016,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/Q_YDyNizYpc" title="Ask the Vet - Dealing with Navicular issues in horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="Q_YDyNizYpc" data-title="Ask the Vet - Dealing with Navicular issues in horses" role="button" tabindex="0" aria-label="Play: Ask the Vet - Dealing with Navicular issues in horses">
+          <img src="https://img.youtube.com/vi/Q_YDyNizYpc/hqdefault.jpg" alt="Ask the Vet - Dealing with Navicular issues in horses" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🩺 Ask the Vet</div>
@@ -1012,7 +1029,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/6T1kVpw20oQ" title="Why Navicular Disease Is Not A Death Sentence" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="6T1kVpw20oQ" data-title="Why Navicular Disease Is Not A Death Sentence" role="button" tabindex="0" aria-label="Play: Why Navicular Disease Is Not A Death Sentence">
+          <img src="https://img.youtube.com/vi/6T1kVpw20oQ/hqdefault.jpg" alt="Why Navicular Disease Is Not A Death Sentence" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Farrier Perspective</div>
@@ -1022,7 +1042,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/X_nBJ2UBNw8" title="Hot Shoeing Navicular horse" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="X_nBJ2UBNw8" data-title="Hot Shoeing Navicular horse" role="button" tabindex="0" aria-label="Play: Hot Shoeing Navicular horse">
+          <img src="https://img.youtube.com/vi/X_nBJ2UBNw8/hqdefault.jpg" alt="Hot Shoeing Navicular horse" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Therapeutic Shoeing</div>
@@ -1175,6 +1198,19 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     });
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid; var t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

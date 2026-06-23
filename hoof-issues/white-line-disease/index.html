@@ -373,6 +373,17 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   .site-nav-inner{padding:0 8px}
 }
 
+
+/* ── VIDEO FACADE — lite embed ───────────────────── */
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* ── end video facade ────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {
@@ -883,7 +894,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <div class="video-grid">
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/L2HlnmJdntg" title="White line disease resection" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="L2HlnmJdntg" data-title="White line disease resection" role="button" tabindex="0" aria-label="Play: White line disease resection">
+          <img src="https://img.youtube.com/vi/L2HlnmJdntg/hqdefault.jpg" alt="White line disease resection" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Farrier Resection</div>
@@ -893,7 +907,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/Y3DOriLw6TQ" title="Removing White Line Disease from a horse's hoof." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="Y3DOriLw6TQ" data-title="Removing White Line Disease from a horse's hoof." role="button" tabindex="0" aria-label="Play: Removing White Line Disease from a horse's hoof.">
+          <img src="https://img.youtube.com/vi/Y3DOriLw6TQ/hqdefault.jpg" alt="Removing White Line Disease from a horse's hoof." loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Removal Walkthrough</div>
@@ -903,7 +920,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/jXkuWgqhSNA" title="White line disease treatment and hoof cast." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="jXkuWgqhSNA" data-title="White line disease treatment and hoof cast." role="button" tabindex="0" aria-label="Play: White line disease treatment and hoof cast.">
+          <img src="https://img.youtube.com/vi/jXkuWgqhSNA/hqdefault.jpg" alt="White line disease treatment and hoof cast." loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Treatment &amp; Hoof Cast</div>
@@ -913,7 +933,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/tXMMRun2SaE" title="White Line Disease in Horses? Here's How to Treat It Fast!" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="tXMMRun2SaE" data-title="White Line Disease in Horses? Here's How to Treat It Fast!" role="button" tabindex="0" aria-label="Play: White Line Disease in Horses? Here's How to Treat It Fast!">
+          <img src="https://img.youtube.com/vi/tXMMRun2SaE/hqdefault.jpg" alt="White Line Disease in Horses? Here's How to Treat It Fast!" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🩺 Vet Guidance</div>
@@ -1068,6 +1091,19 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     });
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid; var t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

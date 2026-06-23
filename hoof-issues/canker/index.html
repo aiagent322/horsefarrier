@@ -221,6 +221,17 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   .prevention-grid{grid-template-columns:1fr 1fr 1fr}
   .hero h1{font-size:2.6rem}
 }
+
+/* ── VIDEO FACADE — lite embed ───────────────────── */
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* ── end video facade ────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {
@@ -632,7 +643,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <div class="video-grid">
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/n1onTo7u0Yc" title="Canker in Horses Explained | Causes & Treatment" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="n1onTo7u0Yc" data-title="Canker in Horses Explained | Causes & Treatment" role="button" tabindex="0" aria-label="Play: Canker in Horses Explained | Causes & Treatment">
+          <img src="https://img.youtube.com/vi/n1onTo7u0Yc/hqdefault.jpg" alt="Canker in Horses Explained | Causes & Treatment" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">📋 Condition Explained</div>
@@ -642,7 +656,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/DF2Rizemz4I" title="Thrush and Canker in Horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="DF2Rizemz4I" data-title="Thrush and Canker in Horses" role="button" tabindex="0" aria-label="Play: Thrush and Canker in Horses">
+          <img src="https://img.youtube.com/vi/DF2Rizemz4I/hqdefault.jpg" alt="Thrush and Canker in Horses" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🩺 Vet Discussion</div>
@@ -652,7 +669,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/KkrXUcoHePU" title="Master Farrier Combats Canker Foot Disease - Clydesdale Horse Rehab Journey" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="KkrXUcoHePU" data-title="Master Farrier Combats Canker Foot Disease - Clydesdale Horse Rehab Journey" role="button" tabindex="0" aria-label="Play: Master Farrier Combats Canker Foot Disease - Clydesdale Horse Rehab Journey">
+          <img src="https://img.youtube.com/vi/KkrXUcoHePU/hqdefault.jpg" alt="Master Farrier Combats Canker Foot Disease - Clydesdale Horse Rehab Journey" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Real Rehab Case</div>
@@ -662,7 +682,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/Mn-3uDSx0PE" title="Diseased Horse Frog - Farrier" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="Mn-3uDSx0PE" data-title="Diseased Horse Frog - Farrier" role="button" tabindex="0" aria-label="Play: Diseased Horse Frog - Farrier">
+          <img src="https://img.youtube.com/vi/Mn-3uDSx0PE/hqdefault.jpg" alt="Diseased Horse Frog - Farrier" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Farrier Perspective</div>
@@ -780,6 +803,19 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     });}
   });
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid; var t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

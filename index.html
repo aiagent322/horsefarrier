@@ -317,6 +317,17 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   .site-nav-inner{padding:0 8px}
 }
 
+
+/* ── VIDEO FACADE — lite embed ───────────────────── */
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* ── end video facade ────────────────────────────── */
+
 </style>
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -496,7 +507,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <div class="featured-videos">
       <div class="featured-video">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/cZbnSRVBkTw?rel=0" title="I Almost Gave Up on This Hoof" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="vid-facade" data-vid="cZbnSRVBkTw" data-title="I Almost Gave Up on This Hoof" role="button" tabindex="0" aria-label="Play: I Almost Gave Up on This Hoof">
+          <img src="https://img.youtube.com/vi/cZbnSRVBkTw/hqdefault.jpg" alt="I Almost Gave Up on This Hoof" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-label">
           <span class="video-cat">🔨 Restoration</span>
@@ -506,7 +520,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="featured-video">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/kshpWz-o9CI?rel=0" title="Therapeutic Horseshoeing" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="vid-facade" data-vid="kshpWz-o9CI" data-title="Therapeutic Horseshoeing" role="button" tabindex="0" aria-label="Play: Therapeutic Horseshoeing">
+          <img src="https://img.youtube.com/vi/kshpWz-o9CI/hqdefault.jpg" alt="Therapeutic Horseshoeing" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-label">
           <span class="video-cat">⚕️ Therapeutic</span>
@@ -599,6 +616,19 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     });
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid; var t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

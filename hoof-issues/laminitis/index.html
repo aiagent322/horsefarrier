@@ -394,6 +394,17 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   .site-nav-inner{padding:0 8px}
 }
 
+
+/* ── VIDEO FACADE — lite embed ───────────────────── */
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* ── end video facade ────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {
@@ -959,7 +970,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <div class="video-grid">
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/ubUMx2SrK4Y" title="The Anatomy of Laminitis in Horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="ubUMx2SrK4Y" data-title="The Anatomy of Laminitis in Horses" role="button" tabindex="0" aria-label="Play: The Anatomy of Laminitis in Horses">
+          <img src="https://img.youtube.com/vi/ubUMx2SrK4Y/hqdefault.jpg" alt="The Anatomy of Laminitis in Horses" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔬 Anatomy Explained</div>
@@ -969,7 +983,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/ZGnJopVJsTo" title="Ask the Vet - Difference between founder and laminitis" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="ZGnJopVJsTo" data-title="Ask the Vet - Difference between founder and laminitis" role="button" tabindex="0" aria-label="Play: Ask the Vet - Difference between founder and laminitis">
+          <img src="https://img.youtube.com/vi/ZGnJopVJsTo/hqdefault.jpg" alt="Ask the Vet - Difference between founder and laminitis" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🩺 Vet Explains</div>
@@ -979,7 +996,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/1BSrxwBmK6E" title="Understanding Laminitis: Signs, Causes, and Treatment Options" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="1BSrxwBmK6E" data-title="Understanding Laminitis: Signs, Causes, and Treatment Options" role="button" tabindex="0" aria-label="Play: Understanding Laminitis: Signs, Causes, and Treatment Options">
+          <img src="https://img.youtube.com/vi/1BSrxwBmK6E/hqdefault.jpg" alt="Understanding Laminitis: Signs, Causes, and Treatment Options" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">📚 Signs &amp; Treatment</div>
@@ -989,7 +1009,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
       </div>
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/EZDsQ8-w5v4" title="Shoeing a Laminitic Horse" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="vid-facade" data-vid="EZDsQ8-w5v4" data-title="Shoeing a Laminitic Horse" role="button" tabindex="0" aria-label="Play: Shoeing a Laminitic Horse">
+          <img src="https://img.youtube.com/vi/EZDsQ8-w5v4/hqdefault.jpg" alt="Shoeing a Laminitic Horse" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div></iframe>
         </div>
         <div class="video-meta">
           <div class="video-cat">🔨 Therapeutic Shoeing</div>
@@ -1142,6 +1165,19 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     });
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid; var t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

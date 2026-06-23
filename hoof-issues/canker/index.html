@@ -43,17 +43,6 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .topbar-divider{display:none}
 .topbar-tagline{display:none}
 .bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
-.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
-.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px;flex-wrap:wrap}
-.nav-link{display:flex;align-items:center;padding:0 12px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
-.nav-link:hover,.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
-.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
-.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
-.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
-.nav-drawer.open{display:flex}
-.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
-.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
-@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
 .breadcrumb{background:var(--sand);border-bottom:1px solid var(--border);padding:10px max(16px,env(safe-area-inset-right))}
 .breadcrumb-inner{max-width:860px;margin:0 auto;font-size:0.78rem;color:var(--ink-muted);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .breadcrumb-inner a{color:var(--leather);text-decoration:none;font-weight:600}
@@ -227,6 +216,25 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 .vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
 /* ── end video facade ────────────────────────────── */
 
+
+/* ═══ SITE NAV ═══ */
+.site-nav{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.1);border-bottom:2px solid var(--rope);position:sticky;top:var(--topbar-h,54px);z-index:150;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.site-nav-inner{display:flex;align-items:stretch;overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 4px;max-width:1200px;margin:0 auto}
+.site-nav-inner::-webkit-scrollbar{display:none}
+.sn-link{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;border-top:3px solid transparent;transition:color 0.18s,border-color 0.18s,background 0.18s;letter-spacing:0.01em}
+.sn-link:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-link.active{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.06)}
+.sn-drop{position:relative;display:flex;align-items:stretch;flex-shrink:0}
+.sn-drop-btn{display:flex;align-items:center;flex-shrink:0;padding:0 13px;height:44px;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.72);background:none;border:none;border-bottom:3px solid transparent;border-top:3px solid transparent;white-space:nowrap;cursor:pointer;font-family:inherit;letter-spacing:0.01em;transition:color 0.18s,border-color 0.18s,background 0.18s}
+.sn-drop-btn:hover{color:var(--rope-light);border-bottom-color:var(--rope);background:rgba(255,255,255,0.04)}
+.sn-drop-panel{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.12);border-top:2px solid var(--rope);border-radius:0 0 var(--radius) var(--radius);box-shadow:0 8px 24px rgba(0,0,0,0.35);z-index:200;padding:4px 0}
+.sn-drop:hover .sn-drop-panel,.sn-drop:focus-within .sn-drop-panel,.sn-drop.open .sn-drop-panel{display:block}
+.sn-drop-link{display:flex;align-items:center;padding:11px 18px;font-size:0.83rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;border-left:3px solid transparent;transition:color 0.15s,background 0.15s,border-color 0.15s;white-space:nowrap;gap:8px}
+.sn-drop-link:hover,.sn-drop-link.active{color:var(--rope-light);background:rgba(255,255,255,0.06);border-left-color:var(--rope)}
+.sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+@media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
+@media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -257,51 +265,46 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
 <div class="topbar">
-  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
-    <div class="topbar-brand">
-      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
-      <div class="topbar-divider"></div>
-      <div class="topbar-tagline">The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a></div>
-    </div>
-  </div>
-  <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-  </button>
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
   <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
-    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
   </a>
 </div>
-<nav class="nav-bar" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
-    <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
-    <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
-    <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
-    <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
-    <a href="/alternative-horseshoes/" class="nav-link">Alternative Shoes</a>
-    <a href="/hoof-issues/" class="nav-link active">Top 10 Hoof Issues</a>
-    <a href="/faq/" class="nav-link">FAQ</a>
-    <a href="/glossary/" class="nav-link">Glossary</a>
-    <a href="/barefoot-vs-shod/" class="nav-link">Barefoot vs Shod</a>
-    <a href="/corrective-shoeing/" class="nav-link">Corrective Shoeing</a>
-    <a href="/therapeutic-shoeing/" class="nav-link">Therapeutic Shoeing</a>
-    <a href="/diy-horseshoeing/" class="nav-link">DIY Horseshoeing</a>
-    <a href="/foal-hoof-care/" class="nav-link">Foal Hoof Care</a>
-    <a href="/find-a-farrier/" class="nav-link">Find a Farrier</a>
-    <a href="/videos/" class="nav-link">Videos</a>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/hoof-care/" class="sn-link">Hoof Care</a>
+    <a href="/farrier-tools/" class="sn-link">Farrier Tools</a>
+    <a href="/horseshoes/" class="sn-link">Horseshoe Types</a>
+    <a href="/alternative-horseshoes/" class="sn-link">Alternative Shoes</a>
+    <a href="/hoof-issues/" class="sn-link active">Hoof Issues</a>
+    <div class="sn-div" aria-hidden="true"></div>
+    <div class="sn-drop">
+      <button class="sn-drop-btn" aria-haspopup="true" aria-expanded="false" aria-controls="disc-panel">Disciplines &#9662;</button>
+      <div class="sn-drop-panel" id="disc-panel" role="menu">
+        <a href="/disciplines/reining/" class="sn-drop-link" role="menuitem">&#129312; Reining</a>
+        <a href="/disciplines/cutting/" class="sn-drop-link" role="menuitem">&#128004; Cutting &amp; Cow Horse</a>
+        <a href="/disciplines/barrel-racing/" class="sn-drop-link" role="menuitem">&#127937; Barrel Racing</a>
+        <a href="/disciplines/dressage/" class="sn-drop-link" role="menuitem">&#127913; Dressage</a>
+        <a href="/disciplines/show-jumping/" class="sn-drop-link" role="menuitem">&#127943; Show Jumping</a>
+        <a href="/disciplines/eventing/" class="sn-drop-link" role="menuitem">&#9968;&#65039; Eventing</a>
+        <a href="/disciplines/thoroughbred-racing/" class="sn-drop-link" role="menuitem">&#127942; Thoroughbred Racing</a>
+        <a href="/disciplines/trail-endurance/" class="sn-drop-link" role="menuitem">&#127794; Trail &amp; Endurance</a>
+        <a href="/disciplines/draft-horses/" class="sn-drop-link" role="menuitem">&#128014; Draft Horses</a>
+      </div>
+    </div>
+    <div class="sn-div" aria-hidden="true"></div>
+    <a href="/breed-hooves/" class="sn-link">Breed Hooves</a>
+    <a href="/nutrition/" class="sn-link">Nutrition</a>
+    <a href="/barefoot-vs-shod/" class="sn-link">Barefoot vs Shod</a>
+    <a href="/corrective-shoeing/" class="sn-link">Corrective Shoeing</a>
+    <a href="/therapeutic-shoeing/" class="sn-link">Therapeutic Shoeing</a>
+    <a href="/diy-horseshoeing/" class="sn-link">DIY Horseshoeing</a>
+    <a href="/foal-hoof-care/" class="sn-link">Foal Hoof Care</a>
+    <a href="/find-a-farrier/" class="sn-link">Find a Farrier</a>
+    <a href="/faq/" class="sn-link">FAQ</a>
+    <a href="/glossary/" class="sn-link">Glossary</a>
+    <a href="/videos/" class="sn-link">Videos</a>
   </div>
-</nav>
-<nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
-  <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
-  <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
-  <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
-  <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
-  <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
-    <a href="/alternative-horseshoes/" class="nav-link">Alternative Shoes</a>
-  <a href="/hoof-issues/" class="nav-link active">🏥 Top 10 Hoof Issues</a>
-  <a href="/faq/" class="nav-link">❓ FAQ</a>
-  <a href="/glossary/" class="nav-link">📖 Glossary</a>
-  <a href="/videos/" class="nav-link">🎬 Videos</a>
 </nav>
 </header>
 
@@ -772,34 +775,13 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
 <script>
 (function(){
-  var btn=document.querySelector('.nav-toggle');
-  var drawer=document.getElementById('nav-drawer');
-  if(btn&&drawer){
-    btn.addEventListener('click',function(){
-      var open=drawer.classList.toggle('open');
-      btn.setAttribute('aria-expanded',open);
-      btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
-    });
+  var btn=document.querySelector('.sn-drop-btn');
+  var drop=btn&&btn.closest('.sn-drop');
+  if(btn&&drop){
+    btn.addEventListener('click',function(){var o=drop.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.textContent=o?'Disciplines ▴':'Disciplines ▾';});
+    drop.addEventListener('focusout',function(e){if(!drop.contains(e.relatedTarget)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
+    document.addEventListener('click',function(e){if(!drop.contains(e.target)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
   }
-  var tabs=document.querySelectorAll('.role-tab');
-  var panels=document.querySelectorAll('.role-panel');
-  tabs.forEach(function(tab){
-    tab.addEventListener('click',function(){
-      tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
-      panels.forEach(function(p){p.classList.remove('active');});
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected','true');
-      var panel=document.getElementById(tab.getAttribute('aria-controls'));
-      if(panel){panel.classList.add('active');}
-    });
-  });
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var b=item.querySelector('.faq-q');
-    if(b){b.addEventListener('click',function(){
-      var open=item.classList.toggle('open');
-      b.setAttribute('aria-expanded',open);
-    });}
-  });
 })();
 </script>
 <script>

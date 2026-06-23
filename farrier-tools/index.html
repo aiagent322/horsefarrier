@@ -106,6 +106,18 @@ footer a{color:var(--rope-light);text-decoration:none}
 .nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
 .nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
 @media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+.video-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:6px}
+.video-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+.video-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:14px 16px 16px}
+.video-tag{display:inline-flex;align-items:center;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px}
+.video-tag.t-tools{background:var(--rope-pale);color:var(--leather-dark)}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px;overflow-wrap:break-word}
+.video-channel{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+@media(hover:hover){.video-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--border-strong)}}
+@media(min-width:768px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.video-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -300,6 +312,58 @@ footer a{color:var(--rope-light);text-decoration:none}
       <li><strong>Flashlight or headlamp:</strong> For examining a hoof in poor light — critical when checking for the source of lameness after hours.</li>
     </ul>
   </div>
+
+  <section class="section" id="videos">
+    <h2>Watch &amp; Learn</h2>
+    <p>Four videos covering the tools themselves and how they're used — from a full tour of the kit to hands-on technique with the knife and rasp.</p>
+    <div class="video-grid">
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/ijHT0OHFylU" title="The Farrier's Tools" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-tools">🧰 Tools</div>
+          <div class="video-title">The Farrier's Tools</div>
+          <div class="video-channel">Equine Distance Learning</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/ikl0bPAb6lk" title="How to Use a Hoof Knife with Chris Gregory" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-tools">🧰 Tools</div>
+          <div class="video-title">How to Use a Hoof Knife with Chris Gregory</div>
+          <div class="video-channel">Morakniv</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/OvuQaYWP2f8" title="Tools of the Trade" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-tools">🧰 Tools</div>
+          <div class="video-title">Tools of the Trade</div>
+          <div class="video-channel">Gary Huston</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/rq24MQRlJQ0" title="How to Use Your Hoof Rasp" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-tools">🧰 Tools</div>
+          <div class="video-title">How to Use Your Hoof Rasp</div>
+          <div class="video-channel">Jessica Isbrecht</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <nav class="nav-cards" aria-label="Explore more resources">
     <a href="../hoof-care/" class="nav-card">

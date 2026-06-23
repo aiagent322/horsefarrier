@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<meta name="format-detection" content="telephone=no, address=no, date=no, email=no">
+<title>Navicular Syndrome in Horses — Causes, Treatment & Management | HorseFarrier.net</title>
+<meta name="description" content="Complete guide to equine navicular syndrome — what it is, how it's diagnosed, therapeutic shoeing options, veterinary treatments, and long-term management for soundness.">
+<link rel="canonical" href="https://horsefarrier.net/hoof-issues/navicular/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Navicular Syndrome in Horses — Causes, Treatment & Management">
+<meta property="og:description" content="Everything horse owners need to know about navicular syndrome — diagnosis, farrier therapeutic shoeing, veterinary options, and keeping horses sound long-term.">
+<meta property="og:url" content="https://horsefarrier.net/hoof-issues/navicular/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* MOBILE-FIRST — 320px base */
+:root{
+  --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --alert:#8B1A1A;--alert-light:#FDF0F0;
+  --nav:#1A5C8B;--nav-dark:#0E3D5C;--nav-light:#E6F3FB;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{display:none}
+.topbar-tagline{display:none}
+.bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
+.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px;flex-wrap:wrap}
+.nav-link{display:flex;align-items:center;padding:0 12px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
+.nav-link:hover,.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
+.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
+.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
+.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
+.nav-drawer.open{display:flex}
+.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
+.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
+@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+
+/* BREADCRUMB */
+.breadcrumb{background:var(--sand);border-bottom:1px solid var(--border);padding:10px max(16px,env(safe-area-inset-right))}
+.breadcrumb-inner{max-width:860px;margin:0 auto;font-size:0.78rem;color:var(--ink-muted);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.breadcrumb-inner a{color:var(--leather);text-decoration:none;font-weight:600}
+.breadcrumb-inner a:hover{text-decoration:underline}
+.breadcrumb-sep{opacity:0.5}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--nav) 0%,var(--nav-dark) 55%,#091E2E 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.hero-inner{max-width:860px;margin:0 auto;position:relative}
+.series-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:12px}
+.hero h1{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:10px}
+.hero h1 em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.72);font-size:0.9rem;line-height:1.6;max-width:640px;margin-bottom:16px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.8);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:14px}
+
+/* SEVERITY BANNER */
+.severity-banner{background:var(--nav-light);border-left:4px solid var(--nav);padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0;margin:20px 0}
+.severity-banner strong{color:var(--nav-dark);display:block;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.severity-banner p{font-size:0.88rem;color:var(--ink);line-height:1.5}
+
+/* MAIN LAYOUT */
+.page-wrap{max-width:860px;margin:0 auto;padding:0 16px 40px}
+
+/* SECTION HEADERS */
+.section-head{margin:32px 0 16px}
+.section-head h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px}
+.section-head p{font-size:0.9rem;color:var(--ink-muted);line-height:1.6}
+.section-divider{height:3px;background:linear-gradient(90deg,var(--nav) 0%,transparent 100%);border-radius:2px;margin-bottom:18px}
+
+/* ANATOMY BOX */
+.anatomy-box{background:var(--nav-light);border:1px solid rgba(26,92,139,0.2);border-radius:var(--radius-lg);padding:18px;margin-bottom:20px}
+.anatomy-box h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--nav-dark);margin-bottom:10px}
+.anatomy-box p{font-size:0.87rem;color:var(--ink);line-height:1.65}
+.anatomy-box p+p{margin-top:8px}
+.anatomy-box strong{color:var(--nav-dark)}
+
+/* WHAT GRID */
+.what-grid{display:flex;flex-direction:column;gap:14px}
+.what-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 16px}
+.what-card h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.what-card p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65}
+.what-card ul{font-size:0.88rem;color:var(--ink-soft);line-height:1.65;padding-left:18px;margin-top:8px}
+.what-card ul li{margin-bottom:5px}
+
+/* RISK FACTORS */
+.risk-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.risk-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;display:flex;gap:14px;align-items:flex-start}
+.risk-icon{font-size:1.5rem;flex-shrink:0;line-height:1;margin-top:2px}
+.risk-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:3px}
+.risk-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+.risk-tag{display:inline-flex;font-size:0.67rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-bottom:5px}
+.risk-tag.high{background:#FFEBEE;color:#C62828}
+.risk-tag.moderate{background:#FFF8E1;color:#F57F17}
+.risk-tag.contributing{background:var(--nav-light);color:var(--nav-dark)}
+
+/* DIAGNOSIS STEPS */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.diag-step{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--nav);border-radius:0 var(--radius-lg) var(--radius-lg) 0;padding:14px 16px}
+.diag-step h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.diag-step p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+
+/* QUICK REF */
+.quick-ref{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:22px 18px;margin:24px 0}
+.quick-ref h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--cream);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12)}
+.quick-ref-grid{display:flex;flex-direction:column;gap:10px}
+.qr-item{display:flex;gap:12px;align-items:flex-start}
+.qr-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--rope-light);flex:0 0 90px}
+.qr-val{font-size:0.85rem;color:rgba(255,255,255,0.8);line-height:1.5}
+
+/* ROLE TABS */
+.role-tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin:24px 0 0;overflow-x:auto;scrollbar-width:none}
+.role-tabs::-webkit-scrollbar{display:none}
+.role-tab{padding:10px 16px;font-size:0.82rem;font-weight:700;color:var(--ink-muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;transition:0.2s;margin-bottom:-2px;min-height:44px}
+.role-tab.active{color:var(--nav-dark);border-bottom-color:var(--nav)}
+.role-panel{display:none;padding:20px 0}
+.role-panel.active{display:block}
+.role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
+.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
+.role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
+.role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
+
+/* STEPS */
+.treatment-steps{display:flex;flex-direction:column;gap:12px}
+.step{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.step-num{background:var(--nav);color:var(--cream);font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:900;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-body strong{display:block;font-size:0.9rem;color:var(--ink);font-weight:700;margin-bottom:4px}
+.step-body p{font-size:0.85rem;color:var(--ink-soft);line-height:1.6}
+.step-body ul{font-size:0.85rem;color:var(--ink-soft);line-height:1.6;padding-left:16px;margin-top:6px}
+.step-body ul li{margin-bottom:4px}
+
+/* PRODUCT GRID */
+.product-grid{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.product-card{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.product-card h4{font-size:0.88rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.product-card p{font-size:0.82rem;color:var(--ink-muted);line-height:1.55}
+.product-tag{display:inline-flex;font-size:0.68rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:3px 9px;border-radius:8px;margin-bottom:6px}
+.product-tag.rx{background:#E8F4FD;color:var(--steel)}
+.product-tag.farrier{background:var(--nav-light);color:var(--nav-dark)}
+.product-tag.mgmt{background:var(--rope-pale);color:var(--leather-dark)}
+.product-tag.otc{background:var(--sage-light);color:var(--sage-dark)}
+
+/* CALLOUT BOXES */
+.caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
+.caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+.tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
+.tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+
+/* PREVENTION */
+.prevention-grid{display:flex;flex-direction:column;gap:12px}
+.prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
+.prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+
+/* VIDEO SECTION */
+.video-section{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:8px}
+.video-grid{display:flex;flex-direction:column;gap:0}
+.video-card{border-bottom:1px solid var(--border)}
+.video-card:last-child{border-bottom:none}
+.video-frame{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;background:#000}
+.video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-meta{padding:14px 16px}
+.video-cat{display:inline-flex;align-items:center;font-size:0.67rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:8px;background:var(--nav-light);color:var(--nav-dark);margin-bottom:7px}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px}
+.video-by{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:16px 18px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:52px}
+.faq-q .faq-arrow{font-size:0.9rem;color:var(--leather);transition:transform 0.2s;flex-shrink:0}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 18px 16px;font-size:0.86rem;color:var(--ink-soft);line-height:1.65}
+.faq-item.open .faq-a{display:block}
+
+/* SERIES NAV */
+.series-nav{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;margin:28px 0}
+.series-nav h3{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--ink);margin-bottom:12px}
+.series-list{display:flex;flex-direction:column;gap:6px}
+.series-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--radius);background:var(--white);border:1px solid var(--border);text-decoration:none;color:var(--ink);font-size:0.85rem;font-weight:600;transition:var(--transition)}
+.series-item.current{background:var(--nav);color:var(--cream);border-color:var(--nav)}
+.series-item.current .series-num{background:rgba(255,255,255,0.2);color:var(--cream)}
+.series-item.done{border-color:var(--border-strong)}
+.series-item.coming{opacity:0.5;pointer-events:none;cursor:default}
+.series-num{background:var(--sand-dark);color:var(--ink-muted);font-size:0.72rem;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.series-item.done .series-num{background:var(--sage-light);color:var(--sage-dark)}
+
+/* CTA / FOOTER */
+.cta-strip{background:var(--sand);border-top:1px solid var(--border);padding:28px max(16px,env(safe-area-inset-right))}
+.cta-box{max-width:860px;margin:0 auto;text-align:center}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.cta-box p{font-size:0.86rem;color:var(--ink-muted);line-height:1.6;max-width:560px;margin:0 auto 16px}
+.cta-btns{display:flex;flex-direction:column;gap:10px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:22px;font-weight:700;font-size:0.88rem;text-decoration:none;transition:var(--transition);min-height:48px}
+.cta-btn.primary{background:var(--leather-deeper);color:var(--cream)}
+.cta-btn.secondary{background:var(--white);color:var(--leather-dark);border:1px solid var(--border-strong)}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-items:center;padding:6px 4px;min-height:44px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:12px 0}
+
+/* HOVER */
+@media(hover:hover){
+  footer a:hover{text-decoration:underline}
+  .cta-btn.primary:hover{background:var(--leather-dark);transform:translateY(-2px)}
+  .cta-btn.secondary:hover{background:var(--sand);transform:translateY(-2px)}
+  .series-item:not(.current):not(.coming):hover{background:var(--sand);border-color:var(--border-strong)}
+}
+
+/* TABLET 768px+ */
+@media(min-width:768px){
+  .topbar-divider{display:block;width:1px;height:20px;background:rgba(255,255,255,0.2);flex-shrink:0}
+  .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.55)}
+  .bb-logo-link{display:flex}
+  .hero h1{font-size:2.4rem}
+  .what-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .prevention-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .quick-ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cta-btns{flex-direction:row;justify-content:center}
+  footer{font-size:0.82rem}
+  .series-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .video-grid{display:grid;grid-template-columns:1fr 1fr}
+  .video-card{border-bottom:none;border-right:1px solid var(--border)}
+  .video-card:nth-child(even){border-right:none}
+  .video-card:nth-child(1),.video-card:nth-child(2){border-bottom:1px solid var(--border)}
+}
+
+/* DESKTOP 1024px+ */
+@media(min-width:1024px){
+  .what-grid{grid-template-columns:1fr 1fr 1fr}
+  .risk-grid{grid-template-columns:1fr 1fr 1fr}
+  .prevention-grid{grid-template-columns:1fr 1fr 1fr}
+  .hero h1{font-size:2.6rem}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Navicular Syndrome in Horses — Causes, Treatment & Management",
+  "url":"https://horsefarrier.net/hoof-issues/navicular/",
+  "description":"Complete guide to equine navicular syndrome — diagnosis, farrier therapeutic shoeing, veterinary treatment options, and long-term management.",
+  "about":{"@type":"MedicalCondition","name":"Equine Navicular Syndrome","alternateName":"Caudal Heel Pain Syndrome; Navicular Disease; Podotrochleosis"},
+  "publisher":{"@type":"Organization","name":"Bridle & Bit Magazine","url":"https://www.bridleandbit.com"},
+  "isPartOf":{"@type":"WebSite","name":"HorseFarrier.net","url":"https://horsefarrier.net"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+    <div class="topbar-brand">
+      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-tagline">The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a></div>
+    </div>
+  </div>
+  <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="nav-bar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
+    <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
+    <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
+    <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="nav-link active">Top 10 Hoof Issues</a>
+    <a href="/faq/" class="nav-link">FAQ</a>
+    <a href="/glossary/" class="nav-link">Glossary</a>
+    <a href="/videos/" class="nav-link">Videos</a>
+  </div>
+</nav>
+<nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+  <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
+  <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
+  <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
+  <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
+  <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
+  <a href="/hoof-issues/" class="nav-link active">🏥 Top 10 Hoof Issues</a>
+  <a href="/faq/" class="nav-link">❓ FAQ</a>
+  <a href="/glossary/" class="nav-link">📖 Glossary</a>
+  <a href="/videos/" class="nav-link">🎬 Videos</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">HorseFarrier.net</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>Navicular Syndrome</span>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="series-badge">🏥 Issue #4 of Top 10 Hoof Problems</div>
+    <h1>Navicular <em>Syndrome</em></h1>
+    <p class="hero-sub">One of the most common causes of chronic forelimb lameness in performance horses — a complex degenerative condition of the navicular bone and surrounding structures. Manageable for years with the right farrier and veterinary team.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">🦴 Degenerative</span>
+      <span class="hero-tag">🐎 Forelimb Focus</span>
+      <span class="hero-tag">🔨 Farrier-Critical</span>
+      <span class="hero-tag">⚕️ Manageable</span>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" class="page-wrap">
+
+  <div class="severity-banner">
+    <strong>⚕️ Serious but Manageable</strong>
+    <p>Navicular syndrome is not a death sentence. Many horses — especially those diagnosed early and managed with the right therapeutic shoeing and veterinary care — remain comfortable and sound for light-to-moderate work for years. The key is accurate diagnosis, a skilled farrier, and consistent management. Do not let anyone tell you a navicular diagnosis ends your horse's useful life before you've explored all options.</p>
+  </div>
+
+  <!-- WHAT IS NAVICULAR SYNDROME -->
+  <div class="section-head">
+    <div class="section-divider"></div>
+    <h2>What Is Navicular Syndrome?</h2>
+    <p>The anatomy, the structures involved, and why "navicular disease" is now considered an outdated term.</p>
+  </div>
+
+  <div class="anatomy-box">
+    <h3>🔬 The Navicular Apparatus — Four Structures, One Problem</h3>
+    <p>The <strong>navicular bone</strong> (distal sesamoid bone) is a small, boat-shaped bone nestled at the back of the horse's foot, sitting behind the coffin joint. It acts as a pulley over which the <strong>deep digital flexor tendon (DDFT)</strong> passes on its way to attach to the bottom of the coffin bone. Cushioning this tendon-bone interface is the <strong>navicular bursa</strong>, a fluid-filled sac that reduces friction. Holding the navicular bone in place are the <strong>navicular ligaments</strong> — the impar ligament below, and the collateral sesamoidean ligaments on the sides.</p>
+    <p>Navicular syndrome involves deterioration of one or more of these four structures — the bone itself, the DDFT, the bursa, or the ligaments — rather than the bone alone. This is why modern veterinary terminology prefers <strong>"caudal heel pain syndrome"</strong> or <strong>"palmar foot pain"</strong> — because the problem is rarely isolated to the navicular bone, and imaging often reveals the DDFT or bursa as the primary source of pain, even when the bone looks abnormal on X-ray.</p>
+    <p>The condition affects the <strong>front feet</strong> in the vast majority of cases — typically both fronts, though one usually presents worse than the other. Hindlimb navicular syndrome occurs but is uncommon.</p>
+  </div>
+
+  <div class="what-grid">
+    <div class="what-card">
+      <h3>🩻 What Changes in the Bone</h3>
+      <p>Over time, the navicular bone undergoes degenerative changes including:</p>
+      <ul>
+        <li>Remodeling and flattening of the flexor surface (where the DDFT slides)</li>
+        <li>Formation of "lollipop" or synovial fossae — erosion pits on the flexor surface</li>
+        <li>Bone cysts within the navicular bone body</li>
+        <li>Mineralization and thickening of the navicular ligaments</li>
+        <li>Osteophyte (bone spur) formation at the bone margins</li>
+      </ul>
+      <p style="margin-top:8px;">Importantly, radiographic changes do not always correlate with pain level — some horses with dramatic X-ray changes are relatively comfortable, while others with mild changes are severely lame.</p>
+    </div>
+    <div class="what-card">
+      <h3>💉 What Changes in Soft Tissue</h3>
+      <p>MRI has revealed that soft tissue damage is as important — or more important — than bone changes in many navicular cases:</p>
+      <ul>
+        <li><strong>DDFT lesions</strong> — longitudinal tears or core lesions in the tendon where it contacts the navicular bone; a leading cause of navicular-region pain</li>
+        <li><strong>Navicular bursitis</strong> — inflammation and thickening of the bursa, causing pain with every stride</li>
+        <li><strong>Impar ligament desmitis</strong> — degeneration and scarring of the ligament below the navicular bone</li>
+        <li><strong>Collateral sesamoidean ligament changes</strong> — thickening and mineralization</li>
+      </ul>
+      <p style="margin-top:8px;">MRI is now considered the gold standard for diagnosing exactly which structures are affected — information that changes the treatment plan significantly.</p>
+    </div>
+    <div class="what-card">
+      <h3>🏇 Why Performance Horses</h3>
+      <p>Navicular syndrome is far more common in performance horses than in horses kept for light pleasure use. The reasons are biomechanical:</p>
+      <ul>
+        <li>High workload increases repetitive concussive stress on the navicular apparatus</li>
+        <li>Hard footing (arena sand packed hard, roads, asphalt) amplifies concussion</li>
+        <li>Athletic disciplines with intense hoof loading — reining, cutting, jumping, racing — concentrate force in the caudal (rear) heel region</li>
+        <li>Conformation faults that increase heel loading (upright pasterns, small feet, long toes / low heels) concentrate stress on the navicular apparatus with every step</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RISK FACTORS -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>Risk Factors — Who Gets Navicular Syndrome</h2>
+    <p>Understanding which horses are predisposed helps owners take preventive steps before symptoms appear.</p>
+  </div>
+
+  <div class="risk-grid">
+    <div class="risk-card">
+      <div class="risk-icon">🐎</div>
+      <div class="risk-body">
+        <div class="risk-tag high">High Risk</div>
+        <h4>Breed Predisposition</h4>
+        <p>Quarter Horses, Warmbloods, and Thoroughbreds are over-represented in navicular cases. These breeds combine athletic use with hoof conformation traits — relatively small feet for body size — that increase navicular loading.</p>
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-icon">📐</div>
+      <div class="risk-body">
+        <div class="risk-tag high">High Risk</div>
+        <h4>Long Toe / Low Heel Conformation</h4>
+        <p>The most correctable risk factor. A long toe increases the moment arm of the DDFT over the navicular bone with every step. Low heels drop the pastern angle and increase tendon tension. This combination concentrates enormous force on the navicular apparatus.</p>
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-icon">🏟️</div>
+      <div class="risk-body">
+        <div class="risk-tag high">High Risk</div>
+        <h4>Hard Footing &amp; Heavy Workload</h4>
+        <p>Horses worked regularly on hard, unyielding surfaces — packed arena sand, roads, asphalt — suffer greater concussive loading of the heel region. High-intensity disciplines intensify this stress further.</p>
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-icon">📏</div>
+      <div class="risk-body">
+        <div class="risk-tag moderate">Moderate Risk</div>
+        <h4>Upright Pasterns &amp; Small Feet</h4>
+        <p>Horses with steep, upright pasterns transmit concussion less effectively and load the heel structures more directly. Small hooves relative to body weight increase pressure per square centimeter on the navicular region.</p>
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-icon">📅</div>
+      <div class="risk-body">
+        <div class="risk-tag moderate">Moderate Risk</div>
+        <h4>Irregular Farrier Intervals</h4>
+        <p>Long trimming intervals allow the toe to grow out and heels to crush forward, recreating the long toe / low heel pattern. Horses with navicular predisposition require strict 5–6 week farrier schedules to maintain the trim that reduces navicular loading.</p>
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-icon">🧬</div>
+      <div class="risk-body">
+        <div class="risk-tag contributing">Contributing</div>
+        <h4>Genetics</h4>
+        <p>Navicular syndrome has a heritable component — certain bloodlines have higher prevalence. This is not a reason to avoid breeding affected horses entirely, but conformation traits that predispose to navicular (small feet, upright pasterns) should be considered in breeding decisions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIAGNOSIS -->
+  <div class="section-head" style="margin-top:8px;">
+    <div class="section-divider"></div>
+    <h2>How Navicular Syndrome Is Diagnosed</h2>
+    <p>Accurate diagnosis is critical — navicular syndrome is frequently over-diagnosed based on X-rays alone. A proper workup requires multiple steps.</p>
+  </div>
+
+  <div class="diag-steps">
+    <div class="diag-step">
+      <h4>1. Lameness Examination — Gait Analysis</h4>
+      <p>The vet observes the horse at walk and trot on straight lines and circles, on hard and soft footing. Classic navicular gait: a short, pottery, stumbling gait — the horse tries to land on the toe to avoid loading the painful heel. Lameness is often worse on circles (inside limb loading), on hard footing, and after the shoe is removed (digital cushion loses support). Both front limbs are often affected, making the horse appear "stiff" or "reluctant" rather than overtly lame on one limb.</p>
+    </div>
+    <div class="diag-step">
+      <h4>2. Hoof Testers</h4>
+      <p>Pressure applied across the heel region and over the frog typically produces a positive response — the horse flinches or pulls the foot away. This implicates the caudal (rear) heel structures including the navicular apparatus. Positive hoof tester response across the frog specifically increases suspicion of navicular involvement. Note: hoof testers are subjective — not every navicular horse responds dramatically, and not every horse that responds has navicular syndrome.</p>
+    </div>
+    <div class="diag-step">
+      <h4>3. Palmar Digital Nerve Block</h4>
+      <p>The definitive localization test. The vet injects local anesthetic around the palmar digital nerves at the back of the pastern, desensitizing the entire caudal (rear) third of the foot including the navicular apparatus. If the horse goes from lame to sound following this block, the pain source is confirmed to be in the caudal heel — consistent with navicular syndrome. This is a required step before any imaging-based diagnosis is accepted.</p>
+    </div>
+    <div class="diag-step">
+      <h4>4. Radiographs (X-Rays)</h4>
+      <p>Four standard views of the navicular bone are taken (lateral, DP, 65° upright pedal, and skyline/flexor views). X-rays reveal bony changes — synovial fossae, bone cysts, osteophytes, and ligament mineralization. Important caveat: many horses with radiographic navicular changes are not lame from those changes, and some horses with navicular pain have minimal radiographic changes. X-rays alone are not sufficient to diagnose navicular syndrome as the cause of lameness.</p>
+    </div>
+    <div class="diag-step">
+      <h4>5. MRI — The Gold Standard</h4>
+      <p>Standing low-field MRI (increasingly available at equine hospitals) allows visualization of the soft tissue structures that X-rays cannot show — DDFT lesions, bursal inflammation, impar ligament changes, and bone marrow edema. MRI frequently reveals that the primary pain source is a DDFT lesion or bursitis rather than the bone itself — findings that change the treatment plan. If therapeutic shoeing and medical management fail to produce improvement, MRI should be strongly considered.</p>
+    </div>
+    <div class="diag-step">
+      <h4>6. Navicular Bursa Injection (Diagnostic / Therapeutic)</h4>
+      <p>Injecting local anesthetic directly into the navicular bursa — a more specific block than the palmar digital nerve block — can confirm whether the bursa itself is the pain source. If the horse goes significantly sounder after a bursal block but not after a standard palmar digital block, bursitis is implicated. This also sets up therapeutic bursal injection as a targeted treatment option.</p>
+    </div>
+  </div>
+
+  <!-- QUICK REFERENCE -->
+  <div class="quick-ref">
+    <h3>⚡ Quick Reference — Navicular Syndrome at a Glance</h3>
+    <div class="quick-ref-grid">
+      <div class="qr-item"><div class="qr-label">Also Called</div><div class="qr-val">Navicular disease, caudal heel pain syndrome, palmar foot pain, podotrochleosis</div></div>
+      <div class="qr-item"><div class="qr-label">Structures</div><div class="qr-val">Navicular bone, DDFT, navicular bursa, impar &amp; collateral ligaments</div></div>
+      <div class="qr-item"><div class="qr-label">Limbs</div><div class="qr-val">Front feet — usually bilateral (both fronts), one worse than other</div></div>
+      <div class="qr-item"><div class="qr-label">Key Signs</div><div class="qr-val">Stumbling, toe-first landing, short choppy stride, worse on hard ground and circles</div></div>
+      <div class="qr-item"><div class="qr-label">Diagnosis</div><div class="qr-val">Lameness exam + nerve blocks + X-rays + MRI (gold standard)</div></div>
+      <div class="qr-item"><div class="qr-label">Treatment</div><div class="qr-val">Therapeutic shoeing + NSAID + bursal injection + bisphosphonates + isoxsuprine</div></div>
+      <div class="qr-item"><div class="qr-label">Prognosis</div><div class="qr-val">Manageable for years with appropriate care; not curative but controllable</div></div>
+      <div class="qr-item"><div class="qr-label">Best Breeds</div><div class="qr-val">Quarter Horse, Warmblood, Thoroughbred most commonly affected</div></div>
+    </div>
+  </div>
+
+  <!-- TREATMENT — THREE ROLES -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>Treatment — Three Roles, Three Approaches</h2>
+    <p>Navicular management is a long-term partnership between farrier and vet. The owner maintains the environment and monitoring that keeps the horse comfortable between visits.</p>
+  </div>
+
+  <div class="role-tabs" role="tablist" aria-label="Treatment by role">
+    <button class="role-tab active" role="tab" aria-selected="true" aria-controls="panel-farrier" id="tab-farrier">🔨 The Farrier</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-vet" id="tab-vet">🩺 The Veterinarian</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-owner" id="tab-owner">🧤 The Horse Owner</button>
+  </div>
+
+  <!-- FARRIER PANEL -->
+  <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
+    <div class="role-header">
+      <div class="role-icon">🔨</div>
+      <div class="role-header-text">
+        <h3>The Farrier's Role — The Most Important Long-Term Variable</h3>
+        <p>In navicular syndrome, the farrier's contribution is arguably more important than any medication or injection. The biomechanical environment of the foot — toe length, heel height, breakover position, shoeing material and style — determines how much force the navicular apparatus receives with every stride. Get the shoeing right and the horse stays comfortable. Get it wrong and no amount of medication will compensate.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Corrective Trim — Address Long Toe / Low Heel</strong>
+          <p>The single most important trimming goal in navicular management is restoring a correct hoof-pastern axis — the hoof wall angle at the toe should be parallel to the slope of the pastern, creating a straight line from the fetlock through the hoof. In practice this means:</p>
+          <ul>
+            <li><strong>Aggressively reduce toe length</strong> — the toe is the primary mechanical driver of navicular stress; shortening it reduces DDFT tension across the navicular bone with every step</li>
+            <li><strong>Raise the heel where appropriate</strong> — in horses with crushed, low heels, raising heel height reduces DDFT tension; however, heels that are already high should not be raised further</li>
+            <li><strong>Establish correct breakover</strong> — the point where the foot tips forward off the ground should be directly under the tip of the coffin bone, reducing the lever arm the toe exerts on the navicular</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Egg Bar Shoe — The Most Commonly Used Therapeutic Shoe</strong>
+          <p>The egg bar shoe is the workhorse of navicular management. Its continuous oval shape extends behind the heels, providing a rear support platform that:</p>
+          <ul>
+            <li>Prevents heel sinking into soft footing — navicular horses often toe-land to avoid heel pain; the bar prevents this compensation from overloading the toe structures</li>
+            <li>Distributes weight more evenly across the rear of the foot, reducing peak pressure on the navicular area</li>
+            <li>Provides proprioceptive feedback from the frog area, encouraging the horse to use its heel again as pain decreases</li>
+            <li>Typically fitted with a slight (2–4°) heel wedge pad in early management to further reduce DDFT tension</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Rolled or Rocker Toe — Reducing Breakover Effort</strong>
+          <p>Rolling or rockering the toe of the shoe significantly reduces the effort and force required to break over — the moment when the heel lifts and the foot pivots forward off the toe. Less breakover effort means less peak tension on the DDFT as it crosses the navicular bone at the end of each stride. This can be done as:</p>
+          <ul>
+            <li><strong>Rolled toe</strong> — the toe of the shoe is forged or ground to a rounded profile, moving breakover back toward the center of the foot</li>
+            <li><strong>Rocker toe</strong> — a more pronounced curve through the toe and quarter of the shoe; more relief than a simple roll</li>
+            <li><strong>Natural Balance shoe</strong> — a commercially available shoe built with a set-back breakover point and wide web; popular for navicular management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Heel Wedge Pads — Managing DDFT Tension</strong>
+          <p>A wedge pad placed between the shoe and the hoof raises the heel, reducing tension on the DDFT as it curves around the navicular bone. Typical therapeutic wedge angles are 2–4°. Important cautions:</p>
+          <ul>
+            <li>Wedging is appropriate for horses with low, crushed, or collapsed heels — it corrects a deficit</li>
+            <li>Wedging a horse that already has a correct or high heel angle is counterproductive — it can over-stress the suspensory apparatus and digital flexors higher up the leg</li>
+            <li>Wedge pads are typically used as a short-to-medium-term tool while the heel is built up through trimming; the goal is eventually to maintain comfort without artificial elevation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Full Pads and Pour-In Packing</strong>
+          <p>Full sole pads placed between shoe and hoof reduce concussion and protect the sole and frog from ground contact. Pour-in polyurethane packing material fills the space completely, providing conforming cushion across the entire solar surface. This combination is particularly useful for:</p>
+          <ul>
+            <li>Horses working on hard, rocky, or arena footing where concussion is high</li>
+            <li>Horses with thin soles or bruised heels complicating navicular pain</li>
+            <li>Reducing the need for medication by improving comfort through mechanical means</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Shortened Shoeing Intervals</strong>
+          <p>Navicular horses should be shod every 5–6 weeks without exception. Allowing the cycle to stretch to 8–10 weeks permits the toe to grow long, the heels to collapse forward, and the entire corrective shoeing benefit to be lost. The farrier works with the vet to evaluate radiographs every 6–12 months and adjust the shoeing strategy as the horse's condition evolves. Consistency is the foundation of successful navicular management.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Egg Bar Shoe</h4>
+        <p>Continuous oval shoe extending behind the heels. Standard first-line therapeutic shoe for navicular. Typically steel or aluminum; glue-on versions available for horses with compromised wall.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Natural Balance Shoe</h4>
+        <p>Commercially designed with set-back breakover and wide web. Reduces toe leverage and improves frog contact. Popular alternative to traditional egg bar for moderate navicular cases.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Wedge Pads (2–4°)</h4>
+        <p>EVA or leather heel elevation pads fitted between shoe and hoof. Reduce DDFT tension in horses with low or crushed heels. Used alongside egg bar or bar shoe.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag farrier">Farrier Applied</div>
+        <h4>Pour-In Pad (Vettec Equi-Pak)</h4>
+        <p>Polyurethane packing that conforms to the entire solar surface. Reduces concussion, protects heel region, and improves comfort on hard footing. Used with full pads or independently.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-icon">💡</div>
+      <div class="tip-body">
+        <strong>Farrier–Vet Collaboration Is Non-Negotiable</strong>
+        <p>The best navicular outcomes come from a farrier and vet who communicate directly — sharing radiographs, discussing the trim strategy, and adjusting the plan together. If your farrier has never seen your horse's X-rays, or your vet has never discussed shoeing goals with your farrier, fix that at the next visit. These two professionals working independently, rather than as a team, is the most common reason navicular management fails.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VET PANEL -->
+  <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
+    <div class="role-header">
+      <div class="role-icon">🩺</div>
+      <div class="role-header-text">
+        <h3>The Veterinarian's Role — Diagnosis, Pain Management, Disease Modification</h3>
+        <p>The vet leads diagnosis and medical management. For navicular syndrome, the goal of veterinary treatment is reducing inflammation, slowing degeneration, and managing pain — enabling the horse to use its feet correctly so that the farrier's biomechanical corrections can take effect.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>NSAIDs — Anti-Inflammatory Pain Management</strong>
+          <p>Phenylbutazone (bute) is the most commonly used NSAID in navicular management — reducing inflammation in the navicular bursa and surrounding tissues, and providing pain relief that allows the horse to move more freely and load the heel correctly. Long-term daily bute is associated with gastric ulcer and kidney risks; the lowest effective dose is used, often in combination with gastric protectants. Some vets prefer flunixin or firocoxib (Equioxx) for longer-term use due to a better safety profile.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Corticosteroid and Hyaluronic Acid Injections</strong>
+          <p>The navicular bursa and the distal interphalangeal (coffin) joint are the two primary injection targets in navicular cases:</p>
+          <ul>
+            <li><strong>Navicular bursa injection</strong> — triamcinolone or methylprednisolone with hyaluronic acid; directly targets the navicular apparatus; typically provides 3–6 months of relief; repeated as needed</li>
+            <li><strong>Coffin joint injection</strong> — the coffin joint communicates with the navicular bursa in many horses; injecting here reaches both structures; technically simpler than direct bursal injection</li>
+            <li><strong>Hyaluronic acid alone</strong> — used in horses where steroid use is limited (e.g., laminitis risk); lubricates the bursa and joint without the anti-inflammatory potency of steroids</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Bisphosphonates — Bone Remodeling Agents</strong>
+          <p>Two bisphosphonate products are licensed for use in horses with navicular syndrome:</p>
+          <ul>
+            <li><strong>Tildren (tiludronate)</strong> — intravenous infusion; inhibits osteoclast activity (bone breakdown), slowing the degenerative remodeling of the navicular bone; clinical trials show significant improvement in lameness scores in navicular horses</li>
+            <li><strong>Osphos (clodronate)</strong> — intramuscular injection; same mechanism as Tildren but different delivery; similar efficacy data</li>
+          </ul>
+          <p style="margin-top:6px;">Bisphosphonates are disease-modifying, not just pain-relieving — they slow the underlying degenerative process. They are not a cure, but they represent a meaningful advance in navicular treatment. Should not be used in growing horses or repeatedly at short intervals.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Isoxsuprine — Vasodilator for Blood Flow</strong>
+          <p>Isoxsuprine is a vasodilator historically used to improve blood flow to the navicular bone — based on the theory that reduced circulation contributes to navicular degeneration. The evidence base is weak by modern standards, and many equine vets have moved away from it in favor of bisphosphonates and injections. However, it remains inexpensive, has a low side-effect profile, and some horses appear to respond to it — so it continues to be used, particularly as an adjunct therapy or in horses where other treatments are cost-prohibitive.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>PRP and Stem Cell Therapy</strong>
+          <p>For horses with navicular syndrome driven primarily by DDFT lesions or bursitis — particularly where MRI has identified specific soft tissue pathology — regenerative therapies are increasingly used:</p>
+          <ul>
+            <li><strong>PRP (Platelet-Rich Plasma)</strong> — concentrated platelets injected into the navicular bursa or directly into a DDFT lesion; promotes healing of soft tissue damage</li>
+            <li><strong>IRAP (Interleukin-1 Receptor Antagonist Protein)</strong> — anti-inflammatory protein harvested from the horse's own blood; reduces joint and bursal inflammation</li>
+            <li><strong>Stem cell therapy</strong> — mesenchymal stem cells injected into DDFT lesions to promote regenerative repair; emerging evidence, variable results</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Neurectomy (Palmar Digital Neurectomy) — Last Resort</strong>
+          <p>When all conservative treatments have failed, palmar digital neurectomy — surgically cutting the palmar digital nerves to permanently desensitize the caudal heel — remains a salvage option. The horse becomes sound because it no longer feels the pain, not because the disease is treated. Important considerations:</p>
+          <ul>
+            <li>Neurectomy does not stop disease progression — the horse remains comfortable but the degeneration continues</li>
+            <li>Risk of DDFT rupture in desensitized horses — the horse can no longer feel warning pain before a tendon failure; this is a serious and sometimes catastrophic complication</li>
+            <li>The horse must be identified as neurectomized when sold; in most disciplines, competing on a neurectomized horse requires disclosure and may be prohibited</li>
+            <li>In appropriate candidates — older horses with severe disease who simply need comfort for light activity — neurectomy can provide years of quality of life</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>Tildren (Tiludronate)</h4>
+        <p>IV bisphosphonate licensed for navicular syndrome. Slows degenerative bone remodeling. Administered as a single slow IV infusion; effects last 6–12 months. One of the most evidence-backed navicular treatments available.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>Osphos (Clodronate)</h4>
+        <p>IM bisphosphonate. Same mechanism as Tildren, different delivery route. May be more practical in field settings. Similar efficacy to Tildren in clinical trials.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>Corticosteroid + HA Bursal Injection</h4>
+        <p>Triamcinolone or methylprednisolone with hyaluronic acid injected into the navicular bursa or coffin joint. First-line injectable treatment. Typically provides 3–6 months of significant relief.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>Firocoxib (Equioxx)</h4>
+        <p>COX-2 selective NSAID. Safer for long-term daily use than phenylbutazone — reduced gastric and renal risk. Appropriate for horses needing ongoing pain management over months to years.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OWNER PANEL -->
+  <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
+    <div class="role-header">
+      <div class="role-icon">🧤</div>
+      <div class="role-header-text">
+        <h3>The Horse Owner's Role — Footing, Workload, Monitoring, Consistency</h3>
+        <p>Navicular syndrome is a chronic condition — there is no cure, only management. The owner's role is maintaining the environment, monitoring daily comfort, enforcing the shoeing schedule, and making intelligent workload decisions that keep the horse sound long-term rather than pushing for performance at the cost of soundness.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Manage the Footing</strong>
+          <p>Footing is the single biggest environmental variable the owner controls. Hard, unyielding surfaces dramatically increase navicular loading on every stride. Practical steps:</p>
+          <ul>
+            <li><strong>Arena footing</strong> — keep arena sand properly maintained at 3–4 inches depth; packed hard sand is nearly as bad as asphalt for navicular horses</li>
+            <li><strong>Paddock footing</strong> — add pea gravel or road base to high-traffic areas; navicular horses standing on packed dirt or gravel all day accumulate significant cumulative concussion even when not being worked</li>
+            <li><strong>Avoid asphalt and concrete</strong> — no schooling or hacking on hard roads without hoof protection; full pads or hoof boots for any road work</li>
+            <li><strong>Stall bedding</strong> — deep, supportive bedding allows the horse to rest its feet on a giving surface during stall time; don't underestimate the cumulative benefit</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Manage Workload Intelligently</strong>
+          <p>Navicular horses can continue working — often for years — if workload is managed sensibly:</p>
+          <ul>
+            <li>Warm up longer on softer footing before any demanding work</li>
+            <li>Avoid repetitive tight circles on hard ground — this concentrates force on the inside limb's caudal heel</li>
+            <li>Rest after injection treatments — the horse needs 2–4 weeks of reduced work after bursal injections for full effect; do not resume heavy training immediately</li>
+            <li>Monitor the horse's response to each ride — consistent post-exercise stiffness or worsening lameness over days indicates the current workload is exceeding what the horse can manage</li>
+            <li>Have honest conversations with your trainer and vet about realistic performance expectations; protecting soundness long-term is always worth a short-term workload reduction</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Never Skip or Extend the Shoeing Schedule</strong>
+          <p>A navicular horse managed on a 5–6 week shoeing cycle can look like a different horse than one allowed to go 10–12 weeks. The corrective trim and therapeutic shoe are the foundation of every other treatment. Stretching the schedule to save money or because the horse "seems okay" is a false economy — the toe grows long, the heel collapses, the navicular loading worsens, and the next veterinary visit will cost more than the saved shoeing appointment. Set a reminder and treat the shoeing schedule as non-negotiable.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Monitor and Record Daily Comfort</strong>
+          <p>Because navicular is a chronic fluctuating condition, keeping a simple daily log is genuinely useful. Note:</p>
+          <ul>
+            <li>Willingness to walk out from the stall in the morning — navicular horses often show morning stiffness that improves with movement</li>
+            <li>Landing pattern — is the horse landing heel-first (good), flat (acceptable), or consistently toe-first (concerning)?</li>
+            <li>Digital pulse — bounding pulse indicates increased inflammation in the heel region</li>
+            <li>Post-exercise comfort vs. the previous session</li>
+          </ul>
+          Share this log at every vet and farrier visit. A 3-month record showing gradual improvement or worsening is information that a point-in-time examination cannot capture.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Supplementation for Hoof Quality</strong>
+          <p>Strong, well-keratinized hoof horn holds therapeutic shoes more securely and provides a better biomechanical platform. Navicular horses often have compromised hoof horn quality from years of abnormal loading. Support with:</p>
+          <ul>
+            <li><strong>Biotin 20mg/day</strong> — most evidence-supported hoof supplement</li>
+            <li><strong>Methionine and zinc</strong> — essential for keratin cross-linking and dense horn production</li>
+            <li><strong>Omega-3 fatty acids</strong> — reduce systemic inflammation; some evidence for improved laminar health</li>
+            <li>Avoid supplements marketed specifically for "navicular" without evidence — most are biotin-based rebrands at premium prices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="caution-box">
+      <div class="caution-icon">⛔</div>
+      <div class="caution-body">
+        <strong>Don't Mask Pain and Work Through It</strong>
+        <p>Navicular horses given NSAIDs to control pain can feel deceptively comfortable and be pushed beyond what their damaged structures can safely tolerate. A horse that is comfortable only because of bute or injections should have its workload assessed honestly — riding a medicated horse as if it were sound can accelerate the very structural damage you are trying to manage. Use medication to support healing and correct biomechanics, not to enable performance that the horse cannot sustain without drugs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREVENTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Prevention &amp; Slowing Progression</h2>
+    <p>Navicular syndrome cannot always be prevented — genetics and conformation play a real role. But its onset can often be delayed, and its progression slowed, with consistent management.</p>
+  </div>
+
+  <div class="prevention-grid">
+    <div class="prev-card">
+      <div class="prev-icon">📅</div>
+      <div class="prev-body">
+        <h4>Strict Trimming Schedule</h4>
+        <p>The most effective prevention is maintaining correct hoof-pastern axis through regular trimming. Never allow the toe to grow long. For high-risk horses (Quarter Horses in performance work, horses with small feet), 5–6 week farrier visits from the start of training.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🏟️</div>
+      <div class="prev-body">
+        <h4>Good Footing Always</h4>
+        <p>Years of work on hard, unforgiving surfaces accumulate damage to the navicular apparatus. Maintain arena footing properly. Avoid unnecessary road work without pads. This is the most controllable environmental factor in navicular prevention.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🔍</div>
+      <div class="prev-body">
+        <h4>Act on Early Signs</h4>
+        <p>A horse that begins toe-landing, stumbling occasionally, or showing morning stiffness in the fronts deserves a lameness evaluation — not "wait and see." Navicular diagnosed at the early soft-tissue phase responds far better to treatment than disease caught after years of bone remodeling.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">⚖️</div>
+      <div class="prev-body">
+        <h4>Maintain Healthy Weight</h4>
+        <p>Every extra kilogram of body weight increases navicular loading on every stride. An overweight performance horse is at substantially higher risk of navicular deterioration. Body condition score 4–5 of 9 is ideal for navicular-prone horses.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🧬</div>
+      <div class="prev-body">
+        <h4>Pre-Purchase Evaluation</h4>
+        <p>Any performance horse purchase should include a full lameness evaluation including flexion tests, nerve blocks if indicated, and radiographs of all four feet. Navicular changes on pre-purchase X-rays must be interpreted in context — some horses with radiographic changes perform for years; others are a liability. Get expert interpretation.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🌾</div>
+      <div class="prev-body">
+        <h4>Hoof Quality Nutrition</h4>
+        <p>Dense, quality hoof horn holds shoes better, provides better biomechanical cushion, and resists the white line disease that can complicate navicular cases. Start biotin and a balanced mineral supplement before problems appear — preventive supplementation is cheaper than remedial care.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Navicular Syndrome Videos — Watch &amp; Learn</h2>
+    <p>Farrier and veterinary perspectives on diagnosis, therapeutic shoeing, and long-term management of navicular syndrome.</p>
+  </div>
+
+  <div class="video-section">
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/L3xEun8GYis" title="Navicular Problems in Horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🩺 Vet Overview</div>
+          <div class="video-title">Navicular Problems in Horses</div>
+          <div class="video-by">SmartPak</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/Q_YDyNizYpc" title="Ask the Vet - Dealing with Navicular issues in horses" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🩺 Ask the Vet</div>
+          <div class="video-title">Ask the Vet — Dealing with Navicular Issues in Horses</div>
+          <div class="video-by">SmartPak</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/6T1kVpw20oQ" title="Why Navicular Disease Is Not A Death Sentence" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Farrier Perspective</div>
+          <div class="video-title">Why Navicular Disease Is Not a Death Sentence</div>
+          <div class="video-by">Think Farrier</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/X_nBJ2UBNw8" title="Hot Shoeing Navicular horse" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-cat">🔨 Therapeutic Shoeing</div>
+          <div class="video-title">Hot Shoeing a Navicular Horse</div>
+          <div class="video-by">Beasley Equine Clinic</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Navicular Syndrome — Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My horse was just diagnosed with navicular. What should I do first? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Start with these three steps: (1) Make sure the diagnosis is solid — confirm that a nerve block was done and that the horse went sound, not just that X-rays showed changes. X-ray changes alone do not confirm navicular as the pain source. (2) Get your farrier and vet communicating directly — share the radiographs with the farrier and schedule a consultation between the two if possible. (3) Start the corrective shoeing immediately — this is the most important first intervention. Medication helps, but the biomechanical correction the farrier can provide is the foundation of everything else.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Can my horse still be ridden with navicular syndrome? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Yes — many navicular horses continue working for years at various levels of activity. The key is matching workload to what the horse can comfortably sustain, on appropriate footing, with correct shoeing maintained on schedule. Horses managed well may continue trail riding, low-level arena work, or even moderate competitive work. High-intensity performance at the level that likely contributed to the condition may need to be reduced or redirected. This conversation is best had honestly with your vet and farrier based on the specific findings in your horse.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How long do bursal injections last, and how often can they be repeated? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Most navicular horses get 3–6 months of significant relief from a bursal or coffin joint corticosteroid injection. Some horses do well for 12+ months; others need injections every 3 months. Repeat injections are reasonable for as long as the horse responds well and maintains quality of life. The concern with frequent corticosteroid injections is the potential for cartilage damage with very high cumulative doses — your vet will monitor the interval and consider alternating with hyaluronic acid, IRAP, or PRP to reduce steroid exposure while maintaining anti-inflammatory effect.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What is the difference between Tildren and Osphos, and which is better? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Both are bisphosphonates approved for navicular syndrome in horses — Tildren (tiludronate) is given as a slow IV infusion over 1 hour, while Osphos (clodronate) is given as an intramuscular injection. Clinical trials have shown both to be similarly effective in reducing navicular lameness scores. The practical choice is often about logistics — IV infusion requires a clinic or well-equipped farm visit, while IM injection is more field-friendly. Both carry a risk of colic-like side effects in the days following administration. Neither is dramatically superior; your vet's preference and your horse's circumstances guide the choice.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Should I buy a horse with navicular changes on X-ray? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">This requires careful interpretation by an experienced equine vet — not a blanket answer. Many horses with radiographic navicular changes perform for years without clinical lameness. The key questions are: Is the horse currently lame? Did the horse go sound on a palmar digital nerve block? How extensive and what type are the changes? What is the intended use of the horse? A horse with mild fossae changes on X-ray who is sound, passes a nerve block soundly, and is intended for light pleasure use is a very different situation from a horse with bone cysts who is currently lame and intended for high-performance use. Get the interpretation from your vet, not from the seller.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Is barefoot better than shod for navicular horses? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Generally no — not for performance horses with established navicular syndrome. The therapeutic shoeing options available (egg bar, wedge pads, rolled toe, pour-in packing) provide measurable biomechanical benefits that barefoot trimming alone cannot replicate in a horse that is already lame. There are barefoot practitioners who advocate for this approach, and some horses on soft, varied terrain with excellent natural foot care do well. However, for the majority of navicular horses in performance work, therapeutic shoeing has a stronger evidence base and more targeted tools than barefoot management. Discuss this specifically with your vet based on your horse's individual findings.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My horse has navicular but also gets laminitis. Can I still use wedge pads? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">This is a genuine management conflict — navicular management often involves raising the heel to reduce DDFT tension, while laminitis management often involves lowering the heel to align the coffin bone correctly. These goals can contradict each other. The resolution requires radiographs of both conditions to understand what each foot actually needs, and a farrier and vet working together to find a compromise trim and shoeing that addresses both conditions as well as possible. There is no standard answer — it is genuinely case-specific and requires expert co-management.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What signs tell me my navicular horse is getting worse? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Warning signs of progression include: consistent toe-first landing that isn't improving with shoeing; increasing frequency of stumbling; lameness that no longer responds adequately to treatments that previously worked; shorter intervals between bursal injections before symptoms return; worsening lameness score on the same workload; a bounding digital pulse that is present consistently rather than only after hard work; and loss of heel buttress height (heels continuing to crush forward and down despite corrective shoeing). Any of these trends should prompt a reassessment with your vet, including updated radiographs and potentially MRI.</div>
+    </div>
+  </div>
+
+  <!-- SERIES NAV -->
+  <div class="series-nav" style="margin-top:36px;">
+    <h3>🏥 Top 10 Hoof Issues for Horse Owners</h3>
+    <div class="series-list">
+      <a href="/hoof-issues/thrush/" class="series-item done"><div class="series-num">1</div>Thrush ✓</a>
+      <a href="/hoof-issues/white-line-disease/" class="series-item done"><div class="series-num">2</div>White Line Disease ✓</a>
+      <a href="/hoof-issues/laminitis/" class="series-item done"><div class="series-num">3</div>Laminitis &amp; Founder ✓</a>
+      <a href="/hoof-issues/navicular/" class="series-item current"><div class="series-num">4</div>Navicular Syndrome — You Are Here</a>
+      <span class="series-item coming"><div class="series-num">5</div>Cracked Hooves</span>
+      <span class="series-item coming"><div class="series-num">6</div>Abscesses</span>
+      <span class="series-item coming"><div class="series-num">7</div>Contracted Heels</span>
+      <span class="series-item coming"><div class="series-num">8</div>Seedy Toe</span>
+      <span class="series-item coming"><div class="series-num">9</div>Sheared Heels</span>
+      <span class="series-item coming"><div class="series-num">10</div>Canker</span>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<div class="cta-strip">
+  <div class="cta-box">
+    <h3>Part of the Bridle &amp; Bit Network</h3>
+    <p>HorseFarrier.net is a free public resource from Bridle &amp; Bit Magazine — Arizona's premier equestrian publication since 1978.</p>
+    <div class="cta-btns">
+      <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" class="cta-btn primary">Visit Bridle &amp; Bit Magazine</a>
+      <a href="/hoof-issues/" class="cta-btn secondary">All Top 10 Hoof Issues →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div style="margin-bottom:10px;">The Complete Hoof Care Resource</div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="/hoof-care/">Hoof Care Basics</a>
+    <a href="/farrier-tools/">Farrier Tools</a>
+    <a href="/breed-hooves/">Breed Hoof Needs</a>
+    <a href="/nutrition/">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/">Horseshoe Types</a>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/glossary/">Glossary</a>
+    <a href="/videos/">Videos</a>
+  </nav>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> — Arizona's premier equestrian publication since 1978.</div>
+  <div style="margin-top:8px;color:rgba(255,255,255,0.35);font-size:0.75rem;">&copy; 2026 HorseFarrier.net. All rights reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var drawer=document.getElementById('nav-drawer');
+  if(btn&&drawer){
+    btn.addEventListener('click',function(){
+      var open=drawer.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+    });
+  }
+  var tabs=document.querySelectorAll('.role-tab');
+  var panels=document.querySelectorAll('.role-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+      panels.forEach(function(p){p.classList.remove('active');});
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      var panel=document.getElementById(tab.getAttribute('aria-controls'));
+      if(panel){panel.classList.add('active');}
+    });
+  });
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var b=item.querySelector('.faq-q');
+    if(b){b.addEventListener('click',function(){
+      var open=item.classList.toggle('open');
+      b.setAttribute('aria-expanded',open);
+    });}
+  });
+})();
+</script>
+</body>
+</html>

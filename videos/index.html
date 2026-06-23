@@ -134,6 +134,20 @@ footer a:hover{text-decoration:underline}
 }
 
 :focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+/* DISCIPLINES DROPDOWN */
+.nav-dropdown{position:relative;display:inline-flex;align-items:center}
+.nav-drop-btn{background:none;border:none;cursor:pointer;font-family:inherit;white-space:nowrap}
+.nav-drop-btn:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+.nav-drop-menu{display:none;position:absolute;top:100%;left:0;background:var(--leather-deeper);border:1px solid rgba(255,255,255,0.1);border-radius:0 0 var(--radius) var(--radius);min-width:200px;z-index:200;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
+.nav-dropdown:hover .nav-drop-menu,.nav-dropdown:focus-within .nav-drop-menu{display:block}
+.nav-drop-item{display:block;padding:10px 16px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-left:3px solid transparent;transition:color 0.2s,background 0.2s,border-color 0.2s}
+.nav-drop-item:hover,.nav-drop-item.active{color:var(--rope-light);background:rgba(255,255,255,0.05);border-left-color:var(--rope)}
+.nav-dropdown.active .nav-drop-btn{color:var(--rope-light);border-bottom-color:var(--rope)}
+/* MOBILE DISCIPLINES DRAWER */
+.nav-disc-toggle{background:none;border:none;cursor:pointer;font-family:inherit;text-align:left;width:100%}
+.nav-disc-drawer{display:none;flex-direction:column}
+.nav-disc-drawer.open{display:flex}
+.nav-sub{padding-left:32px!important;font-size:0.85rem;opacity:0.9}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CollectionPage","name":"Farrier Videos — Watch & Learn","description":"Educational farrier and hoof care videos from expert horseshoers.","url":"https://horsefarrier.net/videos/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
@@ -144,44 +158,66 @@ footer a:hover{text-decoration:underline}
 
 <header>
 <div class="topbar">
-  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
-    <div class="topbar-brand">
-      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
-      <div class="topbar-divider"></div>
-      <div class="topbar-tagline">
-        The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a>
-      </div>
-    </div>
+  <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+  <div style="display:flex;align-items:center;gap:8px">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+      <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+    </a>
   </div>
-  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
-    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
-  </a>
-  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-  </button>
 </div>
-<nav class="nav-bar" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
-    <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
-    <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
-    <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
-    <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
-    <a href="/faq/" class="nav-link">FAQ</a>
-    <a href="/glossary/" class="nav-link">Glossary</a>
-    <a href="/videos/" class="nav-link active">Videos</a>
-  </div>
-</nav>
-<nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
-  <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
-  <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
-  <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
-  <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
-  <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
-  <a href="/faq/" class="nav-link">❓ FAQ</a>
-  <a href="/glossary/" class="nav-link">📖 Glossary</a>
-  <a href="/videos/" class="nav-link active">🎬 Videos</a>
-</nav>
+  <nav class="nav-bar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/hoof-care/" class="nav-link ">Hoof Care Basics</a>
+      <a href="/farrier-tools/" class="nav-link ">Farrier Tools</a>
+      <a href="/horseshoes/" class="nav-link ">Horseshoe Types</a>
+      <a href="/hoof-issues/" class="nav-link ">Hoof Issues</a>
+      <div class="nav-dropdown ">
+        <button class="nav-link nav-drop-btn" aria-expanded="false" aria-haspopup="true">Disciplines ▾</button>
+        <div class="nav-drop-menu">
+          <a href="/disciplines/reining/" class="nav-drop-item ">🤠 Reining</a>
+          <a href="/disciplines/cutting/" class="nav-drop-item ">🐄 Cutting &amp; Cow Horse</a>
+          <a href="/disciplines/barrel-racing/" class="nav-drop-item ">🏁 Barrel Racing</a>
+          <a href="/disciplines/dressage/" class="nav-drop-item ">🎩 Dressage</a>
+          <a href="/disciplines/show-jumping/" class="nav-drop-item ">🏇 Show Jumping</a>
+          <a href="/disciplines/eventing/" class="nav-drop-item ">⛰️ Eventing</a>
+          <a href="/disciplines/thoroughbred-racing/" class="nav-drop-item ">🏆 Thoroughbred Racing</a>
+          <a href="/disciplines/trail-endurance/" class="nav-drop-item ">🌲 Trail &amp; Endurance</a>
+          <a href="/disciplines/draft-horses/" class="nav-drop-item ">🐎 Draft Horses</a>
+        </div>
+      </div>
+      <a href="/breed-hooves/" class="nav-link ">Breed Hoof Needs</a>
+      <a href="/nutrition/" class="nav-link ">Nutrition</a>
+      <a href="/faq/" class="nav-link ">FAQ</a>
+      <a href="/glossary/" class="nav-link ">Glossary</a>
+      <a href="/videos/" class="nav-link active">Videos</a>
+    </div>
+  </nav>
+  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <a href="/hoof-care/" class="nav-link ">🪄 Hoof Care Basics</a>
+    <a href="/farrier-tools/" class="nav-link ">🔧 Farrier Tools</a>
+    <a href="/horseshoes/" class="nav-link ">🔩 Horseshoe Types</a>
+    <a href="/hoof-issues/" class="nav-link ">🏥 Hoof Issues</a>
+    <button class="nav-link nav-disc-toggle" aria-expanded="false">🏇 Disciplines ▾</button>
+    <div class="nav-disc-drawer" id="disc-drawer">
+      <a href="/disciplines/reining/" class="nav-link nav-sub ">🤠 Reining</a>
+      <a href="/disciplines/cutting/" class="nav-link nav-sub ">🐄 Cutting &amp; Cow Horse</a>
+      <a href="/disciplines/barrel-racing/" class="nav-link nav-sub ">🏁 Barrel Racing</a>
+      <a href="/disciplines/dressage/" class="nav-link nav-sub ">🎩 Dressage</a>
+      <a href="/disciplines/show-jumping/" class="nav-link nav-sub ">🏇 Show Jumping</a>
+      <a href="/disciplines/eventing/" class="nav-link nav-sub ">⛰️ Eventing</a>
+      <a href="/disciplines/thoroughbred-racing/" class="nav-link nav-sub ">🏆 Thoroughbred Racing</a>
+      <a href="/disciplines/trail-endurance/" class="nav-link nav-sub ">🌲 Trail &amp; Endurance</a>
+      <a href="/disciplines/draft-horses/" class="nav-link nav-sub ">🐎 Draft Horses</a>
+    </div>
+    <a href="/breed-hooves/" class="nav-link ">🐎 Breed Hoof Needs</a>
+    <a href="/nutrition/" class="nav-link ">🌾 Nutrition</a>
+    <a href="/faq/" class="nav-link ">❓ FAQ</a>
+    <a href="/glossary/" class="nav-link ">📖 Glossary</a>
+    <a href="/videos/" class="nav-link active">🎬 Videos</a>
+  </nav>
 </header>
 
 <div class="page-hero">
@@ -446,7 +482,6 @@ footer a:hover{text-decoration:underline}
 
 <script>
 (function(){
-  /* NAV TOGGLE */
   var btn=document.querySelector('.nav-toggle');
   var drawer=document.getElementById('nav-drawer');
   if(btn&&drawer){
@@ -458,29 +493,15 @@ footer a:hover{text-decoration:underline}
         :'<line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>';
     });
   }
-
-  /* FILTER */
-  var filterBtns=document.querySelectorAll('.filter-btn');
-  var cards=document.querySelectorAll('.video-card');
-  var countBar=document.getElementById('count-bar');
-
-  filterBtns.forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var filter=this.dataset.filter;
-      filterBtns.forEach(function(b){b.classList.remove('active')});
-      this.classList.add('active');
-      var visible=0;
-      cards.forEach(function(card){
-        if(filter==='all'||card.dataset.cat===filter){
-          card.removeAttribute('data-hidden');
-          visible++;
-        } else {
-          card.setAttribute('data-hidden','true');
-        }
-      });
-      countBar.textContent='Showing '+visible+' video'+(visible===1?'':'s');
+  var discBtn=document.querySelector('.nav-disc-toggle');
+  var discDrawer=document.getElementById('disc-drawer');
+  if(discBtn&&discDrawer){
+    discBtn.addEventListener('click',function(){
+      var open=discDrawer.classList.toggle('open');
+      discBtn.setAttribute('aria-expanded',open);
+      discBtn.textContent=(open?'🏇 Disciplines ▴':'🏇 Disciplines ▾');
     });
-  });
+  }
 })();
 </script>
 </body>

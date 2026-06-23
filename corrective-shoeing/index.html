@@ -121,6 +121,27 @@ footer a{color:var(--rope-light);text-decoration:none}
 .sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
 @media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
 @media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
+
+/* ── VIDEO FACADE ─────────────────────────────────── */
+.video-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:16px}
+.video-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)}
+@media(hover:hover){.video-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--border-strong)}}
+.vid-facade{position:relative;width:100%;padding-bottom:56.25%;background:#1a1a1a;cursor:pointer;overflow:hidden}
+.vid-facade img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease,filter 0.3s ease}
+.vid-facade:hover img{transform:scale(1.03);filter:brightness(0.85)}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.vid-facade:hover .vid-play{background:rgba(255,0,0,1);transform:translate(-50%,-50%) scale(1.08)}
+.vid-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.vid-facade iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:14px 16px 16px}
+.video-tag{display:inline-flex;align-items:center;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px}
+.video-tag.t-corrective{background:var(--rope-pale);color:var(--leather-dark)}
+.video-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:4px;overflow-wrap:break-word}
+.video-channel{font-size:0.78rem;color:var(--ink-muted);font-weight:600}
+@media(min-width:768px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+/* ── end video ─────────────────────────────────────── */
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Corrective & Therapeutic Shoeing Overview","description":"What corrective and therapeutic shoeing is, how it works, when it's needed, the five mechanical variables farriers control, and what owners must understand about the process.","url":"https://horsefarrier.net/corrective-shoeing/","publisher":{"@type":"Organization","name":"HorseFarrier.net","url":"https://horsefarrier.net"}}
@@ -461,6 +482,57 @@ footer a{color:var(--rope-light);text-decoration:none}
     </div>
   </section>
 
+  <section class="section" id="videos">
+    <h2>Watch &amp; Learn</h2>
+    <p>Four videos showing corrective shoeing in practice — from hoof balance restoration to reverse shoe application, quarter crack repair, and a master farrier overview. Tap any thumbnail to play.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="vid-facade" data-vid="OrG63_Hj45A" data-title="How a Farrier Fixes a Broken Hoof — Corrective Transformation" role="button" tabindex="0" aria-label="Play: How a Farrier Fixes a Broken Hoof — Corrective Transformation">
+          <img src="https://img.youtube.com/vi/OrG63_Hj45A/hqdefault.jpg" alt="How a Farrier Fixes a Broken Hoof — Corrective Transformation" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-corrective">⚙️ Corrective</div>
+          <div class="video-title">How a Farrier Fixes a Broken Hoof — Corrective Transformation</div>
+          <div class="video-channel">HelpDonkey</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="roW0g_q9Fkg" data-title="Backwards Shoe for Tendon Relief — Corrective Shoeing Case" role="button" tabindex="0" aria-label="Play: Backwards Shoe for Tendon Relief — Corrective Shoeing Case">
+          <img src="https://img.youtube.com/vi/roW0g_q9Fkg/hqdefault.jpg" alt="Backwards Shoe for Tendon Relief — Corrective Shoeing Case" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-corrective">⚙️ Corrective</div>
+          <div class="video-title">Backwards Shoe for Tendon Relief — Corrective Shoeing Case</div>
+          <div class="video-channel">Equine Performance Innovations</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="-hRttBVL3SE" data-title="Horse&#39;s Painful Bleeding Quarter Crack — CJF Corrective Work" role="button" tabindex="0" aria-label="Play: Horse&#39;s Painful Bleeding Quarter Crack — CJF Corrective Work">
+          <img src="https://img.youtube.com/vi/-hRttBVL3SE/hqdefault.jpg" alt="Horse&#39;s Painful Bleeding Quarter Crack — CJF Corrective Work" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-corrective">⚙️ Corrective</div>
+          <div class="video-title">Horse's Painful Bleeding Quarter Crack — CJF Corrective Work</div>
+          <div class="video-channel">Olsen Equine CJF</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="vid-facade" data-vid="gmapH-FKXMw" data-title="Horseshoeing Basics with World-Renowned John McKenzie" role="button" tabindex="0" aria-label="Play: Horseshoeing Basics with World-Renowned John McKenzie">
+          <img src="https://img.youtube.com/vi/gmapH-FKXMw/hqdefault.jpg" alt="Horseshoeing Basics with World-Renowned John McKenzie" loading="lazy" decoding="async">
+          <div class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag t-corrective">⚙️ Corrective</div>
+          <div class="video-title">Horseshoeing Basics with World-Renowned John McKenzie</div>
+          <div class="video-channel">Competitive Horsemanship</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <nav class="nav-cards" aria-label="Explore more resources">
     <a href="/horseshoes/" class="nav-card">
       <div class="label">Deep Dive</div>
@@ -501,6 +573,19 @@ footer a{color:var(--rope-light);text-decoration:none}
     document.addEventListener('click',function(e){if(!drop.contains(e.target)){drop.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Disciplines ▾';}});
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.vid-facade').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.dataset.vid,t=f.dataset.title;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=t; iframe.allowFullscreen=true;
+    iframe.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
+  });
+});
 </script>
 </body>
 </html>

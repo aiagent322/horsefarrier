@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
+<meta name="format-detection" content="telephone=no, address=no, date=no, email=no">
+<title>Thrush in Horses — Causes, Treatment & Prevention | HorseFarrier.net</title>
+<meta name="description" content="Everything horse owners, farriers, and vets need to know about equine thrush — what it is, how to identify it, treatment protocols for all three roles, and how to prevent recurrence.">
+<link rel="canonical" href="https://horsefarrier.net/hoof-issues/thrush/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Thrush in Horses — Causes, Treatment & Prevention">
+<meta property="og:description" content="Complete guide to equine thrush — identification, farrier treatment, veterinary care, and what horse owners can do at home.">
+<meta property="og:url" content="https://horsefarrier.net/hoof-issues/thrush/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* MOBILE-FIRST — 320px base */
+:root{
+  --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;--steel:#1A6FA3;--steel-light:#E8F4FD;
+  --alert:#8B1A1A;--alert-light:#FDF0F0;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{display:none}
+.topbar-tagline{display:none}
+.bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0}
+.nav-bar{background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);display:none}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;padding:0 16px;flex-wrap:wrap}
+.nav-link{display:flex;align-items:center;padding:0 12px;height:40px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
+.nav-link:hover,.nav-link.active{color:var(--rope-light);border-bottom-color:var(--rope)}
+.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0;color:rgba(255,255,255,0.8)}
+.nav-toggle svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}
+.nav-drawer{display:none;flex-direction:column;background:var(--leather-dark);border-top:1px solid rgba(255,255,255,0.08);padding:8px 0 12px}
+.nav-drawer.open{display:flex}
+.nav-drawer .nav-link{height:48px;padding:0 20px;font-size:0.9rem;border-bottom:none;border-left:3px solid transparent}
+.nav-drawer .nav-link:hover,.nav-drawer .nav-link.active{border-left-color:var(--rope);border-bottom:none;background:rgba(255,255,255,0.04)}
+@media(min-width:768px){.nav-toggle{display:none}.nav-bar{display:block}.nav-drawer{display:none!important}}
+
+/* BREADCRUMB */
+.breadcrumb{background:var(--sand);border-bottom:1px solid var(--border);padding:10px max(16px,env(safe-area-inset-right))}
+.breadcrumb-inner{max-width:860px;margin:0 auto;font-size:0.78rem;color:var(--ink-muted);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.breadcrumb-inner a{color:var(--leather);text-decoration:none;font-weight:600}
+.breadcrumb-inner a:hover{text-decoration:underline}
+.breadcrumb-sep{color:var(--ink-muted);opacity:0.5}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--alert) 0%,#6B1414 50%,#4A0E0E 100%);padding:28px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.hero-inner{max-width:860px;margin:0 auto;position:relative}
+.series-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:12px}
+.hero h1{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:10px}
+.hero h1 em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.72);font-size:0.9rem;line-height:1.6;max-width:640px;margin-bottom:16px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.8);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:14px}
+
+/* SEVERITY BANNER */
+.severity-banner{background:var(--alert-light);border-left:4px solid var(--alert);padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0;margin:0}
+.severity-banner strong{color:var(--alert);display:block;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.severity-banner p{font-size:0.88rem;color:var(--ink);line-height:1.5}
+
+/* MAIN LAYOUT */
+.page-wrap{max-width:860px;margin:0 auto;padding:0 16px 40px}
+
+/* SECTION HEADERS */
+.section-head{margin:32px 0 16px}
+.section-head h2{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px}
+.section-head p{font-size:0.9rem;color:var(--ink-muted);line-height:1.6}
+.section-divider{height:3px;background:linear-gradient(90deg,var(--rope) 0%,transparent 100%);border-radius:2px;margin-bottom:18px}
+
+/* WHAT IS IT */
+.what-grid{display:flex;flex-direction:column;gap:14px}
+.what-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 16px}
+.what-card h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.what-card p{font-size:0.88rem;color:var(--ink-soft);line-height:1.65}
+.what-card ul{font-size:0.88rem;color:var(--ink-soft);line-height:1.65;padding-left:18px;margin-top:8px}
+.what-card ul li{margin-bottom:5px}
+
+/* SEVERITY SCALE */
+.severity-scale{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:24px}
+.severity-scale-head{background:var(--sand);padding:14px 18px;border-bottom:1px solid var(--border)}
+.severity-scale-head h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:var(--ink)}
+.severity-row{display:flex;gap:0;border-bottom:1px solid var(--border)}
+.severity-row:last-child{border-bottom:none}
+.severity-stage{flex:0 0 90px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 10px;text-align:center;font-weight:700;font-size:0.78rem;border-right:1px solid var(--border)}
+.severity-stage.mild{background:#E8F5E9;color:#2E7D32}
+.severity-stage.moderate{background:#FFF8E1;color:#F57F17}
+.severity-stage.severe{background:#FFEBEE;color:#C62828}
+.severity-detail{padding:14px 16px;flex:1}
+.severity-detail strong{display:block;font-size:0.85rem;color:var(--ink);margin-bottom:5px}
+.severity-detail p{font-size:0.83rem;color:var(--ink-muted);line-height:1.55}
+
+/* ROLE TREATMENT BLOCKS */
+.role-tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin:24px 0 0;overflow-x:auto;scrollbar-width:none}
+.role-tabs::-webkit-scrollbar{display:none}
+.role-tab{padding:10px 16px;font-size:0.82rem;font-weight:700;color:var(--ink-muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;transition:0.2s;margin-bottom:-2px;min-height:44px}
+.role-tab.active{color:var(--leather-dark);border-bottom-color:var(--leather)}
+.role-panel{display:none;padding:20px 0}
+.role-panel.active{display:block}
+
+.role-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding:16px;background:var(--sand);border-radius:var(--radius-lg);border:1px solid var(--border)}
+.role-icon{font-size:2rem;flex-shrink:0;line-height:1}
+.role-header-text h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--ink);margin-bottom:4px}
+.role-header-text p{font-size:0.85rem;color:var(--ink-muted);line-height:1.55}
+
+.treatment-steps{display:flex;flex-direction:column;gap:12px}
+.step{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.step-num{background:var(--leather-deeper);color:var(--cream);font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:900;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-body{}
+.step-body strong{display:block;font-size:0.9rem;color:var(--ink);font-weight:700;margin-bottom:4px}
+.step-body p{font-size:0.85rem;color:var(--ink-soft);line-height:1.6}
+.step-body ul{font-size:0.85rem;color:var(--ink-soft);line-height:1.6;padding-left:16px;margin-top:6px}
+.step-body ul li{margin-bottom:4px}
+
+.product-grid{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.product-card{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.product-card h4{font-size:0.88rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.product-card p{font-size:0.82rem;color:var(--ink-muted);line-height:1.55}
+.product-tag{display:inline-flex;font-size:0.68rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:3px 9px;border-radius:8px;margin-bottom:6px}
+.product-tag.rx{background:#E8F4FD;color:var(--steel)}
+.product-tag.otc{background:var(--sage-light);color:var(--sage-dark)}
+.product-tag.home{background:var(--rope-pale);color:var(--leather-dark)}
+
+/* CAUTION BOX */
+.caution-box{background:var(--alert-light);border:1px solid rgba(139,26,26,0.2);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.caution-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.caution-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--alert);margin-bottom:4px}
+.caution-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+
+/* TIP BOX */
+.tip-box{background:var(--sage-light);border:1px solid rgba(74,114,57,0.25);border-radius:var(--radius-lg);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.tip-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.tip-body strong{display:block;font-size:0.88rem;font-weight:700;color:var(--sage-dark);margin-bottom:4px}
+.tip-body p{font-size:0.84rem;color:var(--ink);line-height:1.55}
+
+/* PREVENTION GRID */
+.prevention-grid{display:flex;flex-direction:column;gap:12px}
+.prev-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:flex;gap:14px;align-items:flex-start}
+.prev-icon{font-size:1.6rem;flex-shrink:0;line-height:1}
+.prev-body h4{font-size:0.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.prev-body p{font-size:0.84rem;color:var(--ink-soft);line-height:1.6}
+
+/* QUICK REFERENCE CARD */
+.quick-ref{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:22px 18px;margin:24px 0}
+.quick-ref h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:var(--cream);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12)}
+.quick-ref-grid{display:flex;flex-direction:column;gap:10px}
+.qr-item{display:flex;gap:12px;align-items:flex-start}
+.qr-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--rope-light);flex:0 0 80px}
+.qr-val{font-size:0.85rem;color:rgba(255,255,255,0.8);line-height:1.5}
+
+/* FAQ SECTION */
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:16px 18px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:52px}
+.faq-q .faq-arrow{font-size:0.9rem;color:var(--leather);transition:transform 0.2s;flex-shrink:0}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 18px 16px;font-size:0.86rem;color:var(--ink-soft);line-height:1.65}
+.faq-item.open .faq-a{display:block}
+
+/* SERIES NAV */
+.series-nav{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;margin:28px 0}
+.series-nav h3{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:900;color:var(--ink);margin-bottom:12px}
+.series-list{display:flex;flex-direction:column;gap:6px}
+.series-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--radius);background:var(--white);border:1px solid var(--border);text-decoration:none;color:var(--ink);font-size:0.85rem;font-weight:600;transition:var(--transition)}
+.series-item.current{background:var(--leather-deeper);color:var(--cream);border-color:var(--leather-deeper)}
+.series-item.current .series-num{background:var(--rope);color:var(--leather-deeper)}
+.series-item.coming{opacity:0.5;pointer-events:none;cursor:default}
+.series-num{background:var(--sand-dark);color:var(--ink-muted);font-size:0.72rem;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+
+/* CTA STRIP */
+.cta-strip{background:var(--sand);border-top:1px solid var(--border);padding:28px max(16px,env(safe-area-inset-right))}
+.cta-box{max-width:860px;margin:0 auto;text-align:center}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:8px}
+.cta-box p{font-size:0.86rem;color:var(--ink-muted);line-height:1.6;max-width:560px;margin:0 auto 16px}
+.cta-btns{display:flex;flex-direction:column;gap:10px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:22px;font-weight:700;font-size:0.88rem;text-decoration:none;transition:var(--transition);min-height:48px}
+.cta-btn.primary{background:var(--leather-deeper);color:var(--cream)}
+.cta-btn.secondary{background:var(--white);color:var(--leather-dark);border:1px solid var(--border-strong)}
+
+/* FOOTER */
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-items:center;padding:6px 4px;min-height:44px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:12px 0}
+
+/* HOVER */
+@media(hover:hover){
+  .card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+  footer a:hover{text-decoration:underline}
+  .cta-btn.primary:hover{background:var(--leather-dark);transform:translateY(-2px)}
+  .cta-btn.secondary:hover{background:var(--sand);transform:translateY(-2px)}
+  .series-item:not(.current):not(.coming):hover{background:var(--sand);border-color:var(--border-strong)}
+}
+
+/* TABLET 768px+ */
+@media(min-width:768px){
+  .topbar-divider{display:block;width:1px;height:20px;background:rgba(255,255,255,0.2);flex-shrink:0}
+  .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.55);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bb-logo-link{display:flex}
+  .hero h1{font-size:2.4rem}
+  .what-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .prevention-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .quick-ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cta-btns{flex-direction:row;justify-content:center}
+  footer{font-size:0.82rem}
+  .series-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+}
+
+/* DESKTOP 1024px+ */
+@media(min-width:1024px){
+  .what-grid{grid-template-columns:1fr 1fr 1fr}
+  .prevention-grid{grid-template-columns:1fr 1fr 1fr}
+  .hero h1{font-size:2.6rem}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Thrush in Horses — Causes, Treatment & Prevention",
+  "url":"https://horsefarrier.net/hoof-issues/thrush/",
+  "description":"Complete guide to equine thrush — identification, farrier treatment, veterinary care, and what horse owners can do at home.",
+  "about":{"@type":"MedicalCondition","name":"Equine Thrush","alternateName":"Spherophorus necrophorus hoof infection"},
+  "publisher":{"@type":"Organization","name":"Bridle & Bit Magazine","url":"https://www.bridleandbit.com"},
+  "isPartOf":{"@type":"WebSite","name":"HorseFarrier.net","url":"https://horsefarrier.net"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+    <div class="topbar-brand">
+      <a class="topbar-logo" href="/">Horse<span>Farrier</span>.net</a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-tagline">The complete hoof care resource — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" style="color:var(--rope-light);text-decoration:none;">Bridle &amp; Bit Magazine</a></div>
+    </div>
+  </div>
+  <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
+  </a>
+</div>
+<nav class="nav-bar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/hoof-care/" class="nav-link">Hoof Care Basics</a>
+    <a href="/farrier-tools/" class="nav-link">Farrier Tools</a>
+    <a href="/breed-hooves/" class="nav-link">Breed Hoof Needs</a>
+    <a href="/nutrition/" class="nav-link">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/" class="nav-link">Horseshoe Types</a>
+    <a href="/hoof-issues/" class="nav-link active">Top 10 Hoof Issues</a>
+    <a href="/faq/" class="nav-link">FAQ</a>
+    <a href="/glossary/" class="nav-link">Glossary</a>
+    <a href="/videos/" class="nav-link">Videos</a>
+  </div>
+</nav>
+<nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+  <a href="/hoof-care/" class="nav-link">🪄 Hoof Care Basics</a>
+  <a href="/farrier-tools/" class="nav-link">🔧 Farrier Tools</a>
+  <a href="/breed-hooves/" class="nav-link">🐎 Breed Hoof Needs</a>
+  <a href="/nutrition/" class="nav-link">🌾 Nutrition &amp; Hooves</a>
+  <a href="/horseshoes/" class="nav-link">🔩 Horseshoe Types</a>
+  <a href="/hoof-issues/" class="nav-link active">🏥 Top 10 Hoof Issues</a>
+  <a href="/faq/" class="nav-link">❓ FAQ</a>
+  <a href="/glossary/" class="nav-link">📖 Glossary</a>
+  <a href="/videos/" class="nav-link">🎬 Videos</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">HorseFarrier.net</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>Thrush</span>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="series-badge">🏥 Issue #1 of Top 10 Hoof Problems</div>
+    <h1>Equine <em>Thrush</em></h1>
+    <p class="hero-sub">The most common hoof infection horse owners will face — what it is, how to spot it, and exactly what your farrier, your vet, and you should each be doing about it.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">🦠 Bacterial Infection</span>
+      <span class="hero-tag">⚠️ Preventable</span>
+      <span class="hero-tag">🐎 All Breeds</span>
+      <span class="hero-tag">✅ Treatable</span>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" class="page-wrap">
+
+  <!-- SEVERITY BANNER -->
+  <div style="margin:20px 0;">
+    <div class="severity-banner">
+      <strong>⚠️ Severity Range: Mild to Serious</strong>
+      <p>Mild thrush is easily treated at home. Deep-sulcus or chronic thrush can invade sensitive laminar tissue, cause lameness, and require veterinary intervention. Never ignore recurring or foul-smelling black discharge — catch it early.</p>
+    </div>
+  </div>
+
+  <!-- WHAT IS THRUSH -->
+  <div class="section-head">
+    <div class="section-divider"></div>
+    <h2>What Is Thrush?</h2>
+    <p>The biology, cause, and anatomy of the most common hoof infection in horses.</p>
+  </div>
+
+  <div class="what-grid">
+    <div class="what-card">
+      <h3>🦠 The Organism</h3>
+      <p>Thrush is a bacterial infection of the hoof, primarily caused by <em>Fusobacterium necrophorum</em> — an anaerobic bacterium that thrives in the absence of oxygen. Wet, packed manure and mud in the hoof sulci create exactly the oxygen-free environment this organism needs to multiply. Secondary opportunistic bacteria and fungi often join the infection, accelerating tissue destruction.</p>
+    </div>
+    <div class="what-card">
+      <h3>📍 Where It Strikes</h3>
+      <p>Thrush targets the frog — specifically the central sulcus (the groove running down the middle of the frog) and the collateral sulci (the grooves on either side). In healthy hooves these grooves are shallow and self-cleaning. When they become deep, narrow, or chronically packed with debris, they become perfect anaerobic pockets for infection to take hold.</p>
+    </div>
+    <div class="what-card">
+      <h3>⚡ Why It Happens</h3>
+      <p>Thrush is largely a management and environment problem, not a random disease. Key risk factors include:</p>
+      <ul>
+        <li>Standing in mud, wet stalls, or saturated paddocks</li>
+        <li>Infrequent hoof picking — daily cleaning is the single best prevention</li>
+        <li>Long trimming intervals allowing deep, contracted sulci to form</li>
+        <li>Contracted heels creating abnormally deep central sulci</li>
+        <li>Horses on stall rest with limited movement</li>
+        <li>Poor nutrition reducing overall hoof horn quality</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- IDENTIFICATION -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>How to Identify Thrush</h2>
+    <p>Know the signs before it progresses — early detection saves weeks of treatment.</p>
+  </div>
+
+  <div class="severity-scale">
+    <div class="severity-scale-head">
+      <h3>🔍 Thrush Severity Stages — What You Will See and Smell</h3>
+    </div>
+    <div class="severity-row">
+      <div class="severity-stage mild">MILD<br>Stage 1</div>
+      <div class="severity-detail">
+        <strong>Surface Infection — No Lameness</strong>
+        <p>Faint foul odor when picking the hoof. Shallow black or dark gray discoloration in the sulci. The frog tissue appears slightly soft or crumbly at the surface but the structure is intact. Horse shows no sensitivity to hoof pick pressure. This is the easiest and fastest stage to treat.</p>
+      </div>
+    </div>
+    <div class="severity-row">
+      <div class="severity-stage moderate">MODERATE<br>Stage 2</div>
+      <div class="severity-detail">
+        <strong>Deep Sulcus Infection — Possible Sensitivity</strong>
+        <p>Strong, distinctly foul black discharge when the sulci are probed. The frog begins to look ragged, eaten away, or has visible crevices. Horse may flinch or pull away when the central sulcus is probed with a hoof pick. Some horses show a subtle change in gait. The central sulcus may appear slit-like and very deep. Active farrier and diligent daily owner treatment required.</p>
+      </div>
+    </div>
+    <div class="severity-row">
+      <div class="severity-stage severe">SEVERE<br>Stage 3</div>
+      <div class="severity-detail">
+        <strong>Sensitive Tissue Invasion — Lameness Present</strong>
+        <p>Copious black, watery, foul-smelling discharge. Frog tissue is severely undermined, ragged, or partially sloughing. The infection has penetrated into the sensitive frog or sensitive laminae. Visible bleeding when tissue is debrided. Horse is lame or significantly foot-sore. Veterinary examination required — systemic antibiotics may be indicated. Do not attempt to treat this stage without professional guidance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK REFERENCE -->
+  <div class="quick-ref">
+    <h3>⚡ Quick Reference — Thrush at a Glance</h3>
+    <div class="quick-ref-grid">
+      <div class="qr-item"><div class="qr-label">Cause</div><div class="qr-val">Fusobacterium necrophorum + secondary bacteria; anaerobic environment in wet, dirty sulci</div></div>
+      <div class="qr-item"><div class="qr-label">Location</div><div class="qr-val">Central sulcus and collateral sulci of the frog</div></div>
+      <div class="qr-item"><div class="qr-label">Key Sign</div><div class="qr-val">Foul black discharge; soft, ragged, or eaten-away frog tissue</div></div>
+      <div class="qr-item"><div class="qr-label">Lameness?</div><div class="qr-val">Mild: none. Moderate: possible. Severe: yes — call vet</div></div>
+      <div class="qr-item"><div class="qr-label">Treatment</div><div class="qr-val">Debridement + topical antiseptic + dry environment + daily care</div></div>
+      <div class="qr-item"><div class="qr-label">Recovery</div><div class="qr-val">Mild: 1–2 weeks. Moderate: 4–8 weeks. Severe: months</div></div>
+      <div class="qr-item"><div class="qr-label">Prevention</div><div class="qr-val">Daily hoof picking, dry footing, regular farrier schedule</div></div>
+      <div class="qr-item"><div class="qr-label">Contagious?</div><div class="qr-val">Not directly horse-to-horse, but shared wet environments spread risk</div></div>
+    </div>
+  </div>
+
+  <!-- TREATMENT — THREE ROLES -->
+  <div class="section-head" style="margin-top:32px;">
+    <div class="section-divider"></div>
+    <h2>Treatment — Three Roles, Three Approaches</h2>
+    <p>Successful thrush treatment requires coordination between the farrier, the veterinarian, and the horse owner. Each role has a distinct set of responsibilities.</p>
+  </div>
+
+  <div class="role-tabs" role="tablist" aria-label="Treatment by role">
+    <button class="role-tab active" role="tab" aria-selected="true" aria-controls="panel-farrier" id="tab-farrier">🔨 The Farrier</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-vet" id="tab-vet">🩺 The Veterinarian</button>
+    <button class="role-tab" role="tab" aria-selected="false" aria-controls="panel-owner" id="tab-owner">🧤 The Horse Owner</button>
+  </div>
+
+  <!-- FARRIER PANEL -->
+  <div class="role-panel active" id="panel-farrier" role="tabpanel" aria-labelledby="tab-farrier">
+    <div class="role-header">
+      <div class="role-icon">🔨</div>
+      <div class="role-header-text">
+        <h3>The Farrier's Role in Thrush Treatment</h3>
+        <p>The farrier is the first line of defense. They have the tools, training, and hands-on hoof knowledge to debride infected tissue, reshape the foot to prevent recurrence, and recommend or apply appropriate topical treatments. Many cases of thrush are caught by the farrier during routine visits before the owner has noticed any signs.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Thorough Examination & Assessment</strong>
+          <p>Before touching the hoof, the farrier assesses overall foot balance, heel conformation, and sulcus depth. Contracted heels and narrow, deep central sulci are both a cause and consequence of chronic thrush. The farrier notes severity stage, which sulci are affected, and whether sensitive tissue may be involved.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Debridement of Infected & Necrotic Tissue</strong>
+          <p>Using a sharp hoof knife, the farrier carefully removes all necrotic (dead, black, infected) frog tissue. This is the single most important treatment step — topical products cannot penetrate and kill bacteria buried under dead tissue. The farrier opens up the sulci so air can reach the infection. In mild to moderate cases, this alone may resolve the infection within days. Bleeding during debridement indicates proximity to sensitive tissue and signals the farrier to stop and potentially defer to a veterinarian.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Corrective Trimming for Environment Improvement</strong>
+          <p>Thrush thrives in deep, packed sulci. Where appropriate, the farrier adjusts the trim to:</p>
+          <ul>
+            <li>Open the central sulcus — widening a slit-like sulcus so it can self-clean and receive air</li>
+            <li>Relieve contracted heels — widening heel quarters over successive trims to reduce sulcus depth</li>
+            <li>Reduce the trimming interval — often recommending 4–5 week cycles instead of 8 weeks for affected horses</li>
+            <li>Correct breakover and balance to promote healthy frog loading and natural self-cleaning movement</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Topical Treatment Application</strong>
+          <p>After debridement, the farrier applies a topical antiseptic directly into the cleaned sulci. The goal is to kill remaining bacteria and create an inhospitable environment for regrowth. Common farrier-applied treatments include iodine-based solutions (7% tincture of iodine), copper sulfate, or commercial products such as Thrush Buster, Kopertox, or Clean Trax. The farrier will typically recommend the owner continue applications daily.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Packing for Deep-Sulcus Cases</strong>
+          <p>For deep central sulcus thrush, the farrier may pack the treated sulcus with medicated gauze, cotton soaked in iodine or diluted bleach, or commercial packing products. This maintains antiseptic contact with the deepest part of the infection between owner treatments. The farrier instructs the owner on how to remove, check, and replace the packing.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Shoe Selection for Chronic Cases</strong>
+          <p>In chronic or recurrent thrush, the farrier may recommend shoeing changes to support recovery:</p>
+          <ul>
+            <li><strong>Wide-web shoes</strong> — reduce mud and debris packing into sulci</li>
+            <li><strong>Bar shoes or egg bar shoes</strong> — increase frog support and ground contact, stimulating circulation and natural self-cleaning</li>
+            <li><strong>Going barefoot</strong> — in appropriate environments, barefoot horses with good movement often have lower thrush rates due to natural frog flexion and self-cleaning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="caution-box">
+      <div class="caution-icon">⛔</div>
+      <div class="caution-body">
+        <strong>When the Farrier Should Stop & Call the Vet</strong>
+        <p>If debridement produces bleeding, if the horse shows extreme sensitivity suggesting sensitive laminae involvement, or if the infection has clearly breached the white line or shows signs extending into deeper structures — the farrier should defer to veterinary assessment before proceeding. Cutting into sensitive tissue without proper pain management and sterile technique is harmful, not helpful.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VET PANEL -->
+  <div class="role-panel" id="panel-vet" role="tabpanel" aria-labelledby="tab-vet">
+    <div class="role-header">
+      <div class="role-icon">🩺</div>
+      <div class="role-header-text">
+        <h3>The Veterinarian's Role in Thrush Treatment</h3>
+        <p>Most mild-to-moderate thrush cases don't require a vet call. However, once thrush has progressed to Stage 2 or 3 — especially when lameness is present, sensitive tissue is exposed, or the infection is chronic and non-responsive to farrier care — veterinary involvement becomes essential.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Lameness Evaluation</strong>
+          <p>The vet performs a full lameness workup to determine whether the thrush is the primary cause of any gait change, or whether an underlying condition (navicular disease, laminitis, white line disease) has created the contracted heels and deep sulci that allowed thrush to develop. Distinguishing between these conditions changes the treatment plan significantly.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Pain Management for Debridement</strong>
+          <p>For severe cases where debridement into sensitive tissue is required, the vet administers a palmar digital nerve block (regional anesthesia of the foot) so the horse can tolerate thorough cleaning and debridement without pain. This allows the farrier and vet to work together to fully clean the infection without the horse pulling away.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Deep Debridement & Irrigation</strong>
+          <p>The vet may use surgical instruments to debride more aggressively than a farrier can without anesthesia, and may irrigate the sulci with antiseptic solutions (dilute iodine, chlorhexidine, or hydrogen peroxide) using a syringe to flush bacteria from inaccessible pockets. For severe cases, the vet may place a drain or pack the cavity with antibiotic-impregnated material.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Topical Prescription Treatments</strong>
+          <p>The vet may prescribe treatments not available over the counter:</p>
+          <ul>
+            <li><strong>Metronidazole paste or gel</strong> — an antibiotic with specific efficacy against anaerobic bacteria including <em>Fusobacterium necrophorum</em>; applied directly into sulci</li>
+            <li><strong>Chlorhexidine solution (2%)</strong> — prescription-strength antiseptic irrigation</li>
+            <li><strong>DMSO combinations</strong> — dimethyl sulfoxide used as a carrier to drive antibiotics deeper into tissue</li>
+            <li><strong>Silver sulfadiazine cream</strong> — broad-spectrum antimicrobial used in difficult chronic cases</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Systemic Antibiotics (Severe Cases Only)</strong>
+          <p>In cases where the infection has spread to sensitive tissue or shows signs of systemic involvement (fever, swelling up the leg, cellulitis), the vet may prescribe systemic antibiotics — typically trimethoprim-sulfamethoxazole (TMS) or penicillin. Systemic antibiotic use for thrush is reserved for serious infections and should not be requested for routine cases.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Underlying Condition Management</strong>
+          <p>If the vet identifies a predisposing condition — contracted heels from navicular syndrome, chronic laminitis rotation creating abnormal hoof loading, PPID (Cushing's disease) reducing immune function — treating the underlying condition is essential to preventing thrush recurrence. Thrush that keeps coming back despite good management is almost always a symptom of a deeper problem.</p>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-icon">💡</div>
+      <div class="tip-body">
+        <strong>When to Call Your Vet — Don't Wait For</strong>
+        <p>Call your vet if your horse is lame and you see thrush signs, if you see bleeding during at-home treatment, if the infection doesn't improve after 2 weeks of diligent farrier and owner care, if the central sulcus is so deep a hoof pick disappears into it, or if you see swelling above the hoof.</p>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>Metronidazole Gel</h4>
+        <p>Antibiotic with specific anaerobic activity. Compounded by equine pharmacy, applied daily into sulci. Most effective prescription option for stubborn thrush.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>TMS Oral Antibiotic</h4>
+        <p>Trimethoprim-sulfamethoxazole tablets. For systemic involvement only — deep infection with signs of spread beyond the hoof capsule.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag rx">Rx/OTC</div>
+        <h4>2% Chlorhexidine Solution</h4>
+        <p>Broad-spectrum antiseptic used for irrigation. Can be diluted for daily soaks. Available OTC in lower concentrations; 2% requires vet guidance.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag rx">Prescription</div>
+        <h4>Silver Sulfadiazine Cream</h4>
+        <p>Broad-spectrum antimicrobial cream. Used for severe or chronic cases where tissue is exposed or has broken down. Requires vet prescription.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OWNER PANEL -->
+  <div class="role-panel" id="panel-owner" role="tabpanel" aria-labelledby="tab-owner">
+    <div class="role-header">
+      <div class="role-icon">🧤</div>
+      <div class="role-header-text">
+        <h3>The Horse Owner's Role in Thrush Treatment</h3>
+        <p>The horse owner is the most important player in thrush treatment — because you see the horse every day. Farrier visits happen every 6–8 weeks. The vet comes when called. But you're there daily, and daily treatment is what cures thrush. Here's exactly what to do.</p>
+      </div>
+    </div>
+    <div class="treatment-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Pick Hooves Daily — Every Single Day</strong>
+          <p>No step matters more. Pick out all four hooves every day, even on days you don't ride. Use a stiff brush after picking to remove residual debris from the sulci. As you pick, check the frog for odor and soft spots. This daily habit both treats existing thrush by removing the anaerobic debris and prevents new thrush by denying the bacteria its environment.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Apply Your Topical Treatment After Picking</strong>
+          <p>After picking and brushing, apply your chosen treatment product directly into the sulci. The most common and effective home treatments are:</p>
+          <ul>
+            <li><strong>Thrush Buster</strong> — purple-staining, long-lasting, widely regarded as the most effective OTC product; apply every 2–3 days for mild cases, daily for moderate</li>
+            <li><strong>Kopertox (copper naphthenate)</strong> — green solution, very effective; apply daily to every-other-day</li>
+            <li><strong>Pete's Goo / homemade mixture</strong> — triple antibiotic ointment mixed with athletes foot cream; effective for packing into deep sulci</li>
+            <li><strong>7% Tincture of Iodine</strong> — inexpensive and effective; apply daily with a small syringe or brush</li>
+            <li><strong>White Lightning or Clean Trax</strong> — chlorine dioxide-based; used as soaks for 45 minutes; excellent for moderate cases</li>
+            <li><strong>Dilute bleach (1:10 ratio, water:bleach)</strong> — last resort; effective but can dry and damage healthy hoof tissue with overuse</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Manage the Environment</strong>
+          <p>Treatment applied to a horse standing in wet manure is a losing battle. Environment management is non-negotiable:</p>
+          <ul>
+            <li><strong>Stall maintenance</strong> — strip stalls daily, not just spot-clean; wet, deep bedding is thrush's best friend</li>
+            <li><strong>Paddock drainage</strong> — add gravel, sand, or crusher-run footing to chronically wet areas; concentrate footing near water troughs, gate entries, and shelter areas where horses stand</li>
+            <li><strong>Temporary dry housing</strong> — even 12 hours per day in a dry stall or run-in can break the infection cycle during treatment</li>
+            <li><strong>Muddy pastures</strong> — if drainage improvement isn't possible during the wet season, consider a sacrificial dry paddock for the worst weather months</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>How to Pack a Deep Central Sulcus</strong>
+          <p>For deep central sulcus thrush where topical liquids run off before penetrating, packing is more effective. After your farrier or vet shows you the technique:</p>
+          <ul>
+            <li>Clean and dry the sulcus thoroughly</li>
+            <li>Roll a small amount of cotton into a thin rope shape</li>
+            <li>Soak the cotton in your chosen treatment (iodine, Thrush Buster, or Pete's Goo)</li>
+            <li>Use a blunt instrument (back of a hoof pick) to tuck the cotton gently into the sulcus</li>
+            <li>Check and replace daily — remove old cotton before reapplying fresh</li>
+            <li>Stop packing if you see bleeding — contact your farrier or vet</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Track Progress and Know When to Escalate</strong>
+          <p>With consistent daily treatment, mild thrush should show clear improvement within 5–7 days and resolve within 2 weeks. Moderate thrush may take 4–8 weeks of daily care. Signs of improvement: odor decreasing, frog tissue firming up, pink healthy tissue visible at sulcus margins. Escalate to your farrier or vet if: the horse becomes lame, you see bleeding during treatment, there is no improvement after 2 weeks of daily care, or the infection appears to be spreading.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top:20px;">
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Thrush Buster</h4>
+        <p>Purple-staining, long-lasting formula. One of the most widely used and effective OTC thrush treatments. Apply every 2–3 days after picking — stains skin and clothing.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Kopertox</h4>
+        <p>Copper naphthenate solution. Green-colored, penetrating antiseptic. Apply daily with a small brush into the sulci. Highly effective for mild to moderate thrush.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>White Lightning</h4>
+        <p>Chlorine dioxide treatment used as a 45-minute soak in a sealed hoof boot. Excellent for moderate deep-sulcus cases. Combine with good debridement for best results.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag home">Home Remedy</div>
+        <h4>Pete's Goo</h4>
+        <p>Mix equal parts triple antibiotic ointment and antifungal foot cream (clotrimazole or miconazole). Pack into deep sulci. Stays in place better than liquid products.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag home">Home Remedy</div>
+        <h4>7% Iodine Tincture</h4>
+        <p>Inexpensive, effective, widely available. Apply daily with a small syringe or cotton ball into sulci. Dries hoof tissue with prolonged use — avoid on healthy frog.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-tag otc">Over the Counter</div>
+        <h4>Clean Trax</h4>
+        <p>Chlorine dioxide soak system. Used in a hoof boot for 30–45 minutes. Reaches bacteria in areas topical products miss. Effective for chronic recurrent thrush.</p>
+      </div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-icon">💡</div>
+      <div class="tip-body">
+        <strong>Owner Safety Note</strong>
+        <p>Many thrush treatments — especially iodine, Kopertox, and bleach — will stain skin and clothing permanently. Wear gloves and old clothes. Work in a well-ventilated area. Keep products away from eyes. If you get copper naphthenate (Kopertox) on your hands, nail polish remover will remove the green stain.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREVENTION -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Prevention — Keeping Thrush From Coming Back</h2>
+    <p>Curing thrush is straightforward. Preventing recurrence requires changing the conditions that caused it.</p>
+  </div>
+
+  <div class="prevention-grid">
+    <div class="prev-card">
+      <div class="prev-icon">🪣</div>
+      <div class="prev-body">
+        <h4>Daily Hoof Picking</h4>
+        <p>Pick all four hooves every single day. This is the single most effective prevention measure. No product, no shoe, no supplement substitutes for it.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🏠</div>
+      <div class="prev-body">
+        <h4>Dry Stall Bedding</h4>
+        <p>Strip stalls completely at least once per week. Spot clean daily. Deep, wet bedding packed into hooves is thrush's primary breeding ground. Choose bedding that dries quickly — kiln-dried shavings over straw.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🪨</div>
+      <div class="prev-body">
+        <h4>Dry Footing in High-Traffic Areas</h4>
+        <p>Add gravel, pea gravel, road base, or sand to wet paddock areas, especially around water troughs, gates, and shelter entries where horses congregate and stand.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">📅</div>
+      <div class="prev-body">
+        <h4>Regular Farrier Schedule</h4>
+        <p>Long-overdue trims allow frog overgrowth that traps debris in deep sulci. 6–8 week cycles for shod horses; 4–6 weeks for barefoot horses prone to thrush.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🏃</div>
+      <div class="prev-body">
+        <h4>Exercise and Movement</h4>
+        <p>Movement compresses and expands the hoof capsule, pumping debris out of sulci and improving circulation. Stalled horses with minimal turnout have significantly higher thrush rates.</p>
+      </div>
+    </div>
+    <div class="prev-card">
+      <div class="prev-icon">🌾</div>
+      <div class="prev-body">
+        <h4>Hoof-Supportive Nutrition</h4>
+        <p>Biotin (20mg/day), zinc, methionine, and omega-3 fatty acids support healthy hoof horn quality. Dense, quality horn is more resistant to bacterial invasion. See our <a href="/nutrition/" style="color:var(--leather);font-weight:600;">Nutrition &amp; Hooves guide</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-head" style="margin-top:36px;">
+    <div class="section-divider"></div>
+    <h2>Thrush — Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Can thrush spread from horse to horse? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Thrush is not directly contagious between horses in the way a respiratory virus would be. The bacteria causing thrush are environmental organisms present in virtually all horse facilities. However, a shared wet, manure-packed paddock or stall can create thrush conditions that affect multiple horses simultaneously — not because they infected each other, but because they all share the same risk environment.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My horse has thrush in all four feet. Is that unusual? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Not at all. Because thrush is an environmental and management issue rather than a pathogen-spreading disease, all four feet are equally exposed to the same risk conditions. Horses standing in wet or dirty environments commonly develop thrush in multiple feet simultaneously. Treatment protocol is the same — pick and treat all four hooves daily, not just the worst-affected ones.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Can I ride my horse while treating thrush? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">For mild thrush with no lameness — yes, exercise is actually beneficial. Movement promotes blood flow and natural hoof self-cleaning. For moderate thrush with sensitivity — light work is usually fine; avoid hard or rocky footing. For severe thrush with lameness — rest until the vet clears your horse for work. Never ride a lame horse regardless of the cause.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How long does thrush treatment take? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Mild thrush caught early with good debridement and daily treatment typically resolves in 1–2 weeks. Moderate deep-sulcus thrush requires 4–8 weeks of consistent daily care. Severe thrush with sensitive tissue involvement may take 2–4 months to fully heal, and the frog may need to completely regrow — a process that takes 6–9 months. The most common reason thrush "won't go away" is inconsistent treatment, not treatment-resistant bacteria.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Is bleach safe to use on thrush? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">A dilute bleach solution (1 part bleach to 10 parts water) is used by some owners and farriers for thrush and is effective at killing bacteria. However, bleach can dry and damage healthy hoof tissue with repeated use, and can irritate sensitive tissue if the infection is deep. It should be used as a short-term measure, not as a long-term daily treatment. Commercial products like Thrush Buster or Kopertox are generally safer for sustained use. Never use undiluted bleach on a hoof.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">My horse's frog is falling off during treatment — is that normal? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Some sloughing of the outer frog layer during treatment is normal — the dead, infected tissue is separating from healthy tissue underneath. This is a sign treatment is working. However, if the tissue coming away is pink and bleeds, if large sections of frog are detaching, or if your horse becomes more lame rather than less, stop treatment and call your vet or farrier. Normal frog shedding is white or gray and occurs in irregular pieces; this is different from necrotic thrush tissue which is black, wet, and foul-smelling.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Should I use a hoof boot while treating thrush? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Hoof boots are useful in two scenarios: for White Lightning or Clean Trax treatments that require a sealed soaking environment, and for protecting a treated hoof when turnout in muddy conditions is unavoidable. However, leaving a treated hoof in a sealed boot for extended periods can trap moisture and create exactly the anaerobic environment that promotes thrush. Only use hoof boots for specific treatment protocols or short-duration protection, not as continuous coverage.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Can thrush cause permanent damage? <span class="faq-arrow">▼</span></button>
+      <div class="faq-a">Mild to moderate thrush, caught and treated promptly, causes no permanent damage. The frog regrows fully. Severe, chronic, or untreated thrush that penetrates into sensitive laminae can cause scarring of sensitive tissue, permanent alteration of frog morphology, damage to the digital cushion, and in extreme cases can predispose a horse to long-term soundness issues. This is why early treatment matters — the bacteria themselves aren't unusual, but the damage they can do with time is serious.</div>
+    </div>
+  </div>
+
+  <!-- SERIES NAV -->
+  <div class="series-nav" style="margin-top:36px;">
+    <h3>🏥 Top 10 Hoof Issues for Horse Owners</h3>
+    <div class="series-list">
+      <a href="/hoof-issues/thrush/" class="series-item current">
+        <div class="series-num">1</div>
+        Thrush — You Are Here
+      </a>
+      <span class="series-item coming"><div class="series-num">2</div>White Line Disease</span>
+      <span class="series-item coming"><div class="series-num">3</div>Laminitis &amp; Founder</span>
+      <span class="series-item coming"><div class="series-num">4</div>Navicular Syndrome</span>
+      <span class="series-item coming"><div class="series-num">5</div>Cracked Hooves</span>
+      <span class="series-item coming"><div class="series-num">6</div>Abscesses</span>
+      <span class="series-item coming"><div class="series-num">7</div>Contracted Heels</span>
+      <span class="series-item coming"><div class="series-num">8</div>Seedy Toe</span>
+      <span class="series-item coming"><div class="series-num">9</div>Sheared Heels</span>
+      <span class="series-item coming"><div class="series-num">10</div>Canker</span>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<div class="cta-strip">
+  <div class="cta-box">
+    <h3>Part of the Bridle &amp; Bit Network</h3>
+    <p>HorseFarrier.net is a free public resource from Bridle &amp; Bit Magazine — Arizona's premier equestrian publication since 1978.</p>
+    <div class="cta-btns">
+      <a href="https://www.bridleandbit.com" target="_blank" rel="noopener" class="cta-btn primary">Visit Bridle &amp; Bit Magazine</a>
+      <a href="/hoof-issues/" class="cta-btn secondary">All Top 10 Hoof Issues →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Horse<span>Farrier</span>.net</div>
+  <div style="margin-bottom:10px;">The Complete Hoof Care Resource</div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="/hoof-care/">Hoof Care Basics</a>
+    <a href="/farrier-tools/">Farrier Tools</a>
+    <a href="/breed-hooves/">Breed Hoof Needs</a>
+    <a href="/nutrition/">Nutrition &amp; Hooves</a>
+    <a href="/horseshoes/">Horseshoe Types</a>
+    <a href="/hoof-issues/">Top 10 Hoof Issues</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/glossary/">Glossary</a>
+    <a href="/videos/">Videos</a>
+  </nav>
+  <div>A public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> — Arizona's premier equestrian publication since 1978.</div>
+  <div style="margin-top:8px;color:rgba(255,255,255,0.35);font-size:0.75rem;">&copy; 2026 HorseFarrier.net. All rights reserved.</div>
+</footer>
+
+<script>
+(function(){
+  // Nav drawer toggle
+  var btn=document.querySelector('.nav-toggle');
+  var drawer=document.getElementById('nav-drawer');
+  if(btn&&drawer){
+    btn.addEventListener('click',function(){
+      var open=drawer.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+    });
+  }
+
+  // Role tabs
+  var tabs=document.querySelectorAll('.role-tab');
+  var panels=document.querySelectorAll('.role-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+      panels.forEach(function(p){p.classList.remove('active');});
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      var panelId=tab.getAttribute('aria-controls');
+      var panel=document.getElementById(panelId);
+      if(panel){panel.classList.add('active');}
+    });
+  });
+
+  // FAQ accordion
+  var faqItems=document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item){
+    var btn=item.querySelector('.faq-q');
+    if(btn){
+      btn.addEventListener('click',function(){
+        var open=item.classList.toggle('open');
+        btn.setAttribute('aria-expanded',open);
+      });
+    }
+  });
+})();
+</script>
+</body>
+</html>

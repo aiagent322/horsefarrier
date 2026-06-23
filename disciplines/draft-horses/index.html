@@ -190,6 +190,17 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .back-link:hover{text-decoration:underline}
 /* ── end overflow fix ──────────────────────────── */
 
+
+/* ── FORCE PADDING — discipline pages ────────────── */
+.page-hero{padding-left:max(16px,env(safe-area-inset-left)) !important;padding-right:max(16px,env(safe-area-inset-right)) !important}
+.content-wrap{padding-left:16px !important;padding-right:16px !important;box-sizing:border-box !important;width:100% !important;max-width:820px !important}
+.disc-section{padding:0;box-sizing:border-box;width:100%}
+.disc-section h2,.disc-section p,.disc-facts{width:100%;box-sizing:border-box;word-wrap:break-word;overflow-wrap:break-word}
+@media(min-width:768px){
+  .content-wrap{padding-left:24px !important;padding-right:24px !important}
+}
+/* ── end force padding ──────────────────────────── */
+
 </style>
 
 <meta property="og:title" content="Draft &amp; Work Horses — Shoeing Guide — HorseFarrier.net">

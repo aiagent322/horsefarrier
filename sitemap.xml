@@ -46,4 +46,7 @@
   <url><loc>https://horsefarrier.net/faq/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://horsefarrier.net/glossary/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://horsefarrier.net/videos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- About -->
+  <url><loc>https://horsefarrier.net/about/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>

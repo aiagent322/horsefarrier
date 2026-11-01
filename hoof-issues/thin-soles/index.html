@@ -240,12 +240,20 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 /* nav scroll arrows — shown only when the menu overflows */
 .sn-wrap{position:relative;max-width:1200px;margin:0 auto}
 .sn-wrap .site-nav-inner{max-width:none;margin:0}
-.sn-arrow{position:absolute;top:0;bottom:0;z-index:2;width:36px;display:flex;align-items:center;border:0;padding:0;margin:0;cursor:pointer;color:var(--rope-light);font-size:1.7rem;font-weight:700;line-height:1;font-family:inherit}
+.sn-arrow{position:absolute;top:0;bottom:0;z-index:2;width:56px;display:flex;align-items:center;border:0;padding:0 6px;margin:0;cursor:pointer;font-size:0;line-height:1;background:none}
 .sn-arrow[hidden]{display:none}
-.sn-arrow-l{left:0;justify-content:flex-start;padding-left:7px;background:linear-gradient(to right,var(--leather-dark) 55%,rgba(107,66,38,0))}
-.sn-arrow-r{right:0;justify-content:flex-end;padding-right:7px;background:linear-gradient(to left,var(--leather-dark) 55%,rgba(107,66,38,0))}
-.sn-arrow:hover{color:var(--cream)}
+.sn-arrow::before{display:flex;align-items:center;justify-content:center;width:34px;height:34px;padding-bottom:3px;border-radius:50%;background:var(--rope);color:var(--leather-deeper);font-size:1.7rem;font-weight:900;line-height:1;box-shadow:0 0 0 2px var(--leather-dark),0 2px 6px rgba(0,0,0,0.45);transition:background 0.15s,transform 0.15s}
+.sn-arrow-l{left:0;justify-content:flex-start;background:linear-gradient(to right,var(--leather-dark) 60%,rgba(107,66,38,0))}
+.sn-arrow-r{right:0;justify-content:flex-end;background:linear-gradient(to left,var(--leather-dark) 60%,rgba(107,66,38,0))}
+.sn-arrow-l::before{content:'\2039'}
+.sn-arrow-r::before{content:'\203A'}
+.sn-arrow:hover::before{background:var(--rope-light);transform:scale(1.08)}
 .sn-arrow:focus-visible{outline:3px solid var(--rope);outline-offset:-3px}
+@keyframes sn-nudge-r{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+@keyframes sn-nudge-l{0%,100%{transform:translateX(0)}50%{transform:translateX(-3px)}}
+.sn-arrow-r::before{animation:sn-nudge-r 1.6s ease-in-out infinite}
+.sn-arrow-l::before{animation:sn-nudge-l 1.6s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.sn-arrow-r::before,.sn-arrow-l::before{animation:none}}
 @media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
 @media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
 

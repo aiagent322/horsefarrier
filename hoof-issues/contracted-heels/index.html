@@ -326,6 +326,15 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
 
 /* divider between groups */
 .sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+/* nav scroll arrows — shown only when the menu overflows */
+.sn-wrap{position:relative;max-width:1200px;margin:0 auto}
+.sn-wrap .site-nav-inner{max-width:none;margin:0}
+.sn-arrow{position:absolute;top:0;bottom:0;z-index:2;width:36px;display:flex;align-items:center;border:0;padding:0;margin:0;cursor:pointer;color:var(--rope-light);font-size:1.7rem;font-weight:700;line-height:1;font-family:inherit}
+.sn-arrow[hidden]{display:none}
+.sn-arrow-l{left:0;justify-content:flex-start;padding-left:7px;background:linear-gradient(to right,var(--leather-dark) 55%,rgba(107,66,38,0))}
+.sn-arrow-r{right:0;justify-content:flex-end;padding-right:7px;background:linear-gradient(to left,var(--leather-dark) 55%,rgba(107,66,38,0))}
+.sn-arrow:hover{color:var(--cream)}
+.sn-arrow:focus-visible{outline:3px solid var(--rope);outline-offset:-3px}
 
 /* tablet 768px — slightly larger text, show BB logo */
 @media(min-width:768px){
@@ -388,7 +397,9 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
   </a>
 </div>
 <nav class="site-nav" aria-label="Main navigation">
-  <div class="site-nav-inner">
+  <div class="sn-wrap">
+    <button type="button" class="sn-arrow sn-arrow-l" aria-label="Scroll menu left" tabindex="-1" hidden>&#8249;</button>
+    <div class="site-nav-inner">
     <a href="/hoof-care/" class="sn-link ">Hoof Care</a>
     <a href="/farrier-tools/" class="sn-link ">Farrier Tools</a>
     <a href="/horseshoes/" class="sn-link ">Horseshoe Types</a>
@@ -408,6 +419,8 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     <a href="/foal-hoof-care/" class="sn-link">Foal Hoof Care</a>
     <a href="/find-a-farrier/" class="sn-link">Find a Farrier</a>
     <a href="/videos/" class="sn-link ">Videos</a>
+  </div>
+    <button type="button" class="sn-arrow sn-arrow-r" aria-label="Scroll menu right" tabindex="-1" hidden>&#8250;</button>
   </div>
 </nav>
 </header>
@@ -1148,6 +1161,21 @@ document.querySelectorAll('.vid-facade').forEach(function(f){
     f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
   });
 });
+</script>
+<script>
+(function(){
+  var w=document.querySelector('.sn-wrap');if(!w)return;
+  var s=w.querySelector('.site-nav-inner'),l=w.querySelector('.sn-arrow-l'),r=w.querySelector('.sn-arrow-r');
+  if(!s||!l||!r)return;
+  function u(){var m=s.scrollWidth-s.clientWidth;l.hidden=s.scrollLeft<=2;r.hidden=m<=2||s.scrollLeft>=m-2;}
+  function go(d){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;s.scrollBy({left:d*Math.max(160,s.clientWidth*0.6),behavior:rm?'auto':'smooth'});}
+  l.addEventListener('click',function(){go(-1);});
+  r.addEventListener('click',function(){go(1);});
+  s.addEventListener('scroll',u,{passive:true});
+  window.addEventListener('resize',u);
+  window.addEventListener('load',u);
+  u();
+})();
 </script>
 </body>
 </html>

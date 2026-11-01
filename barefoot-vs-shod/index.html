@@ -134,6 +134,15 @@ footer a{color:var(--rope-light);text-decoration:none}
 .sn-drop-link{display:flex;align-items:center;padding:11px 18px;font-size:0.83rem;font-weight:600;color:rgba(255,255,255,0.75);text-decoration:none;border-left:3px solid transparent;transition:color 0.15s,background 0.15s,border-color 0.15s;white-space:nowrap;gap:8px}
 .sn-drop-link:hover,.sn-drop-link.active{color:var(--rope-light);background:rgba(255,255,255,0.06);border-left-color:var(--rope)}
 .sn-div{width:1px;background:rgba(255,255,255,0.1);margin:8px 2px;flex-shrink:0}
+/* nav scroll arrows — shown only when the menu overflows */
+.sn-wrap{position:relative;max-width:1200px;margin:0 auto}
+.sn-wrap .site-nav-inner{max-width:none;margin:0}
+.sn-arrow{position:absolute;top:0;bottom:0;z-index:2;width:36px;display:flex;align-items:center;border:0;padding:0;margin:0;cursor:pointer;color:var(--rope-light);font-size:1.7rem;font-weight:700;line-height:1;font-family:inherit}
+.sn-arrow[hidden]{display:none}
+.sn-arrow-l{left:0;justify-content:flex-start;padding-left:7px;background:linear-gradient(to right,var(--leather-dark) 55%,rgba(107,66,38,0))}
+.sn-arrow-r{right:0;justify-content:flex-end;padding-right:7px;background:linear-gradient(to left,var(--leather-dark) 55%,rgba(107,66,38,0))}
+.sn-arrow:hover{color:var(--cream)}
+.sn-arrow:focus-visible{outline:3px solid var(--rope);outline-offset:-3px}
 @media(min-width:768px){.sn-link,.sn-drop-btn{font-size:0.82rem;padding:0 14px}}
 @media(min-width:1024px){.sn-link,.sn-drop-btn{font-size:0.85rem;padding:0 16px;height:46px}.site-nav-inner{padding:0 8px}}
 /* VIDEO FACADE */
@@ -184,7 +193,9 @@ footer a{color:var(--rope-light);text-decoration:none}
   </a>
 </div>
 <nav class="site-nav" aria-label="Main navigation">
-  <div class="site-nav-inner">
+  <div class="sn-wrap">
+    <button type="button" class="sn-arrow sn-arrow-l" aria-label="Scroll menu left" tabindex="-1" hidden>&#8249;</button>
+    <div class="site-nav-inner">
     <a href="/hoof-care/" class="sn-link active">Hoof Care</a>
     <a href="/farrier-tools/" class="sn-link">Farrier Tools</a>
     <a href="/horseshoes/" class="sn-link">Horseshoe Types</a>
@@ -203,6 +214,8 @@ footer a{color:var(--rope-light);text-decoration:none}
     <a href="/faq/" class="sn-link">FAQ</a>
     <a href="/glossary/" class="sn-link">Glossary</a>
     <a href="/videos/" class="sn-link">Videos</a>
+  </div>
+    <button type="button" class="sn-arrow sn-arrow-r" aria-label="Scroll menu right" tabindex="-1" hidden>&#8250;</button>
   </div>
 </nav>
 </header>
@@ -673,6 +686,21 @@ document.querySelectorAll('.vid-facade').forEach(function(f){
     f.innerHTML=''; f.appendChild(iframe); f.style.cursor='default';
   });
 });
+</script>
+<script>
+(function(){
+  var w=document.querySelector('.sn-wrap');if(!w)return;
+  var s=w.querySelector('.site-nav-inner'),l=w.querySelector('.sn-arrow-l'),r=w.querySelector('.sn-arrow-r');
+  if(!s||!l||!r)return;
+  function u(){var m=s.scrollWidth-s.clientWidth;l.hidden=s.scrollLeft<=2;r.hidden=m<=2||s.scrollLeft>=m-2;}
+  function go(d){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;s.scrollBy({left:d*Math.max(160,s.clientWidth*0.6),behavior:rm?'auto':'smooth'});}
+  l.addEventListener('click',function(){go(-1);});
+  r.addEventListener('click',function(){go(1);});
+  s.addEventListener('scroll',u,{passive:true});
+  window.addEventListener('resize',u);
+  window.addEventListener('load',u);
+  u();
+})();
 </script>
 </body>
 </html>
